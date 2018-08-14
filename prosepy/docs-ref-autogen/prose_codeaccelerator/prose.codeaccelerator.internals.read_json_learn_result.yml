@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: read_json_learn_result
+  source:
+    id: read_json_learn_result
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: module
+  uid: prose.codeaccelerator.internals.read_json_learn_result
+references:
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+  isExternal: false
+  name: ReadJsonLearnResult
+  parent: prose.codeaccelerator.internals.read_json_learn_result
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  isExternal: false
+  name: ReadJsonLearnResultApi
+  parent: prose.codeaccelerator.internals.read_json_learn_result
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi

@@ -1,0 +1,137 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.code
+  - prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.data
+  - prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.regexes
+  class: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: FindPatternsLearnResult
+  source:
+    id: FindPatternsLearnResult
+    path: prose\codeaccelerator\find_patterns_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\find_patterns_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 30
+  summary: 'The result from attempting to learn a set of patterns in string data.
+
+
+
+
+
+    '
+  syntax:
+    content: FindPatternsLearnResult(data, result)
+  type: class
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+- class: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.code
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: code
+  source:
+    id: code
+    path: prose\codeaccelerator\find_patterns_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\find_patterns_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 50
+  summary: 'Return a code fragment that identifies the patterns that were learned.
+
+    :param task: A parameter that can take the values from the enum FindPatternsBuilder.Tasks.
+
+    If the parameter is ''Tasks.classify'', the method produces a code fragment to
+    identify
+
+    the pattern that classifies strings. If the parameter is ''Tasks.check'', the
+    method
+
+    produces a code fragment to assert that a given string falls into one of the
+
+    patterns learned.
+
+    '
+  syntax:
+    content: 'code(task=<Tasks.classify: ''classify''>)'
+    parameters:
+    - defaultValue: Tasks.classify
+      id: task
+  type: method
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.code
+- class: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.data
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: data
+  source:
+    id: data
+    path: prose\codeaccelerator\find_patterns_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\find_patterns_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 65
+  summary: 'Return the data provided to the find patterns operation, grouped by the
+    learned patterns.
+
+    The return value is a dictionary with keys being the name of the pattern, and
+    the values
+
+    being a list of strings that correspond to that pattern.
+
+    '
+  syntax:
+    content: data()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.data
+- class: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.regexes
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: regexes
+  source:
+    id: regexes
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'Return the list of regexes representing the patterns identified in the
+    data.
+
+    None represents a pattern that only matches strings that are None.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.regexes
+references:
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.code
+  isExternal: false
+  name: code
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.code
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.data
+  isExternal: false
+  name: data
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.data
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.regexes
+  isExternal: false
+  name: regexes
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.regexes

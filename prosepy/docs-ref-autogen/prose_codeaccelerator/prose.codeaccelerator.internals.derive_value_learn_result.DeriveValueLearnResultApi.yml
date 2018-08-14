@@ -1,0 +1,55 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi.get_code_string
+  class: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+  fullName: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.derive_value_learn_result
+  name: DeriveValueLearnResultApi
+  source:
+    id: DeriveValueLearnResultApi
+    path: prose\codeaccelerator\internals\derive_value_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\derive_value_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 10
+  syntax:
+    content: DeriveValueLearnResultApi(background_process, prepopulated_referenceId)
+  type: class
+  uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+- class: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+  fullName: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi.get_code_string
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.derive_value_learn_result
+  name: get_code_string
+  source:
+    id: get_code_string
+    path: prose\codeaccelerator\internals\derive_value_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\derive_value_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 11
+  summary: 'Creates the string representation of the learned program.
+
+    :return:
+
+    '
+  syntax:
+    content: get_code_string()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi.get_code_string
+references:
+- fullName: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi.get_code_string
+  isExternal: false
+  name: get_code_string
+  parent: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+  uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi.get_code_string

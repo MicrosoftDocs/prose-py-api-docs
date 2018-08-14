@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilder
+  - prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilderApi
+  fullName: prose.codeaccelerator.internals.find_patterns_builder
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_builder
+  name: find_patterns_builder
+  source:
+    id: find_patterns_builder
+    path: prose\codeaccelerator\internals\find_patterns_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\find_patterns_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: module
+  uid: prose.codeaccelerator.internals.find_patterns_builder
+references:
+- fullName: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilder
+  isExternal: false
+  name: FindPatternsBuilder
+  parent: prose.codeaccelerator.internals.find_patterns_builder
+  uid: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilder
+- fullName: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilderApi
+  isExternal: false
+  name: FindPatternsBuilderApi
+  parent: prose.codeaccelerator.internals.find_patterns_builder
+  uid: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilderApi

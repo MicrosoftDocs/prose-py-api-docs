@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.builder.Builder
+  fullName: prose.codeaccelerator.builder.Builder
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.builder
+  name: Builder
+  source:
+    id: Builder
+    path: prose\codeaccelerator\builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 19
+  syntax:
+    content: Builder()
+  type: class
+  uid: prose.codeaccelerator.builder.Builder
+references: []

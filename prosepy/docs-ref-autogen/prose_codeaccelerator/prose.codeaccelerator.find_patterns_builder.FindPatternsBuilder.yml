@@ -1,0 +1,61 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+  class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator.builder.Builder
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: FindPatternsBuilder
+  source:
+    id: FindPatternsBuilder
+    path: prose\codeaccelerator\find_patterns_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\find_patterns_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 6
+  summary: 'A builder for data and constraints in order to learn code for identifying
+    patterns in a set of strings.
+
+
+    '
+  syntax:
+    content: FindPatternsBuilder(data)
+  type: class
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+- class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: learn
+  source:
+    id: learn
+    path: prose\codeaccelerator\find_patterns_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\find_patterns_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 18
+  summary: 'Attempt to learn a set of patterns that cover the data and satisfy the
+    constraints that have been set on this builder.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+references:
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn

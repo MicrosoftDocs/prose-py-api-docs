@@ -1,0 +1,59 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder.prepopulated_object_builder
+  class: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder
+  fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_builder
+  name: ReadJsonBuilder
+  source:
+    id: ReadJsonBuilder
+    path: prose\codeaccelerator\internals\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 200
+  syntax:
+    content: ReadJsonBuilder(filepath, telemetryOptOut, telemetryTestingInstance,
+      telemetryTestingMode, prepopulated_referenceId=None)
+  type: class
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder
+- class: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder
+  fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder.prepopulated_object_builder
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_builder
+  name: prepopulated_object_builder
+  source:
+    id: prepopulated_object_builder
+    path: prose\codeaccelerator\internals\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 215
+  summary: 'Method to construct ReadJsonBuilder object if equivalent C# object is
+    already created
+
+    '
+  syntax:
+    content: prepopulated_object_builder(prepopulated_referenceId)
+    parameters:
+    - id: cls
+    - id: prepopulated_referenceId
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder.prepopulated_object_builder
+references:
+- fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder.prepopulated_object_builder
+  isExternal: false
+  name: prepopulated_object_builder
+  parent: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder.prepopulated_object_builder

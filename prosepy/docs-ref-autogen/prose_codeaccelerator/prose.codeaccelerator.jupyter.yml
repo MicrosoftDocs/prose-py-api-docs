@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.jupyter.read_text_builder
+  fullName: prose.codeaccelerator.jupyter
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: jupyter
+  source:
+    id: jupyter
+    path: prose\codeaccelerator\jupyter\__init__.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\jupyter\__init__.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: package
+  uid: prose.codeaccelerator.jupyter
+references:
+- fullName: prose.codeaccelerator.jupyter.read_text_builder
+  isExternal: false
+  name: read_text_builder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.read_text_builder

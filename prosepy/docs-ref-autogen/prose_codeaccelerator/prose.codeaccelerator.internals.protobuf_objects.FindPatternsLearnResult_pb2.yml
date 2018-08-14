@@ -1,0 +1,20 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  fullName: prose.codeaccelerator.internals.protobuf_objects.FindPatternsLearnResult_pb2
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.protobuf_objects.FindPatternsLearnResult_pb2
+  name: FindPatternsLearnResult_pb2
+  source:
+    id: FindPatternsLearnResult_pb2
+    path: prose\codeaccelerator\internals\protobuf_objects\FindPatternsLearnResult_pb2.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\protobuf_objects\FindPatternsLearnResult_pb2.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: module
+  uid: prose.codeaccelerator.internals.protobuf_objects.FindPatternsLearnResult_pb2
+references: []

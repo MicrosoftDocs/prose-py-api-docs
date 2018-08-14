@@ -1,0 +1,253 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.check_task
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.classify_task
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.code
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_check_task
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_classify_task
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_regexes
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.regexes
+  - prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.success
+  class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: FindPatternsLearnResultApi
+  source:
+    id: FindPatternsLearnResultApi
+    path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 10
+  summary: '
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: FindPatternsLearnResultApi(background_process, prepopulated_referenceId)
+  type: class
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.check_task
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: check_task
+  source:
+    id: check_task
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for CheckTask
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.check_task
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.classify_task
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: classify_task
+  source:
+    id: classify_task
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for ClassifyTask
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.classify_task
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.code
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: code
+  source:
+    id: code
+    path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 71
+  summary: 'Return a code fragment that either classifies strings into the learned
+    patterns, or asserts thatstrings fall into one of the learned patterns based on
+    the value of the .
+
+    :param task: The task that is to be achieved by the code fragment produces.Must
+    be one ofor .
+
+    :param functionName: The name of the function in the generated code that performs
+    the specified task on an input string.
+
+    :return:
+
+    '
+  syntax:
+    content: code(task, functionName)
+    parameters:
+    - id: task
+    - id: functionName
+  type: method
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.code
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_check_task
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: get_check_task
+  source:
+    id: get_check_task
+    path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 41
+  syntax:
+    content: get_check_task()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_check_task
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_classify_task
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: get_classify_task
+  source:
+    id: get_classify_task
+    path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 11
+  syntax:
+    content: get_classify_task()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_classify_task
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_regexes
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: get_regexes
+  source:
+    id: get_regexes
+    path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\find_patterns_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 108
+  syntax:
+    content: get_regexes()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_regexes
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.regexes
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: regexes
+  source:
+    id: regexes
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for Regexes
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.regexes
+- class: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.success
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.find_patterns_learn_result
+  name: success
+  source:
+    id: success
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for Success
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.success
+references:
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.check_task
+  isExternal: false
+  name: check_task
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.check_task
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.classify_task
+  isExternal: false
+  name: classify_task
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.classify_task
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.code
+  isExternal: false
+  name: code
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.code
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_check_task
+  isExternal: false
+  name: get_check_task
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_check_task
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_classify_task
+  isExternal: false
+  name: get_classify_task
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_classify_task
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_regexes
+  isExternal: false
+  name: get_regexes
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.get_regexes
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.regexes
+  isExternal: false
+  name: regexes
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.regexes
+- fullName: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.success
+  isExternal: false
+  name: success
+  parent: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+  uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi.success

@@ -1,0 +1,195 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.column_count
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_string
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_with_rows_string
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_column_count
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_names
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.names
+  class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: ReadJsonLearnResultApi
+  source:
+    id: ReadJsonLearnResultApi
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 10
+  summary: '
+
+
+
+
+
+    '
+  syntax:
+    content: ReadJsonLearnResultApi(background_process, prepopulated_referenceId)
+  type: class
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+- class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.column_count
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: column_count
+  source:
+    id: column_count
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for ColumnCount
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.column_count
+- class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_string
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: get_code_string
+  source:
+    id: get_code_string
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 82
+  summary: 'Creates the string representation of the learned program.
+
+    :return:
+
+    '
+  syntax:
+    content: get_code_string()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_string
+- class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_with_rows_string
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: get_code_with_rows_string
+  source:
+    id: get_code_with_rows_string
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 116
+  summary: 'Creates the string representation of the learned program with an additional
+    parameter forspecifying the number of rows to read.
+
+    :return:
+
+    '
+  syntax:
+    content: get_code_with_rows_string()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_with_rows_string
+- class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_column_count
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: get_column_count
+  source:
+    id: get_column_count
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 11
+  syntax:
+    content: get_column_count()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_column_count
+- class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_names
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: get_names
+  source:
+    id: get_names
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 41
+  syntax:
+    content: get_names()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_names
+- class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.names
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: names
+  source:
+    id: names
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for Names
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.names
+references:
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.column_count
+  isExternal: false
+  name: column_count
+  parent: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.column_count
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_string
+  isExternal: false
+  name: get_code_string
+  parent: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_string
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_with_rows_string
+  isExternal: false
+  name: get_code_with_rows_string
+  parent: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_code_with_rows_string
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_column_count
+  isExternal: false
+  name: get_column_count
+  parent: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_column_count
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_names
+  isExternal: false
+  name: get_names
+  parent: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.get_names
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.names
+  isExternal: false
+  name: names
+  parent: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi.names

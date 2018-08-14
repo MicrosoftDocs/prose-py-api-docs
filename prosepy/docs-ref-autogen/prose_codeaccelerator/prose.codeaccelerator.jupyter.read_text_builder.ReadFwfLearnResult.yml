@@ -1,0 +1,29 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfLearnResult
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+    type: prose.codeaccelerator.read_text_builder.ReadFwfLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter.read_text_builder
+  name: ReadFwfLearnResult
+  source:
+    id: ReadFwfLearnResult
+    path: prose\codeaccelerator\jupyter\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\jupyter\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 84
+  syntax:
+    content: ReadFwfLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfLearnResult
+references: []

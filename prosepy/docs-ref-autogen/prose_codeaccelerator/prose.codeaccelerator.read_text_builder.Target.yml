@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.read_text_builder.Target.pandas
+  - prose.codeaccelerator.read_text_builder.Target.pyspark
+  class: prose.codeaccelerator.read_text_builder.Target
+  fullName: prose.codeaccelerator.read_text_builder.Target
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: enum.Enum
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: Target
+  source:
+    id: Target
+    path: prose\codeaccelerator\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 6
+  summary: 'An enumeration.
+
+
+
+    '
+  syntax: {}
+  type: class
+  uid: prose.codeaccelerator.read_text_builder.Target
+- fullName: prose.codeaccelerator.read_text_builder.Target.pandas
+  id: pandas
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: pandas
+  parent: prose.codeaccelerator.read_text_builder.Target
+  syntax:
+    content: pandas = (<object object>,)
+    return:
+      type:
+      - prose.codeaccelerator.read_text_builder.Target
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.Target.pandas
+- fullName: prose.codeaccelerator.read_text_builder.Target.pyspark
+  id: pyspark
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: pyspark
+  parent: prose.codeaccelerator.read_text_builder.Target
+  syntax:
+    content: pyspark = <object object>
+    return:
+      type:
+      - prose.codeaccelerator.read_text_builder.Target
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.Target.pyspark
+references:
+- fullName: prose.codeaccelerator.read_text_builder.Target.pandas
+  isExternal: false
+  name: pandas
+  parent: prose.codeaccelerator.read_text_builder.Target
+  uid: prose.codeaccelerator.read_text_builder.Target.pandas
+- fullName: prose.codeaccelerator.read_text_builder.Target.pyspark
+  isExternal: false
+  name: pyspark
+  parent: prose.codeaccelerator.read_text_builder.Target
+  uid: prose.codeaccelerator.read_text_builder.Target.pyspark

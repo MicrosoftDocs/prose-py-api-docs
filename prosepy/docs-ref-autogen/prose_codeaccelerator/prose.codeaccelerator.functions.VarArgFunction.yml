@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.functions.VarArgFunction
+  fullName: prose.codeaccelerator.functions.VarArgFunction
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.functions
+  name: VarArgFunction
+  source:
+    id: VarArgFunction
+    path: prose\codeaccelerator\functions.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\functions.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 35
+  syntax:
+    content: VarArgFunction(function_name, program_string)
+  type: class
+  uid: prose.codeaccelerator.functions.VarArgFunction
+references: []

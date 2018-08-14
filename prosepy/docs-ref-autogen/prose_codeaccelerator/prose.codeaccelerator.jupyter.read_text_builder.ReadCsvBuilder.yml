@@ -1,0 +1,56 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder.learn
+  class: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
+  fullName: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: prose.codeaccelerator.builder.Builder
+      type: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+    type: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter.read_text_builder
+  name: ReadCsvBuilder
+  source:
+    id: ReadCsvBuilder
+    path: prose\codeaccelerator\jupyter\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\jupyter\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 74
+  syntax:
+    content: ReadCsvBuilder(filename)
+  type: class
+  uid: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
+- class: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
+  fullName: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter.read_text_builder
+  name: learn
+  source:
+    id: learn
+    path: prose\codeaccelerator\jupyter\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\jupyter\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 75
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder.learn
+references:
+- fullName: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
+  uid: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder.learn

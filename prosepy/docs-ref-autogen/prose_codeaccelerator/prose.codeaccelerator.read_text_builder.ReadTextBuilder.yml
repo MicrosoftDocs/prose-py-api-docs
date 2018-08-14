@@ -1,0 +1,57 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.read_text_builder.ReadTextBuilder.filename
+  class: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator.builder.Builder
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: ReadTextBuilder
+  source:
+    id: ReadTextBuilder
+    path: prose\codeaccelerator\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 14
+  summary: '
+
+
+    '
+  syntax:
+    content: ReadTextBuilder(filename, is_fixed_width, schema)
+  type: class
+  uid: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+- class: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextBuilder.filename
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: filename
+  source:
+    id: filename
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'The model file to read.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadTextBuilder.filename
+references:
+- fullName: prose.codeaccelerator.read_text_builder.ReadTextBuilder.filename
+  isExternal: false
+  name: filename
+  parent: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+  uid: prose.codeaccelerator.read_text_builder.ReadTextBuilder.filename

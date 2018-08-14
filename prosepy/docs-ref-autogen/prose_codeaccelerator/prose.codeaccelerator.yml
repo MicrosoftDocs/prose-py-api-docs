@@ -1,0 +1,74 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.builder
+  - prose.codeaccelerator.find_patterns_builder
+  - prose.codeaccelerator.functions
+  - prose.codeaccelerator.read_json_builder
+  - prose.codeaccelerator.read_text_builder
+  - prose.codeaccelerator.utils
+  - prose.codeaccelerator.version
+  - prose.codeaccelerator.internals
+  - prose.codeaccelerator.jupyter
+  fullName: prose.codeaccelerator
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: codeaccelerator
+  source:
+    id: codeaccelerator
+    path: prose\codeaccelerator\__init__.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\__init__.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: package
+  uid: prose.codeaccelerator
+references:
+- fullName: prose.codeaccelerator.builder
+  isExternal: false
+  name: builder
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.builder
+- fullName: prose.codeaccelerator.find_patterns_builder
+  isExternal: false
+  name: find_patterns_builder
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.find_patterns_builder
+- fullName: prose.codeaccelerator.functions
+  isExternal: false
+  name: functions
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.functions
+- fullName: prose.codeaccelerator.read_json_builder
+  isExternal: false
+  name: read_json_builder
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.read_json_builder
+- fullName: prose.codeaccelerator.read_text_builder
+  isExternal: false
+  name: read_text_builder
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.read_text_builder
+- fullName: prose.codeaccelerator.utils
+  isExternal: false
+  name: utils
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.utils
+- fullName: prose.codeaccelerator.version
+  isExternal: false
+  name: version
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.version
+- fullName: prose.codeaccelerator.internals
+  isExternal: false
+  name: internals
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.internals
+- fullName: prose.codeaccelerator.jupyter
+  isExternal: false
+  name: jupyter
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.jupyter

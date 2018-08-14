@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult.prepopulated_object_builder
+  class: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult
+  fullName: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.derive_value_learn_result
+  name: DeriveValueLearnResult
+  source:
+    id: DeriveValueLearnResult
+    path: prose\codeaccelerator\internals\derive_value_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\derive_value_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 81
+  syntax:
+    content: DeriveValueLearnResult(prepopulated_referenceId)
+  type: class
+  uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult
+- class: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult
+  fullName: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult.prepopulated_object_builder
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.derive_value_learn_result
+  name: prepopulated_object_builder
+  source:
+    id: prepopulated_object_builder
+    path: prose\codeaccelerator\internals\derive_value_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\derive_value_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 88
+  summary: 'Method to construct DeriveValueLearnResult object if equivalent C# object
+    is already created
+
+    '
+  syntax:
+    content: prepopulated_object_builder(prepopulated_referenceId)
+    parameters:
+    - id: cls
+    - id: prepopulated_referenceId
+  type: method
+  uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult.prepopulated_object_builder
+references:
+- fullName: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult.prepopulated_object_builder
+  isExternal: false
+  name: prepopulated_object_builder
+  parent: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult
+  uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult.prepopulated_object_builder

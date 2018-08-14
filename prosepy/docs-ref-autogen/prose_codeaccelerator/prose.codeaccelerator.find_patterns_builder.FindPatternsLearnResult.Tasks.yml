@@ -1,0 +1,71 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.check
+  - prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.classify
+  class: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: enum.Enum
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+  name: Tasks
+  source:
+    id: Tasks
+    path: prose\codeaccelerator\find_patterns_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\find_patterns_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 32
+  summary: 'An enumeration.
+
+
+
+    '
+  syntax: {}
+  type: class
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.check
+  id: check
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: check
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  syntax:
+    content: check = 'check'
+    return:
+      type:
+      - prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  type: attribute
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.check
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.classify
+  id: classify
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: classify
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  syntax:
+    content: classify = 'classify'
+    return:
+      type:
+      - prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  type: attribute
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.classify
+references:
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.check
+  isExternal: false
+  name: check
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.check
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.classify
+  isExternal: false
+  name: classify
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks.classify

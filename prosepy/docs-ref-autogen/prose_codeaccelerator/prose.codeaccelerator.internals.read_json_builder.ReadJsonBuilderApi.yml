@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.flush_logger
+  - prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.get_telemetry_testing_data
+  - prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.learn
+  class: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_builder
+  name: ReadJsonBuilderApi
+  source:
+    id: ReadJsonBuilderApi
+    path: prose\codeaccelerator\internals\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 11
+  summary: '
+
+
+    '
+  syntax:
+    content: ReadJsonBuilderApi(background_process, filepath, telemetryOptOut, telemetryTestingInstance,
+      telemetryTestingMode, prepopulated_referenceId=None)
+  type: class
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+- class: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.flush_logger
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_builder
+  name: flush_logger
+  source:
+    id: flush_logger
+    path: prose\codeaccelerator\internals\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 143
+  summary: 'Flushes the logger.
+
+    :param wait: Whether to wait for the flush to complete or do it in background.
+
+    :return:
+
+    '
+  syntax:
+    content: flush_logger(wait)
+    parameters:
+    - id: wait
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.flush_logger
+- class: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.get_telemetry_testing_data
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_builder
+  name: get_telemetry_testing_data
+  source:
+    id: get_telemetry_testing_data
+    path: prose\codeaccelerator\internals\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 98
+  summary: 'Gets the testing telemetry events.
+
+    :return:
+
+    '
+  syntax:
+    content: get_telemetry_testing_data()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.get_telemetry_testing_data
+- class: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_builder
+  name: learn
+  source:
+    id: learn
+    path: prose\codeaccelerator\internals\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 64
+  summary: 'Attempt to learn a program from the constraints that have been set on
+    this builder.
+
+    :return: The result of the learning operation.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.learn
+references:
+- fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.flush_logger
+  isExternal: false
+  name: flush_logger
+  parent: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.flush_logger
+- fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.get_telemetry_testing_data
+  isExternal: false
+  name: get_telemetry_testing_data
+  parent: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.get_telemetry_testing_data
+- fullName: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+  uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi.learn

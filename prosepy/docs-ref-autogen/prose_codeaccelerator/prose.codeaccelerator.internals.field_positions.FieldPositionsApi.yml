@@ -1,0 +1,132 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.field_positions.FieldPositionsApi.end
+  - prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_end
+  - prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_start
+  - prose.codeaccelerator.internals.field_positions.FieldPositionsApi.start
+  class: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.field_positions
+  name: FieldPositionsApi
+  source:
+    id: FieldPositionsApi
+    path: prose\codeaccelerator\internals\field_positions.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\field_positions.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 10
+  summary: '
+
+
+
+    '
+  syntax:
+    content: FieldPositionsApi(background_process, start, end, prepopulated_referenceId=None)
+  type: class
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+- class: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.end
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.field_positions
+  name: end
+  source:
+    id: end
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for End
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.end
+- class: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_end
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.field_positions
+  name: get_end
+  source:
+    id: get_end
+    path: prose\codeaccelerator\internals\field_positions.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\field_positions.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 89
+  syntax:
+    content: get_end()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_end
+- class: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_start
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.field_positions
+  name: get_start
+  source:
+    id: get_start
+    path: prose\codeaccelerator\internals\field_positions.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\field_positions.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 59
+  syntax:
+    content: get_start()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_start
+- class: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.start
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.field_positions
+  name: start
+  source:
+    id: start
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for Start
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.start
+references:
+- fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.end
+  isExternal: false
+  name: end
+  parent: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.end
+- fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_end
+  isExternal: false
+  name: get_end
+  parent: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_end
+- fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_start
+  isExternal: false
+  name: get_start
+  parent: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.get_start
+- fullName: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.start
+  isExternal: false
+  name: start
+  parent: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+  uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi.start

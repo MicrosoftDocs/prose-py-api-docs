@@ -1,4 +1,185 @@
-- name: Sample
-  items:
-    - uid: azure.batch.BatchServiceClient
-      name: azure.batch.BatchServiceClient
+- items:
+  - items:
+    - items:
+      - name: prose.codeaccelerator.builder.Builder
+        uid: prose.codeaccelerator.builder.Builder
+      name: prose.codeaccelerator.builder
+      uid: prose.codeaccelerator.builder
+    - items:
+      - name: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+        uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+      - items:
+        - name: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+          uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.Tasks
+        name: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+        uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
+      name: prose.codeaccelerator.find_patterns_builder
+      uid: prose.codeaccelerator.find_patterns_builder
+    - items:
+      - name: prose.codeaccelerator.functions.OneArgFunction
+        uid: prose.codeaccelerator.functions.OneArgFunction
+      - name: prose.codeaccelerator.functions.TwoArgFunction
+        uid: prose.codeaccelerator.functions.TwoArgFunction
+      - name: prose.codeaccelerator.functions.VarArgFunction
+        uid: prose.codeaccelerator.functions.VarArgFunction
+      name: prose.codeaccelerator.functions
+      uid: prose.codeaccelerator.functions
+    - items:
+      - items:
+        - name: prose.codeaccelerator.internals.background_process.BackgroundProcess
+          uid: prose.codeaccelerator.internals.background_process.BackgroundProcess
+        name: prose.codeaccelerator.internals.background_process
+        uid: prose.codeaccelerator.internals.background_process
+      - items:
+        - name: prose.codeaccelerator.internals.cache_manager.CacheManager
+          uid: prose.codeaccelerator.internals.cache_manager.CacheManager
+        name: prose.codeaccelerator.internals.cache_manager
+        uid: prose.codeaccelerator.internals.cache_manager
+      - items:
+        - name: prose.codeaccelerator.internals.derive_value_builder.DeriveValueBuilder
+          uid: prose.codeaccelerator.internals.derive_value_builder.DeriveValueBuilder
+        - name: prose.codeaccelerator.internals.derive_value_builder.DeriveValueBuilderApi
+          uid: prose.codeaccelerator.internals.derive_value_builder.DeriveValueBuilderApi
+        name: prose.codeaccelerator.internals.derive_value_builder
+        uid: prose.codeaccelerator.internals.derive_value_builder
+      - items:
+        - name: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult
+          uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResult
+        - name: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+          uid: prose.codeaccelerator.internals.derive_value_learn_result.DeriveValueLearnResultApi
+        name: prose.codeaccelerator.internals.derive_value_learn_result
+        uid: prose.codeaccelerator.internals.derive_value_learn_result
+      - items:
+        - name: prose.codeaccelerator.internals.field_positions.FieldPositions
+          uid: prose.codeaccelerator.internals.field_positions.FieldPositions
+        - name: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+          uid: prose.codeaccelerator.internals.field_positions.FieldPositionsApi
+        name: prose.codeaccelerator.internals.field_positions
+        uid: prose.codeaccelerator.internals.field_positions
+      - items:
+        - name: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilder
+          uid: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilder
+        - name: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilderApi
+          uid: prose.codeaccelerator.internals.find_patterns_builder.FindPatternsBuilderApi
+        name: prose.codeaccelerator.internals.find_patterns_builder
+        uid: prose.codeaccelerator.internals.find_patterns_builder
+      - items:
+        - name: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResult
+          uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResult
+        - name: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+          uid: prose.codeaccelerator.internals.find_patterns_learn_result.FindPatternsLearnResultApi
+        name: prose.codeaccelerator.internals.find_patterns_learn_result
+        uid: prose.codeaccelerator.internals.find_patterns_learn_result
+      - items:
+        - name: prose.codeaccelerator.internals.null_value_converter_utils.NullValueConverterUtils
+          uid: prose.codeaccelerator.internals.null_value_converter_utils.NullValueConverterUtils
+        name: prose.codeaccelerator.internals.null_value_converter_utils
+        uid: prose.codeaccelerator.internals.null_value_converter_utils
+      - items:
+        - name: prose.codeaccelerator.internals.protobuf_objects.DeriveValueBuilder_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.DeriveValueBuilder_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.DeriveValueLearnResult_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.DeriveValueLearnResult_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.FieldPositions_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.FieldPositions_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.FindPatternsBuilder_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.FindPatternsBuilder_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.FindPatternsLearnResult_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.FindPatternsLearnResult_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.ListMessages_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.ListMessages_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.NullableValueMessages_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.NullableValueMessages_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.ProseApis_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.ProseApis_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.ReadJsonBuilder_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.ReadJsonBuilder_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.ReadJsonLearnResult_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.ReadJsonLearnResult_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.ReadTextBuilder_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.ReadTextBuilder_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.ReadTextLearnResult_pb2
+          uid: prose.codeaccelerator.internals.protobuf_objects.ReadTextLearnResult_pb2
+        - name: prose.codeaccelerator.internals.protobuf_objects.background_process_terminate
+          uid: prose.codeaccelerator.internals.protobuf_objects.background_process_terminate
+        name: prose.codeaccelerator.internals.protobuf_objects
+        uid: prose.codeaccelerator.internals.protobuf_objects
+      - items:
+        - name: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder
+          uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilder
+        - name: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+          uid: prose.codeaccelerator.internals.read_json_builder.ReadJsonBuilderApi
+        name: prose.codeaccelerator.internals.read_json_builder
+        uid: prose.codeaccelerator.internals.read_json_builder
+      - items:
+        - name: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+          uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+        - name: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+          uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+        name: prose.codeaccelerator.internals.read_json_learn_result
+        uid: prose.codeaccelerator.internals.read_json_learn_result
+      - items:
+        - name: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilder
+          uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilder
+        - name: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+          uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+        name: prose.codeaccelerator.internals.read_text_builder
+        uid: prose.codeaccelerator.internals.read_text_builder
+      - items:
+        - name: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult
+          uid: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult
+        - name: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResultApi
+          uid: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResultApi
+        name: prose.codeaccelerator.internals.read_text_learn_result
+        uid: prose.codeaccelerator.internals.read_text_learn_result
+      - name: prose.codeaccelerator.internals.signal_handler_util
+        uid: prose.codeaccelerator.internals.signal_handler_util
+      name: prose.codeaccelerator.internals
+      uid: prose.codeaccelerator.internals
+    - items:
+      - items:
+        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
+          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
+        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvLearnResult
+          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvLearnResult
+        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
+          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
+        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfLearnResult
+          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfLearnResult
+        name: prose.codeaccelerator.jupyter.read_text_builder
+        uid: prose.codeaccelerator.jupyter.read_text_builder
+      name: prose.codeaccelerator.jupyter
+      uid: prose.codeaccelerator.jupyter
+    - items:
+      - name: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
+        uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
+      - name: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+        uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+      name: prose.codeaccelerator.read_json_builder
+      uid: prose.codeaccelerator.read_json_builder
+    - items:
+      - name: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
+        uid: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
+      - name: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
+        uid: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
+      - name: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
+        uid: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
+      - name: prose.codeaccelerator.read_text_builder.ReadFwfLearnResult
+        uid: prose.codeaccelerator.read_text_builder.ReadFwfLearnResult
+      - name: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+        uid: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+      - name: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+        uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+      - name: prose.codeaccelerator.read_text_builder.Target
+        uid: prose.codeaccelerator.read_text_builder.Target
+      name: prose.codeaccelerator.read_text_builder
+      uid: prose.codeaccelerator.read_text_builder
+    - name: prose.codeaccelerator.utils
+      uid: prose.codeaccelerator.utils
+    - name: prose.codeaccelerator.version
+      uid: prose.codeaccelerator.version
+    name: prose.codeaccelerator
+    uid: prose.codeaccelerator
+  name: prose_codeaccelerator
+  uid: project-prose_codeaccelerator
+

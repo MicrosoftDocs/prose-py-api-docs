@@ -1,0 +1,117 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.background_process.BackgroundProcess.cache_cleanup
+  - prose.codeaccelerator.internals.background_process.BackgroundProcess.communicate
+  - prose.codeaccelerator.internals.background_process.BackgroundProcess.runtime
+  class: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  fullName: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.background_process
+  name: BackgroundProcess
+  source:
+    id: BackgroundProcess
+    path: prose\codeaccelerator\internals\background_process.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\background_process.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 17
+  summary: '
+
+
+    '
+  syntax:
+    content: BackgroundProcess(binary_name, guid, process_terminator)
+  type: class
+  uid: prose.codeaccelerator.internals.background_process.BackgroundProcess
+- class: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  fullName: prose.codeaccelerator.internals.background_process.BackgroundProcess.cache_cleanup
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.background_process
+  name: cache_cleanup
+  source:
+    id: cache_cleanup
+    path: prose\codeaccelerator\internals\background_process.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\background_process.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 28
+  syntax:
+    content: cache_cleanup()
+    parameters:
+    - id: cls
+  type: method
+  uid: prose.codeaccelerator.internals.background_process.BackgroundProcess.cache_cleanup
+- class: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  fullName: prose.codeaccelerator.internals.background_process.BackgroundProcess.communicate
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.background_process
+  name: communicate
+  source:
+    id: communicate
+    path: prose\codeaccelerator\internals\background_process.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\background_process.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 98
+  summary: 'Sends message to underlying dotnet process and receives back the reply.
+
+    The protocol is to send message in 2 phases:
+
+    - Send the message length (4 bytes representing signed int) in little-endian order
+
+    - Send the actual message.
+
+    Likewise, the message is received in 2 phases:
+
+    - Message length (4 bytes representing signed int) in little-endian order
+
+    - The actual message.
+
+    :param message_to_send:
+
+    :return:
+
+    '
+  syntax:
+    content: communicate(message_to_send)
+    parameters:
+    - id: message_to_send
+  type: method
+  uid: prose.codeaccelerator.internals.background_process.BackgroundProcess.communicate
+- class: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  fullName: prose.codeaccelerator.internals.background_process.BackgroundProcess.runtime
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.background_process
+  name: runtime
+  syntax:
+    content: runtime = <module 'dotnetcore2.runtime' from 'c:\\program files (x86)\\microsoft
+      visual studio\\shared\\python36_64\\lib\\site-packages\\dotnetcore2\\runtime.py'>
+  type: attribute
+  uid: prose.codeaccelerator.internals.background_process.BackgroundProcess.runtime
+references:
+- fullName: prose.codeaccelerator.internals.background_process.BackgroundProcess.cache_cleanup
+  isExternal: false
+  name: cache_cleanup
+  parent: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  uid: prose.codeaccelerator.internals.background_process.BackgroundProcess.cache_cleanup
+- fullName: prose.codeaccelerator.internals.background_process.BackgroundProcess.communicate
+  isExternal: false
+  name: communicate
+  parent: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  uid: prose.codeaccelerator.internals.background_process.BackgroundProcess.communicate
+- fullName: prose.codeaccelerator.internals.background_process.BackgroundProcess.runtime
+  isExternal: false
+  name: runtime
+  parent: prose.codeaccelerator.internals.background_process.BackgroundProcess
+  uid: prose.codeaccelerator.internals.background_process.BackgroundProcess.runtime

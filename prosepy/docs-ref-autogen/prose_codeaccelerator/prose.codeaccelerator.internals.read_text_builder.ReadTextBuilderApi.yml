@@ -1,0 +1,337 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.flush_logger
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_lines_to_analyze
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_schema
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_target
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_telemetry_testing_data
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.learn
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.lines_to_analyze
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.schema
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_lines_to_analyze
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_target
+  - prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.target
+  class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: ReadTextBuilderApi
+  source:
+    id: ReadTextBuilderApi
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 11
+  summary: '
+
+
+
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: ReadTextBuilderApi(background_process, filepath, isFixedWidth, schema,
+      telemetryOptOut, telemetryTestingInstance, telemetryTestingMode, prepopulated_referenceId=None)
+  type: class
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.flush_logger
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: flush_logger
+  source:
+    id: flush_logger
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 287
+  summary: 'Flushes the logger.
+
+    :param wait: Whether to wait for the flush to complete or do it in background.
+
+    :return:
+
+    '
+  syntax:
+    content: flush_logger(wait)
+    parameters:
+    - id: wait
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.flush_logger
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_lines_to_analyze
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: get_lines_to_analyze
+  source:
+    id: get_lines_to_analyze
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 68
+  syntax:
+    content: get_lines_to_analyze()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_lines_to_analyze
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_schema
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: get_schema
+  source:
+    id: get_schema
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 123
+  syntax:
+    content: get_schema()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_schema
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_target
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: get_target
+  source:
+    id: get_target
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 153
+  syntax:
+    content: get_target()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_target
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_telemetry_testing_data
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: get_telemetry_testing_data
+  source:
+    id: get_telemetry_testing_data
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 242
+  summary: 'Gets the testing telemetry events.
+
+    :return:
+
+    '
+  syntax:
+    content: get_telemetry_testing_data()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_telemetry_testing_data
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: learn
+  source:
+    id: learn
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 208
+  summary: 'Attempt to learn a program from the constraints that have been set on
+    this builder.
+
+    :return: The result of the learning operation.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.learn
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.lines_to_analyze
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: lines_to_analyze
+  source:
+    id: lines_to_analyze
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for LinesToAnalyze
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.lines_to_analyze
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.schema
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: schema
+  source:
+    id: schema
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for Schema
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.schema
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_lines_to_analyze
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: set_lines_to_analyze
+  source:
+    id: set_lines_to_analyze
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 98
+  syntax:
+    content: set_lines_to_analyze(value)
+    parameters:
+    - id: value
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_lines_to_analyze
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_target
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: set_target
+  source:
+    id: set_target
+    path: prose\codeaccelerator\internals\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 183
+  syntax:
+    content: set_target(value)
+    parameters:
+    - id: value
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_target
+- class: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.target
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_builder
+  name: target
+  source:
+    id: target
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'accessor for Target
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.target
+references:
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.flush_logger
+  isExternal: false
+  name: flush_logger
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.flush_logger
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_lines_to_analyze
+  isExternal: false
+  name: get_lines_to_analyze
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_lines_to_analyze
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_schema
+  isExternal: false
+  name: get_schema
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_schema
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_target
+  isExternal: false
+  name: get_target
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_target
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_telemetry_testing_data
+  isExternal: false
+  name: get_telemetry_testing_data
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.get_telemetry_testing_data
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.learn
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.lines_to_analyze
+  isExternal: false
+  name: lines_to_analyze
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.lines_to_analyze
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.schema
+  isExternal: false
+  name: schema
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.schema
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_lines_to_analyze
+  isExternal: false
+  name: set_lines_to_analyze
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_lines_to_analyze
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_target
+  isExternal: false
+  name: set_target
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.set_target
+- fullName: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi
+  uid: prose.codeaccelerator.internals.read_text_builder.ReadTextBuilderApi.target

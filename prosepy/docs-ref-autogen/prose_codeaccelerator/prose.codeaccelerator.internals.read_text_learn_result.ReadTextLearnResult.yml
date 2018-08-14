@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult.prepopulated_object_builder
+  class: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult
+  fullName: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResultApi
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_learn_result
+  name: ReadTextLearnResult
+  source:
+    id: ReadTextLearnResult
+    path: prose\codeaccelerator\internals\read_text_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 293
+  syntax:
+    content: ReadTextLearnResult(prepopulated_referenceId)
+  type: class
+  uid: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult
+- class: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult
+  fullName: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult.prepopulated_object_builder
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_text_learn_result
+  name: prepopulated_object_builder
+  source:
+    id: prepopulated_object_builder
+    path: prose\codeaccelerator\internals\read_text_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_text_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 300
+  summary: 'Method to construct ReadTextLearnResult object if equivalent C# object
+    is already created
+
+    '
+  syntax:
+    content: prepopulated_object_builder(prepopulated_referenceId)
+    parameters:
+    - id: cls
+    - id: prepopulated_referenceId
+  type: method
+  uid: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult.prepopulated_object_builder
+references:
+- fullName: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult.prepopulated_object_builder
+  isExternal: false
+  name: prepopulated_object_builder
+  parent: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult
+  uid: prose.codeaccelerator.internals.read_text_learn_result.ReadTextLearnResult.prepopulated_object_builder

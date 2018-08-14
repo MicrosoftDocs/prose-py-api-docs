@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.read_text_builder.ReadCsvLearnResult.delimiter
+  class: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: ReadCsvLearnResult
+  source:
+    id: ReadCsvLearnResult
+    path: prose\codeaccelerator\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 191
+  summary: 'The result from attempting to learn a program for delimited file reading.
+
+
+    '
+  syntax:
+    content: ReadCsvLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
+- class: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult.delimiter
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: delimiter
+  source:
+    id: delimiter
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'The single delimiter that the learned program will use to split columns
+    if one exists; None otherwise.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult.delimiter
+references:
+- fullName: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult.delimiter
+  isExternal: false
+  name: delimiter
+  parent: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
+  uid: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult.delimiter

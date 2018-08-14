@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult.prepopulated_object_builder
+  class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResultApi
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: ReadJsonLearnResult
+  source:
+    id: ReadJsonLearnResult
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 188
+  syntax:
+    content: ReadJsonLearnResult(prepopulated_referenceId)
+  type: class
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+- class: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult.prepopulated_object_builder
+  langs:
+  - python
+  module: prose.codeaccelerator.internals.read_json_learn_result
+  name: prepopulated_object_builder
+  source:
+    id: prepopulated_object_builder
+    path: prose\codeaccelerator\internals\read_json_learn_result.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\internals\read_json_learn_result.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 195
+  summary: 'Method to construct ReadJsonLearnResult object if equivalent C# object
+    is already created
+
+    '
+  syntax:
+    content: prepopulated_object_builder(prepopulated_referenceId)
+    parameters:
+    - id: cls
+    - id: prepopulated_referenceId
+  type: method
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult.prepopulated_object_builder
+references:
+- fullName: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult.prepopulated_object_builder
+  isExternal: false
+  name: prepopulated_object_builder
+  parent: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult
+  uid: prose.codeaccelerator.internals.read_json_learn_result.ReadJsonLearnResult.prepopulated_object_builder
