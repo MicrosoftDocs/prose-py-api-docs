@@ -8,7 +8,6 @@ items:
   - prose.codeaccelerator.read_text_builder.ReadFwfLearnResult
   - prose.codeaccelerator.read_text_builder.ReadTextBuilder
   - prose.codeaccelerator.read_text_builder.ReadTextLearnResult
-  - prose.codeaccelerator.read_text_builder.Target
   fullName: prose.codeaccelerator.read_text_builder
   langs:
   - python
@@ -55,8 +54,3 @@ references:
   name: ReadTextLearnResult
   parent: prose.codeaccelerator.read_text_builder
   uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
-- fullName: prose.codeaccelerator.read_text_builder.Target
-  isExternal: false
-  name: Target
-  parent: prose.codeaccelerator.read_text_builder
-  uid: prose.codeaccelerator.read_text_builder.Target

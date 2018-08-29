@@ -21,7 +21,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\jupyter\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 67
+    startLine: 13
   syntax:
     content: ReadCsvLearnResult(filename, result)
   type: class

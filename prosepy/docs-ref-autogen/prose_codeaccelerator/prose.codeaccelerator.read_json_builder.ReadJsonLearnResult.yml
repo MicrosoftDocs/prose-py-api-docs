@@ -21,7 +21,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_json_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 31
+    startLine: 52
   summary: 'The result from attempting to learn a program for JSON reading.
 
 
@@ -46,7 +46,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_json_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 42
+    startLine: 63
   summary: 'Return the code that was learned.
 
     '
@@ -88,14 +88,10 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_json_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 49
-  summary: 'Return the data obtained when running the learned program on the example
-    file.
-
-    :param nrows: The number of rows to read from the output.  Default is None (the
-    entire file).
-
-    '
+    startLine: 70
+  summary: "Return the data obtained when running the learned program on the example\
+    \ file.\n:param nrows: The number of rows to read from the output.  Default is\
+    \ None (the entire file).\n\n\n   If specified, then it must be greater than zero.\n"
   syntax:
     content: data(nrows=None)
     parameters:

@@ -20,16 +20,15 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\find_patterns_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 30
+    startLine: 49
   summary: 'The result from attempting to learn a set of patterns in string data.
-
 
 
 
 
     '
   syntax:
-    content: FindPatternsLearnResult(data, result)
+    content: FindPatternsLearnResult(data, result, target)
   type: class
   uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
 - class: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
@@ -45,16 +44,14 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\find_patterns_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 50
+    startLine: 68
   summary: 'Return a code fragment that identifies the patterns that were learned.
 
-    :param task: A parameter that can take the values from the enum FindPatternsBuilder.Tasks.
+    :param task: A parameter that can take the values ''check'' or ''classify''.
 
-    If the parameter is ''Tasks.classify'', the method produces a code fragment to
-    identify
+    If the parameter is ''classify'', the method produces a code fragment to identify
 
-    the pattern that classifies strings. If the parameter is ''Tasks.check'', the
-    method
+    the pattern that classifies strings. If the parameter is ''check'', the method
 
     produces a code fragment to assert that a given string falls into one of the
 
@@ -62,9 +59,9 @@ items:
 
     '
   syntax:
-    content: 'code(task=<Tasks.classify: ''classify''>)'
+    content: code(task='classify')
     parameters:
-    - defaultValue: Tasks.classify
+    - defaultValue: classify
       id: task
   type: method
   uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult.code
@@ -81,7 +78,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\find_patterns_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 65
+    startLine: 101
   summary: 'Return the data provided to the find patterns operation, grouped by the
     learned patterns.
 

@@ -23,7 +23,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 104
+    startLine: 115
   summary: '
 
 
@@ -48,7 +48,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 113
+    startLine: 124
   summary: 'Return the code that was learned.
 
     '
@@ -90,14 +90,11 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 120
-  summary: 'Return the data obtained when running the learned program on the example
-    file.
-
-    :param nrows: The number of rows to read from the file.  Default is None (the
-    entire file).
-
-    '
+    startLine: 131
+  summary: "Return the data obtained when running the learned program on the example\
+    \ file.\n:param nrows: The number of rows to read from the file.  Default is None\
+    \ (the entire file).\n\n\n   If specified, then it must be greater than or equal\
+    \ to zero.\n"
   syntax:
     content: data(nrows=None)
     parameters:

@@ -7,7 +7,9 @@ items:
   fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
   inheritance:
   - inheritance:
-    - type: builtins.object
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
     type: prose.codeaccelerator.builder.Builder
   langs:
   - python
@@ -43,7 +45,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\find_patterns_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 18
+    startLine: 28
   summary: 'Attempt to learn a set of patterns that cover the data and satisfy the
     constraints that have been set on this builder.
 

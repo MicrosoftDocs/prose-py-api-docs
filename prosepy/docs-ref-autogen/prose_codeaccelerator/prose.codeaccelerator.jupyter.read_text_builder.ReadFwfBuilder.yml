@@ -9,7 +9,9 @@ items:
   - inheritance:
     - inheritance:
       - inheritance:
-        - type: builtins.object
+        - inheritance:
+          - type: builtins.object
+          type: abc.ABC
         type: prose.codeaccelerator.builder.Builder
       type: prose.codeaccelerator.read_text_builder.ReadTextBuilder
     type: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
@@ -24,7 +26,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\jupyter\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 91
+    startLine: 35
   syntax:
     content: ReadFwfBuilder(filename, schema=None)
   type: class
@@ -42,7 +44,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\jupyter\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 92
+    startLine: 36
   syntax:
     content: learn()
     parameters: []

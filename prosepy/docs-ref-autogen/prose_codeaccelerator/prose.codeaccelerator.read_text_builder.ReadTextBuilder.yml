@@ -7,7 +7,9 @@ items:
   fullName: prose.codeaccelerator.read_text_builder.ReadTextBuilder
   inheritance:
   - inheritance:
-    - type: builtins.object
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
     type: prose.codeaccelerator.builder.Builder
   langs:
   - python
@@ -20,8 +22,9 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 14
-  summary: '
+    startLine: 8
+  summary: 'Base class to hold shared implementation details for Fwf/Csv builders.
+
 
 
     '

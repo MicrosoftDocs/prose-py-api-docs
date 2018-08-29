@@ -8,7 +8,9 @@ items:
   fullName: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
   inheritance:
   - inheritance:
-    - type: builtins.object
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
     type: prose.codeaccelerator.builder.Builder
   langs:
   - python
@@ -21,9 +23,9 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_json_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 5
+    startLine: 7
   summary: 'A builder for specifying constraints in order to learn code for reading
-    a file.
+    a JSON file into a table.
 
 
 
@@ -65,7 +67,7 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_json_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 24
+    startLine: 34
   summary: 'Attempt to learn a program from the constraints that have been set on
     this builder.
 

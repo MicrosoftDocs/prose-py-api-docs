@@ -9,7 +9,9 @@ items:
   inheritance:
   - inheritance:
     - inheritance:
-      - type: builtins.object
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
       type: prose.codeaccelerator.builder.Builder
     type: prose.codeaccelerator.read_text_builder.ReadTextBuilder
   langs:
@@ -23,9 +25,9 @@ items:
       branch: HEAD
       path: prose\codeaccelerator\read_text_builder.py
       repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 49
+    startLine: 48
   summary: 'A builder for specifying constraints in order to learn code for reading
-    a fixed-width file.
+    a fixed-width file into a table.
 
 
 
