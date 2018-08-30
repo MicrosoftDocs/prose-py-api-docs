@@ -7,7 +7,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-autogen",
-        "dest": "api",
+        "dest": "reference",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -18,6 +18,17 @@
         ]
       },
       {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs-ref-conceptual",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+	    {
         "files": [
           "**/*.yml"
         ],
@@ -50,7 +61,7 @@
     "template": [],
     "dest": "_site",
     "xref": [
-      "../xrefmap.yml"
+        "../xrefmap.yml"
     ]
   }
 }
