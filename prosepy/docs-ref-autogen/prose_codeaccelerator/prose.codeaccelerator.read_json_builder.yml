@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.read_json_builder.ReadJsonBuilder
+  - prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.read_json_builder
+  langs:
+  - python
+  module: prose.codeaccelerator.read_json_builder
+  name: read_json_builder
+  source:
+    id: read_json_builder
+    path: prose\codeaccelerator\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: module
+  uid: prose.codeaccelerator.read_json_builder
+references:
+- fullName: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
+  isExternal: false
+  name: ReadJsonBuilder
+  parent: prose.codeaccelerator.read_json_builder
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
+- fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  isExternal: false
+  name: ReadJsonLearnResult
+  parent: prose.codeaccelerator.read_json_builder
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult

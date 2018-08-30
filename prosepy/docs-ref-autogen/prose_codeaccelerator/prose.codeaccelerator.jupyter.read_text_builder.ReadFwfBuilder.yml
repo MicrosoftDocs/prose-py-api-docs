@@ -1,0 +1,58 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder.learn
+  class: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
+  fullName: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - inheritance:
+          - type: builtins.object
+          type: abc.ABC
+        type: prose.codeaccelerator.builder.Builder
+      type: prose.codeaccelerator.read_text_builder.ReadTextBuilder
+    type: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter.read_text_builder
+  name: ReadFwfBuilder
+  source:
+    id: ReadFwfBuilder
+    path: prose\codeaccelerator\jupyter\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\jupyter\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 35
+  syntax:
+    content: ReadFwfBuilder(filename, schema=None)
+  type: class
+  uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
+- class: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
+  fullName: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter.read_text_builder
+  name: learn
+  source:
+    id: learn
+    path: prose\codeaccelerator\jupyter\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\jupyter\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 36
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder.learn
+references:
+- fullName: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
+  uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder.learn

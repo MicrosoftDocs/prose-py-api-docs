@@ -1,0 +1,142 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.code
+  - prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.column_count
+  - prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.data
+  - prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.names
+  class: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.read_json_builder
+  name: ReadJsonLearnResult
+  source:
+    id: ReadJsonLearnResult
+    path: prose\codeaccelerator\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 52
+  summary: 'The result from attempting to learn a program for JSON reading.
+
+
+
+
+
+    '
+  syntax:
+    content: ReadJsonLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+- class: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.code
+  langs:
+  - python
+  module: prose.codeaccelerator.read_json_builder
+  name: code
+  source:
+    id: code
+    path: prose\codeaccelerator\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 63
+  summary: 'Return the code that was learned.
+
+    '
+  syntax:
+    content: code()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.code
+- class: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.column_count
+  langs:
+  - python
+  module: prose.codeaccelerator.read_json_builder
+  name: column_count
+  source:
+    id: column_count
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'The number of columns that the learned program will generate in its output.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.column_count
+- class: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.data
+  langs:
+  - python
+  module: prose.codeaccelerator.read_json_builder
+  name: data
+  source:
+    id: data
+    path: prose\codeaccelerator\read_json_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_json_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 70
+  summary: "Return the data obtained when running the learned program on the example\
+    \ file.\n:param nrows: The number of rows to read from the output.  Default is\
+    \ None (the entire file).\n\n\n   If specified, then it must be greater than zero.\n"
+  syntax:
+    content: data(nrows=None)
+    parameters:
+    - defaultValue: None
+      id: nrows
+  type: method
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.data
+- class: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.names
+  langs:
+  - python
+  module: prose.codeaccelerator.read_json_builder
+  name: names
+  source:
+    id: names
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'List of column names to use.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.names
+references:
+- fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.code
+  isExternal: false
+  name: code
+  parent: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.code
+- fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.column_count
+  isExternal: false
+  name: column_count
+  parent: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.column_count
+- fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.data
+  isExternal: false
+  name: data
+  parent: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.data
+- fullName: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.names
+  isExternal: false
+  name: names
+  parent: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult.names

@@ -1,0 +1,195 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.read_text_builder.ReadTextLearnResult.code
+  - prose.codeaccelerator.read_text_builder.ReadTextLearnResult.column_count
+  - prose.codeaccelerator.read_text_builder.ReadTextLearnResult.data
+  - prose.codeaccelerator.read_text_builder.ReadTextLearnResult.filename
+  - prose.codeaccelerator.read_text_builder.ReadTextLearnResult.names
+  - prose.codeaccelerator.read_text_builder.ReadTextLearnResult.skip_blank_lines
+  class: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: ReadTextLearnResult
+  source:
+    id: ReadTextLearnResult
+    path: prose\codeaccelerator\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 115
+  summary: '
+
+
+
+
+
+    '
+  syntax:
+    content: ReadTextLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+- class: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.code
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: code
+  source:
+    id: code
+    path: prose\codeaccelerator\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 124
+  summary: 'Return the code that was learned.
+
+    '
+  syntax:
+    content: code()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.code
+- class: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.column_count
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: column_count
+  source:
+    id: column_count
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'The number of columns that the learned program will generate in its output.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.column_count
+- class: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.data
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: data
+  source:
+    id: data
+    path: prose\codeaccelerator\read_text_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\read_text_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 131
+  summary: "Return the data obtained when running the learned program on the example\
+    \ file.\n:param nrows: The number of rows to read from the file.  Default is None\
+    \ (the entire file).\n\n\n   If specified, then it must be greater than or equal\
+    \ to zero.\n"
+  syntax:
+    content: data(nrows=None)
+    parameters:
+    - defaultValue: None
+      id: nrows
+  type: method
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.data
+- class: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.filename
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: filename
+  source:
+    id: filename
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'The model file used to learn.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.filename
+- class: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.names
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: names
+  source:
+    id: names
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'List of column names to use.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.names
+- class: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.skip_blank_lines
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: skip_blank_lines
+  source:
+    id: skip_blank_lines
+    path: null
+    remote:
+      branch: HEAD
+      path: null
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: null
+  summary: 'If True, skip over blank lines rather than interpreting as NaN values.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.skip_blank_lines
+references:
+- fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.code
+  isExternal: false
+  name: code
+  parent: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.code
+- fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.column_count
+  isExternal: false
+  name: column_count
+  parent: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.column_count
+- fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.data
+  isExternal: false
+  name: data
+  parent: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.data
+- fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.filename
+  isExternal: false
+  name: filename
+  parent: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.filename
+- fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.names
+  isExternal: false
+  name: names
+  parent: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.names
+- fullName: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.skip_blank_lines
+  isExternal: false
+  name: skip_blank_lines
+  parent: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
+  uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.skip_blank_lines

@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.jupyter.detect_types_builder
+  - prose.codeaccelerator.jupyter.find_patterns_builder
+  - prose.codeaccelerator.jupyter.read_json_builder
+  - prose.codeaccelerator.jupyter.read_text_builder
+  fullName: prose.codeaccelerator.jupyter
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: jupyter
+  source:
+    id: jupyter
+    path: prose\codeaccelerator\jupyter\__init__.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\jupyter\__init__.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: package
+  uid: prose.codeaccelerator.jupyter
+references:
+- fullName: prose.codeaccelerator.jupyter.detect_types_builder
+  isExternal: false
+  name: detect_types_builder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.detect_types_builder
+- fullName: prose.codeaccelerator.jupyter.find_patterns_builder
+  isExternal: false
+  name: find_patterns_builder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.find_patterns_builder
+- fullName: prose.codeaccelerator.jupyter.read_json_builder
+  isExternal: false
+  name: read_json_builder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.read_json_builder
+- fullName: prose.codeaccelerator.jupyter.read_text_builder
+  isExternal: false
+  name: read_text_builder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.read_text_builder

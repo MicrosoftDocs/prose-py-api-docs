@@ -1,0 +1,32 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
+  - prose.codeaccelerator.detect_types_builder.DetectTypesLearnResult
+  fullName: prose.codeaccelerator.detect_types_builder
+  langs:
+  - python
+  module: prose.codeaccelerator.detect_types_builder
+  name: detect_types_builder
+  source:
+    id: detect_types_builder
+    path: prose\codeaccelerator\detect_types_builder.py
+    remote:
+      branch: HEAD
+      path: prose\codeaccelerator\detect_types_builder.py
+      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
+    startLine: 0
+  type: module
+  uid: prose.codeaccelerator.detect_types_builder
+references:
+- fullName: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
+  isExternal: false
+  name: DetectTypesBuilder
+  parent: prose.codeaccelerator.detect_types_builder
+  uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
+- fullName: prose.codeaccelerator.detect_types_builder.DetectTypesLearnResult
+  isExternal: false
+  name: DetectTypesLearnResult
+  parent: prose.codeaccelerator.detect_types_builder
+  uid: prose.codeaccelerator.detect_types_builder.DetectTypesLearnResult
