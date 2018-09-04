@@ -1,3 +1,7 @@
 - name: Docs
   tocHref: /
   topicHref: /
+  items:
+  - name: Python Code Accelerator for Azure Data Studio
+    tocHref: /python/prose-codeaccelerator
+    topicHref: /python/prose-codeaccelerator/index

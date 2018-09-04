@@ -7,7 +7,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-autogen",
-        "dest": "reference",
+        "dest": "api",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -23,6 +23,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual",
+        "dest": "prose-codeaccelerator",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -57,7 +58,11 @@
     "globalMetadata": {
       "breadcrumb_path": "~/breadcrumb/toc.yml"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.topic": {
+        "docs-ref-autogen/**/*.yml": "reference"
+      }
+    },
     "template": [],
     "dest": "_site",
     "xref": [
