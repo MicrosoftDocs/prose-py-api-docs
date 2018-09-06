@@ -4,6 +4,7 @@ items:
 - children:
   - prose.codeaccelerator.read_json_builder.ReadJsonBuilder.filename
   - prose.codeaccelerator.read_json_builder.ReadJsonBuilder.learn
+  - prose.codeaccelerator.read_json_builder.ReadJsonBuilder.target
   class: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
   fullName: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
   inheritance:
@@ -16,22 +17,20 @@ items:
   - python
   module: prose.codeaccelerator.read_json_builder
   name: ReadJsonBuilder
-  source:
-    id: ReadJsonBuilder
-    path: prose\codeaccelerator\read_json_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_json_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 7
   summary: 'A builder for specifying constraints in order to learn code for reading
     a JSON file into a table.
+
 
 
 
     '
   syntax:
     content: ReadJsonBuilder(filename)
+    parameters:
+    - description: 'Model file (in UTF-8 encoding) for reading.
+
+        '
+      id: filename
   type: class
   uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
 - class: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
@@ -40,14 +39,6 @@ items:
   - python
   module: prose.codeaccelerator.read_json_builder
   name: filename
-  source:
-    id: filename
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'The model file to read.
 
     '
@@ -60,14 +51,6 @@ items:
   - python
   module: prose.codeaccelerator.read_json_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\read_json_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_json_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 34
   summary: 'Attempt to learn a program from the constraints that have been set on
     this builder.
 
@@ -77,6 +60,20 @@ items:
     parameters: []
   type: method
   uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder.learn
+- class: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
+  fullName: prose.codeaccelerator.read_json_builder.ReadJsonBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator.read_json_builder
+  name: target
+  summary: 'Defines the target that the generated code will be generated for.
+
+    Supported values are *"pandas"* and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder.target
 references:
 - fullName: prose.codeaccelerator.read_json_builder.ReadJsonBuilder.filename
   isExternal: false
@@ -88,3 +85,8 @@ references:
   name: learn
   parent: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
   uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder.learn
+- fullName: prose.codeaccelerator.read_json_builder.ReadJsonBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
+  uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder.target

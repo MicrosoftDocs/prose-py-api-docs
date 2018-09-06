@@ -8,14 +8,6 @@ items:
   - python
   module: prose.codeaccelerator.builder
   name: builder
-  source:
-    id: builder
-    path: prose\codeaccelerator\builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 0
   type: module
   uid: prose.codeaccelerator.builder
 references:

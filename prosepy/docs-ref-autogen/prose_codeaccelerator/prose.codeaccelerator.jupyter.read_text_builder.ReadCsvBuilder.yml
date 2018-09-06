@@ -19,14 +19,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_text_builder
   name: ReadCsvBuilder
-  source:
-    id: ReadCsvBuilder
-    path: prose\codeaccelerator\jupyter\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 19
   syntax:
     content: ReadCsvBuilder(filename)
   type: class
@@ -37,14 +29,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_text_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\jupyter\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 20
   syntax:
     content: learn()
     parameters: []

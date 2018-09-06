@@ -3,6 +3,7 @@ api_name: []
 items:
 - children:
   - prose.codeaccelerator.read_text_builder.ReadCsvBuilder.learn
+  - prose.codeaccelerator.read_text_builder.ReadCsvBuilder.target
   class: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
   fullName: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
   inheritance:
@@ -17,16 +18,9 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: ReadCsvBuilder
-  source:
-    id: ReadCsvBuilder
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 90
   summary: 'A builder for specifying constraints in order to learn code for reading
     a delimited file into a table.
+
 
 
     '
@@ -40,14 +34,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 99
   summary: 'Attempt to learn a program from the constraints that have been set on
     this builder.
 
@@ -57,9 +43,28 @@ items:
     parameters: []
   type: method
   uid: prose.codeaccelerator.read_text_builder.ReadCsvBuilder.learn
+- class: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
+  fullName: prose.codeaccelerator.read_text_builder.ReadCsvBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: target
+  summary: 'Defines the target that the generated code will be generated for.
+
+    Supported values are *"pandas"* and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadCsvBuilder.target
 references:
 - fullName: prose.codeaccelerator.read_text_builder.ReadCsvBuilder.learn
   isExternal: false
   name: learn
   parent: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
   uid: prose.codeaccelerator.read_text_builder.ReadCsvBuilder.learn
+- fullName: prose.codeaccelerator.read_text_builder.ReadCsvBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
+  uid: prose.codeaccelerator.read_text_builder.ReadCsvBuilder.target

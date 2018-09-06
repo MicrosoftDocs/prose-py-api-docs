@@ -19,14 +19,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_text_builder
   name: ReadFwfBuilder
-  source:
-    id: ReadFwfBuilder
-    path: prose\codeaccelerator\jupyter\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 35
   syntax:
     content: ReadFwfBuilder(filename, schema=None)
   type: class
@@ -37,14 +29,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_text_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\jupyter\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 36
   syntax:
     content: learn()
     parameters: []

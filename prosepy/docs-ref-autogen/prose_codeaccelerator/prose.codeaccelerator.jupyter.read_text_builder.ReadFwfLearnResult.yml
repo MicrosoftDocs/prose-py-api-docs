@@ -14,14 +14,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_text_builder
   name: ReadFwfLearnResult
-  source:
-    id: ReadFwfLearnResult
-    path: prose\codeaccelerator\jupyter\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 29
   syntax:
     content: ReadFwfLearnResult(filename, result)
   type: class

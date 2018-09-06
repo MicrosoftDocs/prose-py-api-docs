@@ -12,14 +12,6 @@ items:
   - python
   module: prose.codeaccelerator.detect_types_builder
   name: DetectTypesLearnResult
-  source:
-    id: DetectTypesLearnResult
-    path: prose\codeaccelerator\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 141
   summary: 'A class that encapsulates the results of running datatype detection
 
     on a dataset.
@@ -37,22 +29,16 @@ items:
   - python
   module: prose.codeaccelerator.detect_types_builder
   name: code
-  source:
-    id: code
-    path: prose\codeaccelerator\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 164
   summary: 'Generates code to transform the dataset into the appropriate data types.
-
-    :return: A code object which can be called, or printed out.
 
     '
   syntax:
     content: code()
     parameters: []
+    return:
+      description: 'A code object which can be called, or printed out.
+
+        '
   type: method
   uid: prose.codeaccelerator.detect_types_builder.DetectTypesLearnResult.code
 - class: prose.codeaccelerator.detect_types_builder.DetectTypesLearnResult
@@ -61,14 +47,6 @@ items:
   - python
   module: prose.codeaccelerator.detect_types_builder
   name: data
-  source:
-    id: data
-    path: prose\codeaccelerator\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 178
   summary: 'Transforms the data (provided to the builder object that produced this
     result object) into
 

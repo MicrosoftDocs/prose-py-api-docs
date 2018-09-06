@@ -13,14 +13,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: ReadCsvLearnResult
-  source:
-    id: ReadCsvLearnResult
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 220
   summary: 'The result from attempting to learn a program for delimited file reading.
 
 
@@ -35,14 +27,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: delimiter
-  source:
-    id: delimiter
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'The single delimiter that the learned program will use to split columns
     if one exists; None otherwise.
 

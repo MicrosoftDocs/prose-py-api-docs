@@ -12,14 +12,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_json_builder
   name: ReadJsonLearnResult
-  source:
-    id: ReadJsonLearnResult
-    path: prose\codeaccelerator\jupyter\read_json_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_json_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 23
   syntax:
     content: ReadJsonLearnResult(filename, result)
   type: class

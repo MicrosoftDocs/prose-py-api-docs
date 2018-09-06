@@ -12,14 +12,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.detect_types_builder
   name: DetectTypesLearnResult
-  source:
-    id: DetectTypesLearnResult
-    path: prose\codeaccelerator\jupyter\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 19
   syntax:
     content: DetectTypesLearnResult(result, associated_builder)
   type: class

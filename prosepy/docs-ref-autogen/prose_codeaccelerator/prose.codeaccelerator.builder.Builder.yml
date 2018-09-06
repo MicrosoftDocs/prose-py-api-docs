@@ -13,14 +13,6 @@ items:
   - python
   module: prose.codeaccelerator.builder
   name: Builder
-  source:
-    id: Builder
-    path: prose\codeaccelerator\builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 21
   syntax:
     content: Builder()
   type: class
@@ -31,17 +23,9 @@ items:
   - python
   module: prose.codeaccelerator.builder
   name: target
-  source:
-    id: target
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'Defines the target that the generated code will be generated for.
 
-    Currently, supported values are [''pandas'', ''pyspark'']
+    Supported values vary by implementing class.
 
     '
   syntax: {}

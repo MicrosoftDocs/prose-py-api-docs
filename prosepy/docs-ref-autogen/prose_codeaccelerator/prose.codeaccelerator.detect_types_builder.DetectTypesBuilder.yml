@@ -4,6 +4,7 @@ items:
 - children:
   - prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.learn
   - prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.nrows
+  - prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.target
   class: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
   fullName: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
   inheritance:
@@ -16,22 +17,20 @@ items:
   - python
   module: prose.codeaccelerator.detect_types_builder
   name: DetectTypesBuilder
-  source:
-    id: DetectTypesBuilder
-    path: prose\codeaccelerator\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 8
   summary: 'A builder to learn code to transform string-valued data into appropriate
     typed values.
+
 
 
 
     '
   syntax:
     content: DetectTypesBuilder(data)
+    parameters:
+    - description: 'A list-like or a dict object with string-valued data values.
+
+        '
+      id: data
   type: class
   uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
 - class: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
@@ -40,26 +39,20 @@ items:
   - python
   module: prose.codeaccelerator.detect_types_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 99
   summary: 'Infer the datatypes in the provided data.
-
-    :return: A DetectTypesLearnResult object which can be used to
-
-    either generate the code to coerce the data into the appropriate types,
-
-    or to directly transform the sample data into the appropriate types.
 
     '
   syntax:
     content: learn()
     parameters: []
+    return:
+      description: 'A DetectTypesLearnResult object which can be used to
+
+        either generate the code to coerce the data into the appropriate types,
+
+        or to directly transform the sample data into the appropriate types.
+
+        '
   type: method
   uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.learn
 - class: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
@@ -68,23 +61,26 @@ items:
   - python
   module: prose.codeaccelerator.detect_types_builder
   name: nrows
-  source:
-    id: nrows
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'The number of rows to analyze while detecting datatypes.
-
-    :return: an integer representing the number of rows that will be analyzed to detect
-    datatypes.
 
     '
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.nrows
+- class: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
+  fullName: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator.detect_types_builder
+  name: target
+  summary: 'Defines the target that the generated code will be generated for.
+
+    Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.target
 references:
 - fullName: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.learn
   isExternal: false
@@ -96,3 +92,8 @@ references:
   name: nrows
   parent: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
   uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.nrows
+- fullName: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
+  uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder.target

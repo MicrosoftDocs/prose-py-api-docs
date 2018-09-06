@@ -16,14 +16,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: ReadTextLearnResult
-  source:
-    id: ReadTextLearnResult
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 115
   summary: '
 
 
@@ -41,14 +33,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: code
-  source:
-    id: code
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 124
   summary: 'Return the code that was learned.
 
     '
@@ -63,14 +47,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: column_count
-  source:
-    id: column_count
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'The number of columns that the learned program will generate in its output.
 
     '
@@ -83,22 +59,18 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: data
-  source:
-    id: data
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 131
-  summary: "Return the data obtained when running the learned program on the example\
-    \ file.\n:param nrows: The number of rows to read from the file.  Default is None\
-    \ (the entire file).\n\n\n   If specified, then it must be greater than or equal\
-    \ to zero.\n"
+  summary: 'Return the data obtained when running the learned program on the example
+    file.
+
+    '
   syntax:
     content: data(nrows=None)
     parameters:
     - defaultValue: None
+      description: 'The number of rows to read from the file.  Default is None (the
+        entire file). If specified, then it must be greater than or equal to zero.
+
+        '
       id: nrows
   type: method
   uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult.data
@@ -108,14 +80,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: filename
-  source:
-    id: filename
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'The model file used to learn.
 
     '
@@ -128,14 +92,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: names
-  source:
-    id: names
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'List of column names to use.
 
     '
@@ -148,14 +104,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: skip_blank_lines
-  source:
-    id: skip_blank_lines
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'If True, skip over blank lines rather than interpreting as NaN values.
 
     '

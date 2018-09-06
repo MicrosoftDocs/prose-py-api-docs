@@ -17,14 +17,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.detect_types_builder
   name: DetectTypesBuilder
-  source:
-    id: DetectTypesBuilder
-    path: prose\codeaccelerator\jupyter\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 13
   syntax:
     content: DetectTypesBuilder(data)
   type: class
@@ -35,14 +27,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.detect_types_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\jupyter\detect_types_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\detect_types_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 14
   syntax:
     content: learn()
     parameters: []

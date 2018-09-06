@@ -4,6 +4,7 @@ items:
 - children:
   - prose.codeaccelerator.read_text_builder.ReadFwfBuilder.learn
   - prose.codeaccelerator.read_text_builder.ReadFwfBuilder.schema
+  - prose.codeaccelerator.read_text_builder.ReadFwfBuilder.target
   class: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
   fullName: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
   inheritance:
@@ -18,22 +19,27 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: ReadFwfBuilder
-  source:
-    id: ReadFwfBuilder
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 48
   summary: 'A builder for specifying constraints in order to learn code for reading
     a fixed-width file into a table.
+
 
 
 
     '
   syntax:
     content: ReadFwfBuilder(filename, schema=None)
+    parameters:
+    - description: 'Model file for reading.
+
+        '
+      id: filename
+    - description: 'The schema to use for learning.  The schema is expected to be
+        a string that contains a table
+
+        with column metadata about the table in the fixed-width file.
+
+        '
+      id: schema
   type: class
   uid: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
 - class: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
@@ -42,14 +48,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 64
   summary: 'Attempt to learn a program from the constraints that have been set on
     this builder.
 
@@ -65,20 +63,26 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: schema
-  source:
-    id: schema
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'The schema to be used for learning.
 
     '
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.read_text_builder.ReadFwfBuilder.schema
+- class: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
+  fullName: prose.codeaccelerator.read_text_builder.ReadFwfBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator.read_text_builder
+  name: target
+  summary: 'Defines the target that the generated code will be generated for.
+
+    Supported values are *"pandas"* and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.read_text_builder.ReadFwfBuilder.target
 references:
 - fullName: prose.codeaccelerator.read_text_builder.ReadFwfBuilder.learn
   isExternal: false
@@ -90,3 +94,8 @@ references:
   name: schema
   parent: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
   uid: prose.codeaccelerator.read_text_builder.ReadFwfBuilder.schema
+- fullName: prose.codeaccelerator.read_text_builder.ReadFwfBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
+  uid: prose.codeaccelerator.read_text_builder.ReadFwfBuilder.target

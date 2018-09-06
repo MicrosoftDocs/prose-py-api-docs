@@ -9,14 +9,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.find_patterns_builder
   name: find_patterns_builder
-  source:
-    id: find_patterns_builder
-    path: prose\codeaccelerator\jupyter\find_patterns_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\find_patterns_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 0
   type: module
   uid: prose.codeaccelerator.jupyter.find_patterns_builder
 references:

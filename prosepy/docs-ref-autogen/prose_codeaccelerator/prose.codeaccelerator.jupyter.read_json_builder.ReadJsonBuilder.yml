@@ -17,14 +17,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_json_builder
   name: ReadJsonBuilder
-  source:
-    id: ReadJsonBuilder
-    path: prose\codeaccelerator\jupyter\read_json_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_json_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 13
   syntax:
     content: ReadJsonBuilder(filename)
   type: class
@@ -35,14 +27,6 @@ items:
   - python
   module: prose.codeaccelerator.jupyter.read_json_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\jupyter\read_json_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\jupyter\read_json_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 14
   syntax:
     content: learn()
     parameters: []

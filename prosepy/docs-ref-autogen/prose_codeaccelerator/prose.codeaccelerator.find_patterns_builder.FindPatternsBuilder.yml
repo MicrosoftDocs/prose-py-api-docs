@@ -3,6 +3,7 @@ api_name: []
 items:
 - children:
   - prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+  - prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
   class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
   fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
   inheritance:
@@ -15,21 +16,42 @@ items:
   - python
   module: prose.codeaccelerator.find_patterns_builder
   name: FindPatternsBuilder
-  source:
-    id: FindPatternsBuilder
-    path: prose\codeaccelerator\find_patterns_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\find_patterns_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 6
   summary: 'A builder for data and constraints in order to learn code for identifying
     patterns in a set of strings.
+
 
 
     '
   syntax:
     content: FindPatternsBuilder(data)
+    parameters:
+    - description: 'List of strings to identify patterns from.
+
+        '
+      id: data
+      type:
+      - List[str]
+    variables:
+    - description: 'A list of collections of strings. Each collection of strings constrains
+
+        all the strings in the collection to be covered by the same regex/cluster.
+
+        Each collection should have at least 2 strings.
+
+        '
+      id: in_same_cluster
+      type:
+      - List[Iter[str]]
+    - description: 'A list of collections of strings. Each collection of strings constrains
+
+        each string in the collection to be covered by a different regex/cluster.
+
+        Each collection should have at least 2 strings.
+
+        '
+      id: in_different_clusters
+      type:
+      - List[Iter[str]]
   type: class
   uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
 - class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
@@ -38,14 +60,6 @@ items:
   - python
   module: prose.codeaccelerator.find_patterns_builder
   name: learn
-  source:
-    id: learn
-    path: prose\codeaccelerator\find_patterns_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\find_patterns_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 28
   summary: 'Attempt to learn a set of patterns that cover the data and satisfy the
     constraints that have been set on this builder.
 
@@ -55,9 +69,63 @@ items:
     parameters: []
   type: method
   uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+- class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator.find_patterns_builder
+  name: target
+  summary: 'Defines the target that the generated code will be generated for.
+
+    Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
 references:
 - fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
   isExternal: false
   name: learn
   parent: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
   uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
+- fullName: List[Iter[str]]
+  name: List[Iter[str]]
+  spec.python:
+  - fullName: List
+    name: List
+    uid: List
+  - fullName: '['
+    name: '['
+  - fullName: Iter
+    name: Iter
+    uid: Iter
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ']'
+    name: ']'
+  - fullName: ']'
+    name: ']'
+  uid: List[Iter[str]]
+- fullName: List[str]
+  name: List[str]
+  spec.python:
+  - fullName: List
+    name: List
+    uid: List
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ']'
+    name: ']'
+  uid: List[str]

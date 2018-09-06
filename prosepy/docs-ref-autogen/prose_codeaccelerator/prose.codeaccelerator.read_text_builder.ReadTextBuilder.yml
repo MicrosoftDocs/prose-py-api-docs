@@ -15,14 +15,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: ReadTextBuilder
-  source:
-    id: ReadTextBuilder
-    path: prose\codeaccelerator\read_text_builder.py
-    remote:
-      branch: HEAD
-      path: prose\codeaccelerator\read_text_builder.py
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: 8
   summary: 'Base class to hold shared implementation details for Fwf/Csv builders.
 
 
@@ -38,14 +30,6 @@ items:
   - python
   module: prose.codeaccelerator.read_text_builder
   name: filename
-  source:
-    id: filename
-    path: null
-    remote:
-      branch: HEAD
-      path: null
-      repo: https://apidrop.visualstudio.com/Content%20CI/_git/ReferenceAutomation
-    startLine: null
   summary: 'The model file to read.
 
     '
