@@ -7,8 +7,7 @@ ms.service: prose-codeaccelerator
 
 # Python Code Accelerator for Azure Data Studio
 
-Code Accelerator uses the power of [PROSE](https://microsoft.github.io/prose) to quickly and accurately produce Python
-code for data preparation tasks--making you faster and more productive.
+Code Accelerator uses the power of [PROSE](https://microsoft.github.io/prose) to quickly and accurately produce Python code for data preparation tasks--making you faster and more productive.
 
 * [Overview](overview.md)
 * [Getting Started](gettingstarted.md)
@@ -18,6 +17,3 @@ code for data preparation tasks--making you faster and more productive.
     * [Read a fixed-width file](readfixedwidth.md)
     * [Fix data types](fixdatatypes.md)
     * [Find patterns in strings](findpatterns.md)
-  
-
-

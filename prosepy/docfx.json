@@ -3,11 +3,20 @@
     "content": [
       {
         "files": [
-          "**/*.md",
+          "**/toc.md",
+          "**/toc.yml"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "azprose_py_toc",
+        "version": "azure-accelerator-py"
+      },
+      {
+        "files": [
           "**/*.yml"
         ],
         "src": "docs-ref-autogen",
         "dest": "api",
+        "version": "azure-accelerator-py",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -23,7 +32,8 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual",
-        "dest": "prose-codeaccelerator",
+        "dest": "api/overview/prose",
+        "version": "azure-accelerator-py",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -34,11 +44,20 @@
           "**/*.yml"
         ],
         "src": "breadcrumb",
-        "dest": "prose_py_breadcrumb",
+        "dest": "azprose_py_breadcrumb",
+        "version": "azure-accelerator-py",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "docs-ref-joined",
+        "dest": "api/overview",
+        "version": "azure-accelerator-py"
       }
     ],
     "resource": [
@@ -47,12 +66,18 @@
           "**/*.png",
           "**/*.jpg"
         ],
+        "version": "azure-accelerator-py",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
       }
     ],
+    "versions": {
+      "azure-accelerator-py": {
+        "dest": "azure-accelerator-py"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
@@ -61,6 +86,13 @@
     "fileMetadata": {
       "ms.topic": {
         "docs-ref-autogen/**/*.yml": "reference"
+      },
+      "monikers":
+      {
+        "docs-ref-autogen/**": [ "azure-accelerator-py" ],
+        "docs-ref-conceptual/**" : [ "azure-accelerator-py" ],
+        "breadcrumb/**": [ "azure-accelerator-py" ],
+        "docs-ref-joined/**": [ "azure-accelerator-py" ]
       }
     },
     "template": [],
