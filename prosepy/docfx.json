@@ -19,6 +19,18 @@
       },
       {
         "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs-ref-conceptual",
+        "dest": "prose-codeaccelerator",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+	    {
+        "files": [
           "**/*.yml"
         ],
         "src": "breadcrumb",
@@ -46,11 +58,15 @@
     "globalMetadata": {
       "breadcrumb_path": "~/breadcrumb/toc.yml"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.topic": {
+        "docs-ref-autogen/**/*.yml": "reference"
+      }
+    },
     "template": [],
     "dest": "_site",
     "xref": [
-      "../xrefmap.yml"
+        "../xrefmap.yml"
     ]
   }
 }
