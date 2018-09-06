@@ -28,6 +28,7 @@
           "TopLevelTOC": "prosepy/docs-ref-mapping/prose-ref-toc.yml",
           "ReferenceTOC": "prosepy/docs-ref-autogen/toc.yml",
           "ConceptualTOC": "prosepy/docs-ref-conceptual/toc.yml",
+          "ConceptualTOCUrl": "/python/api/overview/prose/toc.json?view=azure-accelerator-py",
           "ReferenceTOCUrl": "/python/api/azprose_py_toc/toc.json?view=azure-accelerator-py",
           "ContainerPageMetadata": {
             "langs": [
