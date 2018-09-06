@@ -18,6 +18,7 @@
         "dest": "api",
         "version": "azure-accelerator-py",
         "exclude": [
+          "**/toc.yml",
           "**/obj/**",
           "**/includes/**",
           "README.md",
