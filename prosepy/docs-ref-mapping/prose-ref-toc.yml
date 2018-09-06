@@ -3,4 +3,4 @@
   landingPageType: Root
   expanded: true
   children:
-- '*'
+  - '*'
