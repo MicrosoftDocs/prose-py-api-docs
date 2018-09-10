@@ -1,0 +1,92 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.ReadJsonBuilder.filename
+  - prose.codeaccelerator.ReadJsonBuilder.learn
+  - prose.codeaccelerator.ReadJsonBuilder.target
+  class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: prose.codeaccelerator._builder.Builder
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: ReadJsonBuilder
+  summary: 'A builder for specifying constraints in order to learn code for reading
+    a JSON file into a table.
+
+
+
+
+    '
+  syntax:
+    content: ReadJsonBuilder(filename)
+    parameters:
+    - description: 'Model file (in UTF-8 encoding) for reading.
+
+        '
+      id: filename
+  type: class
+  uid: prose.codeaccelerator.ReadJsonBuilder
+- class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder.filename
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: filename
+  summary: 'The model file to read.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadJsonBuilder.filename
+- class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: learn
+  summary: 'Attempt to learn a program from the constraints that have been set on
+    this builder.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.ReadJsonBuilder.learn
+- class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: target
+  summary: 'Defines the target that the generated code will be generated for.
+
+    Supported values are *"pandas"* and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadJsonBuilder.target
+references:
+- fullName: prose.codeaccelerator.ReadJsonBuilder.filename
+  isExternal: false
+  name: filename
+  parent: prose.codeaccelerator.ReadJsonBuilder
+  uid: prose.codeaccelerator.ReadJsonBuilder.filename
+- fullName: prose.codeaccelerator.ReadJsonBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.ReadJsonBuilder
+  uid: prose.codeaccelerator.ReadJsonBuilder.learn
+- fullName: prose.codeaccelerator.ReadJsonBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.ReadJsonBuilder
+  uid: prose.codeaccelerator.ReadJsonBuilder.target

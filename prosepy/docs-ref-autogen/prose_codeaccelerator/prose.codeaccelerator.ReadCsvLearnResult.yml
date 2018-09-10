@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.ReadCsvLearnResult.delimiter
+  class: prose.codeaccelerator.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.ReadCsvLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: ReadCsvLearnResult
+  summary: 'The result from attempting to learn a program for delimited file reading.
+
+
+    '
+  syntax:
+    content: ReadCsvLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.ReadCsvLearnResult
+- class: prose.codeaccelerator.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.ReadCsvLearnResult.delimiter
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: delimiter
+  summary: 'The single delimiter that the learned program will use to split columns
+    if one exists; None otherwise.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadCsvLearnResult.delimiter
+references:
+- fullName: prose.codeaccelerator.ReadCsvLearnResult.delimiter
+  isExternal: false
+  name: delimiter
+  parent: prose.codeaccelerator.ReadCsvLearnResult
+  uid: prose.codeaccelerator.ReadCsvLearnResult.delimiter

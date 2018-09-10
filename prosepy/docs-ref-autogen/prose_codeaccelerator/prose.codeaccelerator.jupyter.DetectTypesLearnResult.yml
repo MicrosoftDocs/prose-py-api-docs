@@ -1,0 +1,19 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+  fullName: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator._detect_types_builder.DetectTypesLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: DetectTypesLearnResult
+  syntax:
+    content: DetectTypesLearnResult(result, associated_builder)
+  type: class
+  uid: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+references: []

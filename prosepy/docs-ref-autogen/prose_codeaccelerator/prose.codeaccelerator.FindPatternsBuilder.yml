@@ -2,19 +2,19 @@
 api_name: []
 items:
 - children:
-  - prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
-  - prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
-  class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
+  - prose.codeaccelerator.FindPatternsBuilder.learn
+  - prose.codeaccelerator.FindPatternsBuilder.target
+  class: prose.codeaccelerator.FindPatternsBuilder
+  fullName: prose.codeaccelerator.FindPatternsBuilder
   inheritance:
   - inheritance:
     - inheritance:
       - type: builtins.object
       type: abc.ABC
-    type: prose.codeaccelerator.builder.Builder
+    type: prose.codeaccelerator._builder.Builder
   langs:
   - python
-  module: prose.codeaccelerator.find_patterns_builder
+  module: prose.codeaccelerator
   name: FindPatternsBuilder
   summary: 'A builder for data and constraints in order to learn code for identifying
     patterns in a set of strings.
@@ -53,12 +53,12 @@ items:
       type:
       - List[Iter[str]]
   type: class
-  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-- class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+  uid: prose.codeaccelerator.FindPatternsBuilder
+- class: prose.codeaccelerator.FindPatternsBuilder
+  fullName: prose.codeaccelerator.FindPatternsBuilder.learn
   langs:
   - python
-  module: prose.codeaccelerator.find_patterns_builder
+  module: prose.codeaccelerator
   name: learn
   summary: 'Attempt to learn a set of patterns that cover the data and satisfy the
     constraints that have been set on this builder.
@@ -68,12 +68,12 @@ items:
     content: learn()
     parameters: []
   type: method
-  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
-- class: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-  fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
+  uid: prose.codeaccelerator.FindPatternsBuilder.learn
+- class: prose.codeaccelerator.FindPatternsBuilder
+  fullName: prose.codeaccelerator.FindPatternsBuilder.target
   langs:
   - python
-  module: prose.codeaccelerator.find_patterns_builder
+  module: prose.codeaccelerator
   name: target
   summary: 'Defines the target that the generated code will be generated for.
 
@@ -82,18 +82,18 @@ items:
     '
   syntax: {}
   type: attribute
-  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
+  uid: prose.codeaccelerator.FindPatternsBuilder.target
 references:
-- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
+- fullName: prose.codeaccelerator.FindPatternsBuilder.learn
   isExternal: false
   name: learn
-  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.learn
-- fullName: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
+  parent: prose.codeaccelerator.FindPatternsBuilder
+  uid: prose.codeaccelerator.FindPatternsBuilder.learn
+- fullName: prose.codeaccelerator.FindPatternsBuilder.target
   isExternal: false
   name: target
-  parent: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-  uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder.target
+  parent: prose.codeaccelerator.FindPatternsBuilder
+  uid: prose.codeaccelerator.FindPatternsBuilder.target
 - fullName: List[Iter[str]]
   name: List[Iter[str]]
   spec.python:

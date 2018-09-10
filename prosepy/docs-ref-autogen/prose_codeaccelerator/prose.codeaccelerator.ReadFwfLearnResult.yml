@@ -1,0 +1,44 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.ReadFwfLearnResult.colspecs
+  class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: ReadFwfLearnResult
+  summary: 'The result from attempting to learn a program for fixed-width file reading.
+
+
+    '
+  syntax:
+    content: ReadFwfLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.ReadFwfLearnResult
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.colspecs
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: colspecs
+  summary: 'A list of pairs (tuples) giving the extents of the fixed-width fields
+    of each line as half-open intervals
+
+    (i.e., [from, to[ ).
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.colspecs
+references:
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.colspecs
+  isExternal: false
+  name: colspecs
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.colspecs

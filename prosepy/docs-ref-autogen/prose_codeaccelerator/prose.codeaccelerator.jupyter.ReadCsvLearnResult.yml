@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+    type: prose.codeaccelerator._read_text_builder.ReadCsvLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: ReadCsvLearnResult
+  syntax:
+    content: ReadCsvLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+references: []

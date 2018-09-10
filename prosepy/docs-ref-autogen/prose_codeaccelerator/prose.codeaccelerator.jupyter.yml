@@ -2,35 +2,71 @@
 api_name: []
 items:
 - children:
-  - prose.codeaccelerator.jupyter.detect_types_builder
-  - prose.codeaccelerator.jupyter.find_patterns_builder
-  - prose.codeaccelerator.jupyter.read_json_builder
-  - prose.codeaccelerator.jupyter.read_text_builder
+  - prose.codeaccelerator.jupyter.ReadCsvBuilder
+  - prose.codeaccelerator.jupyter.ReadCsvLearnResult
+  - prose.codeaccelerator.jupyter.ReadFwfBuilder
+  - prose.codeaccelerator.jupyter.ReadFwfLearnResult
+  - prose.codeaccelerator.jupyter.ReadJsonBuilder
+  - prose.codeaccelerator.jupyter.ReadJsonLearnResult
+  - prose.codeaccelerator.jupyter.DetectTypesBuilder
+  - prose.codeaccelerator.jupyter.DetectTypesLearnResult
+  - prose.codeaccelerator.jupyter.FindPatternsBuilder
+  - prose.codeaccelerator.jupyter.FindPatternsLearnResult
   fullName: prose.codeaccelerator.jupyter
   langs:
   - python
   module: prose.codeaccelerator.jupyter
   name: jupyter
-  type: package
+  type: module
   uid: prose.codeaccelerator.jupyter
 references:
-- fullName: prose.codeaccelerator.jupyter.detect_types_builder
+- fullName: prose.codeaccelerator.jupyter.ReadCsvBuilder
   isExternal: false
-  name: detect_types_builder
+  name: ReadCsvBuilder
   parent: prose.codeaccelerator.jupyter
-  uid: prose.codeaccelerator.jupyter.detect_types_builder
-- fullName: prose.codeaccelerator.jupyter.find_patterns_builder
+  uid: prose.codeaccelerator.jupyter.ReadCsvBuilder
+- fullName: prose.codeaccelerator.jupyter.ReadCsvLearnResult
   isExternal: false
-  name: find_patterns_builder
+  name: ReadCsvLearnResult
   parent: prose.codeaccelerator.jupyter
-  uid: prose.codeaccelerator.jupyter.find_patterns_builder
-- fullName: prose.codeaccelerator.jupyter.read_json_builder
+  uid: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+- fullName: prose.codeaccelerator.jupyter.ReadFwfBuilder
   isExternal: false
-  name: read_json_builder
+  name: ReadFwfBuilder
   parent: prose.codeaccelerator.jupyter
-  uid: prose.codeaccelerator.jupyter.read_json_builder
-- fullName: prose.codeaccelerator.jupyter.read_text_builder
+  uid: prose.codeaccelerator.jupyter.ReadFwfBuilder
+- fullName: prose.codeaccelerator.jupyter.ReadFwfLearnResult
   isExternal: false
-  name: read_text_builder
+  name: ReadFwfLearnResult
   parent: prose.codeaccelerator.jupyter
-  uid: prose.codeaccelerator.jupyter.read_text_builder
+  uid: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+- fullName: prose.codeaccelerator.jupyter.ReadJsonBuilder
+  isExternal: false
+  name: ReadJsonBuilder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.ReadJsonBuilder
+- fullName: prose.codeaccelerator.jupyter.ReadJsonLearnResult
+  isExternal: false
+  name: ReadJsonLearnResult
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.ReadJsonLearnResult
+- fullName: prose.codeaccelerator.jupyter.DetectTypesBuilder
+  isExternal: false
+  name: DetectTypesBuilder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.DetectTypesBuilder
+- fullName: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+  isExternal: false
+  name: DetectTypesLearnResult
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+- fullName: prose.codeaccelerator.jupyter.FindPatternsBuilder
+  isExternal: false
+  name: FindPatternsBuilder
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.FindPatternsBuilder
+- fullName: prose.codeaccelerator.jupyter.FindPatternsLearnResult
+  isExternal: false
+  name: FindPatternsLearnResult
+  parent: prose.codeaccelerator.jupyter
+  uid: prose.codeaccelerator.jupyter.FindPatternsLearnResult
