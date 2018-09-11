@@ -15,7 +15,7 @@ Then from within a python interactive prompt (`python`, `ipython`, `jupyter note
 ``` python
 import prose.codeaccelerator as cx 
 # or, if running in a jupyter notebook: 
-# import.prose.codeaccelearator.jupyter as cx 
+# import.prose.codeaccelerator.jupyter as cx 
 
 builder = cx.ReadCsvBuilder("/path/to/file.csv")
 result = builder.learn()
