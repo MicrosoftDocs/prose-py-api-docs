@@ -1,6 +1,6 @@
 ---
 title: Python Code Accelerator for Azure Data Studio
-ms.date: 08/30/2018
+ms.date: 09/11/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
@@ -13,7 +13,7 @@ Code Accelerator uses the power of [PROSE](https://microsoft.github.io/prose) to
 * [Getting Started](gettingstarted.md)
 * How-to guides:
     * [Read a CSV file](readcsv.md)
-    * [Read a JSON file](readjson.md)
-    * [Read a fixed-width file](readfixedwidth.md)
-    * [Fix data types](fixdatatypes.md)
-    * [Find patterns in strings](findpatterns.md)
+    * [Read a Fixed-width File](readfixedwidth.md)
+    * [Read a JSON File](readjson.md)
+    * [Fix Data Types](fixdatatypes.md)
+    * [Find Patterns in Strings](findpatterns.md)

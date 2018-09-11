@@ -1,6 +1,6 @@
 ---
 title: Read a JSON File
-ms.date: 08/30/2018
+ms.date: 09/11/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
@@ -9,17 +9,525 @@ ms.service: prose-codeaccelerator
 
 The `ReadJsonBuilder` will produce code to turn a json file into a flat table for use in a data_frame.
 
-Example Usage:
+## Usage
 
 ``` python
 import prose.codeaccelerator as cx
 
-builder = cx.ReadCsvBuilder(path_to_json_file)
-# optional: builder.Target = cx.Target.pyspark
+builder = cx.ReadJsonBuilder('path_to_json_file')
+# optional: builder.target = 'pyspark' to switch to `pyspark` target (default is 'pandas')
 result = builder.learn()
-result.data(5)
-# examine top 5 rows to see if they look correct
-result.code()
+result.data(5) # examine top 5 rows to see if they look correct
+result.code() # generate the code in the target 
 ```
 
-ToDo: Explain flattening strategy.
+## Examples
+
+All examples assume `import prose.codeaccelerator as cx`.
+
+### Read Object JSON
+
+```python
+>>> with open('object.json', 'r') as f:
+        print f.read()
+{
+  "name": {
+    "first": "Carrie",
+    "last": "Dodson"
+  },
+  "phone": "123-456-7890"
+}
+
+>>> b = cx.ReadJsonBuilder('object.json')
+>>> r = b.learn()
+>>> r.data()
+  name.first name.last         phone
+0     Carrie    Dodson  123-456-7890
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = json.load(f)
+        df = json_normalize(d)
+        return df
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file, multiLine=True)
+    df = df.select(col("name.first").alias("name.first"),
+                   col("name.last").alias("name.last"),
+                   col("phone").alias("phone"))
+    return df
+    
+```
+
+### Read Array JSON
+```python
+>>> with open('array.json', 'r') as f:
+        print f.read()
+[
+    {
+        "name": {
+            "first": "Carrie",
+            "last": "Dodson"
+        },
+        "phone": "123-456-7890"
+    },
+    {
+        "name": {
+            "first": "Leonard",
+            "last": "Robledo"
+        },
+        "phone": "789-012-3456"
+    }
+]
+
+>>> b = cx.ReadJsonBuilder('array.json')
+>>> r = b.learn()
+>>> r.data()
+  name.first name.last         phone
+0     Carrie    Dodson  123-456-7890
+1    Leonard   Robledo  789-012-3456
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = json.load(f)
+        df = json_normalize(d)
+        return df
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file, multiLine=True)
+    df = df.select(col("name.first").alias("name.first"),
+                   col("name.last").alias("name.last"),
+                   col("phone").alias("phone"))
+    return df
+
+```
+
+### Read Line-Delimited JSON
+```python
+>>> with open('delimited.json', 'r') as f:
+        print f.read()
+{"name":{"first":"Carrie","last":"Dodson"},"phone":"123-456-7890"}
+{"name":{"first":"Leonard","last":"Robledo"},"phone":"789-012-3456"}
+
+>>> b = cx.ReadJsonBuilder('delimited.json')
+>>> r = b.learn()
+>>> r.data()
+  name.first name.last         phone
+0     Carrie    Dodson  123-456-7890
+0    Leonard   Robledo  789-012-3456
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = [json.loads(line) for line in f]
+        return json_normalize(d)
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file)
+    df = df.select(col("name.first").alias("name.first"),
+                   col("name.last").alias("name.last"),
+                   col("phone").alias("phone"))
+    return df
+
+```
+
+### Read Split-Array JSON
+```python
+>>> with open('split.json', 'r') as f:
+        print f.read()
+[
+    {
+        "color": "black",
+        "category": "hue",
+        "type": "primary",
+        "code": {
+            "rgba": [255, 255, 255, 1],
+            "hex": "#000"
+        }
+    },
+    {
+        "color": "white",
+        "category": "value",
+        "code": {
+            "rgba": [0, 0, 0, 1],
+            "hex": "#FFF"
+        }
+    }
+]
+>>> b = cx.ReadJsonBuilder('split.json')
+>>> r = b.learn()
+>>> r.data()
+  category code.hex  color     type  code.rgba.0  code.rgba.1  code.rgba.2  code.rgba.3
+0      hue     #000  black  primary          255          255          255            1
+1    value     #FFF  white      NaN            0            0            0            1
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+import pandas as pd
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = json.load(f)
+        df = json_normalize(d)
+        df = (
+            df.drop("code.rgba", 1)
+              .join(df["code.rgba"]
+                    .apply(lambda t: pd.Series(t))
+                    .add_prefix("code.rgba."))
+        )
+        return df
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file, multiLine=True)
+    df = df.select(col("color").alias("color"),
+                   col("category").alias("category"),
+                   col("type").alias("type"),
+                   col("code.rgba")[0].alias("code.rgba.0"),
+                   col("code.rgba")[1].alias("code.rgba.1"),
+                   col("code.rgba")[2].alias("code.rgba.2"),
+                   col("code.rgba")[3].alias("code.rgba.3"),
+                   col("code.hex").alias("code.hex"))
+    return df
+
+```
+
+
+### Read Nested-Arrays JSON
+```python
+>>> with open('nested.json', 'r') as f:
+        print f.read()
+[
+    {
+        "name": {
+            "first": "Carrie",
+            "last": "Dodson"
+        },
+        "phone": [
+            {
+                "area": "123",
+                "number": "456-7890"
+            },
+            {
+                "area": "098",
+                "number": "765-4321"
+            }
+        ]
+    },
+    {
+        "name": {
+            "first": "Leonard",
+            "last": "Robledo"
+        },
+        "phone": [
+            {
+                "area": "789",
+                "number": "012-3456"
+            },
+            {
+                "area": "654",
+                "number": "321-0987"
+            }
+        ]
+    }
+]
+
+>>> b = cx.ReadJsonBuilder('nested.json')
+>>> r = b.learn()
+>>> r.data()
+  phone.area phone.number name.first name.last
+0        123     456-7890     Carrie    Dodson
+1        098     765-4321     Carrie    Dodson
+2        789     012-3456    Leonard   Robledo
+3        654     321-0987    Leonard   Robledo
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = json.load(f)
+        df = json_normalize(d,
+            record_path="phone",
+            meta=[
+                ["name", "first"],
+                ["name", "last"]],
+            record_prefix="phone.")
+        return df
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, explode
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file, multiLine=True)
+    df = df.select(col("name.first").alias("name.first"),
+                   col("name.last").alias("name.last"),
+                   explode("phone").alias("phone_explode"),
+                   col("phone_explode.area").alias("phone.area"),
+                   col("phone_explode.number").alias("phone.number"))
+    df = df.drop("phone_explode")
+    return df
+
+```
+
+### Read Nested-Arrays JSON (2)
+The array elements in `"phone"` are nested objects, which requires an additional call to `json_normalize` to flatten.
+```python
+>>> with open('nested2.json', 'r') as f:
+        print f.read()
+[
+    {
+        "name": {
+            "first": "Carrie",
+            "last": "Dodson"
+        },
+        "phone": [
+            {
+                "area": "123",
+                "number": {
+                    "number1": "456",
+                    "number2": "7890"
+                }
+            },
+            {
+                "area": "098",
+                "number": {
+                    "number1": "765",
+                    "number2": "4321"
+                }
+            }
+        ]
+    },
+    {
+        "name": {
+            "first": "Leonard",
+            "last": "Robledo"
+        },
+        "phone": [
+            {
+                "area": "789",
+                "number": {
+                    "number1": "0123",
+                    "number2": "456"
+                }
+            }
+        ]
+    }
+]
+
+>>> b = cx.ReadJsonBuilder('nested2.json')
+>>> r = b.learn()
+>>> r.data()
+  name.first name.last phone.area phone.number.number1 phone.number.number2
+0     Carrie    Dodson        123                  456                 7890
+1     Carrie    Dodson        098                  765                 4321
+2    Leonard   Robledo        789                 0123                  456
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = json.load(f)
+        df = json_normalize(d,
+            record_path="phone",
+            meta=[
+                ["name", "first"],
+                ["name", "last"]],
+            record_prefix="phone.")
+        # flatten objects in "phone"
+        df = json_normalize(df.to_dict('r'))
+        return df
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, explode
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file, multiLine=True)
+    df = df.select(col("name.first").alias("name.first"),
+                   col("name.last").alias("name.last"),
+                   explode("phone").alias("phone_explode"),
+                   col("phone_explode.area").alias("phone.area"),
+                   col("phone_explode.number.number1").alias("phone.number.number1"),
+                   col("phone_explode.number.number2").alias("phone.number.number2"))
+    df = df.drop("phone_explode")
+    return df
+
+```
+
+### Read Multiple-Arrays JSON
+
+If there are multiple top-level arrays, we preserve these arrays because joining them would have caused exponential blow-up.
+
+```python
+>>> with open('multiple.json', 'r') as f:
+        print f.read()
+{
+    "name": "Carrie Dodson",
+    "addresses": [
+        "1640 Riverside Drive, Hill Valley, California",
+        "1630 Revello Drive, Sunnydale, CA"
+    ],
+    "phone": [
+        "202-555-0180",
+        "202-555-0103"
+    ]
+}
+
+>>> b = cx.ReadJsonBuilder('multiple.json')
+>>> r = b.learn()
+>>> r.data()
+               name             addresses               phone
+0     Carrie Dodson ["1640...","1630..."] ["202...","202..."]
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = json.load(f)
+        df = json_normalize(d)
+        return df
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file, multiLine=True)
+    df = df.select(col("name").alias("name"),
+                   col("addresses").alias("addresses"),
+                   col("phone").alias("phone"))
+    return df
+
+```
+
+### Read Single Top Array JSON
+
+If the JSON has this pattern `{"key_1": ... {"key_n" : [ ... ]} ... }` we only need to flatten the top array `d["key_1"]...["key_n"]`.
+
+```python
+>>> with open('top.json', 'r') as f:
+        print f.read()
+{
+    "top": [
+        {
+            "name": {
+                "first": "Carrie",
+                "last": "Dodson"
+            },
+            "phone": "123-456-7890"
+        },
+        {
+            "name": {
+                "first": "Leonard",
+                "last": "Robledo"
+            },
+            "phone": "789-012-3456"
+        }
+    ]
+}
+
+>>> b = cx.ReadJsonBuilder('top.json')
+>>> r = b.learn()
+>>> r.data()
+  name.first name.last         phone
+0     Carrie    Dodson  123-456-7890
+1    Leonard   Robledo  789-012-3456
+
+>>> r.code()
+import json
+from pandas.io.json import json_normalize
+
+
+def read_json(file):
+    with open(file, encoding="utf-8") as f:
+        d = json.load(f)
+        df = json_normalize(d["top"])
+        return df.add_prefix("top.")
+
+>>> b.target = 'pyspark'
+>>> r = b.learn()
+>>> r.code()
+from pyspark.sql import SparkSession
+from pyspark.sql.functions import col, explode
+
+
+def read_json(file):
+    spark = SparkSession.builder.getOrCreate()
+    df = spark.read.json(file, multiLine=True)
+    df = df.select(explode("top").alias("top_explode"),
+                   col("top_explode.name.first").alias("top.name.first"),
+                   col("top_explode.name.last").alias("top.name.last"),
+                   col("top_explode.phone").alias("top.phone"))
+    df = df.drop("top_explode")
+    return df
+
+```
