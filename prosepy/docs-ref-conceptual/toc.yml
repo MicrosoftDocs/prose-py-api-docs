@@ -5,13 +5,13 @@
     href: overview.md
   - name: Getting Started
     href: gettingstarted.md
-  - name: Read CSV
+  - name: Read a CSV File
     href: readcsv.md
-  - name: Read JSON
-    href: readjson.md
-  - name: Read Fixed Width
+  - name: Read a Fixed-width File
     href: readfixedwidth.md
-  - name: Find Patterns
-    href: findpatterns.md
-  - name: Find Data Types
+  - name: Read a JSON File
+    href: readjson.md
+  - name: Fix Data Types
     href: fixdatatypes.md
+  - name: Find Patterns in Strings
+    href: findpatterns.md
