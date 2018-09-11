@@ -1,0 +1,73 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.DetectTypesLearnResult.code
+  - prose.codeaccelerator.DetectTypesLearnResult.data
+  class: prose.codeaccelerator.DetectTypesLearnResult
+  fullName: prose.codeaccelerator.DetectTypesLearnResult
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: DetectTypesLearnResult
+  summary: 'A class that encapsulates the results of running datatype detection
+
+    on a dataset.
+
+
+
+    '
+  syntax:
+    content: DetectTypesLearnResult(result, associated_builder)
+  type: class
+  uid: prose.codeaccelerator.DetectTypesLearnResult
+- class: prose.codeaccelerator.DetectTypesLearnResult
+  fullName: prose.codeaccelerator.DetectTypesLearnResult.code
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: code
+  summary: 'Generates code to transform the dataset into the appropriate data types.
+
+    '
+  syntax:
+    content: code()
+    parameters: []
+    return:
+      description: 'A code object which can be called, or printed out.
+
+        '
+  type: method
+  uid: prose.codeaccelerator.DetectTypesLearnResult.code
+- class: prose.codeaccelerator.DetectTypesLearnResult
+  fullName: prose.codeaccelerator.DetectTypesLearnResult.data
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: data
+  summary: 'Transforms the data (provided to the builder object that produced this
+    result object) into
+
+    appropriate types.
+
+    '
+  syntax:
+    content: data(nrows=None)
+    parameters:
+    - defaultValue: None
+      id: nrows
+  type: method
+  uid: prose.codeaccelerator.DetectTypesLearnResult.data
+references:
+- fullName: prose.codeaccelerator.DetectTypesLearnResult.code
+  isExternal: false
+  name: code
+  parent: prose.codeaccelerator.DetectTypesLearnResult
+  uid: prose.codeaccelerator.DetectTypesLearnResult.code
+- fullName: prose.codeaccelerator.DetectTypesLearnResult.data
+  isExternal: false
+  name: data
+  parent: prose.codeaccelerator.DetectTypesLearnResult
+  uid: prose.codeaccelerator.DetectTypesLearnResult.data

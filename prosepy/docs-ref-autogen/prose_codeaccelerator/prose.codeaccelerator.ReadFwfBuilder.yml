@@ -1,0 +1,119 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.ReadFwfBuilder.learn
+  - prose.codeaccelerator.ReadFwfBuilder.schema
+  - prose.codeaccelerator.ReadFwfBuilder.schema_filename
+  - prose.codeaccelerator.ReadFwfBuilder.target
+  class: prose.codeaccelerator.ReadFwfBuilder
+  fullName: prose.codeaccelerator.ReadFwfBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: prose.codeaccelerator._builder.Builder
+    type: prose.codeaccelerator._read_text_builder.ReadTextBuilder
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: ReadFwfBuilder
+  summary: 'A builder for specifying constraints in order to learn code for reading
+    a fixed-width file into a table.
+
+
+
+
+
+    '
+  syntax:
+    content: ReadFwfBuilder(filename, schema_filename=None)
+    parameters:
+    - description: 'Model file for reading.
+
+        '
+      id: filename
+    - description: 'The schema file to use for learning.  The schema contains a table
+
+        with column metadata about the table in the fixed-width file.
+
+        '
+      id: schema_filename
+  type: class
+  uid: prose.codeaccelerator.ReadFwfBuilder
+- class: prose.codeaccelerator.ReadFwfBuilder
+  fullName: prose.codeaccelerator.ReadFwfBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: learn
+  summary: 'Attempt to learn a program from the constraints that have been set on
+    this builder.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.ReadFwfBuilder.learn
+- class: prose.codeaccelerator.ReadFwfBuilder
+  fullName: prose.codeaccelerator.ReadFwfBuilder.schema
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: schema
+  summary: 'The schema text to be used for learning.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfBuilder.schema
+- class: prose.codeaccelerator.ReadFwfBuilder
+  fullName: prose.codeaccelerator.ReadFwfBuilder.schema_filename
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: schema_filename
+  summary: 'The schema file to be used for learning.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfBuilder.schema_filename
+- class: prose.codeaccelerator.ReadFwfBuilder
+  fullName: prose.codeaccelerator.ReadFwfBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: target
+  summary: 'Defines the target that the generated code will be generated for.
+
+    Supported values are *"pandas"* and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfBuilder.target
+references:
+- fullName: prose.codeaccelerator.ReadFwfBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.ReadFwfBuilder
+  uid: prose.codeaccelerator.ReadFwfBuilder.learn
+- fullName: prose.codeaccelerator.ReadFwfBuilder.schema
+  isExternal: false
+  name: schema
+  parent: prose.codeaccelerator.ReadFwfBuilder
+  uid: prose.codeaccelerator.ReadFwfBuilder.schema
+- fullName: prose.codeaccelerator.ReadFwfBuilder.schema_filename
+  isExternal: false
+  name: schema_filename
+  parent: prose.codeaccelerator.ReadFwfBuilder
+  uid: prose.codeaccelerator.ReadFwfBuilder.schema_filename
+- fullName: prose.codeaccelerator.ReadFwfBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.ReadFwfBuilder
+  uid: prose.codeaccelerator.ReadFwfBuilder.target

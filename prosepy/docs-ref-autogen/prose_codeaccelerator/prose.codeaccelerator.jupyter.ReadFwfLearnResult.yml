@@ -1,0 +1,21 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+    type: prose.codeaccelerator._read_text_builder.ReadFwfLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: ReadFwfLearnResult
+  syntax:
+    content: ReadFwfLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+references: []

@@ -1,0 +1,42 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.jupyter.ReadFwfBuilder.learn
+  class: prose.codeaccelerator.jupyter.ReadFwfBuilder
+  fullName: prose.codeaccelerator.jupyter.ReadFwfBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - inheritance:
+          - type: builtins.object
+          type: abc.ABC
+        type: prose.codeaccelerator._builder.Builder
+      type: prose.codeaccelerator._read_text_builder.ReadTextBuilder
+    type: prose.codeaccelerator._read_text_builder.ReadFwfBuilder
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: ReadFwfBuilder
+  syntax:
+    content: ReadFwfBuilder(filename, schema_filename=None)
+  type: class
+  uid: prose.codeaccelerator.jupyter.ReadFwfBuilder
+- class: prose.codeaccelerator.jupyter.ReadFwfBuilder
+  fullName: prose.codeaccelerator.jupyter.ReadFwfBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: learn
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.jupyter.ReadFwfBuilder.learn
+references:
+- fullName: prose.codeaccelerator.jupyter.ReadFwfBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.jupyter.ReadFwfBuilder
+  uid: prose.codeaccelerator.jupyter.ReadFwfBuilder.learn
