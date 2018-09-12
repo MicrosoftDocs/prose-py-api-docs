@@ -4,10 +4,10 @@ items:
   - prose.codeaccelerator
   langs:
   - python
-  name: prose_codeaccelerator
+  name: prose-codeaccelerator
   summary: ''
   type: package
-  uid: project-prose_codeaccelerator
+  uid: project-prose-codeaccelerator
 references:
 - fullname: prose.codeaccelerator
   isExternal: false
