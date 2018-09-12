@@ -8,8 +8,8 @@ ms.service: prose-codeaccelerator
 # Read a CSV File
 
 The `ReadCsvBuilder` will analyze a given delimited text file (it doesn't actually need to be comma-separated file, it
-could be delimitted other ways) and determine all the details about that file necessary to successfully parse it and
-produce a dataframe (either pandas or pyspark).  This encludes the encoding, the delimiter, how many lines to skip at
+could be delimited other ways) and determine all the details about that file necessary to successfully parse it and
+produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
 the beginning of the file, etc.
 
 Example Usage:
