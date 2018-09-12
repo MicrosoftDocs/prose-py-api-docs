@@ -10,6 +10,14 @@ ms.service: prose-codeaccelerator
 pip install prose-codeaccelerator --extra-index-url https://prose-python-packages.azurewebsites.net
 ```
 
+If using Jupyter notebook, you must also enable the corresponding extension:
+
+```
+jupyter nbextension enable --py prose.codeaccelerator.jupyter
+```
+
+To verify, `jupyter nbextension list` should now list `prose/extension enabled` as one of the known notebook extensions.
+
 Then from within a python interactive prompt (`python`, `ipython`, `jupyter notebook`, etc.):
 
 ``` python
@@ -23,4 +31,3 @@ result.code()
 ```
 
 To generate code for pyspark, set `builder.target = "pyspark"` before calling `builder.learn()`.
-
