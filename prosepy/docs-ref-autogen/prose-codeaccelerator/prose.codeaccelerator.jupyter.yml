@@ -17,6 +17,14 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: jupyter
+  summary: 'This module contains jupyter wrappers around the PROSE code acceleration
+    SDK.
+
+    Code Accelerator uses the power of PROSE to quickly and accurately produce
+
+    Python code for data preparation tasks--making you faster and more productive.
+
+    '
   type: module
   uid: prose.codeaccelerator.jupyter
 references:

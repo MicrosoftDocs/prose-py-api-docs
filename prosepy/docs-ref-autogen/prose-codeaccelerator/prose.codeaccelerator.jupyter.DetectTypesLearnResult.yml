@@ -12,6 +12,13 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: DetectTypesLearnResult
+  summary: 'Thin wrapper around @prose.codeaccelerator.DetectTypesLearnResult. See
+    the base class for additional details on parameters, methods, and properties.
+
+
+    Encapsulates the results of running data type detection on a dataset.
+
+    '
   syntax:
     content: DetectTypesLearnResult(result, associated_builder)
   type: class

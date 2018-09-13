@@ -75,7 +75,8 @@ items:
   - python
   module: prose.codeaccelerator
   name: target
-  summary: 'Defines the target that the generated code will be generated for.
+  summary: 'Target runtime library for the generated code.
+
 
     Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.
 

@@ -17,8 +17,24 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: ReadJsonBuilder
+  summary: 'Thin wrapper around @prose.codeaccelerator.ReadJsonBuilder. See the base
+    class for additional details on parameters, methods, and properties.
+
+
+    A builder for specifying constraints in order to learn code for reading a JSON
+    file into a table.
+
+
+    '
   syntax:
     content: ReadJsonBuilder(filename)
+    parameters:
+    - description: 'A path to the input file (in UTF-8) to learn from.
+
+        '
+      id: filename
+      type:
+      - str
   type: class
   uid: prose.codeaccelerator.jupyter.ReadJsonBuilder
 - class: prose.codeaccelerator.jupyter.ReadJsonBuilder
@@ -27,9 +43,19 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: learn
+  summary: 'Attempt to learn a program from the constraints that have been set on
+    this builder.
+
+    '
   syntax:
     content: learn()
     parameters: []
+    return:
+      description: 'The result of learning.
+
+        '
+      type:
+      - prose.codeaccelerator.ReadJsonLearnResult.
   type: method
   uid: prose.codeaccelerator.jupyter.ReadJsonBuilder.learn
 references:

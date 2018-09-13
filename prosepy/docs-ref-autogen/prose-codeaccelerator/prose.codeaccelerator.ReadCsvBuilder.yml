@@ -2,7 +2,9 @@
 api_name: []
 items:
 - children:
+  - prose.codeaccelerator.ReadCsvBuilder.filename
   - prose.codeaccelerator.ReadCsvBuilder.learn
+  - prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze
   - prose.codeaccelerator.ReadCsvBuilder.target
   class: prose.codeaccelerator.ReadCsvBuilder
   fullName: prose.codeaccelerator.ReadCsvBuilder
@@ -23,11 +25,32 @@ items:
 
 
 
+
+
     '
   syntax:
     content: ReadCsvBuilder(filename)
+    parameters:
+    - description: 'A path to the input file to learn from.
+
+        '
+      id: filename
+      type:
+      - str
   type: class
   uid: prose.codeaccelerator.ReadCsvBuilder
+- class: prose.codeaccelerator.ReadCsvBuilder
+  fullName: prose.codeaccelerator.ReadCsvBuilder.filename
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: filename
+  summary: 'Path to the input file to learn from.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadCsvBuilder.filename
 - class: prose.codeaccelerator.ReadCsvBuilder
   fullName: prose.codeaccelerator.ReadCsvBuilder.learn
   langs:
@@ -41,28 +64,57 @@ items:
   syntax:
     content: learn()
     parameters: []
+    return:
+      description: 'The result of learning.
+
+        '
+      type:
+      - prose.codeaccelerator.ReadCsvLearnResult.
   type: method
   uid: prose.codeaccelerator.ReadCsvBuilder.learn
+- class: prose.codeaccelerator.ReadCsvBuilder
+  fullName: prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: lines_to_analyze
+  summary: 'Number of lines of the input file that should be used during learning.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze
 - class: prose.codeaccelerator.ReadCsvBuilder
   fullName: prose.codeaccelerator.ReadCsvBuilder.target
   langs:
   - python
   module: prose.codeaccelerator
   name: target
-  summary: 'Defines the target that the generated code will be generated for.
+  summary: 'Target runtime library for the generated code.
 
-    Supported values are *"pandas"* and *"pyspark"*. Default is *"pandas"*.
+
+    Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.
 
     '
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadCsvBuilder.target
 references:
+- fullName: prose.codeaccelerator.ReadCsvBuilder.filename
+  isExternal: false
+  name: filename
+  parent: prose.codeaccelerator.ReadCsvBuilder
+  uid: prose.codeaccelerator.ReadCsvBuilder.filename
 - fullName: prose.codeaccelerator.ReadCsvBuilder.learn
   isExternal: false
   name: learn
   parent: prose.codeaccelerator.ReadCsvBuilder
   uid: prose.codeaccelerator.ReadCsvBuilder.learn
+- fullName: prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze
+  isExternal: false
+  name: lines_to_analyze
+  parent: prose.codeaccelerator.ReadCsvBuilder
+  uid: prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze
 - fullName: prose.codeaccelerator.ReadCsvBuilder.target
   isExternal: false
   name: target

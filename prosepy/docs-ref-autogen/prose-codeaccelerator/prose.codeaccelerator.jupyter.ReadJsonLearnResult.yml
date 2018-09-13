@@ -12,6 +12,18 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: ReadJsonLearnResult
+  summary: 'Thin wrapper around @prose.codeaccelerator.ReadJsonLearnResult. See the
+    base class for additional details on parameters, methods, and properties.
+
+
+    The result from attempting to learn a program for JSON reading.
+
+
+    (The result of calling @prose.codeaccelerator.ReadJsonBuilder.learn.)
+
+    Only intended to be called internally.
+
+    '
   syntax:
     content: ReadJsonLearnResult(filename, result)
   type: class

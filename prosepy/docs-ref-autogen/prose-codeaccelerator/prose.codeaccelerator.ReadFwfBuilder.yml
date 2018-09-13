@@ -2,7 +2,9 @@
 api_name: []
 items:
 - children:
+  - prose.codeaccelerator.ReadFwfBuilder.filename
   - prose.codeaccelerator.ReadFwfBuilder.learn
+  - prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
   - prose.codeaccelerator.ReadFwfBuilder.schema
   - prose.codeaccelerator.ReadFwfBuilder.schema_filename
   - prose.codeaccelerator.ReadFwfBuilder.target
@@ -27,22 +29,41 @@ items:
 
 
 
+
+
     '
   syntax:
     content: ReadFwfBuilder(filename, schema_filename=None)
     parameters:
-    - description: 'Model file for reading.
+    - description: 'A path to the input file to learn from.
 
         '
       id: filename
-    - description: 'The schema file to use for learning.  The schema contains a table
+      type:
+      - str
+    - description: 'An optional path to the fixed-width schema file to use for learning.
+        The schema is expected to
 
-        with column metadata about the table in the fixed-width file.
+        contain a table with column metadata about the table in the fixed-width file.
 
         '
       id: schema_filename
+      type:
+      - str
   type: class
   uid: prose.codeaccelerator.ReadFwfBuilder
+- class: prose.codeaccelerator.ReadFwfBuilder
+  fullName: prose.codeaccelerator.ReadFwfBuilder.filename
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: filename
+  summary: 'Path to the input file to learn from.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfBuilder.filename
 - class: prose.codeaccelerator.ReadFwfBuilder
   fullName: prose.codeaccelerator.ReadFwfBuilder.learn
   langs:
@@ -56,15 +77,33 @@ items:
   syntax:
     content: learn()
     parameters: []
+    return:
+      description: 'The result of learning.
+
+        '
+      type:
+      - prose.codeaccelerator.ReadFwfLearnResult.
   type: method
   uid: prose.codeaccelerator.ReadFwfBuilder.learn
+- class: prose.codeaccelerator.ReadFwfBuilder
+  fullName: prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: lines_to_analyze
+  summary: 'Number of lines of the input file that should be used during learning.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
 - class: prose.codeaccelerator.ReadFwfBuilder
   fullName: prose.codeaccelerator.ReadFwfBuilder.schema
   langs:
   - python
   module: prose.codeaccelerator
   name: schema
-  summary: 'The schema text to be used for learning.
+  summary: 'Schema text to be used for learning.
 
     '
   syntax: {}
@@ -76,7 +115,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: schema_filename
-  summary: 'The schema file to be used for learning.
+  summary: 'Schema file to be used for learning.
 
     '
   syntax: {}
@@ -88,20 +127,31 @@ items:
   - python
   module: prose.codeaccelerator
   name: target
-  summary: 'Defines the target that the generated code will be generated for.
+  summary: 'Target runtime library for the generated code.
 
-    Supported values are *"pandas"* and *"pyspark"*. Default is *"pandas"*.
+
+    Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.
 
     '
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadFwfBuilder.target
 references:
+- fullName: prose.codeaccelerator.ReadFwfBuilder.filename
+  isExternal: false
+  name: filename
+  parent: prose.codeaccelerator.ReadFwfBuilder
+  uid: prose.codeaccelerator.ReadFwfBuilder.filename
 - fullName: prose.codeaccelerator.ReadFwfBuilder.learn
   isExternal: false
   name: learn
   parent: prose.codeaccelerator.ReadFwfBuilder
   uid: prose.codeaccelerator.ReadFwfBuilder.learn
+- fullName: prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
+  isExternal: false
+  name: lines_to_analyze
+  parent: prose.codeaccelerator.ReadFwfBuilder
+  uid: prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
 - fullName: prose.codeaccelerator.ReadFwfBuilder.schema
   isExternal: false
   name: schema

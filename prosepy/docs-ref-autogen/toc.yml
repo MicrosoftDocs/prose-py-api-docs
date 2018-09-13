@@ -1,6 +1,13 @@
 - items:
   - items:
     - items:
+      - name: prose.codeaccelerator.exceptions.LearnError
+        uid: prose.codeaccelerator.exceptions.LearnError
+      - name: prose.codeaccelerator.exceptions.ProseException
+        uid: prose.codeaccelerator.exceptions.ProseException
+      name: prose.codeaccelerator.exceptions
+      uid: prose.codeaccelerator.exceptions
+    - items:
       - name: prose.codeaccelerator.jupyter.DetectTypesBuilder
         uid: prose.codeaccelerator.jupyter.DetectTypesBuilder
       - name: prose.codeaccelerator.jupyter.DetectTypesLearnResult

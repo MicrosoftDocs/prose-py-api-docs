@@ -14,6 +14,18 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: ReadFwfLearnResult
+  summary: 'Thin wrapper around @prose.codeaccelerator.ReadFwfLearnResult. See the
+    base class for additional details on parameters, methods, and properties.
+
+
+    The result from attempting to learn a program for fixed-width file reading.
+
+
+    (The result of calling @prose.codeaccelerator.ReadFwfBuilder.learn.)
+
+    Only intended to be called internally.
+
+    '
   syntax:
     content: ReadFwfLearnResult(filename, result)
   type: class

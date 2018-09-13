@@ -12,12 +12,20 @@ items:
   - prose.codeaccelerator.DetectTypesLearnResult
   - prose.codeaccelerator.FindPatternsBuilder
   - prose.codeaccelerator.FindPatternsLearnResult
+  - prose.codeaccelerator.exceptions
   - prose.codeaccelerator.jupyter
   fullName: prose.codeaccelerator
   langs:
   - python
   module: prose.codeaccelerator
   name: codeaccelerator
+  summary: 'This package contains the PROSE code acceleration SDK. Code Accelerator
+
+    uses the power of PROSE to quickly and accurately produce Python code for
+
+    data preparation tasks--making you faster and more productive.
+
+    '
   type: package
   uid: prose.codeaccelerator
 references:
@@ -71,6 +79,11 @@ references:
   name: FindPatternsLearnResult
   parent: prose.codeaccelerator
   uid: prose.codeaccelerator.FindPatternsLearnResult
+- fullName: prose.codeaccelerator.exceptions
+  isExternal: false
+  name: exceptions
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.exceptions
 - fullName: prose.codeaccelerator.jupyter
   isExternal: false
   name: jupyter

@@ -27,7 +27,17 @@ items:
   syntax:
     content: DetectTypesBuilder(data)
     parameters:
-    - description: 'A list-like or a dict object with string-valued data values.
+    - description: 'A data collection with string-valued data values. The type can
+        be
+
+        either a pandas dataframe, a dictionary mapping column names to lists of strings,
+        or just
+
+        an iterable of strings. In the first two cases, the data types are detected
+        separately for
+
+        each column and in the final case, a single data type is detected for the
+        values in the list.
 
         '
       id: data
@@ -39,7 +49,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn
-  summary: 'Infer the datatypes in the provided data.
+  summary: 'Infer the data types in the provided data.
 
     '
   syntax:
@@ -61,7 +71,10 @@ items:
   - python
   module: prose.codeaccelerator
   name: nrows
-  summary: 'The number of rows to analyze while detecting datatypes.
+  summary: 'Number of rows to analyze while detecting data types.
+
+
+    The value *None*, which is the default, means all rows are analyzed.
 
     '
   syntax: {}
@@ -73,7 +86,8 @@ items:
   - python
   module: prose.codeaccelerator
   name: target
-  summary: 'Defines the target that the generated code will be generated for.
+  summary: 'Target runtime library for the generated code.
+
 
     Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.
 
