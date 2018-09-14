@@ -16,6 +16,10 @@ items:
   - python
   module: prose.codeaccelerator.exceptions
   name: LearnError
+  summary: 'An error occurred during learning.
+
+    '
+  syntax: {}
   type: class
   uid: prose.codeaccelerator.exceptions.LearnError
 references: []
