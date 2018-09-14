@@ -5,7 +5,6 @@ items:
   - prose.codeaccelerator.ReadFwfBuilder.filename
   - prose.codeaccelerator.ReadFwfBuilder.learn
   - prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
-  - prose.codeaccelerator.ReadFwfBuilder.schema
   - prose.codeaccelerator.ReadFwfBuilder.schema_filename
   - prose.codeaccelerator.ReadFwfBuilder.target
   class: prose.codeaccelerator.ReadFwfBuilder
@@ -24,7 +23,6 @@ items:
   name: ReadFwfBuilder
   summary: 'A builder for specifying constraints in order to learn code for reading
     a fixed-width file into a table.
-
 
 
 
@@ -98,18 +96,6 @@ items:
   type: attribute
   uid: prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
 - class: prose.codeaccelerator.ReadFwfBuilder
-  fullName: prose.codeaccelerator.ReadFwfBuilder.schema
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: schema
-  summary: 'Schema text to be used for learning.
-
-    '
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadFwfBuilder.schema
-- class: prose.codeaccelerator.ReadFwfBuilder
   fullName: prose.codeaccelerator.ReadFwfBuilder.schema_filename
   langs:
   - python
@@ -152,11 +138,6 @@ references:
   name: lines_to_analyze
   parent: prose.codeaccelerator.ReadFwfBuilder
   uid: prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze
-- fullName: prose.codeaccelerator.ReadFwfBuilder.schema
-  isExternal: false
-  name: schema
-  parent: prose.codeaccelerator.ReadFwfBuilder
-  uid: prose.codeaccelerator.ReadFwfBuilder.schema
 - fullName: prose.codeaccelerator.ReadFwfBuilder.schema_filename
   isExternal: false
   name: schema_filename
