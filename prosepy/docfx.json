@@ -33,7 +33,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-conceptual",
-        "dest": "api/overview/prose",
+        "dest": "api/overview/azure/prose",
         "version": "azure-accelerator-py",
         "exclude": [
           "**/obj/**",
@@ -57,7 +57,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-joined",
-        "dest": "api/overview/prose",
+        "dest": "api/overview/azure/prose",
         "version": "azure-accelerator-py"
       }
     ],
