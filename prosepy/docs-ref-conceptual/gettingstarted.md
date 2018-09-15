@@ -6,13 +6,14 @@ ms.service: prose-codeaccelerator
 ---
 
 # Getting Started
-```
+
+```bash
 pip install prose-codeaccelerator --extra-index-url https://prose-python-packages.azurewebsites.net
 ```
 
 If using Jupyter notebook, you must also enable the corresponding extension:
 
-```
+```bash
 jupyter nbextension enable --py prose.codeaccelerator.jupyter
 ```
 

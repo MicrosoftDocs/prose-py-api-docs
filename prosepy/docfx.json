@@ -7,7 +7,7 @@
           "**/toc.yml"
         ],
         "src": "docs-ref-autogen",
-        "dest": "azprose_py_toc",
+        "dest": "api/azprose_py_toc",
         "version": "azure-accelerator-py"
       },
       {
@@ -57,7 +57,7 @@
           "**/*.yml"
         ],
         "src": "docs-ref-joined",
-        "dest": "api/overview",
+        "dest": "api/overview/prose",
         "version": "azure-accelerator-py"
       }
     ],

@@ -69,10 +69,10 @@ def read_json(file):
                    col("name.last").alias("name.last"),
                    col("phone").alias("phone"))
     return df
-    
 ```
 
 ### Read Array JSON
+
 ```python
 >>> with open('array.json', 'r') as f:
         print f.read()
@@ -125,10 +125,10 @@ def read_json(file):
                    col("name.last").alias("name.last"),
                    col("phone").alias("phone"))
     return df
-
 ```
 
 ### Read Line-Delimited JSON
+
 ```python
 >>> with open('delimited.json', 'r') as f:
         print f.read()
@@ -166,10 +166,10 @@ def read_json(file):
                    col("name.last").alias("name.last"),
                    col("phone").alias("phone"))
     return df
-
 ```
 
 ### Read Split-Array JSON
+
 ```python
 >>> with open('split.json', 'r') as f:
         print f.read()
@@ -236,11 +236,10 @@ def read_json(file):
                    col("code.rgba")[3].alias("code.rgba.3"),
                    col("code.hex").alias("code.hex"))
     return df
-
 ```
 
-
 ### Read Nested-Arrays JSON
+
 ```python
 >>> with open('nested.json', 'r') as f:
         print f.read()
@@ -325,7 +324,9 @@ def read_json(file):
 ```
 
 ### Read Nested-Arrays JSON (2)
+
 The array elements in `"phone"` are nested objects, which requires an additional call to `json_normalize` to flatten.
+
 ```python
 >>> with open('nested2.json', 'r') as f:
         print f.read()
@@ -413,7 +414,6 @@ def read_json(file):
                    col("phone_explode.number.number2").alias("phone.number.number2"))
     df = df.drop("phone_explode")
     return df
-
 ```
 
 ### Read Multiple-Arrays JSON
@@ -466,7 +466,6 @@ def read_json(file):
                    col("addresses").alias("addresses"),
                    col("phone").alias("phone"))
     return df
-
 ```
 
 ### Read Single Top Array JSON
@@ -529,5 +528,4 @@ def read_json(file):
                    col("top_explode.phone").alias("top.phone"))
     df = df.drop("top_explode")
     return df
-
 ```
