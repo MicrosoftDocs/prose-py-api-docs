@@ -82,7 +82,9 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/toc.yml"
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/MachineLearning-Python-Feedback"
     },
     "fileMetadata": {
       "ms.topic": {
