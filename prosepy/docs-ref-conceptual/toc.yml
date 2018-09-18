@@ -3,16 +3,18 @@
   items:
   - name: Overview
     href: overview.md
-  - name: Read a CSV File
-    href: readcsv.md
-  - name: Read a Fixed-width File
-    href: readfixedwidth.md
-  - name: Read a JSON File
-    href: readjson.md
-  - name: Fix Data Types
-    href: fixdatatypes.md
-  - name: Find Patterns in Strings
-    href: findpatterns.md
+  - name: How-to guides
+    items:
+    - name: Read a CSV File
+      href: readcsv.md
+    - name: Read a Fixed-width File
+      href: readfixedwidth.md
+    - name: Read a JSON File
+      href: readjson.md
+    - name: Fix Data Types
+      href: fixdatatypes.md
+    - name: Find Patterns in Strings
+      href: findpatterns.md
   - name: Known Issues
-      href: knownissues.md
+    href: knownissues.md
   
