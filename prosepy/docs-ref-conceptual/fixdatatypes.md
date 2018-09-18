@@ -1,6 +1,6 @@
 ---
 title: Fix Data Types
-ms.date: 08/30/2018
+ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---

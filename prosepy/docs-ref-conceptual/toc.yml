@@ -3,8 +3,6 @@
   items:
   - name: Overview
     href: overview.md
-  - name: Getting Started
-    href: gettingstarted.md
   - name: Read a CSV File
     href: readcsv.md
   - name: Read a Fixed-width File
@@ -15,3 +13,6 @@
     href: fixdatatypes.md
   - name: Find Patterns in Strings
     href: findpatterns.md
+  - name: Known Issues
+      href: knownissues.md
+  
