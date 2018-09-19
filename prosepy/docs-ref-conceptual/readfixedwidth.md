@@ -46,7 +46,8 @@ The following examples assume `import prose.codeaccelerator as cx`.
 
 ### Read a fixed-width file using a provided schema file
 
-> **Note:** Assume that `'schema.txt'` contains the schema from the previous example.
+> [!NOTE]
+> Assume that `'schema.txt'` contains the schema from the previous example.
 
 ```python
 >>> b = cs.ReadFwBuilder('some_file.txt', 'schema.txt')
