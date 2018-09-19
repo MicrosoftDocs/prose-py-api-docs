@@ -12,6 +12,8 @@ could be delimited other ways) and determine all the details about that file nec
 produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
 the beginning of the file, etc.
 
+The `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data. It is recommended to use `DetectTypesBuilder` to detect and fix the datatypes after reading the file. 
+
 ## Usage
 
 ``` python
