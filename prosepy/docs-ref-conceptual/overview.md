@@ -1,3 +1,4 @@
+
 ---
 title: Overview
 ms.date: 08/30/2018
@@ -57,7 +58,10 @@ task.  The `ReadCsvBuilder`, for instance, will produce a `read_file` function t
 format as the file passed to the builder, while the `DetectTypesBuilder` will produce a `coerce_types` function that
 takes a dataframe of the same form as what was originally passed to the builder.
 
-
+> [!NOTE]
+> Calling the generated function with data having different schema may result in errors. For example, calling the generated `coerce_types` function with a dataframe that has a different schema than what was used to generate the function will likely fail.
+ 
+ 
 ## The `data()` method on learn result
 This method is intended to give a quick look at what the generated code will do.  For the input originally given to the
 builder, it will show what the output of running the generated code would be.  This way you can see if the code does
