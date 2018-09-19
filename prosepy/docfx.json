@@ -8,7 +8,7 @@
         ],
         "src": "docs-ref-autogen",
         "dest": "api/azprose_py_toc",
-        "version": "azure-accelerator-py"
+        "version": "prose-py-latest"
       },
       {
         "files": [
@@ -16,7 +16,7 @@
         ],
         "src": "docs-ref-autogen",
         "dest": "api",
-        "version": "azure-accelerator-py",
+        "version": "prose-py-latest",
         "exclude": [
           "**/toc.yml",
           "**/obj/**",
@@ -34,7 +34,7 @@
         ],
         "src": "docs-ref-conceptual",
         "dest": "api/overview/azure/prose",
-        "version": "azure-accelerator-py",
+        "version": "prose-py-latest,
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -46,7 +46,7 @@
         ],
         "src": "breadcrumb",
         "dest": "azprose_py_breadcrumb",
-        "version": "azure-accelerator-py",
+        "version": "prose-py-latest",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -58,7 +58,7 @@
         ],
         "src": "docs-ref-joined",
         "dest": "api/overview/azure/prose",
-        "version": "azure-accelerator-py"
+        "version": "prose-py-latest"
       }
     ],
     "resource": [
@@ -67,7 +67,7 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "version": "azure-accelerator-py",
+        "version": "prose-py-latest",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -75,8 +75,8 @@
       }
     ],
     "versions": {
-      "azure-accelerator-py": {
-        "dest": "azure-accelerator-py"
+      "prose-py-latest": {
+        "dest": "prose-py-latest"
       }
     },
     "overwrite": [],
@@ -92,10 +92,10 @@
       },
       "monikers":
       {
-        "docs-ref-autogen/**": [ "azure-accelerator-py" ],
-        "docs-ref-conceptual/**" : [ "azure-accelerator-py" ],
-        "breadcrumb/**": [ "azure-accelerator-py" ],
-        "docs-ref-joined/**": [ "azure-accelerator-py" ]
+        "docs-ref-autogen/**": [ "prose-py-latest" ],
+        "docs-ref-conceptual/**" : [ "prose-py-latest" ],
+        "breadcrumb/**": [ "prose-py-latest" ],
+        "docs-ref-joined/**": [ "prose-py-latest" ]
       }
     },
     "template": [],
