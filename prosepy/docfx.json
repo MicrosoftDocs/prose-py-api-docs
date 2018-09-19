@@ -34,7 +34,7 @@
         ],
         "src": "docs-ref-conceptual",
         "dest": "api/overview/azure/prose",
-        "version": "prose-py-latest,
+        "version": "prose-py-latest",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
