@@ -1,28 +1,25 @@
 ---
-title: Fix Data Types
+title: Fix data types
 ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
 
-# Fix Data Types
+# Fix data types
 
 One common pain point when working with data in python is that often values
-in columns in a data frame are often incorrectly given string as their
-datatype.  An entire column may consist of numbers or dates but with values
-that are actually typed as strings which prevents doing logical operations
-on them.  `DetectTypesBuilder` will examine data and, if appropriate,
-produce code to transform the types.  While the underlying pandas and
+in columns in a dataframe are stored as strings whereas they should be numbers or dates. This prevents doing logical operations
+on those columns.  `DetectTypesBuilder` will examine data and, if appropriate,
+produce code to transform the data to correct types.  While the underlying pandas and
 pyspark libraries in some cases have the ability to infer data types from
 strings, often the results are less than ideal: the set of supported
 formats is often small. Further, these inference techniques usually fail
 completely if a column of data consists of values formatted in more than
 one way.
 
-The data type detection features in the PROSE Python SDK come in handy in
+The data type detection features in the PROSE Code Accelerator come in handy in
 such scenarios. Not only does the data type detection convert data into the
-appropriate data type, the process is completely transparent. A user has
-the option to generate code for the datatype transformation/conversion. A
+appropriate data type, the process is completely transparent. After generating code for the data type transformation/conversion, 
 user can then inspect or modify the code as desired: the system is no
 longer a magical black-box.
 
@@ -67,8 +64,7 @@ with commas as the thousands separator, one without, and the last format
 uses the scientific notation. With so much heterogeneity in the data,
 pandas is unable to automatically convert to the right data types.
 
-To convert the columns into the right datatypes, we can simply use the data
-type detection APIs in the PROSE Python SDK:
+To convert the columns into the right data types, we can simply use the data type detection APIs in the PROSE Python SDK:
 
 ```python
 builder = cx.DetectTypesBuilder(df)
@@ -125,7 +121,7 @@ def _parse_value_from_Date(value):
         return datetime.datetime.strptime(value, '%Y_%m_%d').date()
     except ValueError:
         pass
-    # We didn't encounter a value formatted like this when the datatype detection was performed.
+    # We didn't encounter a value formatted like this when the data type detection was performed.
     raise Exception('Unhandled case in type conversion for column %s: \'%s\'' % ('Date', value))
 
 def _parse_value_from_Value(value):
@@ -146,7 +142,7 @@ def _parse_value_from_Value(value):
         value = value.replace(',', '')
         return -float(value)
 
-    # We didn't encounter a value formatted like this when the datatype detection was performed.
+    # We didn't encounter a value formatted like this when the data type detection was performed.
     raise Exception('Unhandled case in type conversion for column %s: \'%s\'' % ('Value', value))
 
 def coerce_types(df):
@@ -165,11 +161,11 @@ The data type detection APIs accept the following three forms of input: (1) A
 simple list, (2) a dictionary with string-valued keys and lists of strings
 as values, or (3) a pandas DataFrame with string-valued column identifiers.
 
-A user may also specify the target for code generation. The datatype
+A user may also specify the target for code generation. The data type
 detection API can generate code that can transform data contained in
 (1) a list, (2) a dictionary, (3) a pandas DataFrame, or (4) a pyspark
 DataFrame. Note that using a pyspark DataFrame as input is not supported. A
-user may manually sample data from the pyspark data frame into a
+user may manually sample data from the pyspark dataframe into a
 dictionary, or a pandas DataFrame. This sampled data may then be used as
 input to learn the data type transformation that can then be applied on the
 pyspark DataFrame.
