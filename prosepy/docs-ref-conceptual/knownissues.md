@@ -18,8 +18,14 @@ working to fix them in a future release.  If you encounter issues not on this li
 
 ### Pyspark:
 - Calling `ReadFwfLearnResult.data()` for a file with `\r\n` or `\r` line separators will cause `NameError: name
-  'StringType' is not defined` exception.  A simple workaround is to use the command `from pyspark.sql.types import
-  StringType` to force import of `StringType`. 
+  'StringType' is not defined` exception.  As a workaround, add the following code to your session:
+  ```python
+  import prose.codeaccelerator as cx
+  from pyspark.sql.types import StringType
+
+  cx._functions.StringType = StringType
+  ```
+
   
 ## ReadJsonBuilder
 - Only UTF-8 encoded files are supported.
@@ -30,7 +36,7 @@ working to fix them in a future release.  If you encounter issues not on this li
   fixed since pandas 0.23.2, but Azure Data Studio uses pandas 0.22.0
 
 - If the json has a single object of object of array. For instance,
-  ```
+  ```json
   {
       "name": "alan smith",
       "info": {
