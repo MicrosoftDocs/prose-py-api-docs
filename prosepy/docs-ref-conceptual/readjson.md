@@ -7,7 +7,7 @@ ms.service: prose-codeaccelerator
 
 # Read a JSON File
 
-The `ReadJsonBuilder` will produce code to turn a json file into a flat table for use in a data_frame.
+The `ReadJsonBuilder` will produce code to read a json file into a dataframe.
 
 ## Usage
 
@@ -27,9 +27,9 @@ All examples assume `import prose.codeaccelerator as cx`.
 
 ### Read Object JSON
 
-```python
->>> with open('object.json', 'r') as f:
-        print f.read()
+Content of object.json file:
+
+```json
 {
   "name": {
     "first": "Carrie",
@@ -37,7 +37,9 @@ All examples assume `import prose.codeaccelerator as cx`.
   },
   "phone": "123-456-7890"
 }
+```
 
+```python
 >>> b = cx.ReadJsonBuilder('object.json')
 >>> r = b.learn()
 >>> r.data()
@@ -73,9 +75,9 @@ def read_json(file):
 
 ### Read Array JSON
 
-```python
->>> with open('array.json', 'r') as f:
-        print f.read()
+Content of array.json file:
+
+```json
 [
     {
         "name": {
@@ -92,7 +94,9 @@ def read_json(file):
         "phone": "789-012-3456"
     }
 ]
+```
 
+```python
 >>> b = cx.ReadJsonBuilder('array.json')
 >>> r = b.learn()
 >>> r.data()
@@ -129,12 +133,14 @@ def read_json(file):
 
 ### Read Line-Delimited JSON
 
-```python
->>> with open('delimited.json', 'r') as f:
-        print f.read()
+Content of delimited.json file:
+
+```json
 {"name":{"first":"Carrie","last":"Dodson"},"phone":"123-456-7890"}
 {"name":{"first":"Leonard","last":"Robledo"},"phone":"789-012-3456"}
+```
 
+```python
 >>> b = cx.ReadJsonBuilder('delimited.json')
 >>> r = b.learn()
 >>> r.data()
@@ -170,9 +176,8 @@ def read_json(file):
 
 ### Read Split-Array JSON
 
-```python
->>> with open('split.json', 'r') as f:
-        print f.read()
+Content of split.json file:
+```json
 [
     {
         "color": "black",
@@ -192,6 +197,9 @@ def read_json(file):
         }
     }
 ]
+```
+
+```python
 >>> b = cx.ReadJsonBuilder('split.json')
 >>> r = b.learn()
 >>> r.data()
@@ -240,9 +248,8 @@ def read_json(file):
 
 ### Read Nested-Arrays JSON
 
-```python
->>> with open('nested.json', 'r') as f:
-        print f.read()
+Content of nested.json file:
+```json
 [
     {
         "name": {
@@ -277,7 +284,9 @@ def read_json(file):
         ]
     }
 ]
+```
 
+```python
 >>> b = cx.ReadJsonBuilder('nested.json')
 >>> r = b.learn()
 >>> r.data()
@@ -327,9 +336,8 @@ def read_json(file):
 
 The array elements in `"phone"` are nested objects, which requires an additional call to `json_normalize` to flatten.
 
-```python
->>> with open('nested2.json', 'r') as f:
-        print f.read()
+Content of nested2.json:
+```json
 [
     {
         "name": {
@@ -369,7 +377,9 @@ The array elements in `"phone"` are nested objects, which requires an additional
         ]
     }
 ]
+```
 
+```python
 >>> b = cx.ReadJsonBuilder('nested2.json')
 >>> r = b.learn()
 >>> r.data()
@@ -420,9 +430,8 @@ def read_json(file):
 
 If there are multiple top-level arrays, we preserve these arrays because joining them would have caused exponential blow-up.
 
-```python
->>> with open('multiple.json', 'r') as f:
-        print f.read()
+Content of multiple.json:
+```json
 {
     "name": "Carrie Dodson",
     "addresses": [
@@ -434,7 +443,9 @@ If there are multiple top-level arrays, we preserve these arrays because joining
         "202-555-0103"
     ]
 }
+```
 
+```python
 >>> b = cx.ReadJsonBuilder('multiple.json')
 >>> r = b.learn()
 >>> r.data()
@@ -472,9 +483,8 @@ def read_json(file):
 
 If the JSON has this pattern `{"key_1": ... {"key_n" : [ ... ]} ... }` we only need to flatten the top array `d["key_1"]...["key_n"]`.
 
-```python
->>> with open('top.json', 'r') as f:
-        print f.read()
+Content of top.json file:
+```json
 {
     "top": [
         {
@@ -493,7 +503,9 @@ If the JSON has this pattern `{"key_1": ... {"key_n" : [ ... ]} ... }` we only n
         }
     ]
 }
+```
 
+```python
 >>> b = cx.ReadJsonBuilder('top.json')
 >>> r = b.learn()
 >>> r.data()
