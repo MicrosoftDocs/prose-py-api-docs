@@ -27,7 +27,7 @@ All examples assume `import prose.codeaccelerator as cx`.
 
 ### Read Object JSON
 
-Content of object.json file:
+Content of object.json:
 
 ```json
 {
@@ -38,6 +38,7 @@ Content of object.json file:
   "phone": "123-456-7890"
 }
 ```
+Using `ReadJsonBuilder` to generate code to read object.json
 
 ```python
 >>> b = cx.ReadJsonBuilder('object.json')
@@ -75,7 +76,7 @@ def read_json(file):
 
 ### Read Array JSON
 
-Content of array.json file:
+Content of array.json:
 
 ```json
 [
@@ -95,6 +96,7 @@ Content of array.json file:
     }
 ]
 ```
+Using `ReadJsonBuilder` to generate code to read array.json
 
 ```python
 >>> b = cx.ReadJsonBuilder('array.json')
@@ -133,12 +135,13 @@ def read_json(file):
 
 ### Read Line-Delimited JSON
 
-Content of delimited.json file:
+Content of delimited.json:
 
 ```json
 {"name":{"first":"Carrie","last":"Dodson"},"phone":"123-456-7890"}
 {"name":{"first":"Leonard","last":"Robledo"},"phone":"789-012-3456"}
 ```
+Using `ReadJsonBuilder` to generate code to read delimited.json
 
 ```python
 >>> b = cx.ReadJsonBuilder('delimited.json')
@@ -176,7 +179,7 @@ def read_json(file):
 
 ### Read Split-Array JSON
 
-Content of split.json file:
+Content of split.json:
 ```json
 [
     {
@@ -198,7 +201,7 @@ Content of split.json file:
     }
 ]
 ```
-
+Using `ReadJsonBuilder` to generate code to read split.json
 ```python
 >>> b = cx.ReadJsonBuilder('split.json')
 >>> r = b.learn()
@@ -248,7 +251,7 @@ def read_json(file):
 
 ### Read Nested-Arrays JSON
 
-Content of nested.json file:
+Content of nested.json:
 ```json
 [
     {
@@ -285,7 +288,7 @@ Content of nested.json file:
     }
 ]
 ```
-
+Using `ReadJsonBuilder` to generate code to read nested.json
 ```python
 >>> b = cx.ReadJsonBuilder('nested.json')
 >>> r = b.learn()
@@ -378,7 +381,7 @@ Content of nested2.json:
     }
 ]
 ```
-
+Using `ReadJsonBuilder` to generate code to read nested2.json
 ```python
 >>> b = cx.ReadJsonBuilder('nested2.json')
 >>> r = b.learn()
@@ -444,7 +447,7 @@ Content of multiple.json:
     ]
 }
 ```
-
+Using `ReadJsonBuilder` to generate code to read multiple.json
 ```python
 >>> b = cx.ReadJsonBuilder('multiple.json')
 >>> r = b.learn()
@@ -504,7 +507,7 @@ Content of top.json file:
     ]
 }
 ```
-
+Using `ReadJsonBuilder` to generate code to read top.json
 ```python
 >>> b = cx.ReadJsonBuilder('top.json')
 >>> r = b.learn()
