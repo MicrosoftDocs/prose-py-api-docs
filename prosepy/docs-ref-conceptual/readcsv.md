@@ -12,7 +12,7 @@ could be delimited other ways) and determine all the details about that file nec
 produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
 the beginning of the file, etc.
 
-# Usage
+## Usage
 
 ``` python
 import prose.codeaccelerator as cx
@@ -24,11 +24,11 @@ result.data(5) # examine top 5 rows to see if they look correct
 result.code() # generate the code in the target
 ```
 
-# Examples
+## Examples
 
 All examples assume `import prose.codeaccelerator as cx`.
 
-## Read a CSV using pyspark
+### Read a CSV using pyspark
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')
@@ -58,7 +58,7 @@ def read_file(file):
 
 ```
 
-## Specify the number of lines to analyze
+### Specify the number of lines to analyze
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')
