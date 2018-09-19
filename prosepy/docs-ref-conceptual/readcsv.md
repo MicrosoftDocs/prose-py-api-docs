@@ -31,7 +31,7 @@ result.code() # generate the code in the target
 > [!NOTE]
 > All examples assume `import prose.codeaccelerator as cx`.
 
-## Example: Read a CSV using pyspark
+## Read CSV - pyspark
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')
@@ -61,7 +61,7 @@ def read_file(file):
 
 ```
 
-## Example: Specify the number of lines to analyze
+## Specify number of lines to analyze
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')

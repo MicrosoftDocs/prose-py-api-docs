@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
 
-# Code Accelerator Overview
+# PROSE Code Accelerator Overview
 
 Code accelerator uses program synthesis to generate code for common data preparation tasks.  The current release focuses
 on data ingestion, data type correction and determining patterns in string data.  Future releases will bring additional
@@ -26,10 +26,10 @@ on Code Accelerator.  You can modify or extend the code, copy it into another sy
 
 Code accelerator contains a series of classes which all follow the same pattern:
 
-Interactions with Code Accelerator all start with a builder which is the object that will build code for you.  We have
+Interactions with Code Accelerator start with a builder which is the object that will build code for you.  There are
 builders for reading delimited files (`ReadCsvBuilder`), reading fixed width files (`ReadFwfBuilder`), reading JSON
-files (`ReadJsonBuilder`), detecting data types (`DetectTypeBuilder`) and finding patterns (`FindPatternsBuilder`).  In
-each case the overall interaction is the same:
+files (`ReadJsonBuilder`), detecting data types (`DetectTypeBuilder`) and finding patterns in strings
+(`FindPatternsBuilder`).  In each case the interaction is the same:
 
 ```
         init           learn               code
@@ -46,8 +46,8 @@ each case the overall interaction is the same:
 3. Learn.
 4. Review the resulting data and code.
 5. Return to step 2 and repeat as necessary until the results are correct.
-6. Take the code and use it independently from Code Accelerator--Code Accelerator itself is just a   
-   tool, it's not required at runtime.
+6. Take the code and use it independently from Code Accelerator--Code Accelerator itself is just a tool, it is not
+   required at runtime.
 
 
 ## About the `code()` method on learn result
@@ -58,8 +58,9 @@ task.  The `ReadCsvBuilder`, for instance, will produce a `read_file` function t
 format as the file passed to the builder, while the `DetectTypesBuilder` will produce a `coerce_types` function that
 takes a dataframe of the same form as what was originally passed to the builder.
 
-> [!NOTE]
-> Calling the generated function with data having different schema may result in errors. For example, calling the generated `coerce_types` function with a dataframe that has a different schema than what was used to generate the function will likely fail.
+> [!NOTE] Calling the generated function with data having different schema may result in errors. For example, calling
+> the generated `coerce_types` function with a dataframe that has a different schema than what was used to generate the
+> function will likely fail.
  
  
 ## The `data()` method on learn result

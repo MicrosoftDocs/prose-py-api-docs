@@ -1,11 +1,11 @@
 ---
-title: Python Code Accelerator for Azure Data Studio
+title: Microsoft PROSE Code Accelerator for Python
 ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
 
-# Python Code Accelerator for Azure Data Studio
+# Microsoft PROSE Code Accelerator for Python
 
 Code Accelerator uses the power of [PROSE](https://microsoft.github.io/prose) to quickly and accurately produce Python
 code for data preparation tasks--making you faster and more productive.

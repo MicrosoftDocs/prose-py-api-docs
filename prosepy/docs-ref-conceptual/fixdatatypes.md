@@ -23,7 +23,7 @@ appropriate data type, the process is completely transparent. After generating c
 user can then inspect or modify the code as desired: the system is no
 longer a magical black-box.
 
-## Example Usage/Quickstart:
+## Usage
 
 ``` python
 import pandas
@@ -170,7 +170,7 @@ dictionary, or a pandas DataFrame. This sampled data may then be used as
 input to learn the data type transformation that can then be applied on the
 pyspark DataFrame.
 
-## Supported Data types and limitations
+## Supported types and limitations
 The data type detection APIs support detection of the following types:
 - Dates
 - Numbers (real and integer valued)

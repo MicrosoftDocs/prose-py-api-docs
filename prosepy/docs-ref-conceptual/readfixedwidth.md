@@ -42,7 +42,7 @@ Third  4       6      The rest
 
 > [!NOTE] The following examples assume `import prose.codeaccelerator as cx`.
 
-## Example: Read a fixed-width file using a provided schema file
+## Read fixed-width file with schema
 
 > [!NOTE]
 > Assume that `'schema.txt'` contains the schema from the previous example.
@@ -78,7 +78,7 @@ def read_file(file):
 
 ```
 
-## Example: Read a fixed-width file without a schema
+## Read fixed-width file without schema
 
 ```python
 >>> b = cs.ReadFwBuilder('some_file.txt')
@@ -111,7 +111,7 @@ def read_file(file):
 
 ```
 
-## Example: Read a fixed-width file using pyspark
+## Read fixed-width file - pyspark
 
 ```python
 >>> b = cs.ReadFwBuilder('some_file.txt')
@@ -138,7 +138,7 @@ def read_file(file):
 ```
 
 
-## Example: Specify the number of lines to analyze
+## Specify number of lines to analyze
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')

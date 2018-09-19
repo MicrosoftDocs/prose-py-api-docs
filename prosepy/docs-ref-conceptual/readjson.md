@@ -23,7 +23,7 @@ result.code() # generate the code in the target
 
 > [!NOTE] All examples assume `import prose.codeaccelerator as cx`.
 
-## Example: Read Object JSON
+## Read Object
 
 Content of object.json:
 
@@ -72,7 +72,7 @@ def read_json(file):
     return df
 ```
 
-## Example: Read Array JSON
+## Read Array
 
 Content of array.json:
 
@@ -131,7 +131,7 @@ def read_json(file):
     return df
 ```
 
-## Example: Read Line-Delimited JSON
+## Read Line-Delimited
 
 Content of delimited.json:
 
@@ -175,7 +175,7 @@ def read_json(file):
     return df
 ```
 
-## Example: Read Split-Array JSON
+## Read Split-Array
 
 Content of split.json:
 ```json
@@ -247,7 +247,7 @@ def read_json(file):
     return df
 ```
 
-## Example: Read Nested-Arrays JSON
+## Read Nested-Arrays
 
 Content of nested.json:
 ```json
@@ -333,7 +333,7 @@ def read_json(file):
 
 ```
 
-## Example: Read Nested-Arrays JSON (2)
+## Read Nested-Arrays (2)
 
 The array elements in `"phone"` are nested objects, which requires an additional call to `json_normalize` to flatten.
 
@@ -427,7 +427,7 @@ def read_json(file):
     return df
 ```
 
-## Example: Read Multiple-Arrays JSON
+## Read Multiple-Arrays
 
 If there are multiple top-level arrays, we preserve these arrays because joining them would have caused exponential blow-up.
 
@@ -480,7 +480,7 @@ def read_json(file):
     return df
 ```
 
-## Example: Read Single Top Array JSON
+## Read Single Top Array
 
 If the JSON has this pattern `{"key_1": ... {"key_n" : [ ... ]} ... }` we only need to flatten the top array `d["key_1"]...["key_n"]`.
 

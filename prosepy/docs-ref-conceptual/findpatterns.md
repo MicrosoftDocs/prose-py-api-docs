@@ -45,7 +45,7 @@ result.code(task=result.Tasks.check)
 result.code() # Equivalent to result.code(task=result.Tasks.classify)
 ```
 
-## Detailed Use Case: Extraction and Standardization by Format
+## Extraction and Standardization
 
 The **Find Patterns Operation** is designed not only to identify patterns in the input strings and
 cluster the given data or check the given data as per these patterns, but to also produce code that
