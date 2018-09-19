@@ -1,6 +1,6 @@
 ---
 title: Find Patterns in Strings
-ms.date: 8/30/2018
+ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
@@ -15,7 +15,7 @@ string data.  Given a set of input strings, **Find Patterns Operation** produces
 of regular expressions such that they together match all the input strings, except possibly a
 small fraction of outliers.
 
-Example Usage:
+## Usage
 
 ``` python
 import prose.codeaccelerator as cx
@@ -45,7 +45,7 @@ result.code(task=result.Tasks.check)
 result.code() # Equivalent to result.code(task=result.Tasks.classify)
 ```
 
-### Detailed Use Case: Extraction and Standardization by Format
+## Detailed Use Case: Extraction and Standardization by Format
 
 The **Find Patterns Operation** is designed not only to identify patterns in the input strings and
 cluster the given data or check the given data as per these patterns, but to also produce code that
@@ -76,7 +76,7 @@ Already, in the first 5 rows, the data looks to be in several different formats 
 handled differently. So, we need go through the data frame carefully to ensure that our processing
 functions don't assume the wrong format. Or, we can use the **Find Patterns Operation**.
 
-## Extracting Last Names
+### Extracting Last Names
 
 We sample a small number of names from the data frame and use it to seed find patterns.
 
@@ -169,7 +169,7 @@ This will produce:
 | 3 |Viachaslau Gordan Hilario |22-Apr-67      |Hilario        |
 | 4 |Maya de Villiers          |19-Mar-60      |de Villiers    |
 
-## Standardizing Birth Years
+### Standardizing Birth Years
 
 We now demonstrate a similar extraction and standardization operation for the birth years,
 but now in the pyspark environment.

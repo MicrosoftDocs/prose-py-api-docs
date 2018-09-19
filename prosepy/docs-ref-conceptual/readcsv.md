@@ -1,7 +1,7 @@
 
 ---
 title: Read a CSV file
-ms.date: 08/30/2018
+ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
@@ -13,8 +13,8 @@ could be delimited other ways) and determine all the details about that file nec
 produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
 the beginning of the file, etc.
 
-> [!NOTE]
-> The `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data. It is recommended to use `DetectTypesBuilder` to detect and fix the datatypes after reading the file. 
+> [!NOTE] The `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
+> It is recommended to use `DetectTypesBuilder` to detect and fix the datatypes after reading the file. 
 
 ## Usage
 
@@ -28,11 +28,10 @@ result.data(5) # examine top 5 rows to see if they look correct
 result.code() # generate the code in the target
 ```
 
-## Examples
+> [!NOTE]
+> All examples assume `import prose.codeaccelerator as cx`.
 
-All examples assume `import prose.codeaccelerator as cx`.
-
-### Read a CSV using pyspark
+## Example: Read a CSV using pyspark
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')
@@ -62,7 +61,7 @@ def read_file(file):
 
 ```
 
-### Specify the number of lines to analyze
+## Example: Specify the number of lines to analyze
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')

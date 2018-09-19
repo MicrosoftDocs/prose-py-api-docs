@@ -1,6 +1,6 @@
 ---
 title: Read a Fixed-Width File
-ms.date: 08/30/2018
+ms.date: 09/18/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
 ---
@@ -15,8 +15,8 @@ another, for example, there just may not be enough information to determine the 
 description does not have to be in an exact format--PROSE will do its best to locate lists of fields and their column
 ranges and use that information to generate the code.
 
-> [!NOTE]
-> The `ReadFwfBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data. It is recommended to use `DetectTypesBuilder` to detect and fix the datatypes after reading the file. 
+> [!NOTE] The `ReadFwfBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
+> It is recommended to use `DetectTypesBuilder` to detect and fix the datatypes after reading the file. 
 
 ## Usage
 
@@ -31,8 +31,6 @@ result.data(5) # examine top 5 rows to see if they look correct
 result.code() # generate the code in the target
 ```
 
-## Examples
-
 ### Example of a fixed-width schema
 
 ```
@@ -42,9 +40,9 @@ Second 3       3      The second, a singleton
 Third  4       6      The rest
 ```
 
-The following examples assume `import prose.codeaccelerator as cx`.
+> [!NOTE] The following examples assume `import prose.codeaccelerator as cx`.
 
-### Read a fixed-width file using a provided schema file
+## Example: Read a fixed-width file using a provided schema file
 
 > [!NOTE]
 > Assume that `'schema.txt'` contains the schema from the previous example.
@@ -80,7 +78,7 @@ def read_file(file):
 
 ```
 
-### Read a fixed-width file without a schema
+## Example: Read a fixed-width file without a schema
 
 ```python
 >>> b = cs.ReadFwBuilder('some_file.txt')
@@ -113,7 +111,7 @@ def read_file(file):
 
 ```
 
-### Read a fixed-width file using pyspark
+## Example: Read a fixed-width file using pyspark
 
 ```python
 >>> b = cs.ReadFwBuilder('some_file.txt')
@@ -140,7 +138,7 @@ def read_file(file):
 ```
 
 
-### Specify the number of lines to analyze
+## Example: Specify the number of lines to analyze
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')
