@@ -1,4 +1,3 @@
-
 ---
 title: Overview
 ms.date: 08/30/2018
@@ -60,7 +59,7 @@ takes a dataframe of the same form as what was originally passed to the builder.
 
 > [!NOTE] Calling the generated function with data having different schema may result in errors. For example, calling
 > the generated `coerce_types` function with a dataframe that has a different schema than what was used to generate the
-> function will likely fail.
+> function will likely fail or produce unwanted results.
  
  
 ## The `data()` method on learn result
