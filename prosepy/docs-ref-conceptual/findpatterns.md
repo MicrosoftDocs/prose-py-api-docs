@@ -5,7 +5,7 @@ ms.topic: conceptual
 ms.service: prose-codeaccelerator
 author: simmdan
 ms.author: dsimmons
-description: LEarn how to automatically identify different formats and patterns in input string data with PROSE Code Accelerator for Python.
+description: Learn how to automatically identify different formats and patterns in input string data with PROSE Code Accelerator for Python.
 ---
 
 # Find patterns in strings with Code Accelerator
