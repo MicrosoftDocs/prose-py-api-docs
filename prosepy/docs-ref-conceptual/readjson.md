@@ -1,14 +1,14 @@
 ---
-title: Read a JSON file with Code Accelerator - Python
+title: Read a JSON file with the Microsoft PROSE Code Accelerator SDK - Python
 ms.date: 09/24/2018
 ms.topic: conceptual
-ms.service: prose-codeaccelerator
+ms.service: non-product-specific
 author: simmdan
 ms.author: dsimmons
-description: Learn how to read a JSON file with PROSE Code Accelerator.
+description: Learn how to read a JSON file with the Microsoft PROSE Code Accelerator SDK for Python.
 ---
 
-# Read a JSON file with Code Accelerator
+# Read a JSON file with the Microsoft PROSE Code Accelerator SDK
 
 `ReadJsonBuilder` will produce code to read a JSON file into a dataframe.
 
@@ -40,7 +40,8 @@ Content of object.json:
   "phone": "123-456-7890"
 }
 ```
-Using `ReadJsonBuilder` to generate code to read object.json
+
+The following example uses `ReadJsonBuilder` to generate code to read object.json.
 
 ```python
 >>> b = cx.ReadJsonBuilder('object.json')
@@ -98,7 +99,8 @@ Content of array.json:
     }
 ]
 ```
-Using `ReadJsonBuilder` to generate code to read array.json
+
+The following examples uses `ReadJsonBuilder` to generate code to read array.json.
 
 ```python
 >>> b = cx.ReadJsonBuilder('array.json')
@@ -143,7 +145,8 @@ Content of delimited.json:
 {"name":{"first":"Carrie","last":"Dodson"},"phone":"123-456-7890"}
 {"name":{"first":"Leonard","last":"Robledo"},"phone":"789-012-3456"}
 ```
-Using `ReadJsonBuilder` to generate code to read delimited.json
+
+The following example uses `ReadJsonBuilder` to generate code to read delimited.json.
 
 ```python
 >>> b = cx.ReadJsonBuilder('delimited.json')
@@ -182,6 +185,7 @@ def read_json(file):
 ## Read split- array
 
 Content of split.json:
+
 ```json
 [
     {
@@ -203,7 +207,9 @@ Content of split.json:
     }
 ]
 ```
-Using `ReadJsonBuilder` to generate code to read split.json
+
+The following example uses `ReadJsonBuilder` to generate code to read split.json.
+
 ```python
 >>> b = cx.ReadJsonBuilder('split.json')
 >>> r = b.learn()
@@ -254,6 +260,7 @@ def read_json(file):
 ## Read nested arrays
 
 Content of nested.json:
+
 ```json
 [
     {
@@ -290,7 +297,9 @@ Content of nested.json:
     }
 ]
 ```
-Using `ReadJsonBuilder` to generate code to read nested.json
+
+The following example uses `ReadJsonBuilder` to generate code to read nested.json.
+
 ```python
 >>> b = cx.ReadJsonBuilder('nested.json')
 >>> r = b.learn()
@@ -342,6 +351,7 @@ def read_json(file):
 The array elements in `"phone"` are nested objects, which requires an additional call to `json_normalize` to flatten.
 
 Content of nested2.json:
+
 ```json
 [
     {
@@ -383,7 +393,9 @@ Content of nested2.json:
     }
 ]
 ```
-Using `ReadJsonBuilder` to generate code to read nested2.json
+
+The following example uses `ReadJsonBuilder` to generate code to read nested2.json.
+
 ```python
 >>> b = cx.ReadJsonBuilder('nested2.json')
 >>> r = b.learn()
@@ -433,9 +445,10 @@ def read_json(file):
 
 ## Read multiple arrays
 
-If there are multiple top-level arrays, we preserve these arrays because joining them would have caused exponential blow-up.
+If there are multiple top-level arrays, preserve these arrays because joining them would cause exponential blow-up.
 
 Content of multiple.json:
+
 ```json
 {
     "name": "Carrie Dodson",
@@ -449,7 +462,9 @@ Content of multiple.json:
     ]
 }
 ```
-Using `ReadJsonBuilder` to generate code to read multiple.json
+
+The following example uses `ReadJsonBuilder` to generate code to read multiple.json.
+
 ```python
 >>> b = cx.ReadJsonBuilder('multiple.json')
 >>> r = b.learn()
@@ -486,9 +501,10 @@ def read_json(file):
 
 ## Read single top array
 
-If the JSON has this pattern `{"key_1": ... {"key_n" : [ ... ]} ... }` we only need to flatten the top array `d["key_1"]...["key_n"]`.
+If the JSON has this pattern `{"key_1": ... {"key_n" : [ ... ]} ... }`, you only need to flatten the top array `d["key_1"]...["key_n"]`.
 
 Content of top.json file:
+
 ```json
 {
     "top": [
@@ -509,7 +525,9 @@ Content of top.json file:
     ]
 }
 ```
-Using `ReadJsonBuilder` to generate code to read top.json
+
+The following example uses `ReadJsonBuilder` to generate code to read top.json.
+
 ```python
 >>> b = cx.ReadJsonBuilder('top.json')
 >>> r = b.learn()

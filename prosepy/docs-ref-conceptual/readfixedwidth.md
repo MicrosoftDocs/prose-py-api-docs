@@ -1,14 +1,14 @@
 ---
-title: Read a fixed-width file with Code Accelerator - Python
+title: Read a fixed-width file with the Microsoft PROSE Code Accelerator SDK - Python
 ms.date: 09/24/2018
 ms.topic: conceptual
-ms.service: prose-codeaccelerator
+ms.service: non-product-specific
 author: simmdan
 ms.author: dsimmons
 description: Learn how to analyze a fixed-width file with PROSE Code Accelerator for Python.
 ---
 
-# Read a fixed-width file with Code Accelerator
+# Read a fixed-width file with the Microsoft PROSE Code Accelerator SDK
 
 `ReadFwfBuilder` will analyze a fixed-width file and produce code to split the fields yielding a dataframe.  When it is
 given only the fixed-width input file, Code Accelerator makes every effort to determine the boundaries between fields.

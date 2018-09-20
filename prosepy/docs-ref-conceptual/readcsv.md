@@ -1,14 +1,14 @@
 ---
-title: Read a CSV file with Code Accelerator - Python
+title: Read a CSV file with the Microsoft PROSE Code Accelerator SDK - Python
 ms.date: 09/24/2018
 ms.topic: conceptual
-ms.service: prose-codeaccelerator
+ms.service: non-product-specific
 author: simmdan
 ms.author: dsimmons
 description: Learn how to analyze and pare delimited files with PROSE Code Accelerator for Python.
 ---
 
-# Read a CSV file with Code Accelerator
+# Read a CSV file with the Microsoft PROSE Code Accelerator SDK
 
 `ReadCsvBuilder` will analyze a given delimited text file (that has comma-separated values, or that uses other delimiters) and determine all the details about that file necessary to successfully parse it and
 produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
