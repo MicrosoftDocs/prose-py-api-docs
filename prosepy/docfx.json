@@ -3,11 +3,22 @@
     "content": [
       {
         "files": [
-          "**/*.md",
+          "**/toc.md",
+          "**/toc.yml"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "api/azprose_py_toc",
+        "version": "prose-py-latest"
+      },
+      {
+        "files": [
           "**/*.yml"
         ],
-	"src": "docs-ref-autogen",
+        "src": "docs-ref-autogen",
+        "dest": "api",
+        "version": "prose-py-latest",
         "exclude": [
+          "**/toc.yml",
           "**/obj/**",
           "**/includes/**",
           "README.md",
@@ -16,16 +27,38 @@
           "ThirdPartyNotices"
         ]
       },
-	  {
+      {
         "files": [
+          "**/*.md",
           "**/*.yml"
         ],
-        "src": "breadcrumb",
-        "dest": "breadcrumb",
+        "src": "docs-ref-conceptual",
+        "dest": "api/overview/azure/prose",
+        "version": "prose-py-latest",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
+      },
+	    {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "breadcrumb",
+        "dest": "azprose_py_breadcrumb",
+        "version": "prose-py-latest",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
+          "**/*.yml"
+        ],
+        "src": "docs-ref-joined",
+        "dest": "api/overview/azure/prose",
+        "version": "prose-py-latest"
       }
     ],
     "resource": [
@@ -34,22 +67,41 @@
           "**/*.png",
           "**/*.jpg"
         ],
+        "version": "prose-py-latest",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
       }
     ],
+    "versions": {
+      "prose-py-latest": {
+        "dest": "prose-py-latest"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/breadcrumb/toc.yml"
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/MachineLearning-Python-Feedback"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+      "ms.topic": {
+        "docs-ref-autogen/**/*.yml": "reference"
+      },
+      "monikers":
+      {
+        "docs-ref-autogen/**": [ "prose-py-latest" ],
+        "docs-ref-conceptual/**" : [ "prose-py-latest" ],
+        "breadcrumb/**": [ "prose-py-latest" ],
+        "docs-ref-joined/**": [ "prose-py-latest" ]
+      }
+    },
     "template": [],
     "dest": "_site",
-	"xref": [
-      "../xrefmap.yml"
+    "xref": [
+        "../xrefmap.yml"
     ]
   }
 }
