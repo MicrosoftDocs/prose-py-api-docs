@@ -38,7 +38,8 @@ working to fix them in a future release.  If you encounter issues not on this li
   `TypeError: must be str, not int`. Github issue: https://github.com/pandas-dev/pandas/issues/21536. This has been
   fixed since pandas 0.23.2, but Azure Data Studio uses pandas 0.22.0
 
-- If the JSON has a single object of object of array. For instance,
+- If the JSON has a single object of object of array, for instance:
+
   ```json
   {
       "name": "alan smith",
@@ -57,7 +58,7 @@ working to fix them in a future release.  If you encounter issues not on this li
   https://github.com/pandas-dev/pandas/issues/22706
 
 ### PySpark:
-- If the JSON is an array of values (e.g., `[1, 2, 3]`). pyspark throws `AnalysisException: 'Since Spark 2.3, the
+- If the JSON is an array of values (e.g., `[1, 2, 3]`), PySpark throws `AnalysisException: 'Since Spark 2.3, the
   queries from raw JSON/CSV files are disallowed when the referenced columns only include the internal corrupt record
   column`. Note that array of objects is not affected.
 
