@@ -1,16 +1,16 @@
 ---
-title: What is Microsoft PROSE Code Accelerator for Python?
+title: What is the Microsoft PROSE Code Accelerator SDK for Python?
 ms.date: 09/24/2018
 ms.topic: conceptual
-ms.service: prose-codeaccelerator
+ms.service: non-product-specific
 author: simmdan
 ms.author: dsimmons
-description: Learn about Microsoft PROSE Code Accelerator for Python requirements and functionality.
+description: Learn about requirements and functionality of the Microsoft PROSE Code Accelerator SDK for Python.
 ---
 
-# What is Code Accelerator?
+# What is the Microsoft PROSE Code Accelerator SDK?
 
-Code accelerator uses program synthesis to generate Python code for common data preparation tasks. It includes [PROSE](https://microsoft.github.io/prose) functionality for
+The Microsoft PROSE Code Accelerator SDK uses program synthesis to generate Python code for common data preparation tasks. Code Accelerator includes [PROSE](https://microsoft.github.io/prose) functionality for
 data ingestion, data type correction, and pattern identification in string data. 
 
 
@@ -20,12 +20,12 @@ generating code for use with [pandas](https://pandas.pydata.org/) or [PySpark](h
 
 
 ## Using Code Accelerator
-The first thing to know about Code Accelerator is that it is a tool masquerading as an API. You call Code Accelerator
+The first thing to know about Code Accelerator is that it is a tool masquerading as an SDK. You call Code Accelerator
 from a Python interactive environment and it produces code for you. You can examine the results, adjust your call to
 Code Accelerator, and repeat as needed. But when you are done, you own the resulting code which has no dependencies
 on Code Accelerator. You can modify or extend the code, copy it into another system, or work with it however you need.
 
-Code accelerator contains a series of classes which all follow the same pattern:
+Code Accelerator contains a series of classes which all follow the same pattern:
 
 Interactions with Code Accelerator start with a builder, which is the object that will build code for you.  There are
 builders for reading delimited files (`ReadCsvBuilder`), reading fixed width files (`ReadFwfBuilder`), reading JSON

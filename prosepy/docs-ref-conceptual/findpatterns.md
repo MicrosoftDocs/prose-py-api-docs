@@ -1,14 +1,14 @@
 ---
-title: Find patterns in strings with Code Accelerator - Python
+title: Find patterns in strings with the Microsoft PROSE Code Accelerator SDK - Python
 ms.date: 09/24/2018
 ms.topic: conceptual
-ms.service: prose-codeaccelerator
+ms.service: non-product-specific
 author: simmdan
 ms.author: dsimmons
 description: Learn how to automatically identify different formats and patterns in input string data with PROSE Code Accelerator for Python.
 ---
 
-# Find patterns in strings with Code Accelerator
+# Find patterns in strings with the Microsoft PROSE Code Accelerator SDK
 
 Have you ever written a script to perform a string transformation and have it either crash or
 produce wrong results silently due to unexpected formats in your input data? Or do you want
@@ -36,12 +36,12 @@ result.regexes
 # produce a list of regexes corresponding to the patterns
 
 result.code(task=result.Tasks.classify)
-# produce a function that takes a data frame (pandas or pyspark, depending on
-# the target) and a column name, and returns the data frame grouped by the
+# produce a function that takes a dataframe (pandas or pyspark, depending on
+# the target) and a column name, and returns the dataframe grouped by the
 # the produced patterns in the column.
 
 result.code(task=result.Tasks.check)
-# produce a function that takes a data frame (pandas or pyspark, depending on
+# produce a function that takes a dataframe (pandas or pyspark, depending on
 # the target) and a column name, and asserts that all values in the column
 # the produced patterns in the column.
 
@@ -52,11 +52,11 @@ result.code() # Equivalent to result.code(task=result.Tasks.classify)
 
 **Find Patterns Operation** is designed not only to identify patterns in input strings and
 cluster or check the given data per these patterns, but to also produce code that
-can be easily modified to perform further operations, such as extracting relevant parts of the strings
-or normalizing the data. We illustrate these use cases.
+you can easily modify to perform further operations, such as extracting relevant parts of the strings
+or normalizing the data. This section illustrates these use cases.
 
-Suppose we have with us a `pandas` data frame having columns `Name` and `BirthDate`. We want to process
-this data frame to end up with a `LastName` and `BirthYear` column. Let us begin by eyeing the data frame.
+Suppose you have with us a `pandas` DataFrame with columns `Name` and `BirthDate`. You want to process
+this DataFrame to end up with a `LastName` and `BirthYear` column. First, review the DataFrame.
 The data and notebooks used in this use case are freely available.
 
 ```python
@@ -75,13 +75,13 @@ df.head()
 | 3 |Viachaslau Gordan Hilario |22-Apr-67      |
 | 4 |Maya de Villiers          |19-Mar-60      |
 
-Already, in the first 5 rows, the data looks to be in several different formats which all need to be
-handled differently. So, we need go through the data frame carefully to ensure that our processing
-functions don't assume the wrong format. Or, we can use the **Find Patterns Operation**.
+From the first 5 rows, you can see that the data looks is in several different formats that all must be
+handled differently. You will need go through the DataFrame carefully to ensure that the processing
+functions don't assume the wrong format. Or, you can use the **Find Patterns Operation**.
 
 ### Extracting Last Names
 
-We sample a small number of names from the data frame and use it to seed find patterns.
+Sample a small number of names from the pandas DataFrame and use it to seed find patterns.
 
 ```python
 # Let's take care of the names first.
@@ -90,14 +90,14 @@ sample_names = df['Name'].sample(25, random_state=0).tolist()
 b = cx.FindPatternsBuilder(sample_names)
 r = b.learn()
 
-# Check that the set of patterns we have learned from the sample
-# matches all names in the data frame. If it doesn't this next line
+# Check that the set of patterns you have learned from the sample
+# matches all names in the dataframe. If it doesn't this next line
 # will fail an assertion.
 r.code(task=r.Tasks.check)(df, 'Name')
 r.code()
 ```
 
-This produces some sample code to cluster the data frame by the format of the name. For instance,
+This produces some sample code to cluster the DataFrame by the format of the name. For instance,
 you could run `classify(df, 'Name').plot()` to see how frequently the name formats occur.
 
 ```python
@@ -175,7 +175,7 @@ This will produce:
 
 ### Standardizing Birth Years
 
-We now demonstrate a similar extraction and standardization operation for the birth years,
+The following example demonstrates a similar extraction and standardization operation for the birth years,
 but now in the PySpark environment.
 
 ```python
@@ -188,7 +188,7 @@ r = b.learn()
 r.code()
 ```
 
-This now produces a clustering function that handles pyspark data frames.
+This now produces a clustering function that handles PySpark DataFrames.
 ```python
 digit2___titleword___digit2 = '^[0-9]{2}-[A-Z][a-z]+-[0-9]{2}$'
 digit2_whitespace_titleword_whitespace_digit4 = r'^[0-9]{2}[\s][A-Z][a-z]+[\s][0-9]{4}$'
@@ -207,7 +207,8 @@ def classify(df, column):
     return df.groupBy(identify_pattern.alias('identify_pattern'))
 ```
 
-Again, we can modify this code to extract the dates from each date format.
+Again, you can modify this code to extract the dates from each date format.
+
 ```diff
 +  from pyspark.sql.functions import concat, lit
 
