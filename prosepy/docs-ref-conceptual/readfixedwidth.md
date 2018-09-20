@@ -18,7 +18,8 @@ another, there might not be enough information to determine the boundary between
 description does not have to be in an exact format; Code Accelerator will do its best to locate lists of fields and their column
 ranges and use that information to generate the code.
 
-> [!NOTE] The `ReadFwfBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
+> [!NOTE]
+> The `ReadFwfBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
 > It is recommended to use `DetectTypesBuilder` to detect and fix the data types after reading the file. 
 
 ## Usage
@@ -43,7 +44,8 @@ Second 3       3      The second, a singleton
 Third  4       6      The rest
 ```
 
-> [!NOTE] The following examples assume `import prose.codeaccelerator as cx`.
+> [!NOTE]
+> The following examples assume `import prose.codeaccelerator as cx`.
 
 ## Read a fixed-width file with schema
 

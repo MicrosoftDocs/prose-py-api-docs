@@ -128,7 +128,7 @@ def classify(df, column):
     return df.groupby(lambda row: identify_pattern(df[column][row]))
 ```
 
-More importantly, this code can be manually edited easily to extract last names per the
+More importantly, you can easily edit this code manually to extract last names per the
 format.
 
 ```diff

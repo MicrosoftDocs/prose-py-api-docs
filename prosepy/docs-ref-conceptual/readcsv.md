@@ -14,7 +14,8 @@ description: Learn how to analyze and pare delimited files with PROSE Code Accel
 produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
 the beginning of the file, etc.
 
-> [!NOTE] `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
+> [!NOTE]
+> `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
 > It is recommended to use `DetectTypesBuilder` to detect and fix the data types after reading the file. 
 
 ## Usage

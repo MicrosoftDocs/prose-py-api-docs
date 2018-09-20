@@ -24,7 +24,8 @@ result.data(5) # examine top 5 rows to see if they look correct
 result.code() # generate the code in the target 
 ```
 
-> [!NOTE] All examples assume `import prose.codeaccelerator as cx`.
+> [!NOTE]
+> All examples assume `import prose.codeaccelerator as cx`.
 
 ## Read object
 
