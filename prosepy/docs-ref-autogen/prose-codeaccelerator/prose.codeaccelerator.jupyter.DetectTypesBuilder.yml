@@ -1,0 +1,75 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.jupyter.DetectTypesBuilder.learn
+  class: prose.codeaccelerator.jupyter.DetectTypesBuilder
+  fullName: prose.codeaccelerator.jupyter.DetectTypesBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: abc.ABC
+      type: prose.codeaccelerator._builder.Builder
+    type: prose.codeaccelerator._detect_types_builder.DetectTypesBuilder
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: DetectTypesBuilder
+  summary: 'Thin wrapper around @prose.codeaccelerator.DetectTypesBuilder. See the
+    base class for additional details on parameters, methods, and properties.
+
+
+    A builder to learn code to transform string-valued data into appropriate typed
+    values.
+
+
+    '
+  syntax:
+    content: DetectTypesBuilder(data)
+    parameters:
+    - description: 'A data collection with string-valued data values. The type can
+        be
+
+        either a pandas dataframe, a dictionary mapping column names to lists of strings,
+        or just
+
+        an iterable of strings. In the first two cases, the data types are detected
+        separately for
+
+        each column and in the final case, a single data type is detected for the
+        values in the list.
+
+        '
+      id: data
+  type: class
+  uid: prose.codeaccelerator.jupyter.DetectTypesBuilder
+- class: prose.codeaccelerator.jupyter.DetectTypesBuilder
+  fullName: prose.codeaccelerator.jupyter.DetectTypesBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: learn
+  summary: 'Infer the data types in the provided data.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+    return:
+      description: 'A DetectTypesLearnResult object which can be used to
+
+        either generate the code to coerce the data into the appropriate types,
+
+        or to directly transform the sample data into the appropriate types.
+
+        '
+  type: method
+  uid: prose.codeaccelerator.jupyter.DetectTypesBuilder.learn
+references:
+- fullName: prose.codeaccelerator.jupyter.DetectTypesBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.jupyter.DetectTypesBuilder
+  uid: prose.codeaccelerator.jupyter.DetectTypesBuilder.learn

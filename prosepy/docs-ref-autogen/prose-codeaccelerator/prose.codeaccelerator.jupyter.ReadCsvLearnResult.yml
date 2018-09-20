@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+    type: prose.codeaccelerator._read_text_builder.ReadCsvLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: ReadCsvLearnResult
+  summary: 'Thin wrapper around @prose.codeaccelerator.ReadCsvLearnResult. See the
+    base class for additional details on parameters, methods, and properties.
+
+
+    The result from attempting to learn a program for delimited file reading.
+
+
+    (The result of calling @prose.codeaccelerator.ReadCsvBuilder.learn.)
+
+    Only intended to be called internally.
+
+    '
+  syntax:
+    content: ReadCsvLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+references: []

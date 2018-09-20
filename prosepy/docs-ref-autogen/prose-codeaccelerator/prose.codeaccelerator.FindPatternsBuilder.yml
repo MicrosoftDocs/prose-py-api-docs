@@ -1,0 +1,132 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.FindPatternsBuilder.learn
+  - prose.codeaccelerator.FindPatternsBuilder.target
+  class: prose.codeaccelerator.FindPatternsBuilder
+  fullName: prose.codeaccelerator.FindPatternsBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: prose.codeaccelerator._builder.Builder
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: FindPatternsBuilder
+  summary: 'A builder for data and constraints in order to learn code for identifying
+    patterns in a set of strings.
+
+
+
+    '
+  syntax:
+    content: FindPatternsBuilder(data)
+    parameters:
+    - description: 'List of strings to identify patterns from.
+
+        '
+      id: data
+      type:
+      - List[str]
+    variables:
+    - description: 'A list of collections of strings. Each collection of strings constrains
+
+        all the strings in the collection to be covered by the same regex/cluster.
+
+        Each collection should have at least 2 strings.
+
+        '
+      id: in_same_cluster
+      type:
+      - List[Iter[str]]
+    - description: 'A list of collections of strings. Each collection of strings constrains
+
+        each string in the collection to be covered by a different regex/cluster.
+
+        Each collection should have at least 2 strings.
+
+        '
+      id: in_different_clusters
+      type:
+      - List[Iter[str]]
+  type: class
+  uid: prose.codeaccelerator.FindPatternsBuilder
+- class: prose.codeaccelerator.FindPatternsBuilder
+  fullName: prose.codeaccelerator.FindPatternsBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: learn
+  summary: 'Attempt to learn a set of patterns that cover the data and satisfy the
+    constraints that have been set on this builder.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+  type: method
+  uid: prose.codeaccelerator.FindPatternsBuilder.learn
+- class: prose.codeaccelerator.FindPatternsBuilder
+  fullName: prose.codeaccelerator.FindPatternsBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: target
+  summary: 'Target runtime library for the generated code.
+
+
+    Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.FindPatternsBuilder.target
+references:
+- fullName: prose.codeaccelerator.FindPatternsBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.FindPatternsBuilder
+  uid: prose.codeaccelerator.FindPatternsBuilder.learn
+- fullName: prose.codeaccelerator.FindPatternsBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.FindPatternsBuilder
+  uid: prose.codeaccelerator.FindPatternsBuilder.target
+- fullName: List[Iter[str]]
+  name: List[Iter[str]]
+  spec.python:
+  - fullName: List
+    name: List
+    uid: List
+  - fullName: '['
+    name: '['
+  - fullName: Iter
+    name: Iter
+    uid: Iter
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ']'
+    name: ']'
+  - fullName: ']'
+    name: ']'
+  uid: List[Iter[str]]
+- fullName: List[str]
+  name: List[str]
+  spec.python:
+  - fullName: List
+    name: List
+    uid: List
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ']'
+    name: ']'
+  uid: List[str]

@@ -17,7 +17,28 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "base_path": "python",
-      "site_name": "Docs"
+      "site_name": "Docs",
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+        ]
+      },
+      "JoinTOCPlugin": [
+        {
+          "TopLevelTOC": "prosepy/docs-ref-mapping/prose-ref-toc.yml",
+          "ReferenceTOC": "prosepy/docs-ref-autogen/toc.yml",
+          "ConceptualTOC": "prosepy/docs-ref-conceptual/toc.yml",
+          "ConceptualTOCUrl": "/python/api/overview/azure/prose/toc.json?view=azure-accelerator-py",
+          "ReferenceTOCUrl": "/python/api/azprose_py_toc/toc.json?view=azure-accelerator-py",
+          "ContainerPageMetadata": {
+            "langs": [
+              "python"
+            ]
+          },
+          "ContainerPageYamlMime": "YamlMime:UniversalReference",
+          "OutputFolder": "prosepy/docs-ref-joined"
+        }
+]
     }
   ],
   "notification_subscribers": [],
@@ -32,6 +53,22 @@
       "url": "https://github.com/Microsoft/templates.docs.msft",
       "branch": "master",
       "branch_mapping": {}
+    }
+  ],
+  "dependent_packages": [
+    {
+      "path_to_root": "_dependentPackages/memberpage.plugins",
+      "target_framework": "net45",
+      "version": "latest",
+      "id": "memberpage.plugins",
+      "nuget_feed": "https://www.myget.org/F/docfx/api/v2"
+    },
+    {
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest",
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2"
     }
   ],
   "branch_target_mapping": {},

@@ -1,83 +1,57 @@
 - items:
   - items:
     - items:
-      - name: prose.codeaccelerator.builder.Builder
-        uid: prose.codeaccelerator.builder.Builder
-      name: prose.codeaccelerator.builder
-      uid: prose.codeaccelerator.builder
+      - name: prose.codeaccelerator.exceptions.LearnError
+        uid: prose.codeaccelerator.exceptions.LearnError
+      - name: prose.codeaccelerator.exceptions.ProseException
+        uid: prose.codeaccelerator.exceptions.ProseException
+      name: prose.codeaccelerator.exceptions
+      uid: prose.codeaccelerator.exceptions
     - items:
-      - name: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
-        uid: prose.codeaccelerator.detect_types_builder.DetectTypesBuilder
-      - name: prose.codeaccelerator.detect_types_builder.DetectTypesLearnResult
-        uid: prose.codeaccelerator.detect_types_builder.DetectTypesLearnResult
-      name: prose.codeaccelerator.detect_types_builder
-      uid: prose.codeaccelerator.detect_types_builder
-    - items:
-      - name: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-        uid: prose.codeaccelerator.find_patterns_builder.FindPatternsBuilder
-      - name: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
-        uid: prose.codeaccelerator.find_patterns_builder.FindPatternsLearnResult
-      name: prose.codeaccelerator.find_patterns_builder
-      uid: prose.codeaccelerator.find_patterns_builder
-    - items:
-      - items:
-        - name: prose.codeaccelerator.jupyter.detect_types_builder.DetectTypesBuilder
-          uid: prose.codeaccelerator.jupyter.detect_types_builder.DetectTypesBuilder
-        - name: prose.codeaccelerator.jupyter.detect_types_builder.DetectTypesLearnResult
-          uid: prose.codeaccelerator.jupyter.detect_types_builder.DetectTypesLearnResult
-        name: prose.codeaccelerator.jupyter.detect_types_builder
-        uid: prose.codeaccelerator.jupyter.detect_types_builder
-      - items:
-        - name: prose.codeaccelerator.jupyter.find_patterns_builder.FindPatternsBuilder
-          uid: prose.codeaccelerator.jupyter.find_patterns_builder.FindPatternsBuilder
-        - name: prose.codeaccelerator.jupyter.find_patterns_builder.FindPatternsLearnResult
-          uid: prose.codeaccelerator.jupyter.find_patterns_builder.FindPatternsLearnResult
-        name: prose.codeaccelerator.jupyter.find_patterns_builder
-        uid: prose.codeaccelerator.jupyter.find_patterns_builder
-      - items:
-        - name: prose.codeaccelerator.jupyter.read_json_builder.ReadJsonBuilder
-          uid: prose.codeaccelerator.jupyter.read_json_builder.ReadJsonBuilder
-        - name: prose.codeaccelerator.jupyter.read_json_builder.ReadJsonLearnResult
-          uid: prose.codeaccelerator.jupyter.read_json_builder.ReadJsonLearnResult
-        name: prose.codeaccelerator.jupyter.read_json_builder
-        uid: prose.codeaccelerator.jupyter.read_json_builder
-      - items:
-        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
-          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvBuilder
-        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvLearnResult
-          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadCsvLearnResult
-        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
-          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfBuilder
-        - name: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfLearnResult
-          uid: prose.codeaccelerator.jupyter.read_text_builder.ReadFwfLearnResult
-        name: prose.codeaccelerator.jupyter.read_text_builder
-        uid: prose.codeaccelerator.jupyter.read_text_builder
+      - name: prose.codeaccelerator.jupyter.DetectTypesBuilder
+        uid: prose.codeaccelerator.jupyter.DetectTypesBuilder
+      - name: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+        uid: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+      - name: prose.codeaccelerator.jupyter.FindPatternsBuilder
+        uid: prose.codeaccelerator.jupyter.FindPatternsBuilder
+      - name: prose.codeaccelerator.jupyter.FindPatternsLearnResult
+        uid: prose.codeaccelerator.jupyter.FindPatternsLearnResult
+      - name: prose.codeaccelerator.jupyter.ReadCsvBuilder
+        uid: prose.codeaccelerator.jupyter.ReadCsvBuilder
+      - name: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+        uid: prose.codeaccelerator.jupyter.ReadCsvLearnResult
+      - name: prose.codeaccelerator.jupyter.ReadFwfBuilder
+        uid: prose.codeaccelerator.jupyter.ReadFwfBuilder
+      - name: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+        uid: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+      - name: prose.codeaccelerator.jupyter.ReadJsonBuilder
+        uid: prose.codeaccelerator.jupyter.ReadJsonBuilder
+      - name: prose.codeaccelerator.jupyter.ReadJsonLearnResult
+        uid: prose.codeaccelerator.jupyter.ReadJsonLearnResult
       name: prose.codeaccelerator.jupyter
       uid: prose.codeaccelerator.jupyter
-    - items:
-      - name: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
-        uid: prose.codeaccelerator.read_json_builder.ReadJsonBuilder
-      - name: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
-        uid: prose.codeaccelerator.read_json_builder.ReadJsonLearnResult
-      name: prose.codeaccelerator.read_json_builder
-      uid: prose.codeaccelerator.read_json_builder
-    - items:
-      - name: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
-        uid: prose.codeaccelerator.read_text_builder.ReadCsvBuilder
-      - name: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
-        uid: prose.codeaccelerator.read_text_builder.ReadCsvLearnResult
-      - name: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
-        uid: prose.codeaccelerator.read_text_builder.ReadFwfBuilder
-      - name: prose.codeaccelerator.read_text_builder.ReadFwfLearnResult
-        uid: prose.codeaccelerator.read_text_builder.ReadFwfLearnResult
-      - name: prose.codeaccelerator.read_text_builder.ReadTextBuilder
-        uid: prose.codeaccelerator.read_text_builder.ReadTextBuilder
-      - name: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
-        uid: prose.codeaccelerator.read_text_builder.ReadTextLearnResult
-      name: prose.codeaccelerator.read_text_builder
-      uid: prose.codeaccelerator.read_text_builder
+    - name: prose.codeaccelerator.DetectTypesBuilder
+      uid: prose.codeaccelerator.DetectTypesBuilder
+    - name: prose.codeaccelerator.DetectTypesLearnResult
+      uid: prose.codeaccelerator.DetectTypesLearnResult
+    - name: prose.codeaccelerator.FindPatternsBuilder
+      uid: prose.codeaccelerator.FindPatternsBuilder
+    - name: prose.codeaccelerator.FindPatternsLearnResult
+      uid: prose.codeaccelerator.FindPatternsLearnResult
+    - name: prose.codeaccelerator.ReadCsvBuilder
+      uid: prose.codeaccelerator.ReadCsvBuilder
+    - name: prose.codeaccelerator.ReadCsvLearnResult
+      uid: prose.codeaccelerator.ReadCsvLearnResult
+    - name: prose.codeaccelerator.ReadFwfBuilder
+      uid: prose.codeaccelerator.ReadFwfBuilder
+    - name: prose.codeaccelerator.ReadFwfLearnResult
+      uid: prose.codeaccelerator.ReadFwfLearnResult
+    - name: prose.codeaccelerator.ReadJsonBuilder
+      uid: prose.codeaccelerator.ReadJsonBuilder
+    - name: prose.codeaccelerator.ReadJsonLearnResult
+      uid: prose.codeaccelerator.ReadJsonLearnResult
     name: prose.codeaccelerator
     uid: prose.codeaccelerator
-  name: prose_codeaccelerator
-  uid: project-prose_codeaccelerator
+  name: prose-codeaccelerator
+  uid: project-prose-codeaccelerator
 

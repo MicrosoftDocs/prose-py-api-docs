@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.jupyter.ReadCsvBuilder.learn
+  class: prose.codeaccelerator.jupyter.ReadCsvBuilder
+  fullName: prose.codeaccelerator.jupyter.ReadCsvBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - inheritance:
+          - type: builtins.object
+          type: abc.ABC
+        type: prose.codeaccelerator._builder.Builder
+      type: prose.codeaccelerator._read_text_builder.ReadTextBuilder
+    type: prose.codeaccelerator._read_text_builder.ReadCsvBuilder
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: ReadCsvBuilder
+  summary: 'Thin wrapper around @prose.codeaccelerator.ReadCsvBuilder. See the base
+    class for additional details on parameters, methods, and properties.
+
+
+    A builder for specifying constraints in order to learn code for reading a delimited
+    file into a table.
+
+
+    '
+  syntax:
+    content: ReadCsvBuilder(filename)
+    parameters:
+    - description: 'A path to the input file to learn from.
+
+        '
+      id: filename
+      type:
+      - str
+  type: class
+  uid: prose.codeaccelerator.jupyter.ReadCsvBuilder
+- class: prose.codeaccelerator.jupyter.ReadCsvBuilder
+  fullName: prose.codeaccelerator.jupyter.ReadCsvBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: learn
+  summary: 'Attempt to learn a program from the constraints that have been set on
+    this builder.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+    return:
+      description: 'The result of learning.
+
+        '
+      type:
+      - prose.codeaccelerator.ReadCsvLearnResult.
+  type: method
+  uid: prose.codeaccelerator.jupyter.ReadCsvBuilder.learn
+references:
+- fullName: prose.codeaccelerator.jupyter.ReadCsvBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.jupyter.ReadCsvBuilder
+  uid: prose.codeaccelerator.jupyter.ReadCsvBuilder.learn

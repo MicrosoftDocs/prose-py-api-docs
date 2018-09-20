@@ -1,0 +1,238 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.ReadFwfLearnResult.code
+  - prose.codeaccelerator.ReadFwfLearnResult.colspecs
+  - prose.codeaccelerator.ReadFwfLearnResult.column_count
+  - prose.codeaccelerator.ReadFwfLearnResult.data
+  - prose.codeaccelerator.ReadFwfLearnResult.filename
+  - prose.codeaccelerator.ReadFwfLearnResult.names
+  - prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
+  class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: ReadFwfLearnResult
+  summary: 'The result from attempting to learn a program for fixed-width file reading.
+
+
+    (The result of calling @prose.codeaccelerator.ReadFwfBuilder.learn.)
+
+    Only intended to be called internally.
+
+
+
+
+
+
+
+
+    '
+  syntax:
+    content: ReadFwfLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.ReadFwfLearnResult
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.code
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: code
+  summary: 'Return the code that was learned.
+
+    '
+  syntax:
+    content: code()
+    parameters: []
+    return:
+      description: 'A callable that accepts a single argument (the file name to read).
+
+        Its string representation is a Python code to read the input file.
+
+        '
+  type: method
+  uid: prose.codeaccelerator.ReadFwfLearnResult.code
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.colspecs
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: colspecs
+  summary: 'List of pairs of the extents of fixed-width fields of each line as half-open
+    intervals (i.e., [from, to[ ).
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.colspecs
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.column_count
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: column_count
+  summary: 'Number of columns that the learned program will generate in its output.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.column_count
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.data
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: data
+  summary: 'Return the data obtained when running the learned program on the input
+    file.
+
+    '
+  syntax:
+    content: data(nrows=None)
+    parameters:
+    - defaultValue: None
+      description: 'The number of rows to read from the file.  Default is `None` (the
+        entire file). If specified, then it must be greater than or equal to zero.
+
+        '
+      id: nrows
+      type:
+      - int
+    return:
+      description: 'The first `nrows` or the data.
+
+        '
+      type:
+      - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
+        List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
+  type: method
+  uid: prose.codeaccelerator.ReadFwfLearnResult.data
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.filename
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: filename
+  summary: 'Path to the input file used to learn.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.filename
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.names
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: names
+  summary: 'List of column names learned from the input file that will be used in
+    the output table.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.names
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: skip_blank_lines
+  summary: 'If True, skip over blank lines rather than interpreting as NaN values.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
+references:
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.code
+  isExternal: false
+  name: code
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.code
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.colspecs
+  isExternal: false
+  name: colspecs
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.colspecs
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.column_count
+  isExternal: false
+  name: column_count
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.column_count
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.data
+  isExternal: false
+  name: data
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.data
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.filename
+  isExternal: false
+  name: filename
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.filename
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.names
+  isExternal: false
+  name: names
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.names
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
+  isExternal: false
+  name: skip_blank_lines
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
+- fullName: Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
+    List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
+  name: Union[[DataFrame](html), List[[Row](Row)]]
+  spec.python:
+  - fullName: Union
+    name: Union
+    uid: Union
+  - fullName: '['
+    name: '['
+  - fullName: '['
+    name: '['
+  - fullName: DataFrame
+    name: DataFrame
+    uid: DataFrame
+  - fullName: ']'
+    name: ']'
+  - fullName: (
+    name: (
+  - fullName: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+    name: html
+    uid: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
+  - fullName: )
+    name: )
+  - fullName: ', '
+    name: ', '
+  - fullName: List
+    name: List
+    uid: List
+  - fullName: '['
+    name: '['
+  - fullName: '['
+    name: '['
+  - fullName: Row
+    name: Row
+    uid: Row
+  - fullName: ']'
+    name: ']'
+  - fullName: (
+    name: (
+  - fullName: http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row
+    name: Row
+    uid: http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row
+  - fullName: )
+    name: )
+  - fullName: ']'
+    name: ']'
+  - fullName: ']'
+    name: ']'
+  uid: Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
+    List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]

@@ -1,0 +1,124 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.FindPatternsLearnResult.code
+  - prose.codeaccelerator.FindPatternsLearnResult.data
+  - prose.codeaccelerator.FindPatternsLearnResult.regexes
+  class: prose.codeaccelerator.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.FindPatternsLearnResult
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: FindPatternsLearnResult
+  summary: 'The result from attempting to learn a set of patterns in string data.
+
+
+
+
+    '
+  syntax:
+    content: FindPatternsLearnResult(data, result, target)
+  type: class
+  uid: prose.codeaccelerator.FindPatternsLearnResult
+- class: prose.codeaccelerator.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.FindPatternsLearnResult.code
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: code
+  summary: 'Return a code fragment that identifies the patterns that were learned.
+
+
+    The code is targeted to the platform specified by the corresponding *FindPatternsBuilder.target*.
+
+    '
+  syntax:
+    content: code(task='classify')
+    parameters:
+    - defaultValue: classify
+      description: 'A parameter that can take the values ''check'' or ''classify''.
+
+        If the parameter is ''classify'', the method produces a code fragment to identify
+
+        the pattern that classifies strings. If the parameter is ''check'', the method
+
+        produces a code fragment to assert that a given string falls into one of the
+
+        patterns learned.
+
+        '
+      id: task
+  type: method
+  uid: prose.codeaccelerator.FindPatternsLearnResult.code
+- class: prose.codeaccelerator.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.FindPatternsLearnResult.data
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: data
+  summary: 'Group data provided to the find patterns operation by the learned patterns.
+
+    '
+  syntax:
+    content: data()
+    parameters: []
+    return:
+      description: 'A dictionary with keys being the name of the pattern, and the
+        values
+
+        being a list of strings that correspond to that pattern.
+
+        '
+  type: method
+  uid: prose.codeaccelerator.FindPatternsLearnResult.data
+- class: prose.codeaccelerator.FindPatternsLearnResult
+  fullName: prose.codeaccelerator.FindPatternsLearnResult.regexes
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: regexes
+  summary: 'List of regexes representing the patterns identified in the data.
+
+
+    *None* represents a pattern that only matches strings that are *None*.
+
+    '
+  syntax:
+    return:
+      type:
+      - List[str]
+  type: attribute
+  uid: prose.codeaccelerator.FindPatternsLearnResult.regexes
+references:
+- fullName: prose.codeaccelerator.FindPatternsLearnResult.code
+  isExternal: false
+  name: code
+  parent: prose.codeaccelerator.FindPatternsLearnResult
+  uid: prose.codeaccelerator.FindPatternsLearnResult.code
+- fullName: prose.codeaccelerator.FindPatternsLearnResult.data
+  isExternal: false
+  name: data
+  parent: prose.codeaccelerator.FindPatternsLearnResult
+  uid: prose.codeaccelerator.FindPatternsLearnResult.data
+- fullName: prose.codeaccelerator.FindPatternsLearnResult.regexes
+  isExternal: false
+  name: regexes
+  parent: prose.codeaccelerator.FindPatternsLearnResult
+  uid: prose.codeaccelerator.FindPatternsLearnResult.regexes
+- fullName: List[str]
+  name: List[str]
+  spec.python:
+  - fullName: List
+    name: List
+    uid: List
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ']'
+    name: ']'
+  uid: List[str]

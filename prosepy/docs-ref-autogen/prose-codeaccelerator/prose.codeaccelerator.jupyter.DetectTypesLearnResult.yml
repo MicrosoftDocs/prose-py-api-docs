@@ -1,0 +1,26 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+  fullName: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: prose.codeaccelerator._detect_types_builder.DetectTypesLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: DetectTypesLearnResult
+  summary: 'Thin wrapper around @prose.codeaccelerator.DetectTypesLearnResult. See
+    the base class for additional details on parameters, methods, and properties.
+
+
+    Encapsulates the results of running data type detection on a dataset.
+
+    '
+  syntax:
+    content: DetectTypesLearnResult(result, associated_builder)
+  type: class
+  uid: prose.codeaccelerator.jupyter.DetectTypesLearnResult
+references: []
