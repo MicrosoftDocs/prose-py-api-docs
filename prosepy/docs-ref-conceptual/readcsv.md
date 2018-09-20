@@ -1,20 +1,21 @@
-
 ---
-title: Read a CSV file
-ms.date: 09/18/2018
+title: Read a CSV file with Code Accelerator - Python
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
+author: simmdan
+ms.author: dsimmons
+description: Learn how to analyze and pare delimited files with PROSE Code Accelerator for Python.
 ---
 
-# Read a CSV File
+# Read a CSV file with Code Accelerator
 
-The `ReadCsvBuilder` will analyze a given delimited text file (it doesn't actually need to be comma-separated file, it
-could be delimited other ways) and determine all the details about that file necessary to successfully parse it and
+`ReadCsvBuilder` will analyze a given delimited text file (that has comma-separated values, or that uses other delimiters) and determine all the details about that file necessary to successfully parse it and
 produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
 the beginning of the file, etc.
 
-> [!NOTE] The `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
-> It is recommended to use `DetectTypesBuilder` to detect and fix the datatypes after reading the file. 
+> [!NOTE] `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
+> It is recommended to use `DetectTypesBuilder` to detect and fix the data types after reading the file. 
 
 ## Usage
 
@@ -31,7 +32,7 @@ result.code() # generate the code in the target
 > [!NOTE]
 > All examples assume `import prose.codeaccelerator as cx`.
 
-## Read CSV - pyspark
+## Read a CSV file - PySpark
 
 ```python
 >>> b = cx.ReadCsvBuilder('some_file.txt')

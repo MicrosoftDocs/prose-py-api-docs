@@ -1,13 +1,16 @@
 ---
-title: Read a JSON File
-ms.date: 09/18/2018
+title: Read a JSON file with Code Accelerator - Python
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
+author: simmdan
+ms.author: dsimmons
+description: Learn how to read a JSON file with PROSE Code Accelerator.
 ---
 
-# Read a JSON File
+# Read a JSON file with Code Accelerator
 
-The `ReadJsonBuilder` will produce code to read a json file into a dataframe.
+`ReadJsonBuilder` will produce code to read a JSON file into a dataframe.
 
 ## Usage
 
@@ -23,7 +26,7 @@ result.code() # generate the code in the target
 
 > [!NOTE] All examples assume `import prose.codeaccelerator as cx`.
 
-## Read Object
+## Read object
 
 Content of object.json:
 
@@ -72,7 +75,7 @@ def read_json(file):
     return df
 ```
 
-## Read Array
+## Read array
 
 Content of array.json:
 
@@ -131,7 +134,7 @@ def read_json(file):
     return df
 ```
 
-## Read Line-Delimited
+## Read line-delimited
 
 Content of delimited.json:
 
@@ -175,7 +178,7 @@ def read_json(file):
     return df
 ```
 
-## Read Split-Array
+## Read split- array
 
 Content of split.json:
 ```json
@@ -247,7 +250,7 @@ def read_json(file):
     return df
 ```
 
-## Read Nested-Arrays
+## Read nested arrays
 
 Content of nested.json:
 ```json
@@ -333,7 +336,7 @@ def read_json(file):
 
 ```
 
-## Read Nested-Arrays (2)
+## Read nested arrays (2)
 
 The array elements in `"phone"` are nested objects, which requires an additional call to `json_normalize` to flatten.
 
@@ -427,7 +430,7 @@ def read_json(file):
     return df
 ```
 
-## Read Multiple-Arrays
+## Read multiple arrays
 
 If there are multiple top-level arrays, we preserve these arrays because joining them would have caused exponential blow-up.
 
@@ -480,7 +483,7 @@ def read_json(file):
     return df
 ```
 
-## Read Single Top Array
+## Read single top array
 
 If the JSON has this pattern `{"key_1": ... {"key_n" : [ ... ]} ... }` we only need to flatten the top array `d["key_1"]...["key_n"]`.
 

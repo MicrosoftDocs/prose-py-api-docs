@@ -1,20 +1,20 @@
-- name: PROSE
+- name: PROSE Code Accelerator
   href: intro.md
   items:
-  - name: Overview
+  - name: What is Code Accelerator?
     href: overview.md
   - name: How-to guides
     items:
-    - name: Read a CSV File
+    - name: Read a CSV file
       href: readcsv.md
-    - name: Read a Fixed-width File
+    - name: Read a fixed-width file
       href: readfixedwidth.md
-    - name: Read a JSON File
+    - name: Read a JSON file
       href: readjson.md
-    - name: Fix Data Types
+    - name: Fix data types
       href: fixdatatypes.md
-    - name: Find Patterns in Strings
+    - name: Find patterns in strings
       href: findpatterns.md
-  - name: Known Issues
+  - name: Known issues
     href: knownissues.md
   

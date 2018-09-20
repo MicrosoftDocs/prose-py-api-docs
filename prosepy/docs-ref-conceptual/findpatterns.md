@@ -1,16 +1,19 @@
 ---
-title: Find Patterns in Strings
-ms.date: 09/18/2018
+title: Find patterns in strings with Code Accelerator - Python
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
+author: simmdan
+ms.author: dsimmons
+description: LEarn how to automatically identify different formats and patterns in input string data with PROSE Code Accelerator for Python.
 ---
 
-# Find Patterns in Strings
+# Find patterns in strings with Code Accelerator
 
 Have you ever written a script to perform a string transformation and have it either crash or
-produce wrong results silently due to input data being in unexpected formats? Or do you want
-to figure out how many different cases you need to handle in your standardization procedure.
- The **Find Patterns Operation** automatically identifies different formats and patterns in
+produce wrong results silently due to unexpected formats in your input data? Or do you want
+to figure out how many different cases you need to handle in your standardization procedure?
+**Find Patterns Operation** automatically identifies different formats and patterns in
 string data.  Given a set of input strings, **Find Patterns Operation** produces a small number
 of regular expressions such that they together match all the input strings, except possibly a
 small fraction of outliers.
@@ -45,11 +48,11 @@ result.code(task=result.Tasks.check)
 result.code() # Equivalent to result.code(task=result.Tasks.classify)
 ```
 
-## Extraction and Standardization
+## Extraction and standardization
 
-The **Find Patterns Operation** is designed not only to identify patterns in the input strings and
-cluster the given data or check the given data as per these patterns, but to also produce code that
-can be easily modified to perform further operations such as extracting relevant parts of the strings
+**Find Patterns Operation** is designed not only to identify patterns in input strings and
+cluster or check the given data per these patterns, but to also produce code that
+can be easily modified to perform further operations, such as extracting relevant parts of the strings
 or normalizing the data. We illustrate these use cases.
 
 Suppose we have with us a `pandas` data frame having columns `Name` and `BirthDate`. We want to process
@@ -125,8 +128,9 @@ def classify(df, column):
     return df.groupby(lambda row: identify_pattern(df[column][row]))
 ```
 
-However, more importantly, this code can be edited easily, by hand, to extract last names as per the
+More importantly, this code can be manually edited easily to extract last names per the
 format.
+
 ```diff
 -def identify_pattern(input_str):
 +def extract_last_name(input_str):
@@ -172,7 +176,7 @@ This will produce:
 ### Standardizing Birth Years
 
 We now demonstrate a similar extraction and standardization operation for the birth years,
-but now in the pyspark environment.
+but now in the PySpark environment.
 
 ```python
 sample_dates = df['BirthDate'].sample(25, random_state=0).tolist()
