@@ -1,31 +1,33 @@
 ---
-title: Overview
-ms.date: 08/30/2018
+title: What is Microsoft PROSE Code Accelerator for Python?
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
+author: simmdan
+ms.author: dsimmons
+description: Learn about Microsoft PROSE Code Accelerator for Python requirements and functionality.
 ---
 
-# PROSE Code Accelerator Overview
+# What is Code Accelerator?
 
-Code accelerator uses program synthesis to generate code for common data preparation tasks.  The current release focuses
-on data ingestion, data type correction and determining patterns in string data.  Future releases will bring additional
-[PROSE](https://microsoft.github.io/prose) functionality.
+Code accelerator uses program synthesis to generate Python code for common data preparation tasks. It includes [PROSE](https://microsoft.github.io/prose) functionality for
+data ingestion, data type correction, and pattern identification in string data. 
 
 
 ## Requirements
-Code Accelerator runs on python 3.5, 3.6 or 3.7 on Windows (32-bit or 64-bit), Linux (64-bit) and OSX.  It supports
-generating code for use with [pandas](https://pandas.pydata.org/) or [pyspark](https://pypi.org/project/pyspark/).
+Code Accelerator runs on Python 3.5, 3.6, or 3.7 on Windows (32-bit or 64-bit), Linux (64-bit), and macOS.  It supports
+generating code for use with [pandas](https://pandas.pydata.org/) or [PySpark](https://pypi.org/project/pyspark/).
 
 
 ## Using Code Accelerator
-The first thing to know about Code Accelerator is that it is a tool masquerading as an API.  You call Code Accelerator
-from a python interactive environment, and it produces code for you.  You can examine the results, adjust your call to
-Code Accelerator and try it again as needed, but when you are done you own the resulting code which has no dependencies
-on Code Accelerator.  You can modify or extend the code, copy it into another system or whatever you need.
+The first thing to know about Code Accelerator is that it is a tool masquerading as an API. You call Code Accelerator
+from a Python interactive environment and it produces code for you. You can examine the results, adjust your call to
+Code Accelerator, and repeat as needed. But when you are done, you own the resulting code which has no dependencies
+on Code Accelerator. You can modify or extend the code, copy it into another system, or work with it however you need.
 
 Code accelerator contains a series of classes which all follow the same pattern:
 
-Interactions with Code Accelerator start with a builder which is the object that will build code for you.  There are
+Interactions with Code Accelerator start with a builder, which is the object that will build code for you.  There are
 builders for reading delimited files (`ReadCsvBuilder`), reading fixed width files (`ReadFwfBuilder`), reading JSON
 files (`ReadJsonBuilder`), detecting data types (`DetectTypeBuilder`) and finding patterns in strings
 (`FindPatternsBuilder`).  In each case the interaction is the same:
@@ -49,7 +51,7 @@ files (`ReadJsonBuilder`), detecting data types (`DetectTypeBuilder`) and findin
    required at runtime.
 
 
-## About the `code()` method on learn result
+## About the code method on learn result
 When `learn()` is called on any Code Accelerator builder, PROSE synthesizes Python code for the specified task.  This
 code may be retrieved from the `code()` method on the result object.  The code takes the form of one or more functions
 which may later be called with the same or similar data to what was initially provided to the builder to accomplish the
@@ -57,13 +59,14 @@ task.  The `ReadCsvBuilder`, for instance, will produce a `read_file` function t
 format as the file passed to the builder, while the `DetectTypesBuilder` will produce a `coerce_types` function that
 takes a dataframe of the same form as what was originally passed to the builder.
 
-> [!NOTE] Calling the generated function with data having different schema may result in errors. For example, calling
+> [!NOTE]
+> Calling the generated function with data having different schema may result in errors. For example, calling
 > the generated `coerce_types` function with a dataframe that has a different schema than what was used to generate the
 > function will likely fail or produce unwanted results.
  
  
-## The `data()` method on learn result
-This method is intended to give a quick look at what the generated code will do.  For the input originally given to the
+## About the data method on learn result
+The `data()` method is intended to give a quick look at what the generated code will do.  For the input originally given to the
 builder, it will show what the output of running the generated code would be.  This way you can see if the code does
 what you want, and if not, provide different or additional information to the builder and try learning again.  
 
@@ -72,17 +75,17 @@ of the number of output values to return.  For some learn results this is a numb
 number of scalar values.
 
 
-## Working with pyspark
+## Working with PySpark
 Each builder supports the `Target` property which specifies the runtime environment for the generated code.  By default
 the generated code will use pandas, but if you set the `Target` property to `"pyspark"`, then it will produce code
 for that runtime instead.
 
-Some things to keep in mind about pyspark:
+Some things to keep in mind about PySpark:
 
-- In order to target pyspark, you must first `pip install pyspark`.  Code Accelerator will dynamically use it if it is
+- In order to target PySpark, you must first `pip install pyspark`.  Code Accelerator will dynamically use it if it is
   installed and you request to target it, but Code Accelerator will fail if you target it, and it isn't already
   installed.
-- The generated code for pyspark does not `collect`.  Code Accelerator generates code that can fit into the beginning or
+- The generated code for PySpark does not `collect`.  Code Accelerator generates code that can fit into the beginning or
   middle of a spark pipeline.  This way you can mix Code Accelerator generated code with other code.  Once you are done
   processing your data, you will need to manually call `collect` or whatever other operator to produce final results.
 - The `data()` method, however, ensures that you get some data back to examine so you can determine if the generated

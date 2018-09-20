@@ -1,31 +1,33 @@
 ---
-title: Fix data types
-ms.date: 09/18/2018
+title: Fix data types with Code Accelerator - Python
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
+author: simmdan
+ms.author: dsimmons
+description: Learn how to use data type detection features in the PROSE Code Accelerator for Python.
 ---
 
-# Fix data types
+# Fix data types with Code Accelerator
 
-One common pain point when working with data in python is that often values
-in columns in a dataframe are stored as strings whereas they should be numbers or dates. This prevents doing logical operations
+One common pain point when working with data in Python is that values
+in columns in a dataframe are often stored as strings whereas they should be numbers or dates. This prevents doing logical operations
 on those columns.  `DetectTypesBuilder` will examine data and, if appropriate,
 produce code to transform the data to correct types.  While the underlying pandas and
-pyspark libraries in some cases have the ability to infer data types from
+PySpark libraries in some cases have the ability to infer data types from
 strings, often the results are less than ideal: the set of supported
-formats is often small. Further, these inference techniques usually fail
+formats is usually small. Further, these inference techniques usually fail
 completely if a column of data consists of values formatted in more than
 one way.
 
-The data type detection features in the PROSE Code Accelerator come in handy in
+The data type detection features in the Code Accelerator come in handy in
 such scenarios. Not only does the data type detection convert data into the
-appropriate data type, the process is completely transparent. After generating code for the data type transformation/conversion, 
-user can then inspect or modify the code as desired: the system is no
-longer a magical black-box.
+appropriate data type, the process is completely transparent. After generating code for the data type transformation/conversion, the user can then inspect or modify the code as desired: the system is no
+longer a magical black box.
 
 ## Usage
 
-``` python
+```python
 import pandas
 import prose.codeaccelerator as cx
 
@@ -156,19 +158,19 @@ of the data. Further, the generated code contains descriptive comments
 which make it easy for a user to modify the generated code to handle
 new and/or unseen formats in the data.
 
-## Inputs and Targets
+## Inputs and targets
 The data type detection APIs accept the following three forms of input: (1) A
 simple list, (2) a dictionary with string-valued keys and lists of strings
 as values, or (3) a pandas DataFrame with string-valued column identifiers.
 
 A user may also specify the target for code generation. The data type
 detection API can generate code that can transform data contained in
-(1) a list, (2) a dictionary, (3) a pandas DataFrame, or (4) a pyspark
-DataFrame. Note that using a pyspark DataFrame as input is not supported. A
-user may manually sample data from the pyspark dataframe into a
+(1) a list, (2) a dictionary, (3) a pandas DataFrame, or (4) a PySpark
+DataFrame. Note that using a PySpark DataFrame as input is not supported. A
+user may manually sample data from the PySpark dataframe into a
 dictionary, or a pandas DataFrame. This sampled data may then be used as
 input to learn the data type transformation that can then be applied on the
-pyspark DataFrame.
+PySpark DataFrame.
 
 ## Supported types and limitations
 The data type detection APIs support detection of the following types:

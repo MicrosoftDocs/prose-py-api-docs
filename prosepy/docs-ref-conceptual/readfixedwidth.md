@@ -1,26 +1,30 @@
 ---
-title: Read a Fixed-Width File
-ms.date: 09/18/2018
+title: Read a fixed-width file with Code Accelerator - Python
+ms.date: 09/24/2018
 ms.topic: conceptual
 ms.service: prose-codeaccelerator
+author: simmdan
+ms.author: dsimmons
+description: Learn how to analyze a fixed-width file with PROSE Code Accelerator for Python.
 ---
 
-# Read a Fixed-Width File
+# Read a fixed-width file with Code Accelerator
 
 `ReadFwfBuilder` will analyze a fixed-width file and produce code to split the fields yielding a dataframe.  When it is
 given only the fixed-width input file, Code Accelerator makes every effort to determine the boundaries between fields.
-Sometimes, however, this simply isn't possible.  If a file has two separate number fields placed directly next to one
-another, for example, there just may not be enough information to determine the boundary between them.  So,
+Sometimes, however, this isn't possible. For example, if a file has two separate number fields placed directly next to one
+another, there might not be enough information to determine the boundary between them.  So,
 `ReadFwfBuilder` optionally also takes a file containing a description of the file schema.  This schema
-description does not have to be in an exact format--PROSE will do its best to locate lists of fields and their column
+description does not have to be in an exact format; Code Accelerator will do its best to locate lists of fields and their column
 ranges and use that information to generate the code.
 
-> [!NOTE] The `ReadFwfBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
-> It is recommended to use `DetectTypesBuilder` to detect and fix the datatypes after reading the file. 
+> [!NOTE]
+> The `ReadFwfBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
+> It is recommended to use `DetectTypesBuilder` to detect and fix the data types after reading the file. 
 
 ## Usage
 
-``` python
+```python
 import prose.codeaccelerator as cx
 
 builder = cx.ReadFwfBuilder(path_to_file, path_to_schema)
@@ -40,9 +44,10 @@ Second 3       3      The second, a singleton
 Third  4       6      The rest
 ```
 
-> [!NOTE] The following examples assume `import prose.codeaccelerator as cx`.
+> [!NOTE]
+> The following examples assume `import prose.codeaccelerator as cx`.
 
-## Read fixed-width file with schema
+## Read a fixed-width file with schema
 
 > [!NOTE]
 > Assume that `'schema.txt'` contains the schema from the previous example.
@@ -78,7 +83,7 @@ def read_file(file):
 
 ```
 
-## Read fixed-width file without schema
+## Read a fixed-width file without schema
 
 ```python
 >>> b = cs.ReadFwBuilder('some_file.txt')
@@ -111,7 +116,7 @@ def read_file(file):
 
 ```
 
-## Read fixed-width file - pyspark
+## Read a fixed-width file - PySpark
 
 ```python
 >>> b = cs.ReadFwBuilder('some_file.txt')
