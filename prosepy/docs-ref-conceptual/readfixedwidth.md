@@ -10,7 +10,7 @@ description: Learn how to analyze a fixed-width file with PROSE Code Accelerator
 
 # Read a fixed-width file with the Microsoft PROSE Code Accelerator SDK
 
-`ReadFwfBuilder` will analyze a fixed-width file and produce code to split the fields yielding a dataframe.  When it is
+`ReadFwfBuilder` will analyze a fixed-width file and produce code to split the fields yielding a data frame.  When it is
 given only the fixed-width input file, Code Accelerator makes every effort to determine the boundaries between fields.
 Sometimes, however, this isn't possible. For example, if a file has two separate number fields placed directly next to one
 another, there might not be enough information to determine the boundary between them.  So,

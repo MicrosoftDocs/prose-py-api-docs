@@ -10,7 +10,7 @@ description: Learn how to read a JSON file with the Microsoft PROSE Code Acceler
 
 # Read a JSON file with the Microsoft PROSE Code Accelerator SDK
 
-`ReadJsonBuilder` will produce code to read a JSON file into a dataframe.
+`ReadJsonBuilder` will produce code to read a JSON file into a data frame.
 
 ## Usage
 
