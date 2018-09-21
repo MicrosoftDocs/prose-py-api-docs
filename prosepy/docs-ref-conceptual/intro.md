@@ -1,8 +1,8 @@
 ---
-title: Microsoft PROSE Code Accelerator SDK for Python
+title: Microsoft PROSE Code Accelerator SDK - Python
 ms.date: 09/24/2018
 ms.topic: conceptual
-ms.service: prose-codeaccelerator
+ms.service: non-product-specific
 author: simmdan
 ms.author: dsimmons
 description: The Microsoft PROSE Code Accelerator SDK helps you quickly and accurately produce Python code for data preparation tasks.
