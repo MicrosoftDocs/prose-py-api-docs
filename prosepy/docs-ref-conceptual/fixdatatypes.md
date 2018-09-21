@@ -11,7 +11,7 @@ description: Learn how to use data type detection features in the PROSE Code Acc
 # Fix data types with the Microsoft PROSE Code Accelerator SDK
 
 One common pain point when working with data in Python is that values
-in columns in a dataframe are often stored as strings whereas they should be numbers or dates. This prevents doing logical operations
+in columns in a data frame are often stored as strings whereas they should be numbers or dates. This prevents doing logical operations
 on those columns. The Microsoft PROSE Code Accelerator SDK includes the `DetectTypesBuilder` class, which will examine data and, if appropriate,
 produce code to transform the data to correct types.  While the underlying pandas and
 PySpark libraries in some cases have the ability to infer data types from

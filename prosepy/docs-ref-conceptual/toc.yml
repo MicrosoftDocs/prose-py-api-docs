@@ -1,8 +1,6 @@
 - name: Microsoft PROSE Code Accelerator
   href: intro.md
   items:
-  - name: What is Code Accelerator?
-    href: overview.md
   - name: How-to guides
     items:
     - name: Read a CSV file
