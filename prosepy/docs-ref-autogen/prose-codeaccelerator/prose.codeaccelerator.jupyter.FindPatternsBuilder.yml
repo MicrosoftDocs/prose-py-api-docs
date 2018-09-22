@@ -17,8 +17,8 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: FindPatternsBuilder
-  summary: 'Thin wrapper around @prose.codeaccelerator.FindPatternsBuilder. See the
-    base class for additional details on parameters, methods, and properties.
+  summary: 'Thin wrapper around <xref:prose.codeaccelerator.FindPatternsBuilder>.
+    See the base class for additional details on parameters, methods, and properties.
 
 
     A builder for data and constraints in order to learn code for identifying patterns

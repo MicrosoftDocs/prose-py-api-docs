@@ -17,8 +17,8 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: ReadJsonBuilder
-  summary: 'Thin wrapper around @prose.codeaccelerator.ReadJsonBuilder. See the base
-    class for additional details on parameters, methods, and properties.
+  summary: 'Thin wrapper around <xref:prose.codeaccelerator.ReadJsonBuilder>. See
+    the base class for additional details on parameters, methods, and properties.
 
 
     A builder for specifying constraints in order to learn code for reading a JSON
@@ -55,7 +55,7 @@ items:
 
         '
       type:
-      - prose.codeaccelerator.ReadJsonLearnResult.
+      - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
   type: method
   uid: prose.codeaccelerator.jupyter.ReadJsonBuilder.learn
 references:

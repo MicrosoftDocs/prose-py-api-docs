@@ -22,7 +22,7 @@ items:
   summary: 'The result from attempting to learn a program for delimited file reading.
 
 
-    (The result of calling @prose.codeaccelerator.ReadCsvBuilder.learn.)
+    (The result of calling <xref:prose.codeaccelerator.ReadCsvBuilder.learn>.)
 
     Only intended to be called internally.
 

@@ -12,8 +12,8 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: FindPatternsLearnResult
-  summary: 'Thin wrapper around @prose.codeaccelerator.FindPatternsLearnResult. See
-    the base class for additional details on parameters, methods, and properties.
+  summary: 'Thin wrapper around <xref:prose.codeaccelerator.FindPatternsLearnResult>.
+    See the base class for additional details on parameters, methods, and properties.
 
 
     The result from attempting to learn a set of patterns in string data.

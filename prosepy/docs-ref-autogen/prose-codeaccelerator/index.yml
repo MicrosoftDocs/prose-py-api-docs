@@ -2,6 +2,7 @@
 items:
 - children:
   - prose.codeaccelerator
+  fullName: prose-codeaccelerator
   langs:
   - python
   name: prose-codeaccelerator
