@@ -37,7 +37,7 @@ result.code() # generate the code in the target
 
 ### Example of a fixed-width schema
 
-```
+```text
 Name   Start   End    Description
 First  1       2      The first thing
 Second 3       3      The second, a singleton
@@ -141,7 +141,6 @@ def read_file(file):
     return df
 
 ```
-
 
 ## Specify number of lines to analyze
 
