@@ -17,7 +17,7 @@ items:
   summary: 'The result from attempting to learn a program for JSON reading.
 
 
-    (The result of calling @prose.codeaccelerator.ReadJsonBuilder.learn.)
+    (The result of calling <xref:prose.codeaccelerator.ReadJsonBuilder.learn>.)
 
     Only intended to be called internally.
 

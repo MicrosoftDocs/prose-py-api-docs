@@ -19,8 +19,8 @@ items:
   - python
   module: prose.codeaccelerator.jupyter
   name: ReadCsvBuilder
-  summary: 'Thin wrapper around @prose.codeaccelerator.ReadCsvBuilder. See the base
-    class for additional details on parameters, methods, and properties.
+  summary: 'Thin wrapper around <xref:prose.codeaccelerator.ReadCsvBuilder>. See the
+    base class for additional details on parameters, methods, and properties.
 
 
     A builder for specifying constraints in order to learn code for reading a delimited
@@ -57,7 +57,7 @@ items:
 
         '
       type:
-      - prose.codeaccelerator.ReadCsvLearnResult.
+      - <xref:prose.codeaccelerator.ReadCsvLearnResult>.
   type: method
   uid: prose.codeaccelerator.jupyter.ReadCsvBuilder.learn
 references:

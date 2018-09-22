@@ -69,7 +69,7 @@ items:
 
         '
       type:
-      - prose.codeaccelerator.ReadCsvLearnResult.
+      - <xref:prose.codeaccelerator.ReadCsvLearnResult>.
   type: method
   uid: prose.codeaccelerator.ReadCsvBuilder.learn
 - class: prose.codeaccelerator.ReadCsvBuilder
