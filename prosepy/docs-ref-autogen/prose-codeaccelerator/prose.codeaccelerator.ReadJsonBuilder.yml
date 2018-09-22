@@ -65,7 +65,7 @@ items:
 
         '
       type:
-      - prose.codeaccelerator.ReadJsonLearnResult.
+      - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
   type: method
   uid: prose.codeaccelerator.ReadJsonBuilder.learn
 - class: prose.codeaccelerator.ReadJsonBuilder

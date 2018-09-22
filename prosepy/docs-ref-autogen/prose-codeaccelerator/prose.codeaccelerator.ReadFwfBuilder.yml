@@ -80,7 +80,7 @@ items:
 
         '
       type:
-      - prose.codeaccelerator.ReadFwfLearnResult.
+      - <xref:prose.codeaccelerator.ReadFwfLearnResult>.
   type: method
   uid: prose.codeaccelerator.ReadFwfBuilder.learn
 - class: prose.codeaccelerator.ReadFwfBuilder
