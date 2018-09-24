@@ -1,0 +1,33 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+    type: prose.codeaccelerator._read_text_builder.ReadFwfLearnResult
+  langs:
+  - python
+  module: prose.codeaccelerator.jupyter
+  name: ReadFwfLearnResult
+  summary: 'Thin wrapper around <xref:prose.codeaccelerator.ReadFwfLearnResult>. See
+    the base class for additional details on parameters, methods, and properties.
+
+
+    The result from attempting to learn a program for fixed-width file reading.
+
+
+    (The result of calling <xref:prose.codeaccelerator.ReadFwfBuilder.learn>.)
+
+    Only intended to be called internally.
+
+    '
+  syntax:
+    content: ReadFwfLearnResult(filename, result)
+  type: class
+  uid: prose.codeaccelerator.jupyter.ReadFwfLearnResult
+references: []

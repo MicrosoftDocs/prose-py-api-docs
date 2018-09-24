@@ -1,0 +1,101 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.ReadJsonBuilder.filename
+  - prose.codeaccelerator.ReadJsonBuilder.learn
+  - prose.codeaccelerator.ReadJsonBuilder.target
+  class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: abc.ABC
+    type: prose.codeaccelerator._builder.Builder
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: ReadJsonBuilder
+  summary: 'A builder for specifying constraints in order to learn code for reading
+    a JSON file into a table.
+
+
+
+
+    '
+  syntax:
+    content: ReadJsonBuilder(filename)
+    parameters:
+    - description: 'A path to the input file (in UTF-8) to learn from.
+
+        '
+      id: filename
+      type:
+      - str
+  type: class
+  uid: prose.codeaccelerator.ReadJsonBuilder
+- class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder.filename
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: filename
+  summary: 'Path to the input JSON file to learn from.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadJsonBuilder.filename
+- class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: learn
+  summary: 'Attempt to learn a program from the constraints that have been set on
+    this builder.
+
+    '
+  syntax:
+    content: learn()
+    parameters: []
+    return:
+      description: 'The result of learning.
+
+        '
+      type:
+      - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
+  type: method
+  uid: prose.codeaccelerator.ReadJsonBuilder.learn
+- class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: target
+  summary: 'Target runtime library for the generated code.
+
+
+    Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadJsonBuilder.target
+references:
+- fullName: prose.codeaccelerator.ReadJsonBuilder.filename
+  isExternal: false
+  name: filename
+  parent: prose.codeaccelerator.ReadJsonBuilder
+  uid: prose.codeaccelerator.ReadJsonBuilder.filename
+- fullName: prose.codeaccelerator.ReadJsonBuilder.learn
+  isExternal: false
+  name: learn
+  parent: prose.codeaccelerator.ReadJsonBuilder
+  uid: prose.codeaccelerator.ReadJsonBuilder.learn
+- fullName: prose.codeaccelerator.ReadJsonBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.ReadJsonBuilder
+  uid: prose.codeaccelerator.ReadJsonBuilder.target

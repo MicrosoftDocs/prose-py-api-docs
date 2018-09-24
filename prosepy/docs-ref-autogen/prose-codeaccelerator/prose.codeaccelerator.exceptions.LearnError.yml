@@ -1,0 +1,25 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: prose.codeaccelerator.exceptions.LearnError
+  fullName: prose.codeaccelerator.exceptions.LearnError
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - type: builtins.object
+        type: builtins.BaseException
+      type: builtins.Exception
+    type: prose.codeaccelerator.exceptions.ProseException
+  langs:
+  - python
+  module: prose.codeaccelerator.exceptions
+  name: LearnError
+  summary: 'An error occurred during learning.
+
+    '
+  syntax: {}
+  type: class
+  uid: prose.codeaccelerator.exceptions.LearnError
+references: []

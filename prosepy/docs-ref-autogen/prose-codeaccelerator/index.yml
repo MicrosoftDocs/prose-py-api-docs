@@ -1,0 +1,16 @@
+### YamlMime:UniversalReference
+items:
+- children:
+  - prose.codeaccelerator
+  fullName: prose-codeaccelerator
+  langs:
+  - python
+  name: prose-codeaccelerator
+  summary: ''
+  type: package
+  uid: project-prose-codeaccelerator
+references:
+- fullname: prose.codeaccelerator
+  isExternal: false
+  name: prose.codeaccelerator
+  uid: prose.codeaccelerator
