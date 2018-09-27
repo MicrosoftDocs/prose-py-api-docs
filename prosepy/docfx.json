@@ -84,7 +84,7 @@
     "globalMetadata": {
       "breadcrumb_path": "~/breadcrumb/toc.yml",
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/MachineLearning-Python-Feedback",
+      "feedback_github_repo": "MicrosoftDocs/prose-py-api-docs",
       "author": "dsindona",
       "ms.service": "non-product-specific",
       "ms.author": "Dana.Sindona",
