@@ -103,22 +103,22 @@ you could run `classify(df, 'Name').plot()` to see how frequently the name forma
 ```python
 import regex
 
-titleword_whitespace_titleword_whitespace_titleword = regex.compile(r'^[A-Z][a-z]+[\s][A-Z][a-z]+[\s][A-Z][a-z]+$')
-titleword_whitespace_lowers_whitespace_titleword = regex.compile(r'^[A-Z][a-z]+[\s][a-z]+[\s][A-Z][a-z]+$')
-titleword_whitespace_titleword___titleword = regex.compile(r'^[A-Z][a-z]+[\s][A-Z][a-z]+-[A-Z][a-z]+$')
-titleword_whitespace_titleword = regex.compile(r'^[A-Z][a-z]+[\s][A-Z][a-z]+$')
+pattern_0 = regex.compile(r'^[A-Z][a-z]+[\s][A-Z][a-z]+[\s][A-Z][a-z]+$')
+pattern_1 = regex.compile(r'^[A-Z][a-z]+[\s][a-z]+[\s][A-Z][a-z]+$')
+pattern_2 = regex.compile(r'^[A-Z][a-z]+[\s][A-Z][a-z]+-[A-Z][a-z]+$')
+pattern_3 = regex.compile(r'^[A-Z][a-z]+[\s][A-Z][a-z]+$')
 
 def identify_pattern(input_str):
-    if input_str is not None and titleword_whitespace_titleword_whitespace_titleword.match(input_str):
+    if input_str is not None and pattern_0.match(input_str):
         # 'Mukhtar Beatriz Savic', 'Martin Gezahegne Kongsangchai'
         return (True, 'TitleWord & [Space]{1} & TitleWord & [Space]{1} & TitleWord')
-    elif input_str is not None and titleword_whitespace_lowers_whitespace_titleword.match(input_str):
+    elif input_str is not None and pattern_1.match(input_str):
         # 'Davit le Roux', 'Marta van Zyl'
         return (True, 'TitleWord & [Space]{1} & [Lower]+ & [Space]{1} & TitleWord')
-    elif input_str is not None and titleword_whitespace_titleword___titleword.match(input_str):
+    elif input_str is not None and pattern_2.match(input_str):
         # 'Ariette Woo-Nicolaou', 'Bolormaa Ivanov-Kassios'
         return (True, 'TitleWord & [Space]{1} & TitleWord & Const[-] & TitleWord')
-    elif input_str is not None and titleword_whitespace_titleword.match(input_str):
+    elif input_str is not None and pattern_3.match(input_str):
         # 'Eka Nastase', 'Jamuna Pavlovski'
         return (True, 'TitleWord & [Space]{1} & TitleWord')
     else:
@@ -134,19 +134,19 @@ format.
 ```diff
 -def identify_pattern(input_str):
 +def extract_last_name(input_str):
-     if input_str is not None and titleword_whitespace_titleword_whitespace_titleword.match(input_str):
+     if input_str is not None and pattern_0.match(input_str):
          # 'Mukhtar Beatriz Savic', 'Martin Gezahegne Kongsangchai'
 -        return (True, 'TitleWord & [Space]{1} & TitleWord & [Space]{1} & TitleWord')
 +        return input_str.split()[-1]  # Ignore the middle name
-     elif input_str is not None and titleword_whitespace_lowers_whitespace_titleword.match(input_str):
+     elif input_str is not None and pattern_1.match(input_str):
          # 'Davit le Roux', 'Marta van Zyl'
 -        return (True, 'TitleWord & [Space]{1} & [Lower]+ & [Space]{1} & TitleWord')
 +        return input_str.split(maxsplit=1)[1]  # Take everything after the first name
-     elif input_str is not None and titleword_whitespace_titleword___titleword.match(input_str):
+     elif input_str is not None and pattern_2.match(input_str):
          # 'Ariette Woo-Nicolaou', 'Bolormaa Ivanov-Kassios'
 -        return (True, 'TitleWord & [Space]{1} & TitleWord & Const[-] & TitleWord')
 +        return input_str.split()[-1]  # Take both halves of the double barrel
-     elif input_str is not None and titleword_whitespace_titleword.match(input_str):
+     elif input_str is not None and pattern_3.match(input_str):
          # 'Eka Nastase', 'Jamuna Pavlovski'
 -        return (True, 'TitleWord & [Space]{1} & TitleWord')
 +        return input_str.split()[-1]  # Take the last name
@@ -190,19 +190,19 @@ r.code()
 
 This now produces a clustering function that handles PySpark DataFrames.
 ```python
-digit2___titleword___digit2 = '^[0-9]{2}-[A-Z][a-z]+-[0-9]{2}$'
-digit2_whitespace_titleword_whitespace_digit4 = r'^[0-9]{2}[\s][A-Z][a-z]+[\s][0-9]{4}$'
-digit4 = '^[0-9]{4}$'
-Unknown = '^Unknown$'
+pattern_0 = '^[0-9]{2}-[A-Z][a-z]+-[0-9]{2}$'
+pattern_1 = r'^[0-9]{2}[\s][A-Z][a-z]+[\s][0-9]{4}$'
+pattern_2 = '^[0-9]{4}$'
+pattern_3 = '^Unknown$'
 
 from pyspark.sql import functions
 
 def classify(df, column):
     identify_pattern = functions \
-        .when(df[column].rlike(digit2___titleword___digit2), '[Digit]{2} & Const[-] & TitleWord & Const[-] & [Digit]{2}') \
-        .when(df[column].rlike(digit2_whitespace_titleword_whitespace_digit4), '[Digit]{2} & [Space]{1} & TitleWord & [Space]{1} & [Digit]{4}') \
-        .when(df[column].rlike(digit4), '[Digit]{4}') \
-        .when(df[column].rlike(Unknown), 'Const[Unknown]') \
+        .when(df[column].rlike(pattern_0), '[Digit]{2} & Const[-] & TitleWord & Const[-] & [Digit]{2}') \
+        .when(df[column].rlike(pattern_1), '[Digit]{2} & [Space]{1} & TitleWord & [Space]{1} & [Digit]{4}') \
+        .when(df[column].rlike(pattern_2), '[Digit]{4}') \
+        .when(df[column].rlike(pattern_3), 'Const[Unknown]') \
 
     return df.groupBy(identify_pattern.alias('identify_pattern'))
 ```
@@ -216,14 +216,14 @@ Again, you can modify this code to extract the dates from each date format.
 +def standardize_year(df, column):
 -    identify_pattern = functions \
 +  extract_and_standardize_year = functions \
--        .when(df[column].rlike(digit2___titleword___digit2), '[Digit]{2} & Const[-] & TitleWord & Const[-] & [Digit]{2}') \
-+        .when(df[column].rlike(digit2___titleword___digit2), concat(lit('19'), df[column].substr(-2, 2))) \
--        .when(df[column].rlike(digit2_whitespace_titleword_whitespace_digit4), '[Digit]{2} & [Space]{1} & TitleWord & [Space]{1} & [Digit]{4}') \
-+        .when(df[column].rlike(digit2_whitespace_titleword_whitespace_digit4), df[column].substr(-4, 4)) \
--        .when(df[column].rlike(digit4), '[Digit]{4}') \
-+        .when(df[column].rlike(digit4), df[column]) \
--        .when(df[column].rlike(Unknown), 'Const[Unknown]') \
-+        .when(df[column].rlike(Unknown), lit(None)) \
+-        .when(df[column].rlike(pattern_0), '[Digit]{2} & Const[-] & TitleWord & Const[-] & [Digit]{2}') \
++        .when(df[column].rlike(pattern_0), concat(lit('19'), df[column].substr(-2, 2))) \
+-        .when(df[column].rlike(pattern_1), '[Digit]{2} & [Space]{1} & TitleWord & [Space]{1} & [Digit]{4}') \
++        .when(df[column].rlike(pattern_1), df[column].substr(-4, 4)) \
+-        .when(df[column].rlike(pattern_2), '[Digit]{4}') \
++        .when(df[column].rlike(pattern_2), df[column]) \
+-        .when(df[column].rlike(pattern_3), 'Const[Unknown]') \
++        .when(df[column].rlike(pattern_3), lit(None)) \
 
 -    return df.groupBy(identify_pattern.alias('identify_pattern'))
 +    return df.withColumn('BirthYear', extract_and_standardize_year)
