@@ -24,9 +24,9 @@ small fraction of outliers.
 import prose.codeaccelerator as cx
 
 builder = cx.FindPatternsBuilder(inputs)  # Inputs need to be list of strings
-# option 0 (default): builder.Target = cx.Target.pandas   # Produces code to operate on pandas dataframes
-# option 1          : builder.Target = cx.Target.pyspark  # Produces code to operate on pyspark dataframes
-# option 2          : builder.Target = cx.Target.auto     # Produces code to operate on individual strings
+# option 0 (default): builder.target = 'pandas'   # Produces code to operate on pandas dataframes
+# option 1          : builder.target = 'pyspark'  # Produces code to operate on pyspark dataframes
+# option 2          : builder.target = 'auto'     # Produces code to operate on individual strings
 result = builder.learn()
 
 result.data()
@@ -35,17 +35,17 @@ result.data()
 result.regexes
 # produce a list of regexes corresponding to the patterns
 
-result.code(task=result.Tasks.classify)
+result.code(task='classify')
 # produce a function that takes a dataframe (pandas or pyspark, depending on
 # the target) and a column name, and returns the dataframe grouped by the
 # the produced patterns in the column.
 
-result.code(task=result.Tasks.check)
+result.code(task='check')
 # produce a function that takes a dataframe (pandas or pyspark, depending on
 # the target) and a column name, and asserts that all values in the column
 # the produced patterns in the column.
 
-result.code() # Equivalent to result.code(task=result.Tasks.classify)
+result.code() # Equivalent to result.code(task='classify')
 ```
 
 ## Extraction and standardization
@@ -93,7 +93,7 @@ r = b.learn()
 # Check that the set of patterns you have learned from the sample
 # matches all names in the dataframe. If it doesn't this next line
 # will fail an assertion.
-r.code(task=r.Tasks.check)(df, 'Name')
+r.code(task='check')(df, 'Name')
 r.code()
 ```
 
@@ -183,7 +183,7 @@ sample_dates = df['BirthDate'].sample(25, random_state=0).tolist()
 b = cx.FindPatternsBuilder(sample_dates)
 
 # Now, set the target to pyspark
-b.target = cx.Target.pyspark
+b.target = 'pyspark'
 r = b.learn()
 r.code()
 ```
