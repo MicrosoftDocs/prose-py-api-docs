@@ -218,4 +218,4 @@ non-`None` value to return when an `NA` value is converted.
   coerced/promoted to `numpy.float64`. This is a "feature" of pandas and is documented
   [here](https://pandas.pydata.org/pandas-docs/stable/gotchas.html#nan-integer-na-values-and-na-type-promotions).
   
-  
+ See the list of known issues [here](https://docs.microsoft.com/en-us/python/api/overview/azure/prose/knownissues?view=prose-py-latest).
