@@ -211,3 +211,11 @@ non-`None` value to return when an `NA` value is converted.
   Further, a bug in Python 3.6 causes dates earlier than `1970-01-02` to be handled incorrectly. To ensure reliable
   operation across platforms, time values without dates are represented with dates of `2000-01-01` in PySpark mode. The
   default date value for other targets remains `1900-01-01`, which is the default for Python.
+
+- When the input is a pandas DataFrame, and the `target` property on the `DetectTypesBuilder` instance is set to
+  `pandas` or `auto`, if a column containing only integer values contains one more more `NA` values, then although the
+  generated code promises to return an `int`, the pandas DataFrame object returned will have the values in that column
+  coerced/promoted to `numpy.float64`. This is a "feature" of pandas and is documented
+  [here](https://pandas.pydata.org/pandas-docs/stable/gotchas.html#nan-integer-na-values-and-na-type-promotions).
+  
+  
