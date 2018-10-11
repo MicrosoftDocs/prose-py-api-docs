@@ -13,11 +13,8 @@ The following are issues that the PROSE team is aware of with the 1.0.0 release 
 working to fix them in a future release.  If you encounter issues not on this list, please report them on the
 [prose-codeaccelerator GitHub repository](https://github.com/Microsoft/prose-codeaccelerator/issues).
 
-## ReadCsvBuilder
-- Only UTF-8 encoded files are supported.
-  
+ 
 ## ReadFwfBuilder
-- Only UTF-8 encoded files are supported.
 
 ### PySpark:
 - Calling `ReadFwfLearnResult.data()` for a file with `\r\n` or `\r` line separators will cause `NameError: name
@@ -28,10 +25,8 @@ working to fix them in a future release.  If you encounter issues not on this li
 
   cx._functions.StringType = StringType
   ```
-
   
 ## ReadJsonBuilder
-- Only UTF-8 encoded files are supported.
 
 ### Pandas:
 - If the JSON has a single top level array of values (e.g., `{"top": [1, 2]}`), pandas' `json_normalize` throws
