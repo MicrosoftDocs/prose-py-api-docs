@@ -18,17 +18,6 @@ working to fix them in a future release.  If you encounter issues not on this li
   
 ## ReadFwfBuilder
 - Only UTF-8 encoded files are supported.
-
-### PySpark:
-- Calling `ReadFwfLearnResult.data()` for a file with `\r\n` or `\r` line separators will cause `NameError: name
-  'StringType' is not defined` exception.  As a workaround, add the following code to your session:
-  ```python
-  import prose.codeaccelerator as cx
-  from pyspark.sql.types import StringType
-
-  cx._functions.StringType = StringType
-  ```
-
   
 ## ReadJsonBuilder
 - Only UTF-8 encoded files are supported.
