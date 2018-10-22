@@ -12,11 +12,11 @@ description: Learn how to analyze a fixed-width file with PROSE Code Accelerator
 
 `ReadFwfBuilder` will analyze a fixed-width file and produce code to split the fields yielding a data frame.  When it is
 given only the fixed-width input file, Code Accelerator makes every effort to determine the boundaries between fields.
-Sometimes, however, this isn't possible. For example, if a file has two separate number fields placed directly next to one
-another, there might not be enough information to determine the boundary between them.  So,
-`ReadFwfBuilder` optionally also takes a file containing a description of the file schema.  This schema
-description does not have to be in an exact format; Code Accelerator will do its best to locate lists of fields and their column
-ranges and use that information to generate the code.
+Sometimes, however, this isn't possible. For example, if a file has two separate number fields placed directly next to
+one another, there might not be enough information to determine the boundary between them.  So, `ReadFwfBuilder`
+optionally also takes a file containing a description of the file schema.  This schema description does not have to be
+in an exact format; Code Accelerator will do its best to locate lists of fields and their column ranges and use that
+information to generate the code.
 
 > [!NOTE]
 > The `ReadFwfBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.

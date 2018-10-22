@@ -10,9 +10,10 @@ description: Learn how to analyze and pare delimited files with PROSE Code Accel
 
 # Read a CSV file with the Microsoft PROSE Code Accelerator SDK
 
-`ReadCsvBuilder` will analyze a given delimited text file (that has comma-separated values, or that uses other delimiters) and determine all the details about that file necessary to successfully parse it and
-produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
-the beginning of the file, etc.
+`ReadCsvBuilder` will analyze a given delimited text file (that has comma-separated values, or that uses other
+delimiters) and determine all the details about that file necessary to successfully parse it and produce a dataframe
+(either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at the beginning of
+the file, etc.
 
 > [!NOTE]
 > `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
