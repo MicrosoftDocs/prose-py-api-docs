@@ -26,6 +26,7 @@ result.code() # generate the code in the target
 
 > [!NOTE]
 > All examples assume `import prose.codeaccelerator as cx`.
+> The field delimiter in Pandas is `.` (e.g., `name.first`) while that in PySpark is `_` (e.g., `name_first`).
 
 ## Read object
 
@@ -71,8 +72,8 @@ from pyspark.sql.functions import col
 def read_json(file):
     spark = SparkSession.builder.getOrCreate()
     df = spark.read.json(file, multiLine=True)
-    df = df.select(col("name.first").alias("name.first"),
-                   col("name.last").alias("name.last"),
+    df = df.select(col("name.first").alias("name_first"),
+                   col("name.last").alias("name_last"),
                    col("phone").alias("phone"))
     return df
 ```
@@ -131,8 +132,8 @@ from pyspark.sql.functions import col
 def read_json(file):
     spark = SparkSession.builder.getOrCreate()
     df = spark.read.json(file, multiLine=True)
-    df = df.select(col("name.first").alias("name.first"),
-                   col("name.last").alias("name.last"),
+    df = df.select(col("name.first").alias("name_first"),
+                   col("name.last").alias("name_last"),
                    col("phone").alias("phone"))
     return df
 ```
@@ -176,8 +177,8 @@ from pyspark.sql.functions import col
 def read_json(file):
     spark = SparkSession.builder.getOrCreate()
     df = spark.read.json(file)
-    df = df.select(col("name.first").alias("name.first"),
-                   col("name.last").alias("name.last"),
+    df = df.select(col("name.first").alias("name_first"),
+                   col("name.last").alias("name_last"),
                    col("phone").alias("phone"))
     return df
 ```
@@ -249,11 +250,11 @@ def read_json(file):
     df = df.select(col("color").alias("color"),
                    col("category").alias("category"),
                    col("type").alias("type"),
-                   col("code.rgba")[0].alias("code.rgba.0"),
-                   col("code.rgba")[1].alias("code.rgba.1"),
-                   col("code.rgba")[2].alias("code.rgba.2"),
-                   col("code.rgba")[3].alias("code.rgba.3"),
-                   col("code.hex").alias("code.hex"))
+                   col("code.rgba")[0].alias("code_rgba_0"),
+                   col("code.rgba")[1].alias("code_rgba_1"),
+                   col("code.rgba")[2].alias("code_rgba_2"),
+                   col("code.rgba")[3].alias("code_rgba_3"),
+                   col("code.hex").alias("code_hex"))
     return df
 ```
 
@@ -336,11 +337,11 @@ from pyspark.sql.functions import col, explode
 def read_json(file):
     spark = SparkSession.builder.getOrCreate()
     df = spark.read.json(file, multiLine=True)
-    df = df.select(col("name.first").alias("name.first"),
-                   col("name.last").alias("name.last"),
+    df = df.select(col("name.first").alias("name_first"),
+                   col("name.last").alias("name_last"),
                    explode("phone").alias("phone_explode"),
-                   col("phone_explode.area").alias("phone.area"),
-                   col("phone_explode.number").alias("phone.number"))
+                   col("phone_explode.area").alias("phone_area"),
+                   col("phone_explode.number").alias("phone_number"))
     df = df.drop("phone_explode")
     return df
 
@@ -433,12 +434,12 @@ from pyspark.sql.functions import col, explode
 def read_json(file):
     spark = SparkSession.builder.getOrCreate()
     df = spark.read.json(file, multiLine=True)
-    df = df.select(col("name.first").alias("name.first"),
-                   col("name.last").alias("name.last"),
+    df = df.select(col("name.first").alias("name_first"),
+                   col("name.last").alias("name_last"),
                    explode("phone").alias("phone_explode"),
-                   col("phone_explode.area").alias("phone.area"),
-                   col("phone_explode.number.number1").alias("phone.number.number1"),
-                   col("phone_explode.number.number2").alias("phone.number.number2"))
+                   col("phone_explode.area").alias("phone_area"),
+                   col("phone_explode.number.number1").alias("phone_number_number1"),
+                   col("phone_explode.number.number2").alias("phone_number_number2"))
     df = df.drop("phone_explode")
     return df
 ```
@@ -558,9 +559,9 @@ def read_json(file):
     spark = SparkSession.builder.getOrCreate()
     df = spark.read.json(file, multiLine=True)
     df = df.select(explode("top").alias("top_explode"),
-                   col("top_explode.name.first").alias("top.name.first"),
-                   col("top_explode.name.last").alias("top.name.last"),
-                   col("top_explode.phone").alias("top.phone"))
+                   col("top_explode.name.first").alias("top_name_first"),
+                   col("top_explode.name.last").alias("top_name_last"),
+                   col("top_explode.phone").alias("top_phone"))
     df = df.drop("top_explode")
     return df
 ```

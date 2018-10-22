@@ -57,6 +57,10 @@ working to fix them in a future release.  If you encounter issues not on this li
   queries from raw JSON/CSV files are disallowed when the referenced columns only include the internal corrupt record
   column`. Note that array of objects is not affected.
 
+- If the JSON has a backtick (`` ` ``) in a property name (e.g., ``{ "property has backtick `": 1 }``),
+`spark.read.json` throws `org.apache.spark.sql.AnalysisException: syntax error in attribute name`. 
+Spark issue: [https://issues.apache.org/jira/browse/SPARK-18502](https://issues.apache.org/jira/browse/SPARK-18502).
+
 ## DetectTypesBuilder
 
 ### Pandas:
