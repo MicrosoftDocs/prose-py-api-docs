@@ -1,6 +1,6 @@
 ---
 title: Known issues with the Microsoft PROSE Code Accelerator SDK - Python
-ms.date: 09/24/2018
+ms.date: 10/22/2018
 ms.topic: conceptual
 ms.service: non-product-specific
 author: simmdan
@@ -9,18 +9,11 @@ description: These are known issues with the current release of PROSE Code Accel
 ---
 
 # Known issues with the Microsoft PROSE Code Accelerator SDK
-The following are issues that the PROSE team is aware of with the 1.0.0 release of the Microsoft PROSE Code Accelerator SDK.  We are
-working to fix them in a future release.  If you encounter issues not on this list, please report them on the
-[prose-codeaccelerator GitHub repository](https://github.com/Microsoft/prose-codeaccelerator/issues).
-
-## ReadCsvBuilder
-- Only UTF-8 encoded files are supported.
-  
-## ReadFwfBuilder
-- Only UTF-8 encoded files are supported.
+The following are issues that the PROSE team is aware of with the 1.0.0 release of the Microsoft PROSE Code Accelerator
+SDK.  We are working to fix them in a future release.  If you encounter issues not on this list, please report them on
+the [prose-codeaccelerator GitHub repository](https://github.com/Microsoft/prose-codeaccelerator/issues).
   
 ## ReadJsonBuilder
-- Only UTF-8 encoded files are supported.
 
 ### Pandas:
 - If the JSON has a single top level array of values (e.g., `{"top": [1, 2]}`), pandas' `json_normalize` throws
@@ -80,4 +73,3 @@ working to fix them in a future release.  If you encounter issues not on this li
   Further, a bug in Python 3.6 causes dates earlier than `1970-01-02` to be handled incorrectly. To ensure reliable
   operation across platforms, time values without dates are represented with dates of `2000-01-01` in PySpark mode. The
   default date value for other targets remains `1900-01-01`, which is the default for Python.
-
