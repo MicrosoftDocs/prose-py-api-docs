@@ -10,19 +10,17 @@ description: Learn how to use data type detection features in the PROSE Code Acc
 
 # Fix data types with the Microsoft PROSE Code Accelerator SDK
 
-One common pain point when working with data in Python is that values
-in columns in a data frame are often stored as strings whereas they should be numbers or dates. This prevents doing logical operations
-on those columns. The Microsoft PROSE Code Accelerator SDK includes the `DetectTypesBuilder` class, which will examine data and, if appropriate,
-produce code to transform the data to correct types.  While the underlying pandas and
-PySpark libraries in some cases have the ability to infer data types from
-strings, often the results are less than ideal: the set of supported
-formats is usually small. Further, these inference techniques usually fail
-completely if a column of data consists of values formatted in more than
-one way.
+One common pain point when working with data in Python is that values in columns in a data frame are often stored as
+strings whereas they should be numbers or dates. This prevents doing logical operations on those columns. The Microsoft
+PROSE Code Accelerator SDK includes the `DetectTypesBuilder` class, which will examine data and, if appropriate, produce
+code to transform the data to correct types.  While the underlying pandas and PySpark libraries in some cases have the
+ability to infer data types from strings, often the results are less than ideal: the set of supported formats is usually
+small. Further, these inference techniques usually fail completely if a column of data consists of values formatted in
+more than one way.
 
-The data type detection features in Code Accelerator come in handy in
-such scenarios. Not only does the data type detection convert data into the
-appropriate data type, the process is completely transparent. After generating code for the data type transformation/conversion, the user can then inspect or modify the code as desired: the system is no
+The data type detection features in Code Accelerator come in handy in such scenarios. Not only does the data type
+detection convert data into the appropriate data type, the process is completely transparent. After generating code for
+the data type transformation/conversion, the user can then inspect or modify the code as desired: the system is no
 longer a magical black box.
 
 ## Usage
@@ -61,9 +59,9 @@ Date:   <class 'str'>
 Value:  <class 'str'>
 ```
 
-You can see that the dates are in differing formats. Also, the `Value` column contains numbers formatted in three different ways: one
-with commas as the thousands separator, one without, and the last uses the scientific notation. With so much heterogeneity in the data,
-pandas is unable to automatically convert to the correct data types.
+You can see that the dates are in differing formats. Also, the `Value` column contains numbers formatted in three
+different ways: one with commas as the thousands separator, one without, and the last uses the scientific notation. With
+so much heterogeneity in the data, pandas is unable to automatically convert to the correct data types.
 
 To convert the columns into the correct data types, you can use the data type detection APIs in the PROSE Python SDK:
 
@@ -159,23 +157,19 @@ def coerce_types(df):
     })
 ```
 
-Observe that the generated code handles the various cases in the formatting
-of the data. Further, the generated code contains descriptive comments
-which make it easy for a user to modify the generated code to handle
-new and/or unseen formats in the data.
+Observe that the generated code handles the various cases in the formatting of the data. Further, the generated code
+contains descriptive comments which make it easy for a user to modify the generated code to handle new and/or unseen
+formats in the data.
 
 ## Inputs and Targets
-The data type detection APIs accept the following three forms of input: (1) A
-simple list, (2) a dictionary with string-valued keys and lists of strings
-as values, or (3) a pandas DataFrame with string-valued column identifiers.
+The data type detection APIs accept the following three forms of input: (1) A simple list, (2) a dictionary with
+string-valued keys and lists of strings as values, or (3) a pandas DataFrame with string-valued column identifiers.
 
-You can also specify the target for code generation. The data type
-detection API can generate code that will transform data contained in
-(1) a list, (2) a dictionary, (3) a pandas DataFrame, or (4) a PySpark
-DataFrame. Note that using a PySpark DataFrame as input is not supported. You can manually sample data from the PySpark DataFrame into a
-dictionary, or a pandas DataFrame. This sampled data may then be used as
-input to learn the data type transformation that can then be applied on the
-PySpark DataFrame.
+You can also specify the target for code generation. The data type detection API can generate code that will transform
+data contained in (1) a list, (2) a dictionary, (3) a pandas DataFrame, or (4) a PySpark DataFrame. Note that using a
+PySpark DataFrame as input is not supported. You can manually sample data from the PySpark DataFrame into a dictionary,
+or a pandas DataFrame. This sampled data may then be used as input to learn the data type transformation that can then
+be applied on the PySpark DataFrame.
 
 ## Supported types and restricting the set of detected types.
 
@@ -186,7 +180,9 @@ The data type detection APIs support detection of the following types:
 - Boolean values
 - String values
 
-Users can restrict the set of types detected by setting the `types_to_detect` property on an instance of `DetectTypesBuilder`. The property accepts assignment to a list of strings. The allowed values in the list include `'bool'`, `'boolean'`, `'numeric'`, `'number'`, `'datetime'`, `'string'` and `'text'`. For example:
+Users can restrict the set of types detected by setting the `types_to_detect` property on an instance of
+`DetectTypesBuilder`. The property accepts assignment to a list of strings. The allowed values in the list include
+`'bool'`, `'boolean'`, `'numeric'`, `'number'`, `'datetime'`, `'string'` and `'text'`. For example:
 
 ```python
 builder = cx.DetectTypesBuilder(df)
@@ -199,14 +195,11 @@ transformation_code = result.code()
 
 ## Limitations:
 
-- When a numeric column includes NA values, the default behavior of the
-code generated by the data type detection APIs is to return `None` in
-response to a value detected as an `NA` value. When used with a pandas
-DataFrame, any integer values intermixed with `None` in a column results in
-the entire column being represented using `numpy.float64` values. A user
-may workaround this by editing the code and choosing an appropriate
-non-`None` value to return when an `NA` value is converted.
+- When a numeric column includes NA values, the default behavior of the code generated by the data type detection APIs
+  is to return `None` in response to a value detected as an `NA` value. When used with a pandas DataFrame, any integer
+  values intermixed with `None` in a column results in the entire column being represented using `numpy.float64` values.
+  A user may workaround this by editing the code and choosing an appropriate non-`None` value to return when an `NA`
+  value is converted.
 
-- The data type detection APIs currently only process columns where the
-  data is string-valued. Non string-valued columns are simply returned
-  as-is, with no transformation applied.
+- The data type detection APIs currently only process columns where the data is string-valued. Non string-valued columns
+  are simply returned as-is, with no transformation applied.

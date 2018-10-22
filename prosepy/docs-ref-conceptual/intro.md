@@ -11,7 +11,9 @@ description: The Microsoft PROSE Code Accelerator SDK helps you quickly and accu
 
 # What is the Microsoft PROSE Code Accelerator SDK for Python?
 
-The Microsoft PROSE Code Accelerator SDK uses the power of [PROSE](https://microsoft.github.io/prose) to quickly and accurately generate Python code for common data preparation tasks. Code Accelerator includes functionality for data ingestion, data type correction, and pattern identification in string data.
+The Microsoft PROSE Code Accelerator SDK uses the power of [PROSE](https://microsoft.github.io/prose) to quickly and
+accurately generate Python code for common data preparation tasks. Code Accelerator includes functionality for data
+ingestion, data type correction, and pattern identification in string data.
 
 ## Requirements
 Code Accelerator runs on Python 3.5, 3.6, or 3.7 on Windows (32-bit or 64-bit), Linux (64-bit), and macOS.  It supports
@@ -65,9 +67,9 @@ takes a data frame of the same form as what was originally passed to the builder
  
  
 ## About the data method on learn result
-The `data()` method is intended to give a quick look at what the generated code will do.  For the input originally given to the
-builder, it will show what the output of running the generated code would be.  This way you can see if the code does
-what you want, and if not, provide different or additional information to the builder and try learning again.  
+The `data()` method is intended to give a quick look at what the generated code will do.  For the input originally given
+to the builder, it will show what the output of running the generated code would be.  This way you can see if the code
+does what you want, and if not, provide different or additional information to the builder and try learning again.  
 
 Since the provided data may be much larger than what you need for a quick check, the method takes an optional parameter
 of the number of output values to return.  For some learn results this is a number of a rows, for others it is just a
