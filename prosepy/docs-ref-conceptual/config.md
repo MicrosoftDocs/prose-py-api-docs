@@ -42,7 +42,7 @@ User configurable settings include:
   send telemetry information.  NOTE: You may also set the environment variable `PROSE_TELEMETRY_OPTOUT` to any value,
   and it's presence will cause this setting to be set to `True` and prevent telemetry information from being sent.
 
-## Persisting configuraiton changes
+## Persisting configuration changes
 
 If you want to change a setting for all future python processes, you will need to create/modify the PROSE configuration
 file found at `~/.config/prose/config.json`.  That file is read by PROSE when the Code Accelerator namespace is
