@@ -44,6 +44,10 @@ the [prose-codeaccelerator GitHub repository](https://github.com/Microsoft/prose
   queries from raw JSON/CSV files are disallowed when the referenced columns only include the internal corrupt record
   column`. Note that array of objects is not affected.
 
+- If the JSON has a backtick (`` ` ``) in a property name (e.g., ``{ "property has backtick `": 1 }``),
+`spark.read.json` throws `org.apache.spark.sql.AnalysisException: syntax error in attribute name`. 
+Spark issue: [https://issues.apache.org/jira/browse/SPARK-18502](https://issues.apache.org/jira/browse/SPARK-18502).
+
 ## DetectTypesBuilder
 - A numeric column formatted like `##.#`, where `#` represents a digit, is detected as a time if all the values are
   between `0.0` and `24.0` with no fractional part exceeding `.59`. So, if numeric values all look like
