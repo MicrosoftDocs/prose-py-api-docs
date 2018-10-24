@@ -3,7 +3,7 @@ api_name: []
 items:
 - children:
   - prose.codeaccelerator.FindPatternsLearnResult.code
-  - prose.codeaccelerator.FindPatternsLearnResult.data
+  - prose.codeaccelerator.FindPatternsLearnResult.preview_data
   - prose.codeaccelerator.FindPatternsLearnResult.regexes
   class: prose.codeaccelerator.FindPatternsLearnResult
   fullName: prose.codeaccelerator.FindPatternsLearnResult
@@ -54,17 +54,15 @@ items:
   type: method
   uid: prose.codeaccelerator.FindPatternsLearnResult.code
 - class: prose.codeaccelerator.FindPatternsLearnResult
-  fullName: prose.codeaccelerator.FindPatternsLearnResult.data
+  fullName: prose.codeaccelerator.FindPatternsLearnResult.preview_data
   langs:
   - python
   module: prose.codeaccelerator
-  name: data
+  name: preview_data
   summary: 'Group data provided to the find patterns operation by the learned patterns.
 
     '
   syntax:
-    content: data()
-    parameters: []
     return:
       description: 'A dictionary with keys being the name of the pattern, and the
         values
@@ -72,8 +70,8 @@ items:
         being a list of strings that correspond to that pattern.
 
         '
-  type: method
-  uid: prose.codeaccelerator.FindPatternsLearnResult.data
+  type: attribute
+  uid: prose.codeaccelerator.FindPatternsLearnResult.preview_data
 - class: prose.codeaccelerator.FindPatternsLearnResult
   fullName: prose.codeaccelerator.FindPatternsLearnResult.regexes
   langs:
@@ -98,11 +96,11 @@ references:
   name: code
   parent: prose.codeaccelerator.FindPatternsLearnResult
   uid: prose.codeaccelerator.FindPatternsLearnResult.code
-- fullName: prose.codeaccelerator.FindPatternsLearnResult.data
+- fullName: prose.codeaccelerator.FindPatternsLearnResult.preview_data
   isExternal: false
-  name: data
+  name: preview_data
   parent: prose.codeaccelerator.FindPatternsLearnResult
-  uid: prose.codeaccelerator.FindPatternsLearnResult.data
+  uid: prose.codeaccelerator.FindPatternsLearnResult.preview_data
 - fullName: prose.codeaccelerator.FindPatternsLearnResult.regexes
   isExternal: false
   name: regexes
