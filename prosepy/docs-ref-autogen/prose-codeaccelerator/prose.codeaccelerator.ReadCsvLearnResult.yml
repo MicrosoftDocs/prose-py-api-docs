@@ -4,10 +4,11 @@ items:
 - children:
   - prose.codeaccelerator.ReadCsvLearnResult.code
   - prose.codeaccelerator.ReadCsvLearnResult.column_count
-  - prose.codeaccelerator.ReadCsvLearnResult.data
   - prose.codeaccelerator.ReadCsvLearnResult.delimiter
+  - prose.codeaccelerator.ReadCsvLearnResult.encoding
   - prose.codeaccelerator.ReadCsvLearnResult.filename
   - prose.codeaccelerator.ReadCsvLearnResult.names
+  - prose.codeaccelerator.ReadCsvLearnResult.preview_data
   - prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
   class: prose.codeaccelerator.ReadCsvLearnResult
   fullName: prose.codeaccelerator.ReadCsvLearnResult
@@ -25,6 +26,7 @@ items:
     (The result of calling <xref:prose.codeaccelerator.ReadCsvBuilder.learn>.)
 
     Only intended to be called internally.
+
 
 
 
@@ -71,36 +73,6 @@ items:
   type: attribute
   uid: prose.codeaccelerator.ReadCsvLearnResult.column_count
 - class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.data
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: data
-  summary: 'Return the data obtained when running the learned program on the input
-    file.
-
-    '
-  syntax:
-    content: data(nrows=None)
-    parameters:
-    - defaultValue: None
-      description: 'The number of rows to read from the file.  Default is `None` (the
-        entire file). If specified, then it must be greater than or equal to zero.
-
-        '
-      id: nrows
-      type:
-      - int
-    return:
-      description: 'The first `nrows` or the data.
-
-        '
-      type:
-      - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-        List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
-  type: method
-  uid: prose.codeaccelerator.ReadCsvLearnResult.data
-- class: prose.codeaccelerator.ReadCsvLearnResult
   fullName: prose.codeaccelerator.ReadCsvLearnResult.delimiter
   langs:
   - python
@@ -113,6 +85,19 @@ items:
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadCsvLearnResult.delimiter
+- class: prose.codeaccelerator.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.ReadCsvLearnResult.encoding
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: encoding
+  summary: 'The detected encoding of the sample file that will be used for subsequent
+    reads.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadCsvLearnResult.encoding
 - class: prose.codeaccelerator.ReadCsvLearnResult
   fullName: prose.codeaccelerator.ReadCsvLearnResult.filename
   langs:
@@ -139,6 +124,26 @@ items:
   type: attribute
   uid: prose.codeaccelerator.ReadCsvLearnResult.names
 - class: prose.codeaccelerator.ReadCsvLearnResult
+  fullName: prose.codeaccelerator.ReadCsvLearnResult.preview_data
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: preview_data
+  summary: 'Return the data obtained when running the learned program on the input
+    file.
+
+    '
+  syntax:
+    return:
+      description: 'The first `5` rows of the data.
+
+        '
+      type:
+      - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
+        List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
+  type: attribute
+  uid: prose.codeaccelerator.ReadCsvLearnResult.preview_data
+- class: prose.codeaccelerator.ReadCsvLearnResult
   fullName: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
   langs:
   - python
@@ -161,16 +166,16 @@ references:
   name: column_count
   parent: prose.codeaccelerator.ReadCsvLearnResult
   uid: prose.codeaccelerator.ReadCsvLearnResult.column_count
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.data
-  isExternal: false
-  name: data
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.data
 - fullName: prose.codeaccelerator.ReadCsvLearnResult.delimiter
   isExternal: false
   name: delimiter
   parent: prose.codeaccelerator.ReadCsvLearnResult
   uid: prose.codeaccelerator.ReadCsvLearnResult.delimiter
+- fullName: prose.codeaccelerator.ReadCsvLearnResult.encoding
+  isExternal: false
+  name: encoding
+  parent: prose.codeaccelerator.ReadCsvLearnResult
+  uid: prose.codeaccelerator.ReadCsvLearnResult.encoding
 - fullName: prose.codeaccelerator.ReadCsvLearnResult.filename
   isExternal: false
   name: filename
@@ -181,6 +186,11 @@ references:
   name: names
   parent: prose.codeaccelerator.ReadCsvLearnResult
   uid: prose.codeaccelerator.ReadCsvLearnResult.names
+- fullName: prose.codeaccelerator.ReadCsvLearnResult.preview_data
+  isExternal: false
+  name: preview_data
+  parent: prose.codeaccelerator.ReadCsvLearnResult
+  uid: prose.codeaccelerator.ReadCsvLearnResult.preview_data
 - fullName: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
   isExternal: false
   name: skip_blank_lines

@@ -10,9 +10,10 @@ description: Learn how to analyze and pare delimited files with PROSE Code Accel
 
 # Read a CSV file with the Microsoft PROSE Code Accelerator SDK
 
-`ReadCsvBuilder` will analyze a given delimited text file (that has comma-separated values, or that uses other delimiters) and determine all the details about that file necessary to successfully parse it and
-produce a dataframe (either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at
-the beginning of the file, etc.
+`ReadCsvBuilder` will analyze a given delimited text file (that has comma-separated values, or that uses other
+delimiters) and determine all the details about that file necessary to successfully parse it and produce a dataframe
+(either `pandas` or `pyspark`).  This includes the encoding, the delimiter, how many lines to skip at the beginning of
+the file, etc.
 
 > [!NOTE]
 > `ReadCsvBuilder` explicitly reads columns as strings to prevent loss of precision during reading the data.
@@ -26,7 +27,7 @@ import prose.codeaccelerator as cx
 builder = cx.ReadCsvBuilder(path_to_file)
 # optional: builder.target = 'pyspark' to switch to `pyspark` target (default is 'pandas')
 result = builder.learn()
-result.data(5) # examine top 5 rows to see if they look correct
+result.preview_data # examine top 5 rows to see if they look correct
 result.code() # generate the code in the target
 ```
 
@@ -41,24 +42,34 @@ result.code() # generate the code in the target
 >>> r = b.learn()
 >>> r.code()
 from pyspark.sql import SparkSession
-from pyspark.sql.types import StructType, StructField, StringType
+from pyspark.sql.functions import col, udf
+from pyspark.sql.types import StringType, StructField, StructType
 
 def read_file(file):
     spark = SparkSession.builder.getOrCreate()
 
-    schema = StructType([
-        StructField("column1", StringType(), True),
-        StructField("column2", StringType(), True),
-        StructField("column3", StringType(), True)])
+    schema = StructType(
+        [
+            StructField("column1", StringType(), True),
+            StructField("column2", StringType(), True),
+            StructField("column3", StringType(), True),
+        ]
+    )
 
-    df = spark.read.csv(file,
-        sep = ",",
-        header = True,
-        schema = schema,
-        quote = "\"",
-        escape = "\"",
-        ignoreLeadingWhiteSpace = True,
-        multiLine = True)
+    df = spark.read.csv(
+        file,
+        sep=",",
+        header=False,
+        schema=schema,
+        quote='"',
+        escape='"',
+        ignoreLeadingWhiteSpace=True,
+        multiLine=True,
+    )
+
+    rstrip_udf = udf(lambda s: None if s is None else s.rstrip("\r"), StringType())
+    df = df.withColumn("column3", rstrip_udf(col("column3")))
+
     return df
 
 ```
@@ -73,3 +84,8 @@ def read_file(file):
 ...
 
 ```
+
+## Current Limitations
+- Only UTF-8 encoded files are supported.
+
+See the list of known issues [here](https://docs.microsoft.com/en-us/python/api/overview/azure/prose/knownissues?view=prose-py-latest).

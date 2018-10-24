@@ -1,6 +1,6 @@
 ---
 title: Known issues with the Microsoft PROSE Code Accelerator SDK - Python
-ms.date: 09/24/2018
+ms.date: 10/22/2018
 ms.topic: conceptual
 ms.service: non-product-specific
 author: simmdan
@@ -9,29 +9,11 @@ description: These are known issues with the current release of PROSE Code Accel
 ---
 
 # Known issues with the Microsoft PROSE Code Accelerator SDK
-The following are issues that the PROSE team is aware of with the 1.0.0 release of the Microsoft PROSE Code Accelerator SDK.  We are
-working to fix them in a future release.  If you encounter issues not on this list, please report them on the
-[prose-codeaccelerator GitHub repository](https://github.com/Microsoft/prose-codeaccelerator/issues).
-
-## ReadCsvBuilder
-- Only UTF-8 encoded files are supported.
-  
-## ReadFwfBuilder
-- Only UTF-8 encoded files are supported.
-
-### PySpark:
-- Calling `ReadFwfLearnResult.data()` for a file with `\r\n` or `\r` line separators will cause `NameError: name
-  'StringType' is not defined` exception.  As a workaround, add the following code to your session:
-  ```python
-  import prose.codeaccelerator as cx
-  from pyspark.sql.types import StringType
-
-  cx._functions.StringType = StringType
-  ```
-
+The following are issues that the PROSE team is aware of with the 1.0.0 release of the Microsoft PROSE Code Accelerator
+SDK.  We are working to fix them in a future release.  If you encounter issues not on this list, please report them on
+the [prose-codeaccelerator GitHub repository](https://github.com/Microsoft/prose-codeaccelerator/issues).
   
 ## ReadJsonBuilder
-- Only UTF-8 encoded files are supported.
 
 ### Pandas:
 - If the JSON has a single top level array of values (e.g., `{"top": [1, 2]}`), pandas' `json_normalize` throws
@@ -62,6 +44,10 @@ working to fix them in a future release.  If you encounter issues not on this li
   queries from raw JSON/CSV files are disallowed when the referenced columns only include the internal corrupt record
   column`. Note that array of objects is not affected.
 
+- If the JSON has a backtick (`` ` ``) in a property name (e.g., ``{ "property has backtick `": 1 }``),
+`spark.read.json` throws `org.apache.spark.sql.AnalysisException: syntax error in attribute name`. 
+Spark issue: [https://issues.apache.org/jira/browse/SPARK-18502](https://issues.apache.org/jira/browse/SPARK-18502).
+
 ## DetectTypesBuilder
 - A numeric column formatted like `##.#`, where `#` represents a digit, is detected as a time if all the values are
   between `0.0` and `24.0` with no fractional part exceeding `.59`. So, if numeric values all look like
@@ -91,4 +77,3 @@ working to fix them in a future release.  If you encounter issues not on this li
   Further, a bug in Python 3.6 causes dates earlier than `1970-01-02` to be handled incorrectly. To ensure reliable
   operation across platforms, time values without dates are represented with dates of `2000-01-01` in PySpark mode. The
   default date value for other targets remains `1900-01-01`, which is the default for Python.
-

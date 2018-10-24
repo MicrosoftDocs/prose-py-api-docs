@@ -5,9 +5,10 @@ items:
   - prose.codeaccelerator.ReadFwfLearnResult.code
   - prose.codeaccelerator.ReadFwfLearnResult.colspecs
   - prose.codeaccelerator.ReadFwfLearnResult.column_count
-  - prose.codeaccelerator.ReadFwfLearnResult.data
+  - prose.codeaccelerator.ReadFwfLearnResult.encoding
   - prose.codeaccelerator.ReadFwfLearnResult.filename
   - prose.codeaccelerator.ReadFwfLearnResult.names
+  - prose.codeaccelerator.ReadFwfLearnResult.preview_data
   - prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
   class: prose.codeaccelerator.ReadFwfLearnResult
   fullName: prose.codeaccelerator.ReadFwfLearnResult
@@ -25,6 +26,7 @@ items:
     (The result of calling <xref:prose.codeaccelerator.ReadFwfBuilder.learn>.)
 
     Only intended to be called internally.
+
 
 
 
@@ -84,35 +86,18 @@ items:
   type: attribute
   uid: prose.codeaccelerator.ReadFwfLearnResult.column_count
 - class: prose.codeaccelerator.ReadFwfLearnResult
-  fullName: prose.codeaccelerator.ReadFwfLearnResult.data
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.encoding
   langs:
   - python
   module: prose.codeaccelerator
-  name: data
-  summary: 'Return the data obtained when running the learned program on the input
-    file.
+  name: encoding
+  summary: 'The detected encoding of the sample file that will be used for subsequent
+    reads.
 
     '
-  syntax:
-    content: data(nrows=None)
-    parameters:
-    - defaultValue: None
-      description: 'The number of rows to read from the file.  Default is `None` (the
-        entire file). If specified, then it must be greater than or equal to zero.
-
-        '
-      id: nrows
-      type:
-      - int
-    return:
-      description: 'The first `nrows` or the data.
-
-        '
-      type:
-      - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-        List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
-  type: method
-  uid: prose.codeaccelerator.ReadFwfLearnResult.data
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.encoding
 - class: prose.codeaccelerator.ReadFwfLearnResult
   fullName: prose.codeaccelerator.ReadFwfLearnResult.filename
   langs:
@@ -138,6 +123,26 @@ items:
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadFwfLearnResult.names
+- class: prose.codeaccelerator.ReadFwfLearnResult
+  fullName: prose.codeaccelerator.ReadFwfLearnResult.preview_data
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: preview_data
+  summary: 'Return the data obtained when running the learned program on the input
+    file.
+
+    '
+  syntax:
+    return:
+      description: 'The first `5` rows of the data.
+
+        '
+      type:
+      - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
+        List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
+  type: attribute
+  uid: prose.codeaccelerator.ReadFwfLearnResult.preview_data
 - class: prose.codeaccelerator.ReadFwfLearnResult
   fullName: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
   langs:
@@ -166,11 +171,11 @@ references:
   name: column_count
   parent: prose.codeaccelerator.ReadFwfLearnResult
   uid: prose.codeaccelerator.ReadFwfLearnResult.column_count
-- fullName: prose.codeaccelerator.ReadFwfLearnResult.data
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.encoding
   isExternal: false
-  name: data
+  name: encoding
   parent: prose.codeaccelerator.ReadFwfLearnResult
-  uid: prose.codeaccelerator.ReadFwfLearnResult.data
+  uid: prose.codeaccelerator.ReadFwfLearnResult.encoding
 - fullName: prose.codeaccelerator.ReadFwfLearnResult.filename
   isExternal: false
   name: filename
@@ -181,6 +186,11 @@ references:
   name: names
   parent: prose.codeaccelerator.ReadFwfLearnResult
   uid: prose.codeaccelerator.ReadFwfLearnResult.names
+- fullName: prose.codeaccelerator.ReadFwfLearnResult.preview_data
+  isExternal: false
+  name: preview_data
+  parent: prose.codeaccelerator.ReadFwfLearnResult
+  uid: prose.codeaccelerator.ReadFwfLearnResult.preview_data
 - fullName: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
   isExternal: false
   name: skip_blank_lines

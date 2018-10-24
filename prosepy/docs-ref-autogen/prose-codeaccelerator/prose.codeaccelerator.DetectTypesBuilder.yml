@@ -5,6 +5,7 @@ items:
   - prose.codeaccelerator.DetectTypesBuilder.learn
   - prose.codeaccelerator.DetectTypesBuilder.nrows
   - prose.codeaccelerator.DetectTypesBuilder.target
+  - prose.codeaccelerator.DetectTypesBuilder.types_to_detect
   class: prose.codeaccelerator.DetectTypesBuilder
   fullName: prose.codeaccelerator.DetectTypesBuilder
   inheritance:
@@ -19,6 +20,7 @@ items:
   name: DetectTypesBuilder
   summary: 'A builder to learn code to transform string-valued data into appropriate
     typed values.
+
 
 
 
@@ -95,6 +97,36 @@ items:
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.DetectTypesBuilder.target
+- class: prose.codeaccelerator.DetectTypesBuilder
+  fullName: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: types_to_detect
+  summary: 'The list of types to detect.
+
+
+    The value *None* which is the default means
+
+    that the standard list of types, which includes Booleans, Numeric types,
+
+    Dates and Times, and String valued types are to be detected.
+
+    Valid strings in the list include the values: ''bool'', ''boolean'',
+
+    ''numeric'', ''number'', ''datetime'', ''string'' and ''text''.
+
+
+    If the values in a column are not identifiable as values
+
+    of the types that *types_to_detect* is set to, then they will
+
+    be treated as string values.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
 references:
 - fullName: prose.codeaccelerator.DetectTypesBuilder.learn
   isExternal: false
@@ -111,3 +143,8 @@ references:
   name: target
   parent: prose.codeaccelerator.DetectTypesBuilder
   uid: prose.codeaccelerator.DetectTypesBuilder.target
+- fullName: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
+  isExternal: false
+  name: types_to_detect
+  parent: prose.codeaccelerator.DetectTypesBuilder
+  uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
