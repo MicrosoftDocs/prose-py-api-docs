@@ -17,7 +17,7 @@ description: Summary of changes for each release of PROSE Code Accelerator for P
 - The `prose.codeaccelerator.jupyter` namespace has been removed and its functionality is now included in the main
   `prose.codeaccelerator` namespace.  When Code Accelerator is used in an environment that supports improved output
   rendering, that rendering is displayed automatically.
-- Now supports Jupyterlab as well as Jupyter notebooks.
+- Now supports JupyterLab as well as Jupyter notebooks.
 - Many bug fixes.
 
 ### ReadCsvBuilder
@@ -43,7 +43,7 @@ description: Summary of changes for each release of PROSE Code Accelerator for P
 - New `FindPatternsBuilder.include_outlier_patterns` property which optionally directs the builder to include additional
   (possibly low quality) patterns in the returned result.
 - Generated code now includes examples and stats in comments.
-- Regex names produced have been simplified to make them easier to read.
+- Produced regex names have been simplified to make them easier to read.
 - Improved performance when finding patterns in long strings.
 
 ## 1.0.0 - 2018-09-20
