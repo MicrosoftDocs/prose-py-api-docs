@@ -13,7 +13,6 @@ items:
   - prose.codeaccelerator.FindPatternsBuilder
   - prose.codeaccelerator.FindPatternsLearnResult
   - prose.codeaccelerator.exceptions
-  - prose.codeaccelerator.jupyter
   fullName: prose.codeaccelerator
   langs:
   - python
@@ -84,8 +83,3 @@ references:
   name: exceptions
   parent: prose.codeaccelerator
   uid: prose.codeaccelerator.exceptions
-- fullName: prose.codeaccelerator.jupyter
-  isExternal: false
-  name: jupyter
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.jupyter

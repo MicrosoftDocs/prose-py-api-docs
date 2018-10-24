@@ -13,6 +13,10 @@
       href: fixdatatypes.md
     - name: Find patterns in strings
       href: findpatterns.md
+  - name: Configuration
+    href: config.md
+  - name: Release Notes
+    href: relnotes.md
   - name: Known issues
     href: knownissues.md
   

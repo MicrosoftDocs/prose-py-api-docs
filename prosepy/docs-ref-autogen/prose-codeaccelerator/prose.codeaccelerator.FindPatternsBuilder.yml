@@ -52,6 +52,45 @@ items:
       id: in_different_clusters
       type:
       - List[Iter[str]]
+    - description: 'A list of custom regex tokens -- each custom regex token is represented
+        as a tuple
+
+        of strings (name, regex). The custom regex tokens are used while generating
+        the patterns.
+
+        '
+      id: custom_regex_tokens
+      type:
+      - List[Tuple[str, str]]
+    - description: 'A switch controlling whether the *.learn()* uses the long constant
+        optimization.
+
+        This optimization improves performance significantly for input data with long
+        repeating constants, while
+
+        potentially producing marginally worse patterns. The default behaviour (when
+        the value is *None*) is to enable
+
+        heuristically enable the optimization, based on the characteristics of the
+        inputs. The optimization
+
+        can be enabled or disabled in other cases by setting the value to *True* and
+        *False*, respectively.
+
+        '
+      id: optimize_for_long_constants
+      type:
+      - Optional[bool]
+    - description: 'A switch controlling whether the *.learn()* returns outlier patterns
+        too. These outlier
+
+        patterns may be of a lower quality and may cover significantly fewer inputs.
+        By default, it is set to *False*.
+
+        '
+      id: include_outlier_patterns
+      type:
+      - bool
   type: class
   uid: prose.codeaccelerator.FindPatternsBuilder
 - class: prose.codeaccelerator.FindPatternsBuilder
@@ -116,6 +155,46 @@ references:
   - fullName: ']'
     name: ']'
   uid: List[Iter[str]]
+- fullName: List[Tuple[str, str]]
+  name: List[Tuple[str, str]]
+  spec.python:
+  - fullName: List
+    name: List
+    uid: List
+  - fullName: '['
+    name: '['
+  - fullName: Tuple
+    name: Tuple
+    uid: Tuple
+  - fullName: '['
+    name: '['
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ', '
+    name: ', '
+  - fullName: str
+    name: str
+    uid: str
+  - fullName: ']'
+    name: ']'
+  - fullName: ']'
+    name: ']'
+  uid: List[Tuple[str, str]]
+- fullName: Optional[bool]
+  name: Optional[bool]
+  spec.python:
+  - fullName: Optional
+    name: Optional
+    uid: Optional
+  - fullName: '['
+    name: '['
+  - fullName: bool
+    name: bool
+    uid: bool
+  - fullName: ']'
+    name: ']'
+  uid: Optional[bool]
 - fullName: List[str]
   name: List[str]
   spec.python:

@@ -4,6 +4,7 @@ items:
 - children:
   - prose.codeaccelerator.ReadJsonBuilder.filename
   - prose.codeaccelerator.ReadJsonBuilder.learn
+  - prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
   - prose.codeaccelerator.ReadJsonBuilder.target
   class: prose.codeaccelerator.ReadJsonBuilder
   fullName: prose.codeaccelerator.ReadJsonBuilder
@@ -19,6 +20,7 @@ items:
   name: ReadJsonBuilder
   summary: 'A builder for specifying constraints in order to learn code for reading
     a JSON file into a table.
+
 
 
 
@@ -69,6 +71,21 @@ items:
   type: method
   uid: prose.codeaccelerator.ReadJsonBuilder.learn
 - class: prose.codeaccelerator.ReadJsonBuilder
+  fullName: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: lines_to_analyze
+  summary: 'Number of lines of the newline-delimited JSON file that should be used
+    during learning.
+
+    If the input file is normal JSON, this property does not have any effect.
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
+- class: prose.codeaccelerator.ReadJsonBuilder
   fullName: prose.codeaccelerator.ReadJsonBuilder.target
   langs:
   - python
@@ -94,6 +111,11 @@ references:
   name: learn
   parent: prose.codeaccelerator.ReadJsonBuilder
   uid: prose.codeaccelerator.ReadJsonBuilder.learn
+- fullName: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
+  isExternal: false
+  name: lines_to_analyze
+  parent: prose.codeaccelerator.ReadJsonBuilder
+  uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
 - fullName: prose.codeaccelerator.ReadJsonBuilder.target
   isExternal: false
   name: target

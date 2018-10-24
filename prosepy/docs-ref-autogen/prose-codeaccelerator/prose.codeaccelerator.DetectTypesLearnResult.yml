@@ -3,7 +3,7 @@ api_name: []
 items:
 - children:
   - prose.codeaccelerator.DetectTypesLearnResult.code
-  - prose.codeaccelerator.DetectTypesLearnResult.data
+  - prose.codeaccelerator.DetectTypesLearnResult.preview_data
   class: prose.codeaccelerator.DetectTypesLearnResult
   fullName: prose.codeaccelerator.DetectTypesLearnResult
   inheritance:
@@ -40,39 +40,31 @@ items:
   type: method
   uid: prose.codeaccelerator.DetectTypesLearnResult.code
 - class: prose.codeaccelerator.DetectTypesLearnResult
-  fullName: prose.codeaccelerator.DetectTypesLearnResult.data
+  fullName: prose.codeaccelerator.DetectTypesLearnResult.preview_data
   langs:
   - python
   module: prose.codeaccelerator
-  name: data
+  name: preview_data
   summary: "Transform data into appropriate types.\n\nThe source data is what was\
     \ provided to the builder object that produced this result object).\nThe type\
     \ of the returned value depends on the input data the builder was initialized\
-    \ with. If the input data was:\n\n* a pandas dataframe, the returned value is\
-    \ a pandas dataframe with the values from each column coerced to the appropriate\
+    \ with.\nIf the input data was:\n\n* a pandas dataframe, the returned value is\
+    \ 5 rows of pandas dataframe with the values from each column coerced to the appropriate\
     \ types. \n\n* a dictionary from column names to lists of strings, the returned\
-    \ value is dictionary mapping column names to values of the detected types. \n\
-    \n* an iterable of strings, the returned value is a list of values of the detected\
-    \ type. \n"
-  syntax:
-    content: data(nrows=None)
-    parameters:
-    - defaultValue: None
-      description: 'Number of rows of data to return. The value *None* returns the
-        entire input.
-
-        '
-      id: nrows
-  type: method
-  uid: prose.codeaccelerator.DetectTypesLearnResult.data
+    \ value is 5 entries of a dictionary mapping column names to values of the detected\
+    \ types. \n\n* an iterable of strings, the returned value is a list of 5 values\
+    \ of the detected type. \n"
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data
 references:
 - fullName: prose.codeaccelerator.DetectTypesLearnResult.code
   isExternal: false
   name: code
   parent: prose.codeaccelerator.DetectTypesLearnResult
   uid: prose.codeaccelerator.DetectTypesLearnResult.code
-- fullName: prose.codeaccelerator.DetectTypesLearnResult.data
+- fullName: prose.codeaccelerator.DetectTypesLearnResult.preview_data
   isExternal: false
-  name: data
+  name: preview_data
   parent: prose.codeaccelerator.DetectTypesLearnResult
-  uid: prose.codeaccelerator.DetectTypesLearnResult.data
+  uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data
