@@ -67,7 +67,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: learn
+  name: learn()
   summary: 'Attempt to learn a program from the constraints that have been set on
     this builder.
 
@@ -130,7 +130,7 @@ references:
   uid: prose.codeaccelerator.ReadFwfBuilder.filename
 - fullName: prose.codeaccelerator.ReadFwfBuilder.learn
   isExternal: false
-  name: learn
+  name: learn()
   parent: prose.codeaccelerator.ReadFwfBuilder
   uid: prose.codeaccelerator.ReadFwfBuilder.learn
 - fullName: prose.codeaccelerator.ReadFwfBuilder.lines_to_analyze

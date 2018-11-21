@@ -56,7 +56,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: learn
+  name: learn()
   summary: 'Attempt to learn a program from the constraints that have been set on
     this builder.
 
@@ -107,7 +107,7 @@ references:
   uid: prose.codeaccelerator.ReadCsvBuilder.filename
 - fullName: prose.codeaccelerator.ReadCsvBuilder.learn
   isExternal: false
-  name: learn
+  name: learn()
   parent: prose.codeaccelerator.ReadCsvBuilder
   uid: prose.codeaccelerator.ReadCsvBuilder.learn
 - fullName: prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze

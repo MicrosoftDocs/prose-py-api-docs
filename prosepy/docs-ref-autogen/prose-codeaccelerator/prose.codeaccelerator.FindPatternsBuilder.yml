@@ -98,7 +98,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: learn
+  name: learn()
   summary: 'Attempt to learn a set of patterns that cover the data and satisfy the
     constraints that have been set on this builder.
 
@@ -126,7 +126,7 @@ items:
 references:
 - fullName: prose.codeaccelerator.FindPatternsBuilder.learn
   isExternal: false
-  name: learn
+  name: learn()
   parent: prose.codeaccelerator.FindPatternsBuilder
   uid: prose.codeaccelerator.FindPatternsBuilder.learn
 - fullName: prose.codeaccelerator.FindPatternsBuilder.target

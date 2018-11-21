@@ -28,7 +28,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: code
+  name: code(task='classify')
   summary: 'Return a code fragment that identifies the patterns that were learned.
 
 
@@ -93,7 +93,7 @@ items:
 references:
 - fullName: prose.codeaccelerator.FindPatternsLearnResult.code
   isExternal: false
-  name: code
+  name: code(task='classify')
   parent: prose.codeaccelerator.FindPatternsLearnResult
   uid: prose.codeaccelerator.FindPatternsLearnResult.code
 - fullName: prose.codeaccelerator.FindPatternsLearnResult.preview_data
