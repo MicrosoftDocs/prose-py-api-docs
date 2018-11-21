@@ -26,7 +26,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: code
+  name: code()
   summary: 'Generate code to transform the dataset into the appropriate data types.
 
     '
@@ -60,7 +60,7 @@ items:
 references:
 - fullName: prose.codeaccelerator.DetectTypesLearnResult.code
   isExternal: false
-  name: code
+  name: code()
   parent: prose.codeaccelerator.DetectTypesLearnResult
   uid: prose.codeaccelerator.DetectTypesLearnResult.code
 - fullName: prose.codeaccelerator.DetectTypesLearnResult.preview_data

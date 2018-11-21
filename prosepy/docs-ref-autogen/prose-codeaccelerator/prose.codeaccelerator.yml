@@ -14,6 +14,7 @@ items:
   - prose.codeaccelerator.FindPatternsLearnResult
   - prose.codeaccelerator.exceptions
   fullName: prose.codeaccelerator
+  kind: import
   langs:
   - python
   module: prose.codeaccelerator

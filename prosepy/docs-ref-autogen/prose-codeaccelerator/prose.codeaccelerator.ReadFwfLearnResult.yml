@@ -45,7 +45,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: code
+  name: code()
   summary: 'Return the code that was learned.
 
     '
@@ -158,7 +158,7 @@ items:
 references:
 - fullName: prose.codeaccelerator.ReadFwfLearnResult.code
   isExternal: false
-  name: code
+  name: code()
   parent: prose.codeaccelerator.ReadFwfLearnResult
   uid: prose.codeaccelerator.ReadFwfLearnResult.code
 - fullName: prose.codeaccelerator.ReadFwfLearnResult.colspecs

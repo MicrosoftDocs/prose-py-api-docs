@@ -54,7 +54,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: learn
+  name: learn()
   summary: 'Attempt to learn a program from the constraints that have been set on
     this builder.
 
@@ -108,7 +108,7 @@ references:
   uid: prose.codeaccelerator.ReadJsonBuilder.filename
 - fullName: prose.codeaccelerator.ReadJsonBuilder.learn
   isExternal: false
-  name: learn
+  name: learn()
   parent: prose.codeaccelerator.ReadJsonBuilder
   uid: prose.codeaccelerator.ReadJsonBuilder.learn
 - fullName: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze

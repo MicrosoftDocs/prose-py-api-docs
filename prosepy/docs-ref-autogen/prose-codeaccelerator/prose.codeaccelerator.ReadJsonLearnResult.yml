@@ -35,7 +35,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: code
+  name: code()
   summary: 'Return the code that was learned.
 
     '
@@ -98,7 +98,7 @@ items:
 references:
 - fullName: prose.codeaccelerator.ReadJsonLearnResult.code
   isExternal: false
-  name: code
+  name: code()
   parent: prose.codeaccelerator.ReadJsonLearnResult
   uid: prose.codeaccelerator.ReadJsonLearnResult.code
 - fullName: prose.codeaccelerator.ReadJsonLearnResult.column_count
