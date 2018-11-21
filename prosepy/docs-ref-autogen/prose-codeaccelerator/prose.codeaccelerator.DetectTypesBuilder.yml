@@ -50,7 +50,7 @@ items:
   langs:
   - python
   module: prose.codeaccelerator
-  name: learn
+  name: learn()
   summary: 'Infer the data types in the provided data.
 
     '
@@ -130,7 +130,7 @@ items:
 references:
 - fullName: prose.codeaccelerator.DetectTypesBuilder.learn
   isExternal: false
-  name: learn
+  name: learn()
   parent: prose.codeaccelerator.DetectTypesBuilder
   uid: prose.codeaccelerator.DetectTypesBuilder.learn
 - fullName: prose.codeaccelerator.DetectTypesBuilder.nrows

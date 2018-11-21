@@ -3,6 +3,7 @@ items:
 - children:
   - prose.codeaccelerator
   fullName: prose-codeaccelerator
+  kind: distribution
   langs:
   - python
   name: prose-codeaccelerator

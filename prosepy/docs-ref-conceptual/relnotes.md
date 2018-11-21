@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Microsoft PROSE Code Accelerator SDK - Python
-ms.date: 10/24/2018
+ms.date: 11/20/2018
 ms.topic: conceptual
 ms.service: non-product-specific
 author: simmdan
@@ -9,6 +9,25 @@ description: Summary of changes for each release of PROSE Code Accelerator for P
 ---
 
 # Release Notes
+
+## 1.2.1 - 2018-11-20
+
+- Changed dependency on the dotnetcore2 package back to version 2.1.0 rather than 2.1.5 in order to better inter-operate
+  with the azureml-dataprep python package.
+
+## 1.2.0 - 2018-11-16
+
+### ReadJsonBuilder
+
+- Code generation improved to prevent unnecessary column aliases: `col("color"`) instead of
+  `col("color").alias("color")`.
+
+### DetectTypesBuilder
+
+- Generated code is now easier to read and understand.
+- Now supports non-separated dates (`20120513`), numbers in parenthesis (`(45,345)`), and other improvements to parsing
+  ambiguous date formats.
+- Better handling of integer columns that look like categorical data, and handling of `NaN` values in string columns.
 
 ## 1.1.0 - 2018-10-24
 
