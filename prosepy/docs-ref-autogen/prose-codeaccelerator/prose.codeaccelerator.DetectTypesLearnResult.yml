@@ -18,7 +18,7 @@ items:
 
     '
   syntax:
-    content: DetectTypesLearnResult(result, associated_builder)
+    content: DetectTypesLearnResult(result)
   type: class
   uid: prose.codeaccelerator.DetectTypesLearnResult
 - class: prose.codeaccelerator.DetectTypesLearnResult
@@ -32,7 +32,6 @@ items:
     '
   syntax:
     content: code()
-    parameters: []
     return:
       description: 'A code object which can be called, or printed out.
 

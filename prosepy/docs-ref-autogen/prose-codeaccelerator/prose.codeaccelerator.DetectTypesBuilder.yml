@@ -2,6 +2,7 @@
 api_name: []
 items:
 - children:
+  - prose.codeaccelerator.DetectTypesBuilder.convert_types
   - prose.codeaccelerator.DetectTypesBuilder.learn
   - prose.codeaccelerator.DetectTypesBuilder.nrows
   - prose.codeaccelerator.DetectTypesBuilder.target
@@ -9,11 +10,7 @@ items:
   class: prose.codeaccelerator.DetectTypesBuilder
   fullName: prose.codeaccelerator.DetectTypesBuilder
   inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: abc.ABC
-    type: prose.codeaccelerator._builder.Builder
+  - type: builtins.object
   langs:
   - python
   module: prose.codeaccelerator
@@ -25,9 +22,10 @@ items:
 
 
 
+
     '
   syntax:
-    content: DetectTypesBuilder(data)
+    content: DetectTypesBuilder(data, true_length=None)
     parameters:
     - description: 'A data collection with string-valued data values. The type can
         be
@@ -43,8 +41,64 @@ items:
 
         '
       id: data
+    - description: 'An optional parameter that can be used to pass the actual size
+        of the dataset,
+
+        in the event that *data* is a sample of the entire dataset.
+
+        '
+      id: true_length
   type: class
   uid: prose.codeaccelerator.DetectTypesBuilder
+- class: prose.codeaccelerator.DetectTypesBuilder
+  fullName: prose.codeaccelerator.DetectTypesBuilder.convert_types
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: convert_types(df, types_to_detect=None)
+  summary: 'Automatically perform type conversion on the DataFrame df. If all that
+    is required
+
+    is a best effort attempt to convert strings in the DataFrame df to appropriately
+    typed values,
+
+    then this entry point is significantly more efficient than the process of creating
+    a builder,
+
+    learning the conversion code and executing the conversion code.
+
+
+    The value *None* which is the default means
+
+    that the standard list of types, which includes Booleans, Numeric types,
+
+    Dates and Times, and String valued types are to be detected.
+
+    Valid strings in the list include the values: ''bool'', ''boolean'',
+
+    ''numeric'', ''number'', ''datetime'', ''string'' and ''text''.
+
+
+    If the values in a column are not identifiable as values
+
+    of the types that *types_to_detect* is set to, then they will
+
+    be treated as string values.
+
+    '
+  syntax:
+    content: convert_types(df, types_to_detect=None)
+    parameters:
+    - description: 'The DataFrame on which type conversion is to be performed.
+
+        '
+      id: df
+    - description: 'The list of types to detect.
+
+        '
+      id: types_to_detect
+  type: method
+  uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
 - class: prose.codeaccelerator.DetectTypesBuilder
   fullName: prose.codeaccelerator.DetectTypesBuilder.learn
   langs:
@@ -56,7 +110,6 @@ items:
     '
   syntax:
     content: learn()
-    parameters: []
     return:
       description: 'A DetectTypesLearnResult object which can be used to
 
@@ -128,6 +181,11 @@ items:
   type: attribute
   uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
 references:
+- fullName: prose.codeaccelerator.DetectTypesBuilder.convert_types
+  isExternal: false
+  name: convert_types(df, types_to_detect=None)
+  parent: prose.codeaccelerator.DetectTypesBuilder
+  uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
 - fullName: prose.codeaccelerator.DetectTypesBuilder.learn
   isExternal: false
   name: learn()
