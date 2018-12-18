@@ -10,13 +10,7 @@ items:
   class: prose.codeaccelerator.ReadFwfBuilder
   fullName: prose.codeaccelerator.ReadFwfBuilder
   inheritance:
-  - inheritance:
-    - inheritance:
-      - inheritance:
-        - type: builtins.object
-        type: abc.ABC
-      type: prose.codeaccelerator._builder.Builder
-    type: prose.codeaccelerator._read_text_builder.ReadTextBuilder
+  - type: builtins.object
   langs:
   - python
   module: prose.codeaccelerator
@@ -74,7 +68,6 @@ items:
     '
   syntax:
     content: learn()
-    parameters: []
     return:
       description: 'The result of learning.
 

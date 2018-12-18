@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Microsoft PROSE Code Accelerator SDK - Python
-ms.date: 11/20/2018
+ms.date: 12/17/2018
 ms.topic: conceptual
 ms.service: non-product-specific
 author: simmdan
@@ -9,6 +9,20 @@ description: Summary of changes for each release of PROSE Code Accelerator for P
 ---
 
 # Release Notes
+
+## 1.3.0 - 2018-12-17
+
+- Miscellaneous bug fixes and performance improvements.
+
+### DetectTypesBuilder
+
+- Added alternate, more efficient entry point for completing the task of performing datatype detection and conversion on
+  a data set rather than generating code for doing so.
+
+### ReadCsvBuilder
+
+- Added a new experimental feature for filtering "junk" rows (ie. repeated headers and non-data, non-comment rows).  To
+  enable set the property `enable_regex_row_filtering` to `True`.
 
 ## 1.2.1 - 2018-11-20
 
