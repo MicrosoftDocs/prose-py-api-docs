@@ -2,6 +2,7 @@
 api_name: []
 items:
 - children:
+  - prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
   - prose.codeaccelerator.ReadCsvBuilder.filename
   - prose.codeaccelerator.ReadCsvBuilder.learn
   - prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze
@@ -9,19 +10,14 @@ items:
   class: prose.codeaccelerator.ReadCsvBuilder
   fullName: prose.codeaccelerator.ReadCsvBuilder
   inheritance:
-  - inheritance:
-    - inheritance:
-      - inheritance:
-        - type: builtins.object
-        type: abc.ABC
-      type: prose.codeaccelerator._builder.Builder
-    type: prose.codeaccelerator._read_text_builder.ReadTextBuilder
+  - type: builtins.object
   langs:
   - python
   module: prose.codeaccelerator
   name: ReadCsvBuilder
   summary: 'A builder for specifying constraints in order to learn code for reading
     a delimited file into a table.
+
 
 
 
@@ -39,6 +35,26 @@ items:
       - str
   type: class
   uid: prose.codeaccelerator.ReadCsvBuilder
+- class: prose.codeaccelerator.ReadCsvBuilder
+  fullName: prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: enable_regex_row_filtering
+  summary: 'Whether to enable regular-expression-based filtering of the rows.
+
+
+
+    > [!NOTE]
+
+    > This is an experimental (unstable) feature.
+
+    >
+
+    '
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
 - class: prose.codeaccelerator.ReadCsvBuilder
   fullName: prose.codeaccelerator.ReadCsvBuilder.filename
   langs:
@@ -63,7 +79,6 @@ items:
     '
   syntax:
     content: learn()
-    parameters: []
     return:
       description: 'The result of learning.
 
@@ -100,6 +115,11 @@ items:
   type: attribute
   uid: prose.codeaccelerator.ReadCsvBuilder.target
 references:
+- fullName: prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
+  isExternal: false
+  name: enable_regex_row_filtering
+  parent: prose.codeaccelerator.ReadCsvBuilder
+  uid: prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
 - fullName: prose.codeaccelerator.ReadCsvBuilder.filename
   isExternal: false
   name: filename

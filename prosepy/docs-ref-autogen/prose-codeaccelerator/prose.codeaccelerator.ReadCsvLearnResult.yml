@@ -13,9 +13,7 @@ items:
   class: prose.codeaccelerator.ReadCsvLearnResult
   fullName: prose.codeaccelerator.ReadCsvLearnResult
   inheritance:
-  - inheritance:
-    - type: builtins.object
-    type: prose.codeaccelerator._read_text_builder.ReadTextLearnResult
+  - type: builtins.object
   langs:
   - python
   module: prose.codeaccelerator
@@ -37,7 +35,7 @@ items:
 
     '
   syntax:
-    content: ReadCsvLearnResult(filename, result)
+    content: ReadCsvLearnResult(result)
   type: class
   uid: prose.codeaccelerator.ReadCsvLearnResult
 - class: prose.codeaccelerator.ReadCsvLearnResult
@@ -51,7 +49,6 @@ items:
     '
   syntax:
     content: code()
-    parameters: []
     return:
       description: 'A callable that accepts a single argument (the file name to read).
 

@@ -20,7 +20,7 @@ items:
 
     '
   syntax:
-    content: FindPatternsLearnResult(data, result, target)
+    content: FindPatternsLearnResult(result)
   type: class
   uid: prose.codeaccelerator.FindPatternsLearnResult
 - class: prose.codeaccelerator.FindPatternsLearnResult
@@ -38,8 +38,7 @@ items:
   syntax:
     content: code(task='classify')
     parameters:
-    - defaultValue: classify
-      description: 'A parameter that can take the values ''check'' or ''classify''.
+    - description: 'A parameter that can take the values ''check'' or ''classify''.
 
         If the parameter is ''classify'', the method produces a code fragment to identify
 
