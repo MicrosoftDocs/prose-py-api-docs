@@ -15,21 +15,12 @@ items:
   - python
   module: prose.codeaccelerator
   name: ReadCsvBuilder
-  summary: 'A builder for specifying constraints in order to learn code for reading
+  summary: A builder for specifying constraints in order to learn code for reading
     a delimited file into a table.
-
-
-
-
-
-
-    '
   syntax:
     content: ReadCsvBuilder(filename)
     parameters:
-    - description: 'A path to the input file to learn from.
-
-        '
+    - description: A path to the input file to learn from.
       id: filename
       type:
       - str
@@ -49,9 +40,7 @@ items:
 
     > This is an experimental (unstable) feature.
 
-    >
-
-    '
+    >'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
@@ -61,9 +50,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: filename
-  summary: 'Path to the input file to learn from.
-
-    '
+  summary: Path to the input file to learn from.
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadCsvBuilder.filename
@@ -73,16 +60,12 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn()
-  summary: 'Attempt to learn a program from the constraints that have been set on
-    this builder.
-
-    '
+  summary: Attempt to learn a program from the constraints that have been set on this
+    builder.
   syntax:
     content: learn()
     return:
-      description: 'The result of learning.
-
-        '
+      description: The result of learning.
       type:
       - <xref:prose.codeaccelerator.ReadCsvLearnResult>.
   type: method
@@ -93,9 +76,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: lines_to_analyze
-  summary: 'Number of lines of the input file that should be used during learning.
-
-    '
+  summary: Number of lines of the input file that should be used during learning.
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadCsvBuilder.lines_to_analyze
@@ -108,9 +89,7 @@ items:
   summary: 'Target runtime library for the generated code.
 
 
-    Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.
-
-    '
+    Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadCsvBuilder.target

@@ -14,9 +14,7 @@ items:
   - python
   module: prose.codeaccelerator.exceptions
   name: ProseException
-  summary: 'A base exception for all code accelerator related exceptions.
-
-    '
+  summary: A base exception for all code accelerator related exceptions.
   syntax: {}
   type: class
   uid: prose.codeaccelerator.exceptions.ProseException

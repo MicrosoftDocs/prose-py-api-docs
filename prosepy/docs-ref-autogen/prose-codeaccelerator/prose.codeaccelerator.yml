@@ -23,9 +23,7 @@ items:
 
     uses the power of PROSE to quickly and accurately produce Python code for
 
-    data preparation tasks--making you faster and more productive.
-
-    '
+    data preparation tasks--making you faster and more productive.'
   type: package
   uid: prose.codeaccelerator
 references:
