@@ -15,15 +15,8 @@ items:
   - python
   module: prose.codeaccelerator
   name: DetectTypesBuilder
-  summary: 'A builder to learn code to transform string-valued data into appropriate
+  summary: A builder to learn code to transform string-valued data into appropriate
     typed values.
-
-
-
-
-
-
-    '
   syntax:
     content: DetectTypesBuilder(data, true_length=None)
     parameters:
@@ -37,16 +30,12 @@ items:
         separately for
 
         each column and in the final case, a single data type is detected for the
-        values in the list.
-
-        '
+        values in the list.'
       id: data
     - description: 'An optional parameter that can be used to pass the actual size
         of the dataset,
 
-        in the event that *data* is a sample of the entire dataset.
-
-        '
+        in the event that *data* is a sample of the entire dataset.'
       id: true_length
   type: class
   uid: prose.codeaccelerator.DetectTypesBuilder
@@ -83,19 +72,13 @@ items:
 
     of the types that *types_to_detect* is set to, then they will
 
-    be treated as string values.
-
-    '
+    be treated as string values.'
   syntax:
     content: convert_types(df, types_to_detect=None)
     parameters:
-    - description: 'The DataFrame on which type conversion is to be performed.
-
-        '
+    - description: The DataFrame on which type conversion is to be performed.
       id: df
-    - description: 'The list of types to detect.
-
-        '
+    - description: The list of types to detect.
       id: types_to_detect
   type: method
   uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
@@ -105,9 +88,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn()
-  summary: 'Infer the data types in the provided data.
-
-    '
+  summary: Infer the data types in the provided data.
   syntax:
     content: learn()
     return:
@@ -115,9 +96,7 @@ items:
 
         either generate the code to coerce the data into the appropriate types,
 
-        or to directly transform the sample data into the appropriate types.
-
-        '
+        or to directly transform the sample data into the appropriate types.'
   type: method
   uid: prose.codeaccelerator.DetectTypesBuilder.learn
 - class: prose.codeaccelerator.DetectTypesBuilder
@@ -129,9 +108,7 @@ items:
   summary: 'Number of rows to analyze while detecting data types.
 
 
-    The value *None*, which is the default, means all rows are analyzed.
-
-    '
+    The value *None*, which is the default, means all rows are analyzed.'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.DetectTypesBuilder.nrows
@@ -144,9 +121,7 @@ items:
   summary: 'Target runtime library for the generated code.
 
 
-    Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.
-
-    '
+    Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.DetectTypesBuilder.target
@@ -174,9 +149,7 @@ items:
 
     of the types that *types_to_detect* is set to, then they will
 
-    be treated as string values.
-
-    '
+    be treated as string values.'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect

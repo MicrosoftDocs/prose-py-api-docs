@@ -1,6 +1,6 @@
 ---
 title: Release Notes for the Microsoft PROSE Code Accelerator SDK - Python
-ms.date: 12/17/2018
+ms.date: 2/15/2019
 ms.topic: conceptual
 ms.service: non-product-specific
 author: simmdan
@@ -9,6 +9,10 @@ description: Summary of changes for each release of PROSE Code Accelerator for P
 ---
 
 # Release Notes
+
+## 1.4.0 - 2019-02-15
+
+- Miscellaneous bug fixes and performance improvements.
 
 ## 1.3.0 - 2018-12-17
 

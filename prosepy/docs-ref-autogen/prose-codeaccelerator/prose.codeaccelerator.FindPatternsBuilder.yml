@@ -17,23 +17,12 @@ items:
   - python
   module: prose.codeaccelerator
   name: FindPatternsBuilder
-  summary: 'A builder for data and constraints in order to learn code for identifying
+  summary: A builder for data and constraints in order to learn code for identifying
     patterns in a set of strings.
-
-
-
-
-
-
-
-
-    '
   syntax:
     content: FindPatternsBuilder(data)
     parameters:
-    - description: 'List of strings to identify patterns from.
-
-        '
+    - description: List of strings to identify patterns from.
       id: data
       type:
       - List[str]
@@ -49,9 +38,7 @@ items:
     as a tuple
 
     of strings (name, regex). The custom regex tokens are used while generating the
-    patterns.
-
-    '
+    patterns.'
   syntax:
     return:
       type:
@@ -68,9 +55,9 @@ items:
 
     each string in the collection to be covered by a different regex/cluster.
 
-    Each collection should have at least 2 strings.
+    Each collection should have at least 2 strings, and all strings in the
 
-    '
+    collections must come from the data provided to the builder during construction.'
   syntax:
     return:
       type:
@@ -87,9 +74,9 @@ items:
 
     all the strings in the collection to be covered by the same regex/cluster.
 
-    Each collection should have at least 2 strings.
+    Each collection should have at least 2 strings, and all strings in the
 
-    '
+    collections must come from the data provided to the builder during construction.'
   syntax:
     return:
       type:
@@ -106,9 +93,7 @@ items:
     These outlier
 
     patterns may be of a lower quality and may cover significantly fewer inputs. By
-    default, it is set to *False*.
-
-    '
+    default, it is set to *False*.'
   syntax:
     return:
       type:
@@ -121,10 +106,8 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn()
-  summary: 'Attempt to learn a set of patterns that cover the data and satisfy the
+  summary: Attempt to learn a set of patterns that cover the data and satisfy the
     constraints that have been set on this builder.
-
-    '
   syntax:
     content: learn()
   type: method
@@ -147,9 +130,7 @@ items:
     The optimization
 
     can be enabled or disabled in other cases by setting the value to *True* and *False*,
-    respectively.
-
-    '
+    respectively.'
   syntax:
     return:
       type:
@@ -165,9 +146,7 @@ items:
   summary: 'Target runtime library for the generated code.
 
 
-    Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.
-
-    '
+    Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.FindPatternsBuilder.target
