@@ -13,12 +13,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: FindPatternsLearnResult
-  summary: 'The result from attempting to learn a set of patterns in string data.
-
-
-
-
-    '
+  summary: The result from attempting to learn a set of patterns in string data.
   syntax:
     content: FindPatternsLearnResult(result)
   type: class
@@ -32,9 +27,7 @@ items:
   summary: 'Return a code fragment that identifies the patterns that were learned.
 
 
-    The code is targeted to the platform specified by the corresponding *FindPatternsBuilder.target*.
-
-    '
+    The code is targeted to the platform specified by the corresponding *FindPatternsBuilder.target*.'
   syntax:
     content: code(task='classify')
     parameters:
@@ -46,9 +39,7 @@ items:
 
         produces a code fragment to assert that a given string falls into one of the
 
-        patterns learned.
-
-        '
+        patterns learned.'
       id: task
   type: method
   uid: prose.codeaccelerator.FindPatternsLearnResult.code
@@ -58,17 +49,13 @@ items:
   - python
   module: prose.codeaccelerator
   name: preview_data
-  summary: 'Group data provided to the find patterns operation by the learned patterns.
-
-    '
+  summary: Group data provided to the find patterns operation by the learned patterns.
   syntax:
     return:
       description: 'A dictionary with keys being the name of the pattern, and the
         values
 
-        being a list of strings that correspond to that pattern.
-
-        '
+        being a list of strings that correspond to that pattern.'
   type: attribute
   uid: prose.codeaccelerator.FindPatternsLearnResult.preview_data
 - class: prose.codeaccelerator.FindPatternsLearnResult
@@ -80,9 +67,7 @@ items:
   summary: 'List of regexes representing the patterns identified in the data.
 
 
-    *None* represents a pattern that only matches strings that are *None*.
-
-    '
+    *None* represents a pattern that only matches strings that are *None*.'
   syntax:
     return:
       type:

@@ -13,19 +13,12 @@ items:
   - python
   module: prose.codeaccelerator
   name: ReadJsonBuilder
-  summary: 'A builder for specifying constraints in order to learn code for reading
+  summary: A builder for specifying constraints in order to learn code for reading
     a JSON file into a table.
-
-
-
-
-    '
   syntax:
     content: ReadJsonBuilder(filename)
     parameters:
-    - description: 'A path to the input file (in UTF-8) to learn from.
-
-        '
+    - description: A path to the input file (in UTF-8) to learn from.
       id: filename
       type:
       - str
@@ -37,16 +30,12 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn()
-  summary: 'Attempt to learn a program from the constraints that have been set on
-    this builder.
-
-    '
+  summary: Attempt to learn a program from the constraints that have been set on this
+    builder.
   syntax:
     content: learn()
     return:
-      description: 'The result of learning.
-
-        '
+      description: The result of learning.
       type:
       - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
   type: method
@@ -60,9 +49,7 @@ items:
   summary: 'Number of lines of the newline-delimited JSON file that should be used
     during learning.
 
-    If the input file is normal JSON, this property does not have any effect.
-
-    '
+    If the input file is normal JSON, this property does not have any effect.'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
@@ -75,9 +62,7 @@ items:
   summary: 'Target runtime library for the generated code.
 
 
-    Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.
-
-    '
+    Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.'
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadJsonBuilder.target

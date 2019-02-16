@@ -12,11 +12,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: DetectTypesLearnResult
-  summary: 'Encapsulates the results of running data type detection on a dataset.
-
-
-
-    '
+  summary: Encapsulates the results of running data type detection on a dataset.
   syntax:
     content: DetectTypesLearnResult(result)
   type: class
@@ -27,15 +23,11 @@ items:
   - python
   module: prose.codeaccelerator
   name: code()
-  summary: 'Generate code to transform the dataset into the appropriate data types.
-
-    '
+  summary: Generate code to transform the dataset into the appropriate data types.
   syntax:
     content: code()
     return:
-      description: 'A code object which can be called, or printed out.
-
-        '
+      description: A code object which can be called, or printed out.
   type: method
   uid: prose.codeaccelerator.DetectTypesLearnResult.code
 - class: prose.codeaccelerator.DetectTypesLearnResult
@@ -52,7 +44,7 @@ items:
     \ types. \n\n* a dictionary from column names to lists of strings, the returned\
     \ value is 5 entries of a dictionary mapping column names to values of the detected\
     \ types. \n\n* an iterable of strings, the returned value is a list of 5 values\
-    \ of the detected type. \n"
+    \ of the detected type."
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data

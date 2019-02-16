@@ -19,13 +19,7 @@ items:
 
     (The result of calling <xref:prose.codeaccelerator.ReadJsonBuilder.learn>.)
 
-    Only intended to be called internally.
-
-
-
-
-
-    '
+    Only intended to be called internally.'
   syntax:
     content: ReadJsonLearnResult(result)
   type: class
@@ -36,17 +30,13 @@ items:
   - python
   module: prose.codeaccelerator
   name: code()
-  summary: 'Return the code that was learned.
-
-    '
+  summary: Return the code that was learned.
   syntax:
     content: code()
     return:
       description: 'A callable that accepts a single argument (the file name to read).
 
-        Its string representation is a Python code to read the input file.
-
-        '
+        Its string representation is a Python code to read the input file.'
   type: method
   uid: prose.codeaccelerator.ReadJsonLearnResult.code
 - class: prose.codeaccelerator.ReadJsonLearnResult
@@ -55,9 +45,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: column_count
-  summary: 'Number of columns that the learned program will generate in its output.
-
-    '
+  summary: Number of columns that the learned program will generate in its output.
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadJsonLearnResult.column_count
@@ -67,10 +55,8 @@ items:
   - python
   module: prose.codeaccelerator
   name: names
-  summary: 'List of column names learned from the input file that will be used in
-    the output table.
-
-    '
+  summary: List of column names learned from the input file that will be used in the
+    output table.
   syntax: {}
   type: attribute
   uid: prose.codeaccelerator.ReadJsonLearnResult.names
@@ -80,15 +66,11 @@ items:
   - python
   module: prose.codeaccelerator
   name: preview_data
-  summary: 'Return the data obtained when running the learned program on the input
+  summary: Return the data obtained when running the learned program on the input
     file.
-
-    '
   syntax:
     return:
-      description: 'The first `5` rows of the data.
-
-        '
+      description: The first `5` rows of the data.
       type:
       - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
         List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
