@@ -10,6 +10,10 @@ description: Summary of changes for each release of PROSE Code Accelerator for P
 
 # Release Notes
 
+## 1.6.0 - 2019-05-31
+
+- Miscellaneous bug fixes.
+
 ## 1.5.0 - 2019-04-11
 
 - Miscellaneous bug fixes and performance improvements.
