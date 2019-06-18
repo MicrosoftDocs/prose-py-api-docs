@@ -1,6 +1,6 @@
 ---
 title: Microsoft PROSE Code Accelerator SDK - Python
-ms.date: 09/24/2018
+ms.date: 06/18/2019
 ms.topic: conceptual
 ms.service: non-product-specific
 author: simmdan
@@ -49,7 +49,10 @@ files (`ReadJsonBuilder`), detecting data types (`DetectTypeBuilder`) and findin
 4. Review the resulting data and code.
 5. Return to step 2 and repeat as necessary until the results are correct.
 6. Take the code and use it independently from Code Accelerator--Code Accelerator itself is just a tool, it is not
-   required at runtime.
+   used at runtime.
+
+_NOTE: Code Accelerator is **NOT** intended for use at runtime.  Use it when creating your code.  Only use the code it
+generates at runtime._
 
 
 ## About the code method on learn result
