@@ -9,7 +9,7 @@ description: These are known issues with the current release of PROSE Code Accel
 ---
 
 # Known issues with the Microsoft PROSE Code Accelerator SDK
-The following are issues that the PROSE team is aware of with the 1.6.0 release of the Microsoft PROSE Code Accelerator
+The following are issues that the PROSE team is aware of with the 1.7.0 release of the Microsoft PROSE Code Accelerator
 SDK.  We are working to fix them in a future release.  If you encounter issues not on this list, please report them on
 the [prose-codeaccelerator GitHub repository](https://github.com/Microsoft/prose-codeaccelerator/issues).
   
