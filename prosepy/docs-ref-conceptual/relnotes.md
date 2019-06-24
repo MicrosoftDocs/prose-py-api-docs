@@ -10,6 +10,11 @@ description: Summary of changes for each release of PROSE Code Accelerator for P
 
 # Release Notes
 
+## 1.7.0 - 2019-06-24
+
+- Fixed bug where the DetectTypesBuilder would reorder columns.
+- More sophisticated detection of number of skip lines for ReadCsvBuilder.
+
 ## 1.6.0 - 2019-05-31
 
 - Miscellaneous bug fixes.
