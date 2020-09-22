@@ -1,0 +1,79 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - prose.codeaccelerator.DomainTypeProfileBuilder.learn
+  - prose.codeaccelerator.DomainTypeProfileBuilder.target
+  - prose.codeaccelerator.DomainTypeProfileBuilder.types_to_detect
+  class: prose.codeaccelerator.DomainTypeProfileBuilder
+  fullName: prose.codeaccelerator.DomainTypeProfileBuilder
+  inheritance:
+  - type: builtins.object
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: DomainTypeProfileBuilder
+  summary: 'A builder that can be used to produce profiles of a column of data or
+    the columns of a dataframe,
+
+    wrt a set of a domain types.'
+  syntax:
+    content: DomainTypeProfileBuilder(data)
+    parameters:
+    - description: 'The data to profile, must be one of (a) a string-valued list-like
+        object, or
+
+        (b) a pandas.DataFrame with string-valued columns.'
+      id: data
+  type: class
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder
+- class: prose.codeaccelerator.DomainTypeProfileBuilder
+  fullName: prose.codeaccelerator.DomainTypeProfileBuilder.learn
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: learn()
+  namewithoutparameters: learn
+  summary: Infer the domain types in the provided data.
+  syntax:
+    content: learn()
+    return:
+      description: A DomainTypeProfileResult object.
+  type: method
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder.learn
+- class: prose.codeaccelerator.DomainTypeProfileBuilder
+  fullName: prose.codeaccelerator.DomainTypeProfileBuilder.target
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: target
+  summary: This is unused and ignored.
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder.target
+- class: prose.codeaccelerator.DomainTypeProfileBuilder
+  fullName: prose.codeaccelerator.DomainTypeProfileBuilder.types_to_detect
+  langs:
+  - python
+  module: prose.codeaccelerator
+  name: types_to_detect
+  summary: The list of types to detect.
+  syntax: {}
+  type: attribute
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder.types_to_detect
+references:
+- fullName: prose.codeaccelerator.DomainTypeProfileBuilder.learn
+  isExternal: false
+  name: learn()
+  parent: prose.codeaccelerator.DomainTypeProfileBuilder
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder.learn
+- fullName: prose.codeaccelerator.DomainTypeProfileBuilder.target
+  isExternal: false
+  name: target
+  parent: prose.codeaccelerator.DomainTypeProfileBuilder
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder.target
+- fullName: prose.codeaccelerator.DomainTypeProfileBuilder.types_to_detect
+  isExternal: false
+  name: types_to_detect
+  parent: prose.codeaccelerator.DomainTypeProfileBuilder
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder.types_to_detect

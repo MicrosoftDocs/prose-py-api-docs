@@ -23,6 +23,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: code()
+  namewithoutparameters: code
   summary: Generate code to transform the dataset into the appropriate data types.
   syntax:
     content: code()

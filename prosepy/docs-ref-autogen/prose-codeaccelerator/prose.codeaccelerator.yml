@@ -12,6 +12,8 @@ items:
   - prose.codeaccelerator.DetectTypesLearnResult
   - prose.codeaccelerator.FindPatternsBuilder
   - prose.codeaccelerator.FindPatternsLearnResult
+  - prose.codeaccelerator.DomainTypeProfileBuilder
+  - prose.codeaccelerator.DomainTypeProfileResult
   - prose.codeaccelerator.exceptions
   fullName: prose.codeaccelerator
   kind: import
@@ -77,6 +79,16 @@ references:
   name: FindPatternsLearnResult
   parent: prose.codeaccelerator
   uid: prose.codeaccelerator.FindPatternsLearnResult
+- fullName: prose.codeaccelerator.DomainTypeProfileBuilder
+  isExternal: false
+  name: DomainTypeProfileBuilder
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.DomainTypeProfileBuilder
+- fullName: prose.codeaccelerator.DomainTypeProfileResult
+  isExternal: false
+  name: DomainTypeProfileResult
+  parent: prose.codeaccelerator
+  uid: prose.codeaccelerator.DomainTypeProfileResult
 - fullName: prose.codeaccelerator.exceptions
   isExternal: false
   name: exceptions

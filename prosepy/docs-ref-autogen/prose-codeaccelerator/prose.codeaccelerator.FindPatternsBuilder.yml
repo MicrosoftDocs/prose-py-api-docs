@@ -106,6 +106,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn()
+  namewithoutparameters: learn
   summary: Attempt to learn a set of patterns that cover the data and satisfy the
     constraints that have been set on this builder.
   syntax:
