@@ -6,6 +6,8 @@ inheritances:
 - builtins.object
 summary: Represents the result produced by a call to learn() on a DomainTypeProfileBuilder
   object.
+constructor:
+  syntax: DomainTypeProfileResult(result)
 methods:
 - uid: prose.codeaccelerator.DomainTypeProfileResult.keys
   name: keys

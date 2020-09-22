@@ -6,6 +6,13 @@ inheritances:
 - builtins.object
 summary: A builder for specifying constraints in order to learn code for reading a
   JSON file into a table.
+constructor:
+  syntax: ReadJsonBuilder(filename)
+  parameters:
+  - name: filename
+    description: A path to the input file (in UTF-8) to learn from.
+    types:
+    - <xref:str>
 methods:
 - uid: prose.codeaccelerator.ReadJsonBuilder.learn
   name: learn

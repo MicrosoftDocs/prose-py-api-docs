@@ -10,6 +10,8 @@ summary: 'The result from attempting to learn a program for JSON reading.
   (The result of calling <xref:prose.codeaccelerator.ReadJsonBuilder.learn>.)
 
   Only intended to be called internally.'
+constructor:
+  syntax: ReadJsonLearnResult(result)
 methods:
 - uid: prose.codeaccelerator.ReadJsonLearnResult.code
   name: code

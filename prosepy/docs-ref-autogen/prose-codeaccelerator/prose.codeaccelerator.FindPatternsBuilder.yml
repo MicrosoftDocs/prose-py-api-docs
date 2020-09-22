@@ -6,6 +6,13 @@ inheritances:
 - builtins.object
 summary: A builder for data and constraints in order to learn code for identifying
   patterns in a set of strings.
+constructor:
+  syntax: FindPatternsBuilder(data)
+  parameters:
+  - name: data
+    description: List of strings to identify patterns from.
+    types:
+    - <xref:List[str]>
 methods:
 - uid: prose.codeaccelerator.FindPatternsBuilder.learn
   name: learn

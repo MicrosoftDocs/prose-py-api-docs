@@ -6,6 +6,25 @@ inheritances:
 - builtins.object
 summary: A builder to learn code to transform string-valued data into appropriate
   typed values.
+constructor:
+  syntax: DetectTypesBuilder(data, true_length=None)
+  parameters:
+  - name: data
+    description: 'A data collection with string-valued data values. The type can be
+
+      either a pandas dataframe, a dictionary mapping column names to lists of strings,
+      or just
+
+      an iterable of strings. In the first two cases, the data types are detected
+      separately for
+
+      each column and in the final case, a single data type is detected for the values
+      in the list.'
+  - name: true_length
+    description: 'An optional parameter that can be used to pass the actual size of
+      the dataset,
+
+      in the event that *data* is a sample of the entire dataset.'
 methods:
 - uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
   name: convert_types

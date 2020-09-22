@@ -8,6 +8,14 @@ summary: 'A builder that can be used to produce profiles of a column of data or 
   columns of a dataframe,
 
   wrt a set of a domain types.'
+constructor:
+  syntax: DomainTypeProfileBuilder(data)
+  parameters:
+  - name: data
+    description: 'The data to profile, must be one of (a) a string-valued list-like
+      object, or
+
+      (b) a pandas.DataFrame with string-valued columns.'
 methods:
 - uid: prose.codeaccelerator.DomainTypeProfileBuilder.learn
   name: learn

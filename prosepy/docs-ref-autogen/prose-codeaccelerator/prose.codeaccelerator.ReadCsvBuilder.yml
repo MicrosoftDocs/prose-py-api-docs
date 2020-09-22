@@ -6,6 +6,13 @@ inheritances:
 - builtins.object
 summary: A builder for specifying constraints in order to learn code for reading a
   delimited file into a table.
+constructor:
+  syntax: ReadCsvBuilder(filename)
+  parameters:
+  - name: filename
+    description: A path to the input file to learn from.
+    types:
+    - <xref:str>
 methods:
 - uid: prose.codeaccelerator.ReadCsvBuilder.learn
   name: learn

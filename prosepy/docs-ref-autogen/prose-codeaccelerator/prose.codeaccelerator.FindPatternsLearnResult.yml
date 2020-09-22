@@ -5,6 +5,8 @@ module: prose.codeaccelerator
 inheritances:
 - builtins.object
 summary: The result from attempting to learn a set of patterns in string data.
+constructor:
+  syntax: FindPatternsLearnResult(result)
 methods:
 - uid: prose.codeaccelerator.FindPatternsLearnResult.code
   name: code
