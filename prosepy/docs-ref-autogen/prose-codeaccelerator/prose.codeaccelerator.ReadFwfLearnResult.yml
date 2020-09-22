@@ -34,6 +34,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: code()
+  namewithoutparameters: code
   summary: Return the code that was learned.
   syntax:
     content: code()

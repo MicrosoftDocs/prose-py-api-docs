@@ -45,6 +45,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: convert_types(df, types_to_detect=None)
+  namewithoutparameters: convert_types
   summary: 'Automatically perform type conversion on the DataFrame df. If all that
     is required
 
@@ -78,8 +79,10 @@ items:
     parameters:
     - description: The DataFrame on which type conversion is to be performed.
       id: df
+      isRequired: true
     - description: The list of types to detect.
       id: types_to_detect
+      isRequired: true
   type: method
   uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
 - class: prose.codeaccelerator.DetectTypesBuilder
@@ -88,6 +91,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn()
+  namewithoutparameters: learn
   summary: Infer the data types in the provided data.
   syntax:
     content: learn()

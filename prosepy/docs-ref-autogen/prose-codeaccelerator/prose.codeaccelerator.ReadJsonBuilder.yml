@@ -30,6 +30,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: learn()
+  namewithoutparameters: learn
   summary: Attempt to learn a program from the constraints that have been set on this
     builder.
   syntax:

@@ -24,6 +24,7 @@ items:
   - python
   module: prose.codeaccelerator
   name: code(task='classify')
+  namewithoutparameters: code
   summary: 'Return a code fragment that identifies the patterns that were learned.
 
 
@@ -41,6 +42,7 @@ items:
 
         patterns learned.'
       id: task
+      isRequired: true
   type: method
   uid: prose.codeaccelerator.FindPatternsLearnResult.code
 - class: prose.codeaccelerator.FindPatternsLearnResult
