@@ -1,51 +1,14 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.DetectTypesBuilder.convert_types
-  - prose.codeaccelerator.DetectTypesBuilder.learn
-  - prose.codeaccelerator.DetectTypesBuilder.nrows
-  - prose.codeaccelerator.DetectTypesBuilder.target
-  - prose.codeaccelerator.DetectTypesBuilder.types_to_detect
-  class: prose.codeaccelerator.DetectTypesBuilder
-  fullName: prose.codeaccelerator.DetectTypesBuilder
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: DetectTypesBuilder
-  summary: A builder to learn code to transform string-valued data into appropriate
-    typed values.
-  syntax:
-    content: DetectTypesBuilder(data, true_length=None)
-    parameters:
-    - description: 'A data collection with string-valued data values. The type can
-        be
-
-        either a pandas dataframe, a dictionary mapping column names to lists of strings,
-        or just
-
-        an iterable of strings. In the first two cases, the data types are detected
-        separately for
-
-        each column and in the final case, a single data type is detected for the
-        values in the list.'
-      id: data
-    - description: 'An optional parameter that can be used to pass the actual size
-        of the dataset,
-
-        in the event that *data* is a sample of the entire dataset.'
-      id: true_length
-  type: class
-  uid: prose.codeaccelerator.DetectTypesBuilder
-- class: prose.codeaccelerator.DetectTypesBuilder
-  fullName: prose.codeaccelerator.DetectTypesBuilder.convert_types
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: convert_types(df, types_to_detect=None)
-  namewithoutparameters: convert_types
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.DetectTypesBuilder
+name: DetectTypesBuilder
+module: prose.codeaccelerator
+inheritances:
+- builtins.object
+summary: A builder to learn code to transform string-valued data into appropriate
+  typed values.
+methods:
+- uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
+  name: convert_types
   summary: 'Automatically perform type conversion on the DataFrame df. If all that
     is required
 
@@ -74,66 +37,32 @@ items:
     of the types that *types_to_detect* is set to, then they will
 
     be treated as string values.'
-  syntax:
-    content: convert_types(df, types_to_detect=None)
-    parameters:
-    - description: The DataFrame on which type conversion is to be performed.
-      id: df
-      isRequired: true
-    - description: The list of types to detect.
-      id: types_to_detect
-      isRequired: true
-  type: method
-  uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
-- class: prose.codeaccelerator.DetectTypesBuilder
-  fullName: prose.codeaccelerator.DetectTypesBuilder.learn
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: learn()
-  namewithoutparameters: learn
+  signature: convert_types(df, types_to_detect=None)
+  parameters:
+  - name: df
+    description: The DataFrame on which type conversion is to be performed.
+    isRequired: true
+  - name: types_to_detect
+    description: The list of types to detect.
+    isRequired: true
+- uid: prose.codeaccelerator.DetectTypesBuilder.learn
+  name: learn
   summary: Infer the data types in the provided data.
-  syntax:
-    content: learn()
-    return:
-      description: 'A DetectTypesLearnResult object which can be used to
-
-        either generate the code to coerce the data into the appropriate types,
-
-        or to directly transform the sample data into the appropriate types.'
-  type: method
-  uid: prose.codeaccelerator.DetectTypesBuilder.learn
-- class: prose.codeaccelerator.DetectTypesBuilder
-  fullName: prose.codeaccelerator.DetectTypesBuilder.nrows
-  langs:
-  - python
-  module: prose.codeaccelerator
+  signature: learn()
+attributes:
+- uid: prose.codeaccelerator.DetectTypesBuilder.nrows
   name: nrows
   summary: 'Number of rows to analyze while detecting data types.
 
 
     The value *None*, which is the default, means all rows are analyzed.'
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.DetectTypesBuilder.nrows
-- class: prose.codeaccelerator.DetectTypesBuilder
-  fullName: prose.codeaccelerator.DetectTypesBuilder.target
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.DetectTypesBuilder.target
   name: target
   summary: 'Target runtime library for the generated code.
 
 
     Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.'
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.DetectTypesBuilder.target
-- class: prose.codeaccelerator.DetectTypesBuilder
-  fullName: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
   name: types_to_detect
   summary: 'The list of types to detect.
 
@@ -154,32 +83,3 @@ items:
     of the types that *types_to_detect* is set to, then they will
 
     be treated as string values.'
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
-references:
-- fullName: prose.codeaccelerator.DetectTypesBuilder.convert_types
-  isExternal: false
-  name: convert_types(df, types_to_detect=None)
-  parent: prose.codeaccelerator.DetectTypesBuilder
-  uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
-- fullName: prose.codeaccelerator.DetectTypesBuilder.learn
-  isExternal: false
-  name: learn()
-  parent: prose.codeaccelerator.DetectTypesBuilder
-  uid: prose.codeaccelerator.DetectTypesBuilder.learn
-- fullName: prose.codeaccelerator.DetectTypesBuilder.nrows
-  isExternal: false
-  name: nrows
-  parent: prose.codeaccelerator.DetectTypesBuilder
-  uid: prose.codeaccelerator.DetectTypesBuilder.nrows
-- fullName: prose.codeaccelerator.DetectTypesBuilder.target
-  isExternal: false
-  name: target
-  parent: prose.codeaccelerator.DetectTypesBuilder
-  uid: prose.codeaccelerator.DetectTypesBuilder.target
-- fullName: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
-  isExternal: false
-  name: types_to_detect
-  parent: prose.codeaccelerator.DetectTypesBuilder
-  uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect

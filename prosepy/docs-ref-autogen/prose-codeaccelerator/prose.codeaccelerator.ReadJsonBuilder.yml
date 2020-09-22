@@ -1,85 +1,31 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.ReadJsonBuilder.learn
-  - prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
-  - prose.codeaccelerator.ReadJsonBuilder.target
-  class: prose.codeaccelerator.ReadJsonBuilder
-  fullName: prose.codeaccelerator.ReadJsonBuilder
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: ReadJsonBuilder
-  summary: A builder for specifying constraints in order to learn code for reading
-    a JSON file into a table.
-  syntax:
-    content: ReadJsonBuilder(filename)
-    parameters:
-    - description: A path to the input file (in UTF-8) to learn from.
-      id: filename
-      type:
-      - str
-  type: class
-  uid: prose.codeaccelerator.ReadJsonBuilder
-- class: prose.codeaccelerator.ReadJsonBuilder
-  fullName: prose.codeaccelerator.ReadJsonBuilder.learn
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: learn()
-  namewithoutparameters: learn
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.ReadJsonBuilder
+name: ReadJsonBuilder
+module: prose.codeaccelerator
+inheritances:
+- builtins.object
+summary: A builder for specifying constraints in order to learn code for reading a
+  JSON file into a table.
+methods:
+- uid: prose.codeaccelerator.ReadJsonBuilder.learn
+  name: learn
   summary: Attempt to learn a program from the constraints that have been set on this
     builder.
-  syntax:
-    content: learn()
-    return:
-      description: The result of learning.
-      type:
-      - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
-  type: method
-  uid: prose.codeaccelerator.ReadJsonBuilder.learn
-- class: prose.codeaccelerator.ReadJsonBuilder
-  fullName: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
-  langs:
-  - python
-  module: prose.codeaccelerator
+  signature: learn()
+  return:
+    description: The result of learning.
+    types:
+    - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
+attributes:
+- uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
   name: lines_to_analyze
   summary: 'Number of lines of the newline-delimited JSON file that should be used
     during learning.
 
     If the input file is normal JSON, this property does not have any effect.'
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
-- class: prose.codeaccelerator.ReadJsonBuilder
-  fullName: prose.codeaccelerator.ReadJsonBuilder.target
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadJsonBuilder.target
   name: target
   summary: 'Target runtime library for the generated code.
 
 
     Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.'
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadJsonBuilder.target
-references:
-- fullName: prose.codeaccelerator.ReadJsonBuilder.learn
-  isExternal: false
-  name: learn()
-  parent: prose.codeaccelerator.ReadJsonBuilder
-  uid: prose.codeaccelerator.ReadJsonBuilder.learn
-- fullName: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
-  isExternal: false
-  name: lines_to_analyze
-  parent: prose.codeaccelerator.ReadJsonBuilder
-  uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
-- fullName: prose.codeaccelerator.ReadJsonBuilder.target
-  isExternal: false
-  name: target
-  parent: prose.codeaccelerator.ReadJsonBuilder
-  uid: prose.codeaccelerator.ReadJsonBuilder.target

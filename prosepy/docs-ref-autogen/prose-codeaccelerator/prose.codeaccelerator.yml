@@ -1,96 +1,24 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.ReadCsvBuilder
-  - prose.codeaccelerator.ReadCsvLearnResult
-  - prose.codeaccelerator.ReadFwfBuilder
-  - prose.codeaccelerator.ReadFwfLearnResult
-  - prose.codeaccelerator.ReadJsonBuilder
-  - prose.codeaccelerator.ReadJsonLearnResult
-  - prose.codeaccelerator.DetectTypesBuilder
-  - prose.codeaccelerator.DetectTypesLearnResult
-  - prose.codeaccelerator.FindPatternsBuilder
-  - prose.codeaccelerator.FindPatternsLearnResult
-  - prose.codeaccelerator.DomainTypeProfileBuilder
-  - prose.codeaccelerator.DomainTypeProfileResult
-  - prose.codeaccelerator.exceptions
-  fullName: prose.codeaccelerator
-  kind: import
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: codeaccelerator
-  summary: 'This package contains the PROSE code acceleration SDK. Code Accelerator
+### YamlMime:PythonPackage
+uid: prose.codeaccelerator
+name: codeaccelerator
+summary: 'This package contains the PROSE code acceleration SDK. Code Accelerator
 
-    uses the power of PROSE to quickly and accurately produce Python code for
+  uses the power of PROSE to quickly and accurately produce Python code for
 
-    data preparation tasks--making you faster and more productive.'
-  type: package
-  uid: prose.codeaccelerator
-references:
-- fullName: prose.codeaccelerator.ReadCsvBuilder
-  isExternal: false
-  name: ReadCsvBuilder
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.ReadCsvBuilder
-- fullName: prose.codeaccelerator.ReadCsvLearnResult
-  isExternal: false
-  name: ReadCsvLearnResult
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.ReadCsvLearnResult
-- fullName: prose.codeaccelerator.ReadFwfBuilder
-  isExternal: false
-  name: ReadFwfBuilder
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.ReadFwfBuilder
-- fullName: prose.codeaccelerator.ReadFwfLearnResult
-  isExternal: false
-  name: ReadFwfLearnResult
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.ReadFwfLearnResult
-- fullName: prose.codeaccelerator.ReadJsonBuilder
-  isExternal: false
-  name: ReadJsonBuilder
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.ReadJsonBuilder
-- fullName: prose.codeaccelerator.ReadJsonLearnResult
-  isExternal: false
-  name: ReadJsonLearnResult
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.ReadJsonLearnResult
-- fullName: prose.codeaccelerator.DetectTypesBuilder
-  isExternal: false
-  name: DetectTypesBuilder
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.DetectTypesBuilder
-- fullName: prose.codeaccelerator.DetectTypesLearnResult
-  isExternal: false
-  name: DetectTypesLearnResult
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.DetectTypesLearnResult
-- fullName: prose.codeaccelerator.FindPatternsBuilder
-  isExternal: false
-  name: FindPatternsBuilder
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.FindPatternsBuilder
-- fullName: prose.codeaccelerator.FindPatternsLearnResult
-  isExternal: false
-  name: FindPatternsLearnResult
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.FindPatternsLearnResult
-- fullName: prose.codeaccelerator.DomainTypeProfileBuilder
-  isExternal: false
-  name: DomainTypeProfileBuilder
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.DomainTypeProfileBuilder
-- fullName: prose.codeaccelerator.DomainTypeProfileResult
-  isExternal: false
-  name: DomainTypeProfileResult
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.DomainTypeProfileResult
-- fullName: prose.codeaccelerator.exceptions
-  isExternal: false
-  name: exceptions
-  parent: prose.codeaccelerator
-  uid: prose.codeaccelerator.exceptions
+  data preparation tasks--making you faster and more productive.'
+type: import
+classes:
+- prose.codeaccelerator.ReadCsvBuilder
+- prose.codeaccelerator.ReadCsvLearnResult
+- prose.codeaccelerator.ReadFwfBuilder
+- prose.codeaccelerator.ReadFwfLearnResult
+- prose.codeaccelerator.ReadJsonBuilder
+- prose.codeaccelerator.ReadJsonLearnResult
+- prose.codeaccelerator.DetectTypesBuilder
+- prose.codeaccelerator.DetectTypesLearnResult
+- prose.codeaccelerator.FindPatternsBuilder
+- prose.codeaccelerator.FindPatternsLearnResult
+- prose.codeaccelerator.DomainTypeProfileBuilder
+- prose.codeaccelerator.DomainTypeProfileResult
+modules:
+- prose.codeaccelerator.exceptions

@@ -1,37 +1,12 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.DomainTypeProfileResult.keys
-  class: prose.codeaccelerator.DomainTypeProfileResult
-  fullName: prose.codeaccelerator.DomainTypeProfileResult
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: DomainTypeProfileResult
-  summary: Represents the result produced by a call to learn() on a DomainTypeProfileBuilder
-    object.
-  syntax:
-    content: DomainTypeProfileResult(result)
-  type: class
-  uid: prose.codeaccelerator.DomainTypeProfileResult
-- class: prose.codeaccelerator.DomainTypeProfileResult
-  fullName: prose.codeaccelerator.DomainTypeProfileResult.keys
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: keys()
-  namewithoutparameters: keys
-  syntax:
-    content: keys()
-    parameters: []
-  type: method
-  uid: prose.codeaccelerator.DomainTypeProfileResult.keys
-references:
-- fullName: prose.codeaccelerator.DomainTypeProfileResult.keys
-  isExternal: false
-  name: keys()
-  parent: prose.codeaccelerator.DomainTypeProfileResult
-  uid: prose.codeaccelerator.DomainTypeProfileResult.keys
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.DomainTypeProfileResult
+name: DomainTypeProfileResult
+module: prose.codeaccelerator
+inheritances:
+- builtins.object
+summary: Represents the result produced by a call to learn() on a DomainTypeProfileBuilder
+  object.
+methods:
+- uid: prose.codeaccelerator.DomainTypeProfileResult.keys
+  name: keys
+  signature: keys()
