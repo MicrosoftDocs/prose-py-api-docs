@@ -1,6 +1,7 @@
 ### YamlMime:PythonModule
 uid: prose.codeaccelerator.exceptions
 name: exceptions
+fullName: prose.codeaccelerator.exceptions
 classes:
 - prose.codeaccelerator.exceptions.LearnError
 - prose.codeaccelerator.exceptions.ProseException

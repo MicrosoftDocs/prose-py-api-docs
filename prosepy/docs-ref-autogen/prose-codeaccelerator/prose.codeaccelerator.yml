@@ -1,6 +1,7 @@
 ### YamlMime:PythonPackage
 uid: prose.codeaccelerator
 name: codeaccelerator
+fullName: prose.codeaccelerator
 summary: 'This package contains the PROSE code acceleration SDK. Code Accelerator
 
   uses the power of PROSE to quickly and accurately produce Python code for

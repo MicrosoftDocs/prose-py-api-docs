@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.ReadCsvBuilder
 name: ReadCsvBuilder
+fullName: prose.codeaccelerator.ReadCsvBuilder
 module: prose.codeaccelerator
 inheritances:
 - builtins.object

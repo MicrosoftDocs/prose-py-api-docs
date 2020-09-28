@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.FindPatternsLearnResult
 name: FindPatternsLearnResult
+fullName: prose.codeaccelerator.FindPatternsLearnResult
 module: prose.codeaccelerator
 inheritances:
 - builtins.object

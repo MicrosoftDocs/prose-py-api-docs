@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.exceptions.LearnError
 name: LearnError
+fullName: prose.codeaccelerator.exceptions.LearnError
 module: prose.codeaccelerator.exceptions
 inheritances:
 - prose.codeaccelerator.exceptions.ProseException

@@ -1,6 +1,7 @@
 ### YamlMime:PythonPackage
 uid: project-prose-codeaccelerator
 name: prose-codeaccelerator
+fullName: prose-codeaccelerator
 type: distribution
 packages:
 - prose.codeaccelerator

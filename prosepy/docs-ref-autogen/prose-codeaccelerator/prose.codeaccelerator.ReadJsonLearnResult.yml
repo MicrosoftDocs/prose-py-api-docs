@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.ReadJsonLearnResult
 name: ReadJsonLearnResult
+fullName: prose.codeaccelerator.ReadJsonLearnResult
 module: prose.codeaccelerator
 inheritances:
 - builtins.object

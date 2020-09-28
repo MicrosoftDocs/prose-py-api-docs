@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.ReadFwfLearnResult
 name: ReadFwfLearnResult
+fullName: prose.codeaccelerator.ReadFwfLearnResult
 module: prose.codeaccelerator
 inheritances:
 - builtins.object

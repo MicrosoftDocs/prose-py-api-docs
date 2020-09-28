@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.DomainTypeProfileBuilder
 name: DomainTypeProfileBuilder
+fullName: prose.codeaccelerator.DomainTypeProfileBuilder
 module: prose.codeaccelerator
 inheritances:
 - builtins.object

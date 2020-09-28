@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.DetectTypesBuilder
 name: DetectTypesBuilder
+fullName: prose.codeaccelerator.DetectTypesBuilder
 module: prose.codeaccelerator
 inheritances:
 - builtins.object

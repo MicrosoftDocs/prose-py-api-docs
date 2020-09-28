@@ -1,6 +1,7 @@
 ### YamlMime:PythonClass
 uid: prose.codeaccelerator.exceptions.ProseException
 name: ProseException
+fullName: prose.codeaccelerator.exceptions.ProseException
 module: prose.codeaccelerator.exceptions
 inheritances:
 - builtins.Exception
