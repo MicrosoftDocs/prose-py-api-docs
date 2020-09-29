@@ -13,7 +13,7 @@ constructor:
   - name: data
     description: List of strings to identify patterns from.
     types:
-    - <xref:List>[<xref:str>]
+    - <xref:<xref:List>[<xref:str>]>
 methods:
 - uid: prose.codeaccelerator.FindPatternsBuilder.learn
   name: learn
@@ -30,7 +30,7 @@ attributes:
     patterns.'
   return:
     types:
-    - <xref:List>[<xref:Tuple>[<xref:str>, <xref:str>]]
+    - <xref:<xref:List>[<xref:Tuple>[<xref:str>, <xref:str>]]>
 - uid: prose.codeaccelerator.FindPatternsBuilder.in_different_clusters
   name: in_different_clusters
   summary: 'A list of collections of strings. Each collection of strings constrains
@@ -42,7 +42,7 @@ attributes:
     collections must come from the data provided to the builder during construction.'
   return:
     types:
-    - <xref:List>[<xref:Iter>[<xref:str>]]
+    - <xref:<xref:List>[<xref:Iter>[<xref:str>]]>
 - uid: prose.codeaccelerator.FindPatternsBuilder.in_same_cluster
   name: in_same_cluster
   summary: 'A list of collections of strings. Each collection of strings constrains
@@ -54,7 +54,7 @@ attributes:
     collections must come from the data provided to the builder during construction.'
   return:
     types:
-    - <xref:List>[<xref:Iter>[<xref:str>]]
+    - <xref:<xref:List>[<xref:Iter>[<xref:str>]]>
 - uid: prose.codeaccelerator.FindPatternsBuilder.include_outlier_patterns
   name: include_outlier_patterns
   summary: 'A switch controlling whether the *.learn()* returns outlier patterns too.
@@ -82,7 +82,7 @@ attributes:
     respectively.'
   return:
     types:
-    - <xref:Optional>[<xref:bool>]
+    - <xref:<xref:Optional>[<xref:bool>]>
 - uid: prose.codeaccelerator.FindPatternsBuilder.target
   name: target
   summary: 'Target runtime library for the generated code.
