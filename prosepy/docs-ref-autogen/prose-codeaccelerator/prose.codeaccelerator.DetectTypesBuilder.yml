@@ -69,6 +69,12 @@ methods:
   name: learn
   summary: Infer the data types in the provided data.
   signature: learn()
+  return:
+    description: 'A DetectTypesLearnResult object which can be used to
+
+      either generate the code to coerce the data into the appropriate types,
+
+      or to directly transform the sample data into the appropriate types.'
 attributes:
 - uid: prose.codeaccelerator.DetectTypesBuilder.nrows
   name: nrows

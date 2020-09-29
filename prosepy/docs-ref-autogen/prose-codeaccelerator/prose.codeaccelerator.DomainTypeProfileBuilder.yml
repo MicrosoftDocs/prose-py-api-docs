@@ -22,6 +22,8 @@ methods:
   name: learn
   summary: Infer the domain types in the provided data.
   signature: learn()
+  return:
+    description: A DomainTypeProfileResult object.
 attributes:
 - uid: prose.codeaccelerator.DomainTypeProfileBuilder.target
   name: target

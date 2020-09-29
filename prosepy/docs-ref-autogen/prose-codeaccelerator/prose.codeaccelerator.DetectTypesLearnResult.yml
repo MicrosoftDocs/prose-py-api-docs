@@ -13,6 +13,8 @@ methods:
   name: code
   summary: Generate code to transform the dataset into the appropriate data types.
   signature: code()
+  return:
+    description: A code object which can be called, or printed out.
 attributes:
 - uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data
   name: preview_data

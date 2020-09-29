@@ -13,7 +13,7 @@ constructor:
   - name: filename
     description: A path to the input file to learn from.
     types:
-    - <xref:str>
+    - str
 methods:
 - uid: prose.codeaccelerator.ReadCsvBuilder.learn
   name: learn

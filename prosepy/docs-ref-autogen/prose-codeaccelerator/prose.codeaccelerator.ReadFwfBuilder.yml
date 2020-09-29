@@ -13,14 +13,14 @@ constructor:
   - name: filename
     description: A path to the input file to learn from.
     types:
-    - <xref:str>
+    - str
   - name: schema_filename
     description: 'An optional path to the fixed-width schema file to use for learning.
       The schema is expected to
 
       contain a table with column metadata about the table in the fixed-width file.'
     types:
-    - <xref:str>
+    - str
 methods:
 - uid: prose.codeaccelerator.ReadFwfBuilder.learn
   name: learn

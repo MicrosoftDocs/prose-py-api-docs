@@ -18,6 +18,10 @@ methods:
   name: code
   summary: Return the code that was learned.
   signature: code()
+  return:
+    description: 'A callable that accepts a single argument (the file name to read).
+
+      Its string representation is a Python code to read the input file.'
 attributes:
 - uid: prose.codeaccelerator.ReadFwfLearnResult.colspecs
   name: colspecs
@@ -44,8 +48,8 @@ attributes:
   return:
     description: The first `5` rows of the data.
     types:
-    - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-      List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
+    - <xref:Union>[[<xref:DataFrame>](<xref:https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html>),
+      <xref:List>[[<xref:Row>](<xref:http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row>)]]
 - uid: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
   name: skip_blank_lines
   summary: If True, skip over blank lines rather than interpreting as NaN values.

@@ -32,6 +32,10 @@ attributes:
 - uid: prose.codeaccelerator.FindPatternsLearnResult.preview_data
   name: preview_data
   summary: Group data provided to the find patterns operation by the learned patterns.
+  return:
+    description: 'A dictionary with keys being the name of the pattern, and the values
+
+      being a list of strings that correspond to that pattern.'
 - uid: prose.codeaccelerator.FindPatternsLearnResult.regexes
   name: regexes
   summary: 'List of regexes representing the patterns identified in the data.
@@ -40,4 +44,4 @@ attributes:
     *None* represents a pattern that only matches strings that are *None*.'
   return:
     types:
-    - List[str]
+    - <xref:List>[<xref:str>]
