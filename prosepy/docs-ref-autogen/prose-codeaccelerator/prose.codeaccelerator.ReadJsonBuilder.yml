@@ -13,7 +13,7 @@ constructor:
   - name: filename
     description: A path to the input file (in UTF-8) to learn from.
     types:
-    - str
+    - <xref:str>
 methods:
 - uid: prose.codeaccelerator.ReadJsonBuilder.learn
   name: learn
@@ -23,7 +23,7 @@ methods:
   return:
     description: The result of learning.
     types:
-    - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
+    - <xref:<xref:prose.codeaccelerator.ReadJsonLearnResult>.>
 attributes:
 - uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
   name: lines_to_analyze

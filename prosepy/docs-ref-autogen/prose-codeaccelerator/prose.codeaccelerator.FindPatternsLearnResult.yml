@@ -44,4 +44,4 @@ attributes:
     *None* represents a pattern that only matches strings that are *None*.'
   return:
     types:
-    - <xref:<xref:List>[<xref:str>]>
+    - <xref:List>[<xref:str>]

@@ -48,8 +48,8 @@ attributes:
   return:
     description: The first `5` rows of the data.
     types:
-    - <xref:<xref:Union>[[<xref:DataFrame>](<xref:https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html>),
-      <xref:List>[[<xref:Row>](<xref:http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row>)]]>
+    - <xref:Union>[[<xref:DataFrame>](<xref:https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html>),
+      <xref:List>[[<xref:Row>](<xref:http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row>)]]
 - uid: prose.codeaccelerator.ReadFwfLearnResult.skip_blank_lines
   name: skip_blank_lines
   summary: If True, skip over blank lines rather than interpreting as NaN values.
