@@ -21979,6 +21979,14 @@ references:
   href: https://docs.python.org/3/library/builtins.html#module-builtins
   name: builtins
   uid: builtins
+- fullName: builtins.object
+  href: https://docs.python.org/3/library/functions.html?highlight=object#object
+  name: builtins.object
+  uid: builtins.object
+- fullName: builtins.Exception
+  href: https://docs.python.org/3/library/exceptions.html?highlight=exception#Exception
+  name: builtins.Exception
+  uid: builtins.Exception
 - fullName: bz2
   href: https://docs.python.org/3/library/bz2.html#module-bz2
   name: bz2
