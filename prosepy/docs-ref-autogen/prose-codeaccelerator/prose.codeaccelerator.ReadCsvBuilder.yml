@@ -23,7 +23,7 @@ methods:
   return:
     description: The result of learning.
     types:
-    - <xref:<xref:prose.codeaccelerator.ReadCsvLearnResult>.>
+    - <xref:prose.codeaccelerator.ReadCsvLearnResult>.
 attributes:
 - uid: prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
   name: enable_regex_row_filtering

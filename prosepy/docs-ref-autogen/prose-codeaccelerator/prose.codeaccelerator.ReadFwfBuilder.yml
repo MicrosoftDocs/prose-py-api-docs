@@ -30,7 +30,7 @@ methods:
   return:
     description: The result of learning.
     types:
-    - <xref:<xref:prose.codeaccelerator.ReadFwfLearnResult>.>
+    - <xref:prose.codeaccelerator.ReadFwfLearnResult>.
 attributes:
 - uid: prose.codeaccelerator.ReadFwfBuilder.filename
   name: filename

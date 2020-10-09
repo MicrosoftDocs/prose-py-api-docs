@@ -23,7 +23,7 @@ methods:
   return:
     description: The result of learning.
     types:
-    - <xref:<xref:prose.codeaccelerator.ReadJsonLearnResult>.>
+    - <xref:prose.codeaccelerator.ReadJsonLearnResult>.
 attributes:
 - uid: prose.codeaccelerator.ReadJsonBuilder.lines_to_analyze
   name: lines_to_analyze
