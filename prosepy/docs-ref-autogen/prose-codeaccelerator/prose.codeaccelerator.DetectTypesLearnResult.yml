@@ -1,40 +1,22 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.DetectTypesLearnResult.code
-  - prose.codeaccelerator.DetectTypesLearnResult.preview_data
-  class: prose.codeaccelerator.DetectTypesLearnResult
-  fullName: prose.codeaccelerator.DetectTypesLearnResult
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: DetectTypesLearnResult
-  summary: Encapsulates the results of running data type detection on a dataset.
-  syntax:
-    content: DetectTypesLearnResult(result)
-  type: class
-  uid: prose.codeaccelerator.DetectTypesLearnResult
-- class: prose.codeaccelerator.DetectTypesLearnResult
-  fullName: prose.codeaccelerator.DetectTypesLearnResult.code
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: code()
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.DetectTypesLearnResult
+name: DetectTypesLearnResult
+fullName: prose.codeaccelerator.DetectTypesLearnResult
+module: prose.codeaccelerator
+inheritances:
+- builtins.object
+summary: Encapsulates the results of running data type detection on a dataset.
+constructor:
+  syntax: DetectTypesLearnResult(result)
+methods:
+- uid: prose.codeaccelerator.DetectTypesLearnResult.code
+  name: code
   summary: Generate code to transform the dataset into the appropriate data types.
-  syntax:
-    content: code()
-    return:
-      description: A code object which can be called, or printed out.
-  type: method
-  uid: prose.codeaccelerator.DetectTypesLearnResult.code
-- class: prose.codeaccelerator.DetectTypesLearnResult
-  fullName: prose.codeaccelerator.DetectTypesLearnResult.preview_data
-  langs:
-  - python
-  module: prose.codeaccelerator
+  signature: code()
+  return:
+    description: A code object which can be called, or printed out.
+attributes:
+- uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data
   name: preview_data
   summary: "Transform data into appropriate types.\n\nThe source data is what was\
     \ provided to the builder object that produced this result object).\nThe type\
@@ -45,17 +27,3 @@ items:
     \ value is 5 entries of a dictionary mapping column names to values of the detected\
     \ types. \n\n* an iterable of strings, the returned value is a list of 5 values\
     \ of the detected type."
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data
-references:
-- fullName: prose.codeaccelerator.DetectTypesLearnResult.code
-  isExternal: false
-  name: code()
-  parent: prose.codeaccelerator.DetectTypesLearnResult
-  uid: prose.codeaccelerator.DetectTypesLearnResult.code
-- fullName: prose.codeaccelerator.DetectTypesLearnResult.preview_data
-  isExternal: false
-  name: preview_data
-  parent: prose.codeaccelerator.DetectTypesLearnResult
-  uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data

@@ -1,0 +1,33 @@
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.DomainTypeProfileBuilder
+name: DomainTypeProfileBuilder
+fullName: prose.codeaccelerator.DomainTypeProfileBuilder
+module: prose.codeaccelerator
+inheritances:
+- builtins.object
+summary: 'A builder that can be used to produce profiles of a column of data or the
+  columns of a dataframe,
+
+  wrt a set of a domain types.'
+constructor:
+  syntax: DomainTypeProfileBuilder(data)
+  parameters:
+  - name: data
+    description: 'The data to profile, must be one of (a) a string-valued list-like
+      object, or
+
+      (b) a pandas.DataFrame with string-valued columns.'
+methods:
+- uid: prose.codeaccelerator.DomainTypeProfileBuilder.learn
+  name: learn
+  summary: Infer the domain types in the provided data.
+  signature: learn()
+  return:
+    description: A DomainTypeProfileResult object.
+attributes:
+- uid: prose.codeaccelerator.DomainTypeProfileBuilder.target
+  name: target
+  summary: This is unused and ignored.
+- uid: prose.codeaccelerator.DomainTypeProfileBuilder.types_to_detect
+  name: types_to_detect
+  summary: The list of types to detect.

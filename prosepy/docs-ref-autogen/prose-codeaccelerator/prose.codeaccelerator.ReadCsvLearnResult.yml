@@ -1,215 +1,55 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.ReadCsvLearnResult.code
-  - prose.codeaccelerator.ReadCsvLearnResult.column_count
-  - prose.codeaccelerator.ReadCsvLearnResult.delimiter
-  - prose.codeaccelerator.ReadCsvLearnResult.encoding
-  - prose.codeaccelerator.ReadCsvLearnResult.filename
-  - prose.codeaccelerator.ReadCsvLearnResult.names
-  - prose.codeaccelerator.ReadCsvLearnResult.preview_data
-  - prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
-  class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: ReadCsvLearnResult
-  summary: 'The result from attempting to learn a program for delimited file reading.
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.ReadCsvLearnResult
+name: ReadCsvLearnResult
+fullName: prose.codeaccelerator.ReadCsvLearnResult
+module: prose.codeaccelerator
+inheritances:
+- builtins.object
+summary: 'The result from attempting to learn a program for delimited file reading.
 
 
-    (The result of calling <xref:prose.codeaccelerator.ReadCsvBuilder.learn>.)
+  (The result of calling <xref:prose.codeaccelerator.ReadCsvBuilder.learn>.)
 
-    Only intended to be called internally.'
-  syntax:
-    content: ReadCsvLearnResult(result)
-  type: class
-  uid: prose.codeaccelerator.ReadCsvLearnResult
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.code
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: code()
+  Only intended to be called internally.'
+constructor:
+  syntax: ReadCsvLearnResult(result)
+methods:
+- uid: prose.codeaccelerator.ReadCsvLearnResult.code
+  name: code
   summary: Return the code that was learned.
-  syntax:
-    content: code()
-    return:
-      description: 'A callable that accepts a single argument (the file name to read).
+  signature: code()
+  return:
+    description: 'A callable that accepts a single argument (the file name to read).
 
-        Its string representation is a Python code to read the input file.'
-  type: method
-  uid: prose.codeaccelerator.ReadCsvLearnResult.code
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.column_count
-  langs:
-  - python
-  module: prose.codeaccelerator
+      Its string representation is a Python code to read the input file.'
+attributes:
+- uid: prose.codeaccelerator.ReadCsvLearnResult.column_count
   name: column_count
   summary: Number of columns that the learned program will generate in its output.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadCsvLearnResult.column_count
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.delimiter
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadCsvLearnResult.delimiter
   name: delimiter
   summary: Single delimiter that the learned program will use to split columns if
     one exists; None otherwise.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadCsvLearnResult.delimiter
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.encoding
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadCsvLearnResult.encoding
   name: encoding
   summary: The detected encoding of the sample file that will be used for subsequent
     reads.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadCsvLearnResult.encoding
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.filename
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadCsvLearnResult.filename
   name: filename
   summary: Path to the input file used to learn.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadCsvLearnResult.filename
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.names
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadCsvLearnResult.names
   name: names
   summary: List of column names learned from the input file that will be used in the
     output table.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadCsvLearnResult.names
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.preview_data
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadCsvLearnResult.preview_data
   name: preview_data
   summary: Return the data obtained when running the learned program on the input
     file.
-  syntax:
-    return:
-      description: The first `5` rows of the data.
-      type:
-      - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-        List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
-  type: attribute
-  uid: prose.codeaccelerator.ReadCsvLearnResult.preview_data
-- class: prose.codeaccelerator.ReadCsvLearnResult
-  fullName: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
-  langs:
-  - python
-  module: prose.codeaccelerator
+  return:
+    description: The first `5` rows of the data.
+    types:
+    - <xref:Union>[[<xref:DataFrame>](<xref:https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html>),
+      <xref:List>[[<xref:Row>](<xref:http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row>)]]
+- uid: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
   name: skip_blank_lines
   summary: If True, skip over blank lines rather than interpreting as NaN values.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
-references:
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.code
-  isExternal: false
-  name: code()
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.code
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.column_count
-  isExternal: false
-  name: column_count
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.column_count
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.delimiter
-  isExternal: false
-  name: delimiter
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.delimiter
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.encoding
-  isExternal: false
-  name: encoding
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.encoding
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.filename
-  isExternal: false
-  name: filename
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.filename
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.names
-  isExternal: false
-  name: names
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.names
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.preview_data
-  isExternal: false
-  name: preview_data
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.preview_data
-- fullName: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
-  isExternal: false
-  name: skip_blank_lines
-  parent: prose.codeaccelerator.ReadCsvLearnResult
-  uid: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
-- fullName: Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-    List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
-  name: Union[[DataFrame](html), List[[Row](Row)]]
-  spec.python:
-  - fullName: Union
-    name: Union
-    uid: Union
-  - fullName: '['
-    name: '['
-  - fullName: '['
-    name: '['
-  - fullName: DataFrame
-    name: DataFrame
-    uid: DataFrame
-  - fullName: ']'
-    name: ']'
-  - fullName: (
-    name: (
-  - fullName: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
-    name: html
-    uid: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
-  - fullName: )
-    name: )
-  - fullName: ', '
-    name: ', '
-  - fullName: List
-    name: List
-    uid: List
-  - fullName: '['
-    name: '['
-  - fullName: '['
-    name: '['
-  - fullName: Row
-    name: Row
-    uid: Row
-  - fullName: ']'
-    name: ']'
-  - fullName: (
-    name: (
-  - fullName: http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row
-    name: Row
-    uid: http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row
-  - fullName: )
-    name: )
-  - fullName: ']'
-    name: ']'
-  - fullName: ']'
-    name: ']'
-  uid: Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-    List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
