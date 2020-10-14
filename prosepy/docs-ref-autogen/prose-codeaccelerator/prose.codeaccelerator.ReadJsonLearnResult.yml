@@ -1,149 +1,41 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.ReadJsonLearnResult.code
-  - prose.codeaccelerator.ReadJsonLearnResult.column_count
-  - prose.codeaccelerator.ReadJsonLearnResult.names
-  - prose.codeaccelerator.ReadJsonLearnResult.preview_data
-  class: prose.codeaccelerator.ReadJsonLearnResult
-  fullName: prose.codeaccelerator.ReadJsonLearnResult
-  inheritance:
-  - type: builtins.object
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: ReadJsonLearnResult
-  summary: 'The result from attempting to learn a program for JSON reading.
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.ReadJsonLearnResult
+name: ReadJsonLearnResult
+fullName: prose.codeaccelerator.ReadJsonLearnResult
+module: prose.codeaccelerator
+inheritances:
+- builtins.object
+summary: 'The result from attempting to learn a program for JSON reading.
 
 
-    (The result of calling <xref:prose.codeaccelerator.ReadJsonBuilder.learn>.)
+  (The result of calling <xref:prose.codeaccelerator.ReadJsonBuilder.learn>.)
 
-    Only intended to be called internally.'
-  syntax:
-    content: ReadJsonLearnResult(result)
-  type: class
-  uid: prose.codeaccelerator.ReadJsonLearnResult
-- class: prose.codeaccelerator.ReadJsonLearnResult
-  fullName: prose.codeaccelerator.ReadJsonLearnResult.code
-  langs:
-  - python
-  module: prose.codeaccelerator
-  name: code()
+  Only intended to be called internally.'
+constructor:
+  syntax: ReadJsonLearnResult(result)
+methods:
+- uid: prose.codeaccelerator.ReadJsonLearnResult.code
+  name: code
   summary: Return the code that was learned.
-  syntax:
-    content: code()
-    return:
-      description: 'A callable that accepts a single argument (the file name to read).
+  signature: code()
+  return:
+    description: 'A callable that accepts a single argument (the file name to read).
 
-        Its string representation is a Python code to read the input file.'
-  type: method
-  uid: prose.codeaccelerator.ReadJsonLearnResult.code
-- class: prose.codeaccelerator.ReadJsonLearnResult
-  fullName: prose.codeaccelerator.ReadJsonLearnResult.column_count
-  langs:
-  - python
-  module: prose.codeaccelerator
+      Its string representation is a Python code to read the input file.'
+attributes:
+- uid: prose.codeaccelerator.ReadJsonLearnResult.column_count
   name: column_count
   summary: Number of columns that the learned program will generate in its output.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadJsonLearnResult.column_count
-- class: prose.codeaccelerator.ReadJsonLearnResult
-  fullName: prose.codeaccelerator.ReadJsonLearnResult.names
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadJsonLearnResult.names
   name: names
   summary: List of column names learned from the input file that will be used in the
     output table.
-  syntax: {}
-  type: attribute
-  uid: prose.codeaccelerator.ReadJsonLearnResult.names
-- class: prose.codeaccelerator.ReadJsonLearnResult
-  fullName: prose.codeaccelerator.ReadJsonLearnResult.preview_data
-  langs:
-  - python
-  module: prose.codeaccelerator
+- uid: prose.codeaccelerator.ReadJsonLearnResult.preview_data
   name: preview_data
   summary: Return the data obtained when running the learned program on the input
     file.
-  syntax:
-    return:
-      description: The first `5` rows of the data.
-      type:
-      - Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-        List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
-  type: attribute
-  uid: prose.codeaccelerator.ReadJsonLearnResult.preview_data
-references:
-- fullName: prose.codeaccelerator.ReadJsonLearnResult.code
-  isExternal: false
-  name: code()
-  parent: prose.codeaccelerator.ReadJsonLearnResult
-  uid: prose.codeaccelerator.ReadJsonLearnResult.code
-- fullName: prose.codeaccelerator.ReadJsonLearnResult.column_count
-  isExternal: false
-  name: column_count
-  parent: prose.codeaccelerator.ReadJsonLearnResult
-  uid: prose.codeaccelerator.ReadJsonLearnResult.column_count
-- fullName: prose.codeaccelerator.ReadJsonLearnResult.names
-  isExternal: false
-  name: names
-  parent: prose.codeaccelerator.ReadJsonLearnResult
-  uid: prose.codeaccelerator.ReadJsonLearnResult.names
-- fullName: prose.codeaccelerator.ReadJsonLearnResult.preview_data
-  isExternal: false
-  name: preview_data
-  parent: prose.codeaccelerator.ReadJsonLearnResult
-  uid: prose.codeaccelerator.ReadJsonLearnResult.preview_data
-- fullName: Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-    List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
-  name: Union[[DataFrame](html), List[[Row](Row)]]
-  spec.python:
-  - fullName: Union
-    name: Union
-    uid: Union
-  - fullName: '['
-    name: '['
-  - fullName: '['
-    name: '['
-  - fullName: DataFrame
-    name: DataFrame
-    uid: DataFrame
-  - fullName: ']'
-    name: ']'
-  - fullName: (
-    name: (
-  - fullName: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
-    name: html
-    uid: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html
-  - fullName: )
-    name: )
-  - fullName: ', '
-    name: ', '
-  - fullName: List
-    name: List
-    uid: List
-  - fullName: '['
-    name: '['
-  - fullName: '['
-    name: '['
-  - fullName: Row
-    name: Row
-    uid: Row
-  - fullName: ']'
-    name: ']'
-  - fullName: (
-    name: (
-  - fullName: http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row
-    name: Row
-    uid: http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row
-  - fullName: )
-    name: )
-  - fullName: ']'
-    name: ']'
-  - fullName: ']'
-    name: ']'
-  uid: Union[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
-    List[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
+  return:
+    description: The first `5` rows of the data.
+    types:
+    - <xref:Union>[[<xref:DataFrame>](<xref:https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html>),
+      <xref:List>[[<xref:Row>](<xref:http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row>)]]

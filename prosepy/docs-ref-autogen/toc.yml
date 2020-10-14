@@ -1,16 +1,25 @@
 - items:
+  - name: Overview
+    uid: project-prose-codeaccelerator
   - items:
+    - name: Overview
+      uid: prose.codeaccelerator
     - items:
+      - name: Overview
+        uid: prose.codeaccelerator.exceptions
       - name: prose.codeaccelerator.exceptions.LearnError
         uid: prose.codeaccelerator.exceptions.LearnError
       - name: prose.codeaccelerator.exceptions.ProseException
         uid: prose.codeaccelerator.exceptions.ProseException
       name: prose.codeaccelerator.exceptions
-      uid: prose.codeaccelerator.exceptions
     - name: prose.codeaccelerator.DetectTypesBuilder
       uid: prose.codeaccelerator.DetectTypesBuilder
     - name: prose.codeaccelerator.DetectTypesLearnResult
       uid: prose.codeaccelerator.DetectTypesLearnResult
+    - name: prose.codeaccelerator.DomainTypeProfileBuilder
+      uid: prose.codeaccelerator.DomainTypeProfileBuilder
+    - name: prose.codeaccelerator.DomainTypeProfileResult
+      uid: prose.codeaccelerator.DomainTypeProfileResult
     - name: prose.codeaccelerator.FindPatternsBuilder
       uid: prose.codeaccelerator.FindPatternsBuilder
     - name: prose.codeaccelerator.FindPatternsLearnResult
@@ -28,7 +37,5 @@
     - name: prose.codeaccelerator.ReadJsonLearnResult
       uid: prose.codeaccelerator.ReadJsonLearnResult
     name: prose.codeaccelerator
-    uid: prose.codeaccelerator
   name: prose-codeaccelerator
-  uid: project-prose-codeaccelerator
 

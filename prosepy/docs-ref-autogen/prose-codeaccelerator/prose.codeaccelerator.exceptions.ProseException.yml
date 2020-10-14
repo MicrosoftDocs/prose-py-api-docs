@@ -1,21 +1,8 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children: []
-  class: prose.codeaccelerator.exceptions.ProseException
-  fullName: prose.codeaccelerator.exceptions.ProseException
-  inheritance:
-  - inheritance:
-    - inheritance:
-      - type: builtins.object
-      type: builtins.BaseException
-    type: builtins.Exception
-  langs:
-  - python
-  module: prose.codeaccelerator.exceptions
-  name: ProseException
-  summary: A base exception for all code accelerator related exceptions.
-  syntax: {}
-  type: class
-  uid: prose.codeaccelerator.exceptions.ProseException
-references: []
+### YamlMime:PythonClass
+uid: prose.codeaccelerator.exceptions.ProseException
+name: ProseException
+fullName: prose.codeaccelerator.exceptions.ProseException
+module: prose.codeaccelerator.exceptions
+inheritances:
+- builtins.Exception
+summary: A base exception for all code accelerator related exceptions.

@@ -1,24 +1,7 @@
-### YamlMime:UniversalReference
-api_name: []
-items:
-- children:
-  - prose.codeaccelerator.exceptions.LearnError
-  - prose.codeaccelerator.exceptions.ProseException
-  fullName: prose.codeaccelerator.exceptions
-  langs:
-  - python
-  module: prose.codeaccelerator.exceptions
-  name: exceptions
-  type: module
-  uid: prose.codeaccelerator.exceptions
-references:
-- fullName: prose.codeaccelerator.exceptions.LearnError
-  isExternal: false
-  name: LearnError
-  parent: prose.codeaccelerator.exceptions
-  uid: prose.codeaccelerator.exceptions.LearnError
-- fullName: prose.codeaccelerator.exceptions.ProseException
-  isExternal: false
-  name: ProseException
-  parent: prose.codeaccelerator.exceptions
-  uid: prose.codeaccelerator.exceptions.ProseException
+### YamlMime:PythonModule
+uid: prose.codeaccelerator.exceptions
+name: exceptions
+fullName: prose.codeaccelerator.exceptions
+classes:
+- prose.codeaccelerator.exceptions.LearnError
+- prose.codeaccelerator.exceptions.ProseException
