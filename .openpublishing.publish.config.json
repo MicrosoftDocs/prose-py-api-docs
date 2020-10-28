@@ -40,7 +40,6 @@
               "python"
             ]
           },
-          "ContainerPageYamlMime": "YamlMime:UniversalReference",
           "OutputFolder": "prosepy/docs-ref-joined"
         }
 ]
