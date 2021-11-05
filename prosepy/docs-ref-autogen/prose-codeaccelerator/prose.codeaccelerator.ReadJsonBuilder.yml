@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: filename
     description: A path to the input file (in UTF-8) to learn from.
+    isRequired: true
     types:
     - <xref:str>
 methods:

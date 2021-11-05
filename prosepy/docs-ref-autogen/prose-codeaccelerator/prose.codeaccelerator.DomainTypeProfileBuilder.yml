@@ -17,6 +17,7 @@ constructor:
       object, or
 
       (b) a pandas.DataFrame with string-valued columns.'
+    isRequired: true
 methods:
 - uid: prose.codeaccelerator.DomainTypeProfileBuilder.learn
   name: learn
