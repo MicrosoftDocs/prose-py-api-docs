@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: data
     description: List of strings to identify patterns from.
+    isRequired: true
     types:
     - <xref:List>[<xref:str>]
 methods:
