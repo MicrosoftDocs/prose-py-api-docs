@@ -18,12 +18,11 @@ methods:
 attributes:
 - uid: prose.codeaccelerator.DetectTypesLearnResult.preview_data
   name: preview_data
-  summary: "Transform data into appropriate types.\n\nThe source data is what was\
-    \ provided to the builder object that produced this result object).\nThe type\
-    \ of the returned value depends on the input data the builder was initialized\
-    \ with.\nIf the input data was:\n\n* a pandas dataframe, the returned value is\
-    \ 5 rows of pandas dataframe with the values from each column coerced to the appropriate\
-    \ types. \n\n* a dictionary from column names to lists of strings, the returned\
-    \ value is 5 entries of a dictionary mapping column names to values of the detected\
-    \ types. \n\n* an iterable of strings, the returned value is a list of 5 values\
-    \ of the detected type."
+  summary: "Transform data into appropriate types.\nThe source data is what was provided\
+    \ to the builder object that produced this result object).\nThe type of the returned\
+    \ value depends on the input data the builder was initialized with.\nIf the input\
+    \ data was:\n* a pandas dataframe, the returned value is 5 rows of pandas dataframe\
+    \ with the values from each column coerced to the appropriate types. \n\n* a dictionary\
+    \ from column names to lists of strings, the returned value is 5 entries of a\
+    \ dictionary mapping column names to values of the detected types. \n\n* an iterable\
+    \ of strings, the returned value is a list of 5 values of the detected type."

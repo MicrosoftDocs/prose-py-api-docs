@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: filename
     description: A path to the input file to learn from.
+    isRequired: true
     types:
     - <xref:str>
 methods:
@@ -29,8 +30,6 @@ attributes:
   name: enable_regex_row_filtering
   summary: 'Whether to enable regular-expression-based filtering of the rows.
 
-
-
     > [!NOTE]
 
     > This is an experimental (unstable) feature.
@@ -45,6 +44,5 @@ attributes:
 - uid: prose.codeaccelerator.ReadCsvBuilder.target
   name: target
   summary: 'Target runtime library for the generated code.
-
 
     Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.'

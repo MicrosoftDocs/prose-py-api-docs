@@ -21,11 +21,13 @@ constructor:
 
       each column and in the final case, a single data type is detected for the values
       in the list.'
+    isRequired: true
   - name: true_length
     description: 'An optional parameter that can be used to pass the actual size of
       the dataset,
 
       in the event that *data* is a sample of the entire dataset.'
+    isRequired: true
 methods:
 - uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
   name: convert_types
@@ -40,7 +42,6 @@ methods:
 
     learning the conversion code and executing the conversion code.
 
-
     The value *None* which is the default means
 
     that the standard list of types, which includes Booleans, Numeric types,
@@ -50,7 +51,6 @@ methods:
     Valid strings in the list include the values: ''bool'', ''boolean'',
 
     ''numeric'', ''number'', ''datetime'', ''string'' and ''text''.
-
 
     If the values in a column are not identifiable as values
 
@@ -80,18 +80,15 @@ attributes:
   name: nrows
   summary: 'Number of rows to analyze while detecting data types.
 
-
     The value *None*, which is the default, means all rows are analyzed.'
 - uid: prose.codeaccelerator.DetectTypesBuilder.target
   name: target
   summary: 'Target runtime library for the generated code.
 
-
     Supported values are *"auto"*, *"pandas"*, and *"pyspark"*. Default is *"pandas"*.'
 - uid: prose.codeaccelerator.DetectTypesBuilder.types_to_detect
   name: types_to_detect
   summary: 'The list of types to detect.
-
 
     The value *None* which is the default means
 
@@ -102,7 +99,6 @@ attributes:
     Valid strings in the list include the values: ''bool'', ''boolean'',
 
     ''numeric'', ''number'', ''datetime'', ''string'' and ''text''.
-
 
     If the values in a column are not identifiable as values
 

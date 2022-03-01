@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: filename
     description: A path to the input file (in UTF-8) to learn from.
+    isRequired: true
     types:
     - <xref:str>
 methods:
@@ -34,6 +35,5 @@ attributes:
 - uid: prose.codeaccelerator.ReadJsonBuilder.target
   name: target
   summary: 'Target runtime library for the generated code.
-
 
     Supported values are `"pandas"` and `"pyspark"`. Default is `"pandas"`.'

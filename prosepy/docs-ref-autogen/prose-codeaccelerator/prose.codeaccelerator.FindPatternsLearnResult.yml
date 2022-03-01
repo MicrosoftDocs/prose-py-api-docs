@@ -13,7 +13,6 @@ methods:
   name: code
   summary: 'Return a code fragment that identifies the patterns that were learned.
 
-
     The code is targeted to the platform specified by the corresponding *FindPatternsBuilder.target*.'
   signature: code(task='classify')
   parameters:
@@ -39,7 +38,6 @@ attributes:
 - uid: prose.codeaccelerator.FindPatternsLearnResult.regexes
   name: regexes
   summary: 'List of regexes representing the patterns identified in the data.
-
 
     *None* represents a pattern that only matches strings that are *None*.'
   return:
