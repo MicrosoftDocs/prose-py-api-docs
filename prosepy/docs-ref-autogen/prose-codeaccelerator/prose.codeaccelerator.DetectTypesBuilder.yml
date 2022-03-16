@@ -21,11 +21,13 @@ constructor:
 
       each column and in the final case, a single data type is detected for the values
       in the list.'
+    isRequired: true
   - name: true_length
     description: 'An optional parameter that can be used to pass the actual size of
       the dataset,
 
       in the event that *data* is a sample of the entire dataset.'
+    isRequired: true
 methods:
 - uid: prose.codeaccelerator.DetectTypesBuilder.convert_types
   name: convert_types

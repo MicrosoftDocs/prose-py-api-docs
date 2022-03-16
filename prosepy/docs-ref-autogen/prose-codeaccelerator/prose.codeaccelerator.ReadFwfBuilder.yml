@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: filename
     description: A path to the input file to learn from.
+    isRequired: true
     types:
     - <xref:str>
   - name: schema_filename
@@ -19,6 +20,7 @@ constructor:
       The schema is expected to
 
       contain a table with column metadata about the table in the fixed-width file.'
+    isRequired: true
     types:
     - <xref:str>
 methods:
