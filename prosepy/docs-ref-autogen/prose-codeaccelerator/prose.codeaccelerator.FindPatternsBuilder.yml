@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: data
     description: List of strings to identify patterns from.
+    isRequired: true
     types:
     - <xref:List>[<xref:str>]
 methods:
@@ -23,11 +24,9 @@ methods:
 attributes:
 - uid: prose.codeaccelerator.FindPatternsBuilder.custom_regex_tokens
   name: custom_regex_tokens
-  summary: 'A list of custom regex tokens -- each custom regex token is represented
-    as a tuple
-
-    of strings (name, regex). The custom regex tokens are used while generating the
-    patterns.'
+  summary: "A list of custom regex tokens \u2013 each custom regex token is represented\
+    \ as a tuple\nof strings (name, regex). The custom regex tokens are used while\
+    \ generating the patterns."
   return:
     types:
     - <xref:List>[<xref:Tuple>[<xref:str>, <xref:str>]]
