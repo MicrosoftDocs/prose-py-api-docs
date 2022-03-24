@@ -6,3 +6,5 @@ module: prose.codeaccelerator.exceptions
 inheritances:
 - builtins.Exception
 summary: A base exception for all code accelerator related exceptions.
+constructor:
+  syntax: ProseException()

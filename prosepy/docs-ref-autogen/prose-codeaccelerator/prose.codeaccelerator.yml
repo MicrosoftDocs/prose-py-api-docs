@@ -9,17 +9,17 @@ summary: 'This package contains the PROSE code acceleration SDK. Code Accelerato
   data preparation tasks--making you faster and more productive.'
 type: import
 classes:
+- prose.codeaccelerator.DetectTypesBuilder
+- prose.codeaccelerator.DetectTypesLearnResult
+- prose.codeaccelerator.DomainTypeProfileBuilder
+- prose.codeaccelerator.DomainTypeProfileResult
+- prose.codeaccelerator.FindPatternsBuilder
+- prose.codeaccelerator.FindPatternsLearnResult
 - prose.codeaccelerator.ReadCsvBuilder
 - prose.codeaccelerator.ReadCsvLearnResult
 - prose.codeaccelerator.ReadFwfBuilder
 - prose.codeaccelerator.ReadFwfLearnResult
 - prose.codeaccelerator.ReadJsonBuilder
 - prose.codeaccelerator.ReadJsonLearnResult
-- prose.codeaccelerator.DetectTypesBuilder
-- prose.codeaccelerator.DetectTypesLearnResult
-- prose.codeaccelerator.FindPatternsBuilder
-- prose.codeaccelerator.FindPatternsLearnResult
-- prose.codeaccelerator.DomainTypeProfileBuilder
-- prose.codeaccelerator.DomainTypeProfileResult
 modules:
 - prose.codeaccelerator.exceptions
