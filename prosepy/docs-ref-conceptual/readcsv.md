@@ -85,7 +85,8 @@ def read_file(file):
 
 ```
 
-## Current Limitations
+## Current limitations
+
 - Only UTF-8 encoded files are supported.
 
-See the list of known issues [here](https://docs.microsoft.com/en-us/python/api/overview/azure/prose/knownissues?view=prose-py-latest).
+See the [list of known issues](/python/api/overview/azure/prose/knownissues?view=prose-py-latest).
