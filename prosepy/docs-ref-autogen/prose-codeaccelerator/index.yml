@@ -5,3 +5,5 @@ fullName: prose-codeaccelerator
 type: distribution
 packages:
 - prose.codeaccelerator
+modules:
+- prose.codeaccelerator.exceptions
