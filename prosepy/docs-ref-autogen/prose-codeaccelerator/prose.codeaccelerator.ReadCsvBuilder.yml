@@ -12,6 +12,7 @@ constructor:
   parameters:
   - name: filename
     description: A path to the input file to learn from.
+    isRequired: true
     types:
     - <xref:str>
 methods:
@@ -28,7 +29,6 @@ attributes:
 - uid: prose.codeaccelerator.ReadCsvBuilder.enable_regex_row_filtering
   name: enable_regex_row_filtering
   summary: 'Whether to enable regular-expression-based filtering of the rows.
-
 
 
     > [!NOTE]
