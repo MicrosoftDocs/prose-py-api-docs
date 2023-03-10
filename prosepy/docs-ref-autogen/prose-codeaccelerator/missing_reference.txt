@@ -1,8 +1,0 @@
-Exception: "<pending_xref py:class=\"ProseException\" py:module=\"prose.codeaccelerator.exceptions\"\
-  \ refdoc=\"prose.codeaccelerator\" refdomain=\"py\" refexplicit=\"False\" reftarget=\"\
-  Exception\" reftype=\"class\" refwarn=\"False\">\n    <literal classes=\"xref py\
-  \ py-class\">\n        Exception\n"
-object: "<pending_xref py:class=\"ReadJsonLearnResult\" py:module=\"prose.codeaccelerator\"\
-  \ refdoc=\"prose.codeaccelerator\" refdomain=\"py\" refexplicit=\"False\" reftarget=\"\
-  object\" reftype=\"class\" refwarn=\"False\">\n    <literal classes=\"xref py py-class\"\
-  >\n        object\n"
