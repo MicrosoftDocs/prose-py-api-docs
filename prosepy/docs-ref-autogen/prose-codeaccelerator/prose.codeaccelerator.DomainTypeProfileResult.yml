@@ -9,6 +9,8 @@ summary: Represents the result produced by a call to learn() on a DomainTypeProf
   object.
 constructor:
   syntax: DomainTypeProfileResult(result)
+  parameters:
+  - name: result
 methods:
 - uid: prose.codeaccelerator.DomainTypeProfileResult.keys
   name: keys

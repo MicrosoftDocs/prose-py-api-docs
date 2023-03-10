@@ -8,6 +8,8 @@ inheritances:
 summary: The result from attempting to learn a set of patterns in string data.
 constructor:
   syntax: FindPatternsLearnResult(result)
+  parameters:
+  - name: result
 methods:
 - uid: prose.codeaccelerator.FindPatternsLearnResult.code
   name: code

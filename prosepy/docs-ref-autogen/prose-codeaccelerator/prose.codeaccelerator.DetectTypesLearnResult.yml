@@ -8,6 +8,8 @@ inheritances:
 summary: Encapsulates the results of running data type detection on a dataset.
 constructor:
   syntax: DetectTypesLearnResult(result)
+  parameters:
+  - name: result
 methods:
 - uid: prose.codeaccelerator.DetectTypesLearnResult.code
   name: code

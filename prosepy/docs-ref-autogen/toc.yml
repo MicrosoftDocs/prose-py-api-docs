@@ -3,15 +3,15 @@
     uid: project-prose-codeaccelerator
   - items:
     - name: Overview
+      uid: prose.codeaccelerator.exceptions
+    - name: prose.codeaccelerator.exceptions.LearnError
+      uid: prose.codeaccelerator.exceptions.LearnError
+    - name: prose.codeaccelerator.exceptions.ProseException
+      uid: prose.codeaccelerator.exceptions.ProseException
+    name: prose.codeaccelerator.exceptions
+  - items:
+    - name: Overview
       uid: prose.codeaccelerator
-    - items:
-      - name: Overview
-        uid: prose.codeaccelerator.exceptions
-      - name: prose.codeaccelerator.exceptions.LearnError
-        uid: prose.codeaccelerator.exceptions.LearnError
-      - name: prose.codeaccelerator.exceptions.ProseException
-        uid: prose.codeaccelerator.exceptions.ProseException
-      name: prose.codeaccelerator.exceptions
     - name: prose.codeaccelerator.DetectTypesBuilder
       uid: prose.codeaccelerator.DetectTypesBuilder
     - name: prose.codeaccelerator.DetectTypesLearnResult

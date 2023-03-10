@@ -6,3 +6,5 @@ module: prose.codeaccelerator.exceptions
 inheritances:
 - prose.codeaccelerator.exceptions.ProseException
 summary: An error occurred during learning.
+constructor:
+  syntax: LearnError()

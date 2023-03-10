@@ -13,6 +13,8 @@ summary: 'The result from attempting to learn a program for delimited file readi
   Only intended to be called internally.'
 constructor:
   syntax: ReadCsvLearnResult(result)
+  parameters:
+  - name: result
 methods:
 - uid: prose.codeaccelerator.ReadCsvLearnResult.code
   name: code
@@ -48,8 +50,8 @@ attributes:
   return:
     description: The first `5` rows of the data.
     types:
-    - <xref:Union>[[<xref:DataFrame>](<xref:https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html>),
-      <xref:List>[[<xref:Row>](<xref:http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row>)]]
+    - <xref:Union>[[DataFrame](https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.html),
+      <xref:List>[[Row](http://spark.apache.org/docs/latest/api/python/pyspark.sql.html#pyspark.sql.Row)]]
 - uid: prose.codeaccelerator.ReadCsvLearnResult.skip_blank_lines
   name: skip_blank_lines
   summary: If True, skip over blank lines rather than interpreting as NaN values.
