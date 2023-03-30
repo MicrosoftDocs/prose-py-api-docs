@@ -1,56 +1,9 @@
 {
-  "docsets_to_publish": [
-    {
-      "docset_name": "prosepy",
-      "build_source_folder": "prosepy",
-      "build_output_subfolder": "prosepy",
-      "locale": "en-us",
-      "monikers": [],
-      "moniker_ranges": [],
-      "open_to_public_contributors": false,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "RestApi": "Content",
-        "UniversalReference": "Content",
-        "PythonEnum": "Content",
-        "PythonModule": "Content",
-        "PythonClass": "Content",
-        "PythonPackage": "Content",
-        "ReferenceContainer": "Content"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes",
-      "base_path": "python",
-      "site_name": "Docs",
-      "customized_tasks": {
-        "docset_prebuild": [
-          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
-        ]
-      },
-      "JoinTOCPlugin": [
-        {
-          "TopLevelTOC": "prosepy/docs-ref-mapping/prose-ref-toc.yml",
-          "ReferenceTOC": "prosepy/docs-ref-autogen/toc.yml",
-          "ConceptualTOC": "prosepy/docs-ref-conceptual/toc.yml",
-          "ConceptualTOCUrl": "/python/api/overview/azure/prose/toc.json?view=azure-accelerator-py",
-          "ReferenceTOCUrl": "/python/api/azprose_py_toc/toc.json?view=azure-accelerator-py",
-          "ContainerPageMetadata": {
-            "langs": [
-              "python"
-            ]
-          },
-          "OutputFolder": "prosepy/docs-ref-joined"
-        }
-      ]
-    }
-  ],
+  "docsets_to_publish": [],
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": false,
-  "contribution_branch_mappings": {},
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
@@ -60,6 +13,9 @@
     }
   ],
   "branch_target_mapping": {},
+  "docs_build_engine": {},
+  "skip_source_output_uploading": false,
+  "contribution_branch_mappings": {},
   "dependent_packages": [
     {
       "path_to_root": "_dependentPackages/memberpage.plugins",
@@ -76,8 +32,5 @@
       "nuget_feed": "https://www.myget.org/F/op/api/v2"
     }
   ],
-  "need_generate_pdf_url_template": false,
-  "docs_build_engine": {
-    "name": "docfx_v3"
-  }
+  "need_generate_pdf_url_template": false
 }
